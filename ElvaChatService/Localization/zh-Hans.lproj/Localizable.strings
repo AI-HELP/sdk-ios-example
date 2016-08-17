@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  ElvaTestIOS
+
+  Created by wwj on 16/5/30.
+  Copyright © 2016年 im30. All rights reserved.
+*/
+
+"ElvaChatService" = "聊天客服";
+
+"offLine"= "您的链接已经断开,请重新进入!";
+
+"ContactCustomerService" = "联系客服";
+"self_service_interface" = "自助服务";
+
+"Message" = "信息";
+"WasHelp"="此信息对您有帮助吗?";
+"NO"="否";
+"YES"="是";
