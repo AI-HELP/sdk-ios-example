@@ -25,6 +25,8 @@
  */
 @property (nonatomic, copy) UIColor *loadingBarTintColor;
 @property (nonatomic,copy) NSString *contentStr;
+@property (nonatomic,copy) NSString *faqId;
+@property (nonatomic,copy) NSString *wasHelpFul;
 
 @property (nonatomic, assign) bool showLoadingBar;
 @property (nonatomic, assign) bool isShowSelfBtn;
@@ -32,7 +34,11 @@
 @property (nonatomic, assign) bool isShowUserSelfBtn;
 @property (nonatomic, assign) bool isShowFaqList;
 @property int loadedCount;
+@property(nonatomic,retain)UILabel *footLabel;
+@property(nonatomic,retain)UILabel *footBottomLabel;
+@property(nonatomic,retain)UILabel *helpBottomLabel;
 @property (nonatomic) UIActivityIndicatorView *oneIndicatorView;//环形进度条
+
 /** 是否不显示导航栏右上角点点点 */
 @property (nonatomic, assign) bool noMoreBtn;
 

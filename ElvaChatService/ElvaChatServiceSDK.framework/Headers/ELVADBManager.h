@@ -28,4 +28,7 @@
 
 -(NSString *) getFaqByFaqId:(NSString *)faqId;
 
+-(NSString *) getFaqIsHelp:(NSString *)faqId;
+
+-(Boolean)updateWasHelp:(NSString *)isHelpFul faqId:(NSString *)faqId;
 @end
