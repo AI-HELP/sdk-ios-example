@@ -25,6 +25,7 @@
 @property (copy,nonatomic)NSString *upload;
 @property (copy,nonatomic)NSString *userName;
 @property (copy,nonatomic)NSString *faqData;
+@property (copy,nonatomic)NSString *logUrl;
 @property (copy,nonatomic)NSString *faqKey;
 //@property int isCommended;
 + (void)getServerMsgWithAppId:(NSString *)appSecret Domain:(NSString *)domain appId:(NSString *)appId;

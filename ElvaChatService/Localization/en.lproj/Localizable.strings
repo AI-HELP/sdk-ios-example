@@ -8,12 +8,18 @@
 
 "ElvaChatService" = "ElvaChat Service";
 "offLine"="Your network is disconnected,please try again later";
-"ContactCustomerService" = "contact";
+"ContactCustomerService" = "Contact Us";
 "self_service_interface"="services";
 "Message" = "Message";
 "WasHelp"="Was this helpful?";
 "NO"="NO";
 "YES"="YES";
+"elva__mark_helpful_toast"="You find this helpful";
+"elva__mark_no"="NO";
+"elva__mark_unhelpful_toast"="You didn't find this helpful";
+"elva__mark_yes"="YES";
+"elva__mark_yes_no_question"="Was this helpful?";
+
 
 
 
