@@ -6,7 +6,7 @@
 # 三、接入工程配置
     修改info.list，确保Allow Arbitrary Loads 的值为YES（初始化需要HTTP支持）
 # 四、接口调用说明
-      1、进行初始化：（必须在游戏开始阶段调用）
+      1、SDK初始化（必须在游戏开始阶段调用）
         在Cocos2dx中调用：ECServiceCocos2dx::init(string appKey,string domain,string appId)
           其中：
           appKey:app密钥，从Web管理系统获取。
