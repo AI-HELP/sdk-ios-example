@@ -1,6 +1,6 @@
-  Android SDK access instructions for English: https://github.com/CS30-NET/android-sdk-stable/blob/master/README.md
+  IOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/README.md
   
-  中文版Android SDK接入说明：https://github.com/CS30-NET/android-sdk-stable/blob/master/README-CN.md
+  中文版IOS SDK接入说明：https://github.com/CS30-NET/ios-sdk-stable/blob/master/README%E2%80%94CN.md
 # IOS SDK Access Instructions
 # Ⅰ. cocos2dx Interface List
     Put ECServiceCocos2dx.h, ECServiceCocos2dx.mm in the Classes folder
