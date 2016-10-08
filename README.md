@@ -7,7 +7,7 @@
 # Ⅱ. Import elvachatservice into project
     Copy the elvachatservice folder to your main directory，created as 'create groups for any added folders'.
 # Ⅲ. The access project configuration
-    Modify the info.list, ensure that the value of Allow Arbitrary Loads is YES (HTTP support is required for initialization)
+    Modify info.list, ensure that the value of Allow Arbitrary Loads is YES (HTTP support is required for initialization)
 # Ⅳ.The interface call instructions
     1. SDK initialization. (must be called at the beginning of the game)
       a. Call ECServiceCocos2dx::init(string appKey,string domain,string appId) in Cocos2dx.
