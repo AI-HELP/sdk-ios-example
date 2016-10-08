@@ -1,6 +1,6 @@
 # IOS SDK 接入说明
 # 一、下载IOS SDK
-    点击上一个页面右上角的“Clone or download”按钮进行下载，下载完成后解压文件。
+    点击上一个页面右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
 # 二、cocos2dx接口清单
     把interface文件夹下的ECServiceCocos2dx.h、ECServiceCocos2dx.mm放入您的Classes文件夹
 # 三、导入ElvaChatService
