@@ -2,7 +2,9 @@
   
   中文版IOS SDK接入说明：https://github.com/CS30-NET/ios-sdk-stable/blob/master/README%E2%80%94CN.md
 # IOS SDK Access Instructions
-# Ⅰ. cocos2dx Interface List
+# Ⅰ. Download IOS SDK
+    Click the button "Clone or download" in the top right corner to download IOS SDK and then unzip the file.
+# Ⅱ. cocos2dx Interface List
     Put ECServiceCocos2dx.h, ECServiceCocos2dx.mm in the Classes folder
 # Ⅱ. Import elvachatservice into project
     Copy the elvachatservice folder to your main directory，created as 'create groups for any added folders'.
