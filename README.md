@@ -15,7 +15,7 @@
           
           注：后面这三个参数，请使用注册时的邮箱地址作为登录名登录https://cs30.net/elva。在Settings菜单Applications页面查看。初次使用，请先登录官网自助注册,地址为www.cs30.net/pricing.html。
       2、接口调用方法
-          1) 智能客服主界面启动，调用showElva方法，启动机器人界面
+          1)智能客服主界面启动，调用showElva方法，启动机器人界面
             ECServiceCocos2dx:: showElva (string playerName , string playerUid , int serverId,string playerParseId, string showConversationFlag,cocos2d::ValueMap& config);
             参数说明:
               playerName: 游戏中玩家名称。
