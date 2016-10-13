@@ -192,46 +192,24 @@ void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId
 
 #pragma mark - faq参数为faqID
 void ECServiceCocos2dx::showSingleFAQ(string faqId) {
-    GetServerIP* faqUrl = [GetServerIP getFaqService];
-    NSString *showfaqs = faqUrl.showUrl;
-    NSString *faqid = elvaParseCString(faqId.c_str());
-    ShowWebViewController *showWebView = [[ShowWebViewController alloc]init];
-    
-     NSString * appId = faqUrl.appId;
-    showWebView.isShowManue = true;//首次打开显示菜单
-    //判断是否存在userID，没有就不显示自助服务
-    if(faqUrl.userId == nil || [faqUrl.userId isEqualToString:@""]){
-        showWebView.isShowUserSelfBtn = true;
-    }else{
-        showWebView.isShowUserSelfBtn = false;
-    }
-    [showWebView showSelfInterface:faqid];
-    
-    ELVADBManager *db = [ELVADBManager getSharedInstance];
-    NSString *faqContent =  [db getFaqByPublishId:faqid];
-    if(faqContent){
-            showWebView.isShowFaqList = true;
-            showWebView.contentStr = faqContent;
-    }else{
-        //获取本地语言
-        NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
-        NSArray  *languages = [defs objectForKey:@"AppleLanguages"];
-        NSString *preferredLang = [languages objectAtIndex:0];
-        NSString * type = @"3";
-        NSString* url =[NSString stringWithFormat:@"%@?type=%@&appid=%@&l=%@&faqid=%@",showfaqs,type,appId,preferredLang,faqid];
-        showWebView.url = [NSURL URLWithString:url];
-    }
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showWebView animated:YES completion:^{
-        nil;
-    }];
+    cocos2d::ValueMap config;
+    showSingleFAQ(faqId,config);
 }
 
 #pragma mark - faq参数为faqID 带config
 void ECServiceCocos2dx::showSingleFAQ(string faqId,cocos2d::ValueMap& config) {
-    NSString * jsonString = elvaParseConfig(config);
     
     GetServerIP* faqUrl = [GetServerIP getFaqService];
-    faqUrl.customerData = jsonString;
+    if(!config["showConversationFlag"].isNull()){
+        faqUrl.showVipChat=@"1";
+    }else{
+        faqUrl.showVipChat=nil;
+    }
+    //把json 转成 nsstring
+    if(config.size()>0){
+        NSString * jsonString = elvaParseConfig(config);
+        faqUrl.customerData = jsonString;
+    }
     ShowWebViewController *showWebView = [[ShowWebViewController alloc]init];
     NSString *faqid = elvaParseCString(faqId.c_str());
     
@@ -268,63 +246,26 @@ void ECServiceCocos2dx::showSingleFAQ(string faqId,cocos2d::ValueMap& config) {
 
 #pragma mark - showFAQSection
 void ECServiceCocos2dx::showFAQSection(string sectionPublishId){
-    
-    GetServerIP* faqUrl = [GetServerIP getFaqService];
-    NSString *sectionId = elvaParseCString(sectionPublishId.c_str());
-    
-    ELVADBManager *db = [ELVADBManager getSharedInstance];
-    NSMutableArray *faqsArray = [db getFaqsBySectionId:sectionId];
-    if(nil != faqsArray)
-    {
-        ShowFAQSectionController *showWebView = [[ShowFAQSectionController alloc]init];
-        
-        showWebView.isShowManue = true;//首次打开显示菜单
-        //判断是否存在userID，没有就不显示自助服务
-        if(faqUrl.userId == nil || [faqUrl.userId isEqualToString:@""]){
-            showWebView.isShowUserSelfBtn = true;
-        }else{
-            showWebView.isShowUserSelfBtn = false;
-        }
-        showWebView.sectionId =sectionId;
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showWebView animated:YES completion:^{
-            nil;
-        }];
-    }else{
-        ShowWebViewController *showWebView = [[ShowWebViewController alloc]init];
-        NSString *showfaqs = faqUrl.showUrl;//获取url
-        showWebView.isShowManue = true;//首次打开显示菜单
-        //判断是否存在userID，没有就不显示自助服务
-        if(faqUrl.userId == nil || [faqUrl.userId isEqualToString:@""]){
-            showWebView.isShowUserSelfBtn = true;
-        }else{
-            showWebView.isShowUserSelfBtn = false;
-        }
-        //获取本地语言
-        NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
-        NSArray  *languages = [defs objectForKey:@"AppleLanguages"];
-        NSString *preferredLang = [languages objectAtIndex:0];
-        NSString *appid = faqUrl.appId;
-        NSString *type = @"2";
-        NSString* url =[NSString stringWithFormat:@"%@?type=%@&appid=%@&l=%@&sectionid=%@",showfaqs,type,appid,preferredLang,sectionId];
-        showWebView.url = [NSURL URLWithString:url];
-        showWebView.loadingBarTintColor = [UIColor blueColor];
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showWebView animated:YES completion:^{
-            nil;
-        }];
-        
-    }
-    
-    
+    cocos2d::ValueMap config;
+    showFAQSection(sectionPublishId, config);
 }
 
 #pragma mark - showFAQSection(带config)
 void ECServiceCocos2dx::showFAQSection(string sectionPublishId,cocos2d::ValueMap& config){
     GetServerIP* faqUrl = [GetServerIP getFaqService];
+    if(!config["showConversationFlag"].isNull()){
+        faqUrl.showVipChat=@"1";
+    }else{
+        faqUrl.showVipChat=nil;
+    }
+    //把json 转成 nsstring
+    if(config.size()>0){
+        NSString * jsonString = elvaParseConfig(config);
+        faqUrl.customerData = jsonString;
+    }
+    
     NSString *sectionId = elvaParseCString(sectionPublishId.c_str());
     
-   
-    NSString * jsonString = elvaParseConfig(config);
-    faqUrl.customerData = jsonString;
     
     
     ELVADBManager *db = [ELVADBManager getSharedInstance];
@@ -374,84 +315,25 @@ void ECServiceCocos2dx::showFAQSection(string sectionPublishId,cocos2d::ValueMap
 
 #pragma mark - faqList无参数
 void ECServiceCocos2dx::showFAQs() {
-    GetServerIP* faqUrl = [GetServerIP getFaqService];
-    
-    ELVADBManager *db = [ELVADBManager getSharedInstance];
-    NSMutableArray * sectionsArray = [db getAllSections];
-    if(nil != sectionsArray)
-    {
-        ShowFAQListController *show = [[ShowFAQListController alloc]init];
-        show.isShowManue = true;//首次打开显示菜单
-        //判断是否存在userID，没有就不显示自助服务
-        if(faqUrl.userId == nil || [faqUrl.userId isEqualToString:@""]){
-            show.isShowUserSelfBtn = true;
-        }else{
-            show.isShowUserSelfBtn = false;
-        }
-        
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:show animated:YES completion:^{
-            nil;
-        }];
-
-    }else{
-        NSString *showfaqs = faqUrl.showfaqlist;
-        NSString *appId = faqUrl.appId;
-        
-        //获取本地语言
-        NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
-        NSArray* languages = [defs objectForKey:@"AppleLanguages"];
-        NSString* preferredLang = [languages objectAtIndex:0];
-        
-        ShowWebViewController *showWebView = [[ShowWebViewController alloc]init];
-        NSString * type = @"1";
-        NSString* url =[NSString stringWithFormat:@"%@?type=%@&appid=%@&l=%@",showfaqs,type,appId,preferredLang];
-        //    NSString* url =[NSString stringWithFormat:@"%@?AppID=%@&l=%@",showfaqs,appId,preferredLang];
-        
-        NSURLCache *urlCache = [NSURLCache sharedURLCache];
-        /* 设置缓存的大小为1M*/
-        [urlCache setMemoryCapacity:1*1024*1024];
-        //创建一个nsurl
-        NSURL *cacheUrls = [NSURL URLWithString:url];
-        //        showWebView.url = [NSURL URLWithString:url];
-        showWebView.url =cacheUrls;
-        
-        //创建一个请求
-        NSMutableURLRequest *request =
-        [NSMutableURLRequest
-         requestWithURL: showWebView.url
-         cachePolicy:NSURLRequestReloadRevalidatingCacheData
-         timeoutInterval:60.0f];
-        //从请求中获取缓存输出
-        NSCachedURLResponse *response =
-        [urlCache cachedResponseForRequest:request];
-        //判断是否有缓存
-        if (response != nil){
-            //        NSLog(@"如果有缓存输出，从缓存中获取数据");
-            [request setCachePolicy:NSURLRequestReloadRevalidatingCacheData];
-        }
-        
-        showWebView.isShowManue = true;//首次打开显示菜单
-        //判断是否存在userID，没有就不显示自助服务
-        if(faqUrl.userId == nil || [faqUrl.userId isEqualToString:@""]){
-            showWebView.isShowUserSelfBtn = true;
-        }else{
-            showWebView.isShowUserSelfBtn = false;
-        }
-        showWebView.loadingBarTintColor = [UIColor blueColor];
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showWebView animated:YES completion:^{
-            nil;
-        }];
-
-    }
-    
+    cocos2d::ValueMap config;
+    showFAQs(config);
    }
 
 #pragma mark - showFAQList 带参数config
 void ECServiceCocos2dx::showFAQs(cocos2d::ValueMap& config) {
     
-    NSString * jsonString = elvaParseConfig(config);
     GetServerIP* faqUrl = [GetServerIP getFaqService];
-    faqUrl.customerData = jsonString;
+    if(!config["showConversationFlag"].isNull()){
+        faqUrl.showVipChat=@"1";
+        config["showConversationFlag"];
+    }else{
+        faqUrl.showVipChat=nil;
+    }
+    //把json 转成 nsstring
+    if(config.size()>0){
+        NSString * jsonString = elvaParseConfig(config);
+        faqUrl.customerData = jsonString;
+    }
     
     ELVADBManager *db = [ELVADBManager getSharedInstance];
     NSMutableArray * sectionsArray = [db getAllSections];
@@ -530,7 +412,8 @@ void ECServiceCocos2dx::showFAQs(cocos2d::ValueMap& config) {
 void ECServiceCocos2dx::setName(string game_name){
      GetServerIP* faqUrl = [GetServerIP getFaqService];
      NSString* gameName  = elvaParseCString(game_name.c_str());
-     faqUrl.gameName = gameName;
+     [faqUrl setGameName:gameName];
+
 }
 
 #pragma mark - 设置deviceToken

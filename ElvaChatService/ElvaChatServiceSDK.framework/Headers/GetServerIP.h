@@ -27,10 +27,13 @@
 @property (copy,nonatomic)NSString *faqData;
 @property (copy,nonatomic)NSString *logUrl;
 @property (copy,nonatomic)NSString *faqKey;
+@property (copy,nonatomic)NSString *showVipChat;
 //@property int isCommended;
 + (void)getServerMsgWithAppId:(NSString *)appSecret Domain:(NSString *)domain appId:(NSString *)appId;
 
 +(GetServerIP *)getFaqService;
+
+- (void)setGameName:(NSString *)gameName;
 
 
 
