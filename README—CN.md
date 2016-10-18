@@ -10,7 +10,7 @@
 # 五、接口调用说明
 1、SDK初始化（必须在游戏开始阶段调用）<br />
 在Cocos2dx中调用：ECServiceCocos2dx::init(string appKey,string domain,string appId)<br />
-其中：<br />
+* 其中：<br />
 appKey:app密钥，从Web管理系统获取。<br />
 domain:app域名，从Web管理系统获取。<br />
 appId:app唯一标识，从Web管理系统获取。<br />
