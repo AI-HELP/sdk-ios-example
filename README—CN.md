@@ -8,14 +8,15 @@
 # 四、接入工程配置
 修改info.list，确保Allow Arbitrary Loads 的值为YES（初始化需要HTTP支持）
 # 五、接口调用说明
-1、SDK初始化（必须在游戏开始阶段调用）<br />
+## 1、SDK初始化（必须在游戏开始阶段调用）<br />
 在Cocos2dx中调用：ECServiceCocos2dx::init(string appKey,string domain,string appId)<br />
 * 其中：<br />
 appKey:app密钥，从Web管理系统获取。<br />
 domain:app域名，从Web管理系统获取。<br />
 appId:app唯一标识，从Web管理系统获取。<br />
 注：后面这三个参数，请使用注册时的邮箱地址作为登录名登录 [智能客服后台](https://cs30.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[智能客服官网](http://cs30.net/index.html)自助注册。<br />
-2、接口调用方法<br />
+
+## 2、接口调用方法<br />
 > 1)智能客服主界面启动，调用showElva方法，启动机器人界面<br />
 ECServiceCocos2dx:: showElva (string playerName , string playerUid , int serverId,string playerParseId, string showConversationFlag,cocos2d::ValueMap& config);
 * 参数说明:<br />
