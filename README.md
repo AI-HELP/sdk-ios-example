@@ -28,8 +28,8 @@ playerUid: The player's unique id in the game.<br />
 serverId: The server ID of the player.<br />
 playerParseId: Push token.<br />
 showConversationFlag (0 or 1): whether VIP, 0: marked non-VIP; 1: VIP. Here is 1, will be in the upper right corner of the robot chat interface, to provide artificial chat entry function.<br />
-config: Optional, custom ValueMap information. You can set specific Tag information here.
-![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-EN-IOS.png "showElva")
+config: Optional, custom ValueMap information. You can set specific Tag information here.<br />
+![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-EN-IOS.jpg "showElva")
 * Parameter Example:    
 
     ECServiceCocos2dx :: showElva ( "elvaTestName", "12349303258", 1, "es234-3dfs-d42f-342sfe3s3", "1"
@@ -48,20 +48,20 @@ ECServiceCocos2dx :: showSingleFAQ (string faqId, cocos2d :: ValueMap & config);
 faqId: FAQ's PublishID, in the Web background https://cs30.net/elva, from the FAQs menu to find the specified FAQ, view PublishID.<br />
 config: Optional, custom ValueMap information. Refer to 1) intelligent customer service main interface starts.<br />
 Note: If the SelfServiceInterface is configured in the web administration background, and the SDK is configured with related parameters, the FAQ will be displayed and the function menu will be provided in the upper right corner to call up the related self-service.<br />
-![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-EN-IOS.png "showSingleFAQ")
+![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-EN-IOS.jpg "showSingleFAQ")
 > 
 > 3) Show the relevant part of the FAQ, call `showFAQSection` method<br />
 ECServiceCocos2dx :: showFAQSection (string sectionPublishId, cocos2d :: ValueMap & config);
 * Parameter Description:
 sectionPublishId: PublishID of the FAQ Section (PublishID can be viewed from the [Section] menu in the FAQs menu at https://cs30.net/elva).<br />
 config: Optional, custom ValueMap information. Refer to 1) intelligent customer service main interface starts.<br />
-![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-EN-IOS.png "showFAQSection")
+![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-EN-IOS.jpg "showFAQSection")
 > 
 > 4) Show the FAQ list, call `showFAQs` method<br />
 ECServiceCocos2dx :: showFAQs (cocos2d :: ValueMap & config)
 * Parameter Description:<br />
 config: Optional, custom ValueMap information. Refer to 1) intelligent customer service main interface starts.<br />
-![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-EN-IOS.png "showFAQs")
+![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-EN-IOS.jpg "showFAQs")
 > 
 > 5) set the game name information, call `setName` method (It is recommended to call this method after calling init)<br />   
 ECServiceCocos2dx :: setName (string game_name);
