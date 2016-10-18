@@ -8,7 +8,7 @@ Put ECServiceCocos2dx.h, ECServiceCocos2dx.mm in the interface folder in your Cl
 # Ⅲ. Import elvachatservice into project
 Copy the elvachatservice folder to your main directory，created as 'create groups for any added folders'.
 # Ⅳ. Access Project Configuration
-Modify info.list, ensure that the value of Allow Arbitrary Loads is YES (HTTP support is required for initialization)
+Modify info.list, ensure that the value of Allow Arbitrary Loads is YES (HTTP support is required for initialization).
 # Ⅴ.Interface Call Instructions
 ## 1. SDK initialization. (must be called at the beginning of the game)
 Call ECServiceCocos2dx::init(string appKey,string domain,string appId) in Cocos2dx.
@@ -58,7 +58,7 @@ config: Optional, custom ValueMap information. Refer to 1) intelligent customer 
 ![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-EN-IOS.jpg "showFAQSection")
 > 
 > 4) Show the FAQ list, call `showFAQs` method<br />
-ECServiceCocos2dx :: showFAQs (cocos2d :: ValueMap & config)
+ECServiceCocos2dx :: showFAQs (cocos2d :: ValueMap & config);
 * Parameter Description:<br />
 config: Optional, custom ValueMap information. Refer to 1) intelligent customer service main interface starts.<br />
 ![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-EN-IOS.jpg "showFAQs")
@@ -66,7 +66,7 @@ config: Optional, custom ValueMap information. Refer to 1) intelligent customer 
 > 5) set the game name information, call `setName` method (It is recommended to call this method after calling init)<br />   
 ECServiceCocos2dx :: setName (string game_name);
 * Parameter Description:<br />
-game_name: The name of the game, which will be displayed in the title bar of the relevant interface in the SDK
+game_name: The name of the game, which will be displayed in the title bar of the relevant interface in the SDK.
 > 
 > 6) Set Token, use google push, call `registerDeviceToken` method (no)<br />
 ECServiceCocos2dx :: registerDeviceToken (string deviceToken);
