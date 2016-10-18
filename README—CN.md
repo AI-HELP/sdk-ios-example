@@ -51,13 +51,13 @@ ECServiceCocos2dx:: showFAQSection (string sectionPublishId,cocos2d::ValueMap& c
 * 参数说明：<br />
 sectionPublishId：FAQ Section的PublishID（可以在[智能客服后台](https://cs30.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。<br />
 config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。<br />
-![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.png "showFAQSection")
+![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg "showFAQSection")
 > 
 > 4)展示FAQ列表，调用`showFAQs`方法<br />
 ECServiceCocos2dx:: showFAQs (cocos2d::ValueMap& config)<br />
 * 参数说明：<br />
 config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。<br />
-![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-CN-IOS.png "showFAQs")
+![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-CN-IOS.jpg "showFAQs")
 > 
 > 5)设置游戏名称信息，调用`setName`方法(建议游戏刚进入，调用Init之后就默认调用)<br />
 ECServiceCocos2dx:: setName (string game_name);
