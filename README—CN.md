@@ -26,6 +26,7 @@ serverId:玩家所在的服务器编号。<br />
 playerParseId:推送传token。<br />
 showConversationFlag(0或1):是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
 config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。
+![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-CN-IOS.png "showElva")<br />
 * 参数示例:<br />
 
     ECServiceCocos2dx:: showElva (“elvaTestName”,“12349303258”,1, “es234-3dfs-d42f-342sfe3s3”,”1”,
@@ -43,17 +44,20 @@ ECServiceCocos2dx:: showSingleFAQ (string faqId,cocos2d::ValueMap& config);
 faqId：FAQ的PublishID,可以在[智能客服后台](https://cs30.net/elva)中，从FAQs菜单下找到指定FAQ，查看PublishID。<br />
 config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。<br />
 注：如果在智能客服后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。
+![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-CN-IOS.png "showSingleFAQ")<br />
 > 
 > 3)展示相关部分FAQ，调用`showFAQSection`方法<br />
 ECServiceCocos2dx:: showFAQSection (string sectionPublishId,cocos2d::ValueMap& config);
 * 参数说明：<br />
 sectionPublishId：FAQ Section的PublishID（可以在[智能客服后台](https://cs30.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。<br />
 config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。
+![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.png "showFAQSection")<br />
 > 
 > 4)展示FAQ列表，调用`showFAQs`方法<br />
 ECServiceCocos2dx:: showFAQs (cocos2d::ValueMap& config)<br />
 * 参数说明：<br />
 config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。
+![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-CN-IOS.png "showFAQs")<br />
 > 
 > 5)设置游戏名称信息，调用`setName`方法(建议游戏刚进入，调用Init之后就默认调用)<br />
 ECServiceCocos2dx:: setName (string game_name);
@@ -86,3 +90,4 @@ ECServiceCocos2dx:: showConversation (string playerUid,int serverId,cocos2d::Val
 playerUid:玩家在游戏里的唯一标示id。<br />
 serverId:玩家所在的服务器编号。<br />
 config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。<br />
+![showConversation](https://github.com/CS30-NET/Pictures/blob/master/showConversation-CN-IOS.png "showConversation")
