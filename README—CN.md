@@ -26,7 +26,7 @@ serverId:玩家所在的服务器编号。<br />
 playerParseId:推送传token。<br />
 showConversationFlag(0或1):是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
 config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。<br />
-![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-CN-IOS.png "showElva")
+![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-CN-IOS.jpg "showElva")
 * 参数示例:<br />
 
     ECServiceCocos2dx:: showElva (“elvaTestName”,“12349303258”,1, “es234-3dfs-d42f-342sfe3s3”,”1”,
