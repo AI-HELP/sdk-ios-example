@@ -200,7 +200,7 @@ void ECServiceCocos2dx::showSingleFAQ(string faqId) {
 void ECServiceCocos2dx::showSingleFAQ(string faqId,cocos2d::ValueMap& config) {
     
     GetServerIP* faqUrl = [GetServerIP getFaqService];
-    if(!config["showConversationFlag"].isNull()){
+    if(config.find("showConversationFlag") != config.end()){
         faqUrl.showVipChat=@"1";
     }else{
         faqUrl.showVipChat=nil;
@@ -253,7 +253,7 @@ void ECServiceCocos2dx::showFAQSection(string sectionPublishId){
 #pragma mark - showFAQSection(带config)
 void ECServiceCocos2dx::showFAQSection(string sectionPublishId,cocos2d::ValueMap& config){
     GetServerIP* faqUrl = [GetServerIP getFaqService];
-    if(!config["showConversationFlag"].isNull()){
+    if(config.find("showConversationFlag") != config.end()){
         faqUrl.showVipChat=@"1";
     }else{
         faqUrl.showVipChat=nil;
@@ -323,9 +323,8 @@ void ECServiceCocos2dx::showFAQs() {
 void ECServiceCocos2dx::showFAQs(cocos2d::ValueMap& config) {
     
     GetServerIP* faqUrl = [GetServerIP getFaqService];
-    if(!config["showConversationFlag"].isNull()){
+    if(config.find("showConversationFlag") != config.end()){
         faqUrl.showVipChat=@"1";
-        config["showConversationFlag"];
     }else{
         faqUrl.showVipChat=nil;
     }
