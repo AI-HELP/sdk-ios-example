@@ -6,7 +6,8 @@
 # 三、导入ElvaChatService
 将ElvaChatService文件夹拖到游戏工程对应的目录下，以‘create groups for any added folders’方式创建。
 # 四、接入工程配置
-修改info.list，确保Allow Arbitrary Loads 的值为YES（初始化需要HTTP支持）。
+1、Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：unrecognized selector sent to instance exception<br/>
+2、修改info.list，确保Allow Arbitrary Loads 的值为YES（初始化需要HTTP支持）。
 # 五、接口调用说明
 ## 1、SDK初始化（必须在游戏开始阶段调用）<br />
 在Cocos2dx中调用：ECServiceCocos2dx::init(string appKey,string domain,string appId)<br />
