@@ -1,5 +1,27 @@
-  IOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/README.md <br />
-  中文版IOS SDK接入说明：https://github.com/CS30-NET/ios-sdk-stable/blob/master/README%E2%80%94CN.md
+IOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/README.md <br />
+中文版IOS SDK接入说明：https://github.com/CS30-NET/ios-sdk-stable/blob/master/README%E2%80%94CN.md
+# HIGHLIGHTS<br />
+1.Remember to initialize, otherwise the user can not enter Elva intelligent customer service system.<br />
+2.<div>
+    <table border="0">
+      <tr>
+        <th>Method</th>
+        <th>showElva</th>
+        <th>showConversation</th>
+        <th>showFAQs</th>
+        <th>showFAQSection</th>
+        <th>showSingleFAQ</th>
+      </tr>
+      <tr>
+        <td>Purpose</td>
+        <td>Start the main robot interface</td>
+        <td>Open the manual CS interface</td>
+        <td>Show FAQ list</td>
+        <td>Show Section</td>
+        <td>Show a single FAQ</td>
+      </tr>
+    </table>
+</div>
 # IOS SDK Access Instructions
 # Ⅰ. Download IOS SDK
 Click the button "Clone or download" in the top right corner to download IOS SDK and then unzip the file.
