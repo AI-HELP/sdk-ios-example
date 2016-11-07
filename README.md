@@ -23,16 +23,16 @@ IOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-sta
     </table>
 </div>
 # IOS SDK Access Instructions
-# Ⅰ. Download IOS SDK
+## Ⅰ. Download IOS SDK
 Click the button "Clone or download" in the top right corner to download IOS SDK and then unzip the file.
-# Ⅱ. cocos2dx Interface List
+## Ⅱ. cocos2dx Interface List
 Put ECServiceCocos2dx.h, ECServiceCocos2dx.mm in the interface folder in your Classes folder.
-# Ⅲ. Import elvachatservice into project
+## Ⅲ. Import elvachatservice into project
 Copy the elvachatservice folder to your main directory，created as 'create groups for any added folders'.
-# Ⅳ. Access Project Configuration
+## Ⅳ. Access Project Configuration
 Modify info.list, ensure that the value of Allow Arbitrary Loads is YES (HTTP support is required for initialization).
-# Ⅴ.Interface Call Instructions
-## 1. SDK initialization. (must be called at the beginning of the game)
+## Ⅴ.Interface Call Instructions
+### 1. SDK initialization. (must be called at the beginning of the game)
 Call ECServiceCocos2dx::init(string appKey,string domain,string appId) in Cocos2dx.
 * Parameter Description:<br />
 app Key: The app key, obtained from the Web management system.<br />
@@ -40,7 +40,7 @@ domain: app Domain name, obtained from the Web management system.<br />
 appId: app Unique identifier, obtained from the Web management system.<br />
 Note: The latter three parameters, please use the registered email address to login https://cs30.net/elva. View in the Settings-Applications page. Initial use, please register on the official website http://cs30.net/preview/index.html.
 
-## 2. The interface call method
+### 2. The interface call method
 > 
 > 1) Start smart customer service main interface, call `showElva` method, start the robot interface.<br />
 ECServiceCocos2dx :: showElva (string playerName, string playerUid, int serverId, string playerParseId, string showConversationFlag, cocos2d :: ValueMap & config);
