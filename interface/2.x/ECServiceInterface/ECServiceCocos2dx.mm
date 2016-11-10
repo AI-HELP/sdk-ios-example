@@ -111,8 +111,8 @@ void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId
     
     NSString *conversationFlag =elvaParseCString(playershowConversationFlag.c_str());
     
-    
-    [ECServiceSdk showElva:NSuserName PlayerUid:NSuserId ServerId:serverId PlayerParseId:parseId PlayershowConversationFlag:conversationFlag];
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk showElva:NSuserName PlayerUid:NSuserId ServerId:serverIdStr PlayerParseId:parseId PlayershowConversationFlag:conversationFlag];
     
     
 }
@@ -130,7 +130,8 @@ void ECServiceCocos2dx::showElva(string playerName,string playerUid,int serverId
     
     
     NSMutableDictionary *customData = elvaParseConfigDic(config);
-    [ECServiceSdk showElva:NSuserName PlayerUid:NSuserId ServerId:serverId PlayerParseId:parseId PlayershowConversationFlag:conversationFlag Config :customData];
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk showElva:NSuserName PlayerUid:NSuserId ServerId:serverIdStr PlayerParseId:parseId PlayershowConversationFlag:conversationFlag Config :customData];
 }
 
 
@@ -194,7 +195,8 @@ void ECServiceCocos2dx::setUserId(string playerUid){
 }
 #pragma mark - 设置ServerId
 void ECServiceCocos2dx::setServerId(int serverId){
-    [ECServiceSdk setServerId:serverId];
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk setServerId:serverIdStr];
 }
 
 #pragma mark - 设置userName
@@ -205,12 +207,14 @@ void ECServiceCocos2dx::setUserName(string playerName){
 #pragma mark - 设置showConversation
 void ECServiceCocos2dx::showConversation(string playerUid,int serverId){
     NSString* userId = elvaParseCString(playerUid.c_str());
-    [ECServiceSdk showConversation:userId ServerId:serverId];
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk showConversation:userId ServerId:serverIdStr];
 }
 #pragma mark - 设置showConversation带config
 void ECServiceCocos2dx::showConversation(string playerUid,int serverId,cocos2d::CCDictionary* config){
     NSString* userId = elvaParseCString(playerUid.c_str());
     NSMutableDictionary *customData = elvaParseConfigDic(config);
-    [ECServiceSdk showConversation:userId ServerId:serverId Config:customData];
+    NSString* serverIdStr = [NSString stringWithFormat:@"%d",serverId];
+    [ECServiceSdk showConversation:userId ServerId:serverIdStr Config:customData];
     
 }
