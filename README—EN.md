@@ -2,8 +2,8 @@
 
 ## 1.1.14 (latest)
 
-1, Add interface `setSDKLanguage`
-2, when support vertical and horizontal screen display, can be forced vertical screen display <br />
+1, Add interface `setSDKLanguage`<br />
+2, when support vertical and horizontal screen display, can be forced vertical screen display
 
 ## 1.1.13
 
