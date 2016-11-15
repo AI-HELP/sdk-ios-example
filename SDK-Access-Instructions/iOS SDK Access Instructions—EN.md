@@ -1,5 +1,5 @@
-IOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/README.md <br />
-中文版IOS SDK接入说明：https://github.com/CS30-NET/ios-sdk-stable/blob/master/README%E2%80%94CN.md
+iOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/README.md <br />
+中文版IiOS SDK接入说明：https://github.com/CS30-NET/ios-sdk-stable/blob/master/README%E2%80%94CN.md
 # HIGHLIGHTS<br />
 1.Remember to initialize, otherwise the user can not enter Elva intelligent customer service system.<br />
 2.<div>
