@@ -1,7 +1,7 @@
-
 # 重点提醒：<br />
 1.一定要进行初始化init操作，不然会无法进入Elva智能客服系统。<br />
-2.<div>
+2.iOS10需要获取权限，具体方法参考下面链接 http://blog.csdn.net/u012681458/article/details/51865435
+3.<div>
     <table border="0">
       <tr>
         <th>方法</th>
