@@ -19,3 +19,7 @@
 1、表单上传图片的支持<br />
 2、faq支持点赞<br />
 3、增加cocos2dx引擎2接口
+
+# SDK接入说明
+中文版iOS SDK接入说明： https://github.com/CS30-NET/android-sdk-stable/blob/master/SDK-Access-Instructions/%E5%AE%89%E5%8D%93SDK%E6%8E%A5%E5%85%A5%E8%AF%B4%E6%98%8E%E2%80%94%E4%B8%AD%E6%96%87%E7%89%88.md <br />
+iOS SDK access instructions for English: https://github.com/CS30-NET/android-sdk-stable/blob/master/SDK-Access-Instructions/Android%20SDK%20Access%20Instructions%E2%80%94EN.md
