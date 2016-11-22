@@ -24,3 +24,7 @@
 1, Support to upload pictures in form <br />
 2, FAQ support point praise<br />
 3, Add cocos2dx engine 2 interface
+
+# SDK Access Instruction
+中文版iOS SDK接入说明： https://github.com/CS30-NET/ios-sdk-stable/blob/master/SDK-Access-Instructions/iOS%20SDK%E6%8E%A5%E5%85%A5%E8%AF%B4%E6%98%8E%E2%80%94%E4%B8%AD%E6%96%87%E7%89%88.md <br />
+iOS SDK access instructions for English: https://github.com/CS30-NET/ios-sdk-stable/blob/master/SDK-Access-Instructions/iOS%20SDK%20Access%20Instructions%E2%80%94EN.md
