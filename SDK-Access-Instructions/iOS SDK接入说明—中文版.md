@@ -27,7 +27,7 @@
 # 二、cocos2dx接口清单
 把interface文件夹下的ECServiceCocos2dx.h、ECServiceCocos2dx.mm放入您的Classes文件夹。
 # 三、导入ElvaChatService
-将ElvaChatService文件夹拖到游戏工程对应的目录下，以‘create groups for any added folders’方式创建。
+将ElvaChatService文件夹拖到游戏工程对应的目录下。
 # 四、接入工程配置
 1、Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：unrecognized selector sent to instance exception<br/>
 2、修改info.list，确保Allow Arbitrary Loads 的值为YES（初始化需要HTTP支持）。
