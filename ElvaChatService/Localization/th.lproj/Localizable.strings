@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  ElvaTestIOS
+
+  Created by wwj on 16/5/30.
+  Copyright © 2016年 im30. All rights reserved.
+*/
+
+"ElvaChatService" = "ElvaChat Service";
+"offLine"="Your network is disconnected,please try again later";
+"ContactCustomerService" = "ติดต่อเรา";
+"self_service_interface"="services";
+"Message" = "Message";
+"WasHelp"="Was this helpful?";
+"NO"="NO";
+"YES"="YES";
+"elva__mark_helpful_toast"="มีประโยชน์สำหรับคุณ";
+"elva__mark_no"="ไม่ใช่";
+"elva__mark_unhelpful_toast"="ไม่มีประโยชน์สำหรับคุณ";
+"elva__mark_yes"="ใช่";
+"elva__mark_yes_no_question"="ข้อมูลดังกล่าวมีประโยชน์หรือไม่";
+"content_too_long"="No more than %ld chars!";

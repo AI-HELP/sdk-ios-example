@@ -21,5 +21,5 @@
 "elva__mark_no"="否";
 "elva__mark_unhelpful_toast"="妳發現這無幫助";
 "elva__mark_yes"="是";
-"elva__mark_yes_no_question"="這有幫助嗎?";
+"elva__mark_yes_no_question"="這有幫助嗎";
 "content_too_long"="不能超過%ld個字！";
