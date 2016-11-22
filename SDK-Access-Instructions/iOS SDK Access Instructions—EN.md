@@ -26,7 +26,7 @@ Click the button "Clone or download" in the top right corner to download IOS SDK
 ## Ⅱ. cocos2dx Interface List
 Put ECServiceCocos2dx.h, ECServiceCocos2dx.mm in the interface folder in your Classes folder.
 ## Ⅲ. Import elvachatservice into project
-Copy the elvachatservice folder to your main directory，created as 'create groups for any added folders'.
+Copy the elvachatservice folder to your main directory.
 ## Ⅳ. Access Project Configuration
 Modify info.list, ensure that the value of Allow Arbitrary Loads is YES (HTTP support is required for initialization).
 ## Ⅴ.Interface Call Instructions
