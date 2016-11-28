@@ -25,4 +25,5 @@
     + (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId Config:(NSMutableDictionary*) config;
     + (BOOL) setSDKLanguage:(NSString*) sdkLanguage;
     + (void) setChangeDirection;
+    + (void) setUseDevice;
 @end
