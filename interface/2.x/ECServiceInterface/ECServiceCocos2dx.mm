@@ -218,3 +218,13 @@ void ECServiceCocos2dx::showConversation(string playerUid,int serverId,cocos2d::
     [ECServiceSdk showConversation:userId ServerId:serverIdStr Config:customData];
     
 }
+bool ECServiceCocos2dx::setSDKLanguage(const char *locale) {
+    if(locale == NULL || strlen(locale) == 0) {
+        return false;
+    }
+    NSString* language = elvaParseCString(locale);
+    return [ECServiceSdk setSDKLanguage:language];
+}
+void ECServiceCocos2dx::useDevice() {
+    [ECServiceSdk setUseDevice];
+}

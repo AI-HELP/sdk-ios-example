@@ -224,3 +224,6 @@ bool ECServiceCocos2dx::setSDKLanguage(const char *locale) {
     NSString* language = elvaParseCString(locale);
     return [ECServiceSdk setSDKLanguage:language];
 }
+void ECServiceCocos2dx::useDevice() {
+    [ECServiceSdk setUseDevice];
+}
