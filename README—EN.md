@@ -1,6 +1,7 @@
 # Elva iOS SDK Version Update
-
-## 1.1.5(latest)
+## 1.1.6(latest)
+1, in accordance with the device id to support customer complaints
+## 1.1.5
 1, FAQ like, support Russian, Korean, Spanish, Japanese, Arabic, Thai<br />
 2, customer service reply picture direct display<br />
 3, click on the picture to enlarge to full screen
