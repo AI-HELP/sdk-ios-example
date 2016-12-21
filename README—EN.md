@@ -1,5 +1,9 @@
 # Elva iOS SDK Version Update
-## 1.1.6(latest)
+## 1.1.8 (latest)
+1, url with https protocol<br />
+2, the form short connection display title<br />
+3, support from the FAQ directly into the manual
+## 1.1.6
 1, in accordance with the device id to support customer complaints
 ## 1.1.5
 1, FAQ like, support Russian, Korean, Spanish, Japanese, Arabic, Thai<br />
