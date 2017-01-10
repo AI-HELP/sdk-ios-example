@@ -26,11 +26,11 @@
 点击上一个页面右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
 # 二、cocos2dx接口清单
 把interface文件夹下的ECServiceCocos2dx.h、ECServiceCocos2dx.mm放入您的Classes文件夹。
-# 三、导入ElvaChatService
-将ElvaChatService文件夹拖到游戏工程对应的目录下。
+# 三、导入ElvaChatService和AFNetworking.framework
+1、导入ElvaChatService；<br/>
+2、导入AFNetworking.framework，作为Embed Frameworks
 # 四、接入工程配置
 1、Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：unrecognized selector sent to instance exception<br/>
-2、修改info.list，确保Allow Arbitrary Loads 的值为YES（初始化需要HTTP支持）。
 # 五、接口调用说明
 ## 1、SDK初始化（必须在游戏开始阶段调用）<br />
 在Cocos2dx中调用：ECServiceCocos2dx::init(string appKey,string domain,string appId)<br />
