@@ -26,4 +26,5 @@
     + (BOOL) setSDKLanguage:(NSString*) sdkLanguage;
     + (void) setChangeDirection;
     + (void) setUseDevice;
+    + (void) setEvaluateStar:(int) star;
 @end

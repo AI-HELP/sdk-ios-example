@@ -228,3 +228,6 @@ bool ECServiceCocos2dx::setSDKLanguage(const char *locale) {
 void ECServiceCocos2dx::useDevice() {
     [ECServiceSdk setUseDevice];
 }
+void ECServiceCocos2dx::setEvaluateStar(int star){
+    [ECServiceSdk setEvaluateStar:star];
+}
