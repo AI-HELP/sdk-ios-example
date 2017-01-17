@@ -1,8 +1,9 @@
 # Elva iOS SDK版本更新
 ## 1.1.9 (最新)
 1、url用https协议<br />
-2、增加接口设置人工评价分数<br />
-3、spotlight优化，显示faq title和content
+2、增加接口设置人工评价默认分数<br />
+3、spotlight优化，显示faq title和content<br />
+4、机器人界面软键盘输入优化：可直接发送内容
 ## 1.1.8 (最新)
 1、表单短连接显示title<br />
 2、支持faq直接进入人工
