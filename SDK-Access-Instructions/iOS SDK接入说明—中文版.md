@@ -80,7 +80,7 @@ config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动
 > 4)展示FAQ列表，调用`showFAQs`方法<br />
 ECServiceCocos2dx:: showFAQs (cocos2d::ValueMap& config)<br />
 * 参数说明：<br />
-config : 可选，自定义ValueMap信息。参照 1)智能客服主界面启动。<br />
+config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息和是否提供人工聊天的入口功能<br />
 ![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-CN-IOS.jpg "showFAQs")
 > 
 > 5)设置游戏名称信息，调用`setName`方法(建议游戏刚进入，调用Init之后就默认调用)<br />
