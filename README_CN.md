@@ -1,4 +1,4 @@
-# 重点提醒：<br />
+# 重点提醒：
 1. 必须在游戏启动代码中调用init接口进行AIHelp SDK的初始化。
 2. iOS10需要获取权限，具体方法参考[链接](http://blog.csdn.net/u012681458/article/details/51865435)
 3. 接口简介：
