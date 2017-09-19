@@ -1,3 +1,5 @@
+[中文版接入文档](https://github.com/AI-HELP/iOS-SDK-stable/blob/master/README_CN.md)
+
 # HIGHLIGHTS<br />
 1.Remember to initialize, otherwise the user can not enter Elva intelligent customer service system.<br />
 2.<div>
