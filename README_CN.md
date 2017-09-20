@@ -10,15 +10,17 @@
 | showFAQs | 展示全部FAQ菜单|
 | showFAQSection| 展示FAQ分类|
 | showSingleFAQ | 展示单条FAQ|
+|showConversation|进入人工客服界面|
 | showElvaOP | 启动运营界面|
 
 # IOS SDK 接入说明
 # 一、下载iOS SDK
 点击上一个页面右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
 # 二、导入ElvaChatService
-导入ElvaChatService的文件到项目中<br />      
+导入ElvaChatService的文件到项目中     
 # 三、接入工程配置 
 1. 在xcode Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：`unrecognized selector sent to instance exception`
+2. 如果您的Xcode工程本身没有引入webkit.framework，那么你需要手动增加webkit.framework到工程里。
 
 # 四、接口调用说明
 ## 1、SDK初始化（必须在游戏应用启动阶段调用）
@@ -66,6 +68,7 @@ serverId:玩家所在的服务器编号。<br />
 playerParseId:传空。<br />
 showConversationFlag(0或1):是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
 config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。<br />
+
 ![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-CN-IOS.jpg "showElva")
 
 * 参数示例:<br />
@@ -134,6 +137,7 @@ NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 >faqId：FAQ的PublishID,可以在[智能客服后台](https://cs30.net/elva)中，从FAQs菜单下找到指定FAQ，查看PublishID.<br />
 config : 可选，自定义ValueMap信息。参照智能客服主界面启动。<br />
 注：如果在智能客服后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
+
 ![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-CN-IOS.png "showSingleFAQ")
 
 
@@ -149,6 +153,7 @@ NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 
 >sectionPublishId：FAQ Section的PublishID（可以在[智能客服后台](https://cs30.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。<br />
 config : 可选，自定义ValueMap信息。参照 智能客服主界面启动。<br />
+
 ![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg "showFAQSection")
 
 ### 展示FAQ列表，调用`showFAQs`方法
@@ -160,8 +165,9 @@ config : 可选，自定义ValueMap信息。参照 智能客服主界面启动�
 ```
 
 * 参数说明：
-* 
+
 >config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息和是否提供人工聊天的入口功能<br />
+
 ![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-CN-IOS.jpg "showFAQs")
 
 ### 设置游戏名称信息，调用`setName`方法
@@ -216,4 +222,5 @@ NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 >playerUid:玩家在游戏里的唯一标示id。<br />
 serverId:玩家所在的服务器编号。<br />
 config : 可选，自定义ValueMap信息。参照 智能客服主界面启动。<br />
+
 ![showConversation](https://github.com/CS30-NET/Pictures/blob/master/showConversation-CN-IOS.png "showConversation")
