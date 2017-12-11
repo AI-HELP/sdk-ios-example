@@ -17,7 +17,7 @@
 + (void) showFAQs;
 + (void) showFAQs:(NSMutableDictionary*) config;
 + (void) setName:(NSString*) game_name;
-+ (void) registerDeviceToken:(NSString*) deviceToken;
++ (void) registerDeviceToken:(NSString*) deviceToken isVIP:(Boolean) isVip;
 + (void) setUserId:(NSString*) playerUid;//自助服务，在showFAQ之前调用
 + (void) setServerId:(NSString*) serverId;//自助服务，在showFAQ之前调用
 + (void) setUserName:(NSString*) playerName;//在需要的接口之前调用，建议游戏刚进入就默认调用
@@ -35,5 +35,7 @@
 
 + (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary *)config defaultTabIndex:(int)defaultTabIndex;
 
++ (void) showStoreReview;
 
 @end
+
