@@ -18,5 +18,5 @@
 "elva__mark_no"="NO";
 "elva__mark_unhelpful_toast"="You didn't find this helpful";
 "elva__mark_yes"="YES";
-"elva__mark_yes_no_question"="Was this helpful";
+"elva__mark_yes_no_question"="Was this helpful?";
 "content_too_long"="No more than %ld chars!";

@@ -8,7 +8,7 @@
 
 "ElvaChatService" = "ElvaChat Service";
 "offLine"="Your network is disconnected,please try again later";
-"ContactCustomerService" = "НАПИШИТЕ НАМ";
+"ContactCustomerService" = "Связаться с Нами";
 "self_service_interface"="services";
 "Message" = "Message";
 "WasHelp"="Was this helpful?";
