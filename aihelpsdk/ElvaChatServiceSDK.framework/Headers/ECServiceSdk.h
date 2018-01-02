@@ -37,5 +37,8 @@
 
 + (void) showStoreReview;
 
-@end
++ (void) handlePushNotification:(NSDictionary *) table DataFromInApp:(BOOL) dataFromInApp;
 
++ (int) getNotificationMessageCount;
+
+@end
