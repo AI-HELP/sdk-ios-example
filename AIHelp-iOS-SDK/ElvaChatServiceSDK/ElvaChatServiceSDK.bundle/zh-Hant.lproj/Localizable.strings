@@ -1,0 +1,26 @@
+/*
+ Localizable.strings
+ ElvaTestIOS
+ 
+ Created by wwj on 16/5/30.
+ Copyright © 2016年 im30. All rights reserved.
+ */
+
+"ElvaChatService" = "聊天客服";
+
+"offLine"= "您的鏈接已經斷開,請重新進入!";
+
+"ContactCustomerService" = "聯系我們";
+"self_service_interface" = "自助服務";
+
+"Message" = "信息";
+"WasHelp"="此信息對您有幫助嗎?";
+"NO"="否";
+"YES"="是";
+"elva__mark_helpful_toast"="妳發現這有幫助";
+"elva__mark_no"="否";
+"elva__mark_unhelpful_toast"="妳發現這無幫助";
+"elva__mark_yes"="是";
+"elva__mark_yes_no_question"="這有幫助嗎";
+"content_too_long"="不能超過%ld個字！";
+"CustomerService"="HELP";
