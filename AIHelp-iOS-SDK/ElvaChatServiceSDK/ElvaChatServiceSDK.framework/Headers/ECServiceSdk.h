@@ -28,6 +28,8 @@
 + (void) setUseDevice;
 + (void) setEvaluateStar:(int) star;
 + (void) setNoMenu;
++ (void) setSendCloseNotification:(BOOL) isSend;
++ (void) setAccelerateDomain:(NSString *)domain;
 
 + (void) showVIPChat:(NSString*) appidWeb;
 
@@ -39,6 +41,6 @@
 
 + (void) handlePushNotification:(NSDictionary *) table DataFromInApp:(BOOL) dataFromInApp;
 
-+ (int) getNotificationMessageCount;
++ (NSString *) getNotificationMessage;
 
 @end
