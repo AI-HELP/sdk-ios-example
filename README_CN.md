@@ -40,218 +40,319 @@
 domain:app域名，从Web管理系统获取。<br />
 appId:app唯一标识，从Web管理系统获取。<br />
 
-注：后面这三个参数，请使用注册时的邮箱地址作为登录名登录 [智能客服后台](https://aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[智能客服官网](http://aihelp.net/index.html)自助注册。<br />
+注：后面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 后台](https://aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[智能客服官网](http://aihelp.net/index.html)自助注册。<br />
+
+**代码示例**
+
+```
+// 一定要在应用初始化时进行初始化init操作，否则无法进入AIHelp智能客服系统。
+[ECServiceSdk init:@"YOUR_API_KEY"
+				Domain:@"YOUR_DOMAIN_NAME"
+				AppId:@"YOUR_APP_ID"];
+```
 
 ## 2、调用接口完成功能需求
-### <a name="showElva"></a>智能客服主界面启动，调用`showElva`方法，启动机器人界面<br />
+### <a name="showElva"></a>智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
 
-```
-// 不带config 参数
-[ECServiceSdk showElva:playerName 
-				PlayerUid:playerUid 
-				ServerId:serverId 
-				PlayerParseId:playerParseId
-				PlayershowConversationFlag:playershowConversationFlag
-];
+	[ECServiceSdk showElva:playerName
+    				PlayerUid:playerUid
+    				ServerId:serverId
+    				PlayerParseId:playerParseId
+    				PlayershowConversationFlag:showConversationFlag];
+			
+或
 
-// 带config参数
-[ECServiceSdk showElva:playerName 
-				PlayerUid:playerUid 
-				ServerId:serverId 
-				PlayerParseId:playerParseId
-				PlayershowConversationFlag:playershowConversationFlag
-				Config:customData
-];
-```
-    
-* 参数说明:<br />
+	[ECServiceSdk showElva:playerName
+					PlayerUid:playerUid
+					ServerId:serverId
+					PlayerParseId:playerParseId
+					PlayershowConversationFlag:showConversationFlag
+					Config:config];
 
->playerName: 游戏中玩家名称。<br />
-playerUid:玩家在游戏里的唯一标示id。<br />
-serverId:玩家所在的服务器编号。<br />
-playerParseId:传空。<br />
-showConversationFlag(0或1):是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
-config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。<br />
+**代码示例:**
+
+	// Presenting AI Help Converation with your customers
+	NSMutableDictionary *config = [NSMutableDictionary dictionary];
+	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
+	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
+	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+	[ECServiceSdk showElva:@"USER_NAME"
+    				PlayerUid:@"USER_ID"
+    				ServerId:@"123"
+    				PlayerParseId:@""
+    				PlayershowConversationFlag:@"1"
+    				Config:config];
+    				
+	/*config 示例内容:
+			{
+				AIHelp-custom-metadata ＝｛
+					AIHelp-tags ＝'军队, 充值',
+					VersionCode ＝ '3'
+				｝
+			}
+	*/
+	
+**参数说明:**
+
+- __playerName__: 游戏中玩家名称。<br />
+- __playerUid__:玩家在游戏里的唯一标示id。<br />
+- __serverId__:玩家所在的服务器编号。<br />
+- __playerParseId__:传空字符串。<br />
+- __showConversationFlag(0或1)__:是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
+- __config__: 可选，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br />
 
 ![showElva](https://github.com/CS30-NET/Pictures/blob/master/showElva-CN-IOS.jpg "showElva")
 
-* 参数示例:<br />
+**最佳实践：**
 
-```
-    NSString* NSuserName = "elvaTestName";
-    NSString* NSuserId = "12349303258";
-    NSString* parseId = "";
-    NSString *conversationFlag = "1";
-    NSString* serverIdStr = "es234-3dfs-d42f-342sfe3s3";
+> 1. 在您应用的客服主入口触发这个接口的调用。在AIHelp 配置个性化的机器人欢迎语，以及更多机器人对话故事线，引导用户反馈并得到回答。
+> 2. 打开人工客服入口，用户可以在机器人客服界面右上角进入人工客服进行聊天, 你也可以设置条件只让一部分用户看到这个入口。
+
+### <a name="showElvaOP"></a>运营主界面启动，调用 `showElvaOP ` 方法
+
+	[ECServiceSdk showElvaOP:playerName 
+					PlayerUid:playerUid 
+					ServerId:serverId 
+					PlayerParseId:playerParseId 
+					PlayershowConversationFlag:showConversationFlag 
+					Config:config];
+
+或
+
+	[ECServiceSdk showElvaOP:playerName 
+					PlayerUid:playerUid 
+					ServerId:serverId 
+					PlayerParseId:playerParseId 
+					PlayershowConversationFlag:showConversationFlag 
+					Config:config
+					defaultTabIndex:defaultTabIndex];
     
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];
-    
-    [ECServiceSdk showElva:NSuserName 
-                  PlayerUid:NSuserId 
-    				 ServerId:serverIdStr 
-                  PlayerParseId:parseId 
-                  PlayershowConversationFlag:conversationFlag 
-                  Config :customData
-    ];
+**代码示例：**
 
-/* customData示例内容
-      { 
-        hs-custom-metadata＝｛
-        hs-tags＝’军队，充值’, 
-        VersionCode＝’3’
-        ｝
-      }
-      说明：hs-tags对应的值为vector类型，此处传入自定义的Tag，需要在Web管理配置同名称的Tag才能生效。
-*/
-```
+	// Presenting Operation Info to your customers
+	NSMutableDictionary *config = [NSMutableDictionary dictionary];
+	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
+	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
+	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+	[ECServiceSdk showElvaOP:@"USER_NAME" 
+					PlayerUid:@"USER_ID" 
+					ServerId:@"123" 
+					PlayerParseId:@"" 
+					PlayershowConversationFlag:@"1" 
+					Config:config];
 
-### <a name="showElvaOP"></a>运营主界面启动，调用`showElvaOP `方法
+**参数说明:**<br />
 
-```
-[ECServiceSdk showElvaOP:playerName 
-              PlayerUid:playerUid 
-              ServerId:serverId 
-              PlayerParseId:playerParseId
-              PlayershowConversationFlag:playershowConversationFlag
-              Config:config 
-              defaultTabIndex:0];
-```
-    
-* 参数说明:<br />
+- __playerName__: 游戏中玩家名称。<br />
+- __playerUid__:玩家在游戏里的唯一标示id。<br />
+- __serverId__:玩家所在的服务器编号。<br />
+- __playerParseId__:传空字符串。<br />
+- __showConversationFlag(0或1)__:是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
+- __config__: 可选，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br />
+- __defaultTabIndex__:首次进入运营界面时候展示的tab的编号，默认为第一个tab，若需默认展示客服界面tab，设置值为999。<br />
 
->playerName: 游戏中玩家名称。<br />
-playerUid:玩家在游戏里的唯一标示id。<br />
-serverId:玩家所在的服务器编号。<br />
-playerParseId:传空。<br />
-showConversationFlag(0或1):是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
-config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息。<br />
-defaultTabIndex:默认为0。<br />
+![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
 
-### <a name="showSingleFAQ"></a>展示单条FAQ，调用`showSingleFAQ`方法
+**最佳实践：**
+> 1. 在您应用的运营入口触发这个接口的调用。
+在AIHelp 后台配置运营分页（tab)并且发布跟应用相关的运营公告内容。就通过AIHelp展示这些内容给用户。运营界面的最后一个分页总是机器人客服聊天界面。
+> 2. 在tab页面，用户可以在页面右上角进入FAQ页面查看；在机器人客服页面（Help页面），用户可以在页面右上角进入人工客服，此人工客服入口可以通过参数设置条件，根据条件打开或关闭，只让一部分用户看到这个入口。
 
-```
-[ECServiceSdk showSingleFAQ:faqid];
+### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法
 
-NSMutableDictionary *customData = [NSMutableDictionary dictionary];
-[ECServiceSdk showSingleFAQ:faqid Config:customData];
-```
+	[ECServiceSdk showSingleFAQ:faqId];
 
-* 参数说明：
+或
 
->faqId：FAQ的PublishID,可以在[智能客服后台](https://cs30.net/elva)中，从FAQs菜单下找到指定FAQ，查看PublishID.<br />
-config : 可选，自定义ValueMap信息。参照智能客服主界面启动。<br />
-注：如果在智能客服后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
+	[ECServiceSdk showSingleFAQ:faqId Config:config];
+
+**代码示例：**
+
+	// Presenting FAQs to your customers
+	NSMutableDictionary *config = [NSMutableDictionary dictionary];
+	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
+	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
+	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+	[ECServiceSdk showSingleFAQ:@"20" Config:config];
+
+**参数说明：**
+
+- __faqId__: FAQ的PublishID,可以在[AIHelp 后台](https://aihelp.net/elva)中，从FAQs菜单下找到指定FAQ，查看PublishID.<br />
+- __config__: 可选，自定义Dictionary信息。参照智能客服主界面启动。<br />
+注：如果在AIHelp 后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
 
 ![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-CN-IOS.png "showSingleFAQ")
 
 
-### <a name="showFAQSection"></a>展示相关部分FAQ，调用`showFAQSection`方法<br />
-```
-[ECServiceSdk showFAQSection:sectionId];
+### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法<br />
 
-NSMutableDictionary *customData = [NSMutableDictionary dictionary];
-[ECServiceSdk showFAQSection:sectionId Config:customData];
-```
+	[ECServiceSdk showFAQSection:sectionPublishId];
 
-* 参数说明：
+或
 
->sectionPublishId：FAQ Section的PublishID（可以在[智能客服后台](https://cs30.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。<br />
-config : 可选，自定义ValueMap信息。参照 智能客服主界面启动。<br />
+	[ECServiceSdk showFAQSection:sectionPublishId Config:config];
+	
+**代码示例：**
+
+	NSMutableDictionary *config = [NSMutableDictionary dictionary];
+	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
+	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
+	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+	[ECServiceSdk showFAQSection:@"100" Config:config];
+
+**参数说明：**
+
+- __sectionPublishId__: FAQ Section的PublishID（可以在[AIHelp 后台](https://aihelp.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。<br />
+- __config__: 可选，自定义Dictionary信息。参照 智能客服主界面启动。<br />
 
 ![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg "showFAQSection")
 
-### <a name="showFAQs"></a>展示FAQ列表，调用`showFAQs`方法
-```
- [ECServiceSdk showFAQs];
- 
- NSMutableDictionary *customData = [NSMutableDictionary dictionary];
- [ECServiceSdk showFAQs:customData];
-```
+### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法
 
-* 参数说明：
+	[ECServiceSdk showFAQs];
 
->config : 可选，自定义ValueMap信息。可以在此处设置特定的Tag信息和是否提供人工聊天的入口功能<br />
+或
+
+	[ECServiceSdk showFAQs:config];
+	
+**代码示例：**
+
+	// Presenting FAQs to your customers
+	NSMutableDictionary *config = [NSMutableDictionary dictionary];
+	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
+	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
+	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+	[ECServiceSdk showFAQs:config];
+
+**参数说明：**
+
+- __config__: 可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工聊天的入口功能<br />
 
 ![showFAQs](https://github.com/CS30-NET/Pictures/blob/master/showFAQs-CN-IOS.jpg "showFAQs")
 
-### <a name="setName"></a>设置游戏名称信息，调用`setName`方法
+**最佳实践：**
+> 在您应用的FAQ主入口触发这个接口的调用。在AIHelp 后台页面配置并分类FAQ，如果您的FAQ较多，可以增加一个父级分类。
 
-```
-[ECServiceSdk setName:gameName];
-```
-* 参数说明:
+### <a name="setName"></a>设置游戏名称信息，调用 `setName` 方法
 
-> gameName：游戏名称，设置后将显示在SDK中相关界面导航栏。
+	[ECServiceSdk setName:game_name];
 
-* 代码示例:
+**代码示例：**
 
-> [ECServiceSdk setName:@"聊天客服"];<br />
-> 见下图中红框中的文字。<br />
+	[ECServiceSdk setName:@"Your Game"];
+	
+**参数说明：**
+
+- __game_name__: 游戏名称，设置后将显示在SDK中相关界面导航栏。
 
 ![setName](https://github.com/CS30-NET/Pictures/blob/master/setName-CN-IOS.jpg "setName")
 
-### <a name="setUserId"></a>设置用户id信息，调用`setUserId`方法(使用自助服务必须调用，参见展示单条FAQ)
-```
-    [ECServiceSdk setUserId:userId];
-```
+**最佳实践：**
+> 在初始化后调用该接口设置游戏名称，将显示在AIHelp相关界面标题栏。
 
-* 参数说明:
+### <a name="setUserId"></a>设置用户唯一id信息，调用 `setUserId` 方法(使用自助服务必须调用，参见展示单条FAQ)
 
-> userId：玩家唯一ID。
+	[ECServiceSdk setUserId:playerUid];
 
-### <a name="setServerId"></a>设置服务器编号信息，调用`setServerId`方法(使用自助服务必须调用，参见展示单条FAQ)
+**代码示例：**
 
-```
-    [ECServiceSdk setServerId:serverIdStr];
-```
-* 参数说明:
+	[ECServiceSdk setUserId:@"123ABC567DEF"];
 
-> serverIdStr:服务器ID。
+**参数说明：**
 
-### <a name="setUserName"></a>设置玩家名称信息，调用`setUserName`方法()
+- __playerUid__: 玩家唯一ID。
 
-```
-    [ECServiceSdk setUserName:userName];
-```
+**最佳实践：**
+> 通常你可以用在其他接口传入用户Id，无需调用该接口，但是若要使用[自助服务](#selfservice)，则必须调用。
 
-* 参数说明:
+### <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
 
-> userName:玩家名称。
+	[ECServiceSdk setServerId:serverId];
 
-### <a name="showConversation"></a>直接进行人工客服聊天，调用`showConversation`方法(必须确保设置玩家名称信息setUserName 已经调用)
+**代码示例：**
 
-```
-// 不带可选参数
-[ECServiceSdk showConversation:userId ServerId:serverIdStr];
-        
-// 带可选参数
-NSMutableDictionary *customData = [NSMutableDictionary dictionary];
-[ECServiceSdk showConversation:userId 
-					ServerId:serverIdStr 
-					Config:customData];
-```
+	[ECServiceSdk setServerId:@"SERVER_ID"];
+	
+**参数说明：**
 
-* 参数说明:
+- __serverId__: 服务器ID。
 
->playerUid:玩家在游戏里的唯一标示id。<br />
-serverId:玩家所在的服务器编号。<br />
-config : 可选，自定义ValueMap信息。参照 智能客服主界面启动。<br />
+**最佳实践：**
+> 通常你无需调用该接口，可以用其他接口传入服务器ID，但是若要使用[自助服务](#selfservice)，则必须调用。
+
+### <a name="setUserName"></a>设置玩家名称信息，调用 `setUserName` 方法()
+
+	[ECServiceSdk setUserName:playerName];
+
+**代码示例：**
+
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+
+**参数说明：**
+
+- __playerName__: 玩家名称。
+
+**最佳实践：**
+> 1. 传入你的App的用户名称，这样在后台客户服务页面会展示用户的应用内名称，便于客服在服务用户时个性化称呼对方。
+> 2. 通常你无需调用该接口，可以用其他接口传入用户名称，但是若要使用[自助服务](#selfservice)，则必须调用。
+
+### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息setUserName 已经调用)
+
+	[ECServiceSdk showConversation:playerUid ServerId:serverId];
+
+或
+
+	[ECServiceSdk showConversation:playerUid 
+					ServerId:serverId 
+					Config:config];
+
+**代码示例：**
+
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+	NSMutableDictionary *config = [NSMutableDictionary dictionary];
+	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
+	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
+	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+	[ECServiceSdk showConversation:@"PLAYER_ID" 
+					ServerId:@"123" 
+					Config:config];
+
+**参数说明：**
+
+- __playerUid__: 玩家在游戏里的唯一标示id。<br />
+- __serverId__:玩家所在的服务器编号。<br />
+- __config__: 可选，自定义Dictionary信息。参照智能客服主界面启动。<br />
 
 ![showConversation](https://github.com/CS30-NET/Pictures/blob/master/showConversation-CN-IOS.png "showConversation")
 
-#### <a name="setSDKLanguage"></a>设置SDK语言，调用`setSDKLanguage`方法
+**最佳实践：**
+> 通常你不需要调用这个接口，除非你想在应用里设置触发点，让用户有机会直接进入人工客服聊天界面。
+
+#### <a name="setSDKLanguage"></a>设置SDK语言，调用 `setSDKLanguage` 方法
 
 	[ECServiceSdk setSDKLanguage:language];
+	
+**代码示例：**
 
-* 参数说明:
+	[ECServiceSdk setSDKLanguage:@"en"];
 
->language:语言名称。如英语为en,简体中文为zh_CN。更多语言简称参见AIHelp后台，"设置"-->"语言"的Alias列。
->> 1. 通常SDK会使用手机的默认语言设置，如果你的应用使用跟手机设置不一样的语言，那么你需要在AIHelp SDK初始化之后调用此接口修改默认语言。
->> 2. 如果你的应用允许用户更改语言，那么每次更改语言之后，也需要调用此接口重新设置SDK的语言。
+**参数说明：**
+
+- __language__: 语言名称。如英语为en,简体中文为zh_CN。更多语言简称参见[AIHelp后台](https://aihelp.net/elva)，"设置"-->"语言"的Alias列。
 
 ![language](https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png "语言Alias列")
 
-#### <a name="setChangeDirection"></a>设置SDK竖屏显示，调用`setChangeDirection`方法
+**最佳实践：**
+> 1. 通常SDK会使用手机的默认语言设置，如果你的应用使用跟手机设置不一样的语言，那么你需要在AIHelp SDK初始化之后调用此接口修改默认语言。
+> 2. 如果你的应用允许用户更改语言，那么每次更改语言之后，也需要调用此接口重新设置SDK的语言。
+
+#### <a name="setChangeDirection"></a>设置SDK竖屏显示，调用 `setChangeDirection` 方法
 
 	[ECServiceSdk setChangeDirection];
 
@@ -262,6 +363,10 @@ config : 可选，自定义ValueMap信息。参照 智能客服主界面启动�
 #### 设置另一个欢迎语。
 
 如果你设置了进入AI客服的不同入口，希望用户从不同的入口进入AI客服时显示不同的欢迎语，进入不同故事线，可以通过设置config参数来实现： 
+
+
+	NSMutableDictionary *welcomeText = [NSMutableDictionary dictionary];
+	[welcomeText setObject:@"usersay" forKey:@"anotherWelcomeText"];
 	
 **代码示例：**
 
@@ -272,7 +377,7 @@ config : 可选，自定义ValueMap信息。参照 智能客服主界面启动�
 	//需要改变的是usersay，保持和故事线中配置的User Say内容一样
 	[welcomeText setObject:@"usersay" forKey:@"anotherWelcomeText"];
 	NSMutableDictionary *config = [NSMutableDictionary dictionary];
-	[config setObject:welcomeText forKey:@"elva-custom-metadata"];
+	[config setObject:welcomeText forKey:@"AIHelp-custom-metadata"];
 	
 	//如果是在智能客服主界面中	
 	[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
@@ -293,4 +398,4 @@ config : 可选，自定义ValueMap信息。参照 智能客服主界面启动�
 
 
 **最佳实践：**
->引导玩家从不同入口看到不同的服务
+> 引导玩家从不同入口看到不同的服务

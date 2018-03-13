@@ -97,7 +97,7 @@ or
 	/*config example content:
 			{
 				elva-custom-metadata ＝｛
-					hs-tags ＝'军队, 充值',
+					hs-tags ＝'army, pay',
 					VersionCode ＝ '3'
 				｝
 			}
