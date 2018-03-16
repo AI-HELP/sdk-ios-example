@@ -8,9 +8,9 @@
 | [**init**](#init)      | 初始化 | 
 | [**showElva**](#showElva)      | 启动机器人客服界面| 
 | [**showElvaOP**](#showElvaOP) | 启动运营界面| 需配置运营模块|
-| [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ|
-| [**showFAQSection**](#showFAQSection)| 展示FAQ分类|
-| [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ|
+| [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showConversation**](#showConversation)|进入人工客服界面| 需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**setName**](#setName) | 设置在客服系统中显示的游戏名称|在初始化之后调用|
 | [**setUserId**](#setUserId) | 设置玩家(用户)ID|
@@ -160,7 +160,7 @@ appId:app唯一标识，从Web管理系统获取。<br />
 在AIHelp 后台配置运营分页（tab)并且发布跟应用相关的运营公告内容。就通过AIHelp展示这些内容给用户。运营界面的最后一个分页总是机器人客服聊天界面。
 > 2. 在tab页面，用户可以在页面右上角进入FAQ页面查看；在机器人客服页面（Help页面），用户可以在页面右上角进入人工客服，此人工客服入口可以通过参数设置条件，根据条件打开或关闭，只让一部分用户看到这个入口。
 
-### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法
+### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
 
 	[ECServiceSdk showSingleFAQ:faqId];
 
@@ -171,6 +171,8 @@ appId:app唯一标识，从Web管理系统获取。<br />
 **代码示例：**
 
 	// Presenting FAQs to your customers
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+	[ECServiceSdk setUserId:@"123ABC567DEF"];
 	NSMutableDictionary *config = [NSMutableDictionary dictionary];
 	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
@@ -187,7 +189,7 @@ appId:app唯一标识，从Web管理系统获取。<br />
 ![showSingleFAQ](https://github.com/CS30-NET/Pictures/blob/master/showSingleFAQ-CN-IOS.png "showSingleFAQ")
 
 
-### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法<br />
+### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
 
 	[ECServiceSdk showFAQSection:sectionPublishId];
 
@@ -196,7 +198,9 @@ appId:app唯一标识，从Web管理系统获取。<br />
 	[ECServiceSdk showFAQSection:sectionPublishId Config:config];
 	
 **代码示例：**
-
+	
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+	[ECServiceSdk setUserId:@"123ABC567DEF"];
 	NSMutableDictionary *config = [NSMutableDictionary dictionary];
 	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
@@ -211,7 +215,7 @@ appId:app唯一标识，从Web管理系统获取。<br />
 
 ![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg "showFAQSection")
 
-### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法
+### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
 
 	[ECServiceSdk showFAQs];
 
@@ -222,6 +226,8 @@ appId:app唯一标识，从Web管理系统获取。<br />
 **代码示例：**
 
 	// Presenting FAQs to your customers
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+	[ECServiceSdk setUserId:@"123ABC567DEF"];
 	NSMutableDictionary *config = [NSMutableDictionary dictionary];
 	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
@@ -301,7 +307,7 @@ appId:app唯一标识，从Web管理系统获取。<br />
 > 1. 传入你的App的用户名称，这样在后台客户服务页面会展示用户的应用内名称，便于客服在服务用户时个性化称呼对方。
 > 2. 通常你无需调用该接口，可以用其他接口传入用户名称，但是若要使用[自助服务](#selfservice)，则必须调用。
 
-### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息setUserName 已经调用)
+### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 已经调用)
 
 	[ECServiceSdk showConversation:playerUid ServerId:serverId];
 

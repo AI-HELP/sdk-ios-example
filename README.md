@@ -50,9 +50,9 @@ If your company doesn't have an account, you need to register an account at [AIH
 |:------------- |:---------------|:---------------|
 | [**showElva**](#showElva)      | Launch AI Conversation Interface| 
 | [**showElvaOP**](#showElvaOP) | Launch Operation Interface| Need to configure Operation Sections|
-| [**showFAQs**](#showFAQs) | Show all FAQs by Sections|Need to Configure FAQs|
-| [**showFAQSection**](#showFAQSection)| Show FAQ Section|
-| [**showSingleFAQ**](#showSingleFAQ) | Show Single FAQ|Need to Configure FAQ|
+| [**showFAQs**](#showFAQs) | Show all FAQs by Sections|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**showFAQSection**](#showFAQSection)| Show FAQ Section|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**showSingleFAQ**](#showSingleFAQ) | Show Single FAQ|Need to Configure FAQ,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
 | [**showConversation**](#showConversation)|Launch Manual Conversation Interface| Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
 | [**setName**](#setName) |Set Your App's Name for AIHelp SDK to Display|Use it After Initialization|
 | [**setUserId**](#setUserId) | Set unique User ID|
@@ -170,7 +170,7 @@ or
 **Best Practice：**
 > 1. Use this API to present news, announcements, articles or any useful information to users/players. Configure and publish the information in AIHelp web console. 
 
-### <a name="showFAQs"></a>4. Display FAQs, use `showFAQs`:<br />
+### <a name="showFAQs"></a>4. Display FAQs, use `showFAQs` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 	[ECServiceSdk showFAQs];
 
@@ -181,6 +181,8 @@ or
 **Coding Example：**
 
 	// Presenting FAQs to your customers
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+	[ECServiceSdk setUserId:@"123ABC567DEF"];
 	NSMutableDictionary *config = [NSMutableDictionary dictionary];
 	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 	[customData setObject:@"vip,pay1" forKey:@"elva-tags"];
@@ -197,7 +199,7 @@ or
 **Best Practice：**
 > 1. Use this method to show FAQs about your APP/Game properly. Configure FAQs in AIHelp Web Console. Each FAQ can be categroized into a section. If the FAQs are great in number, you can also add Parent Sections to categorize sections to make things clear and organized. 
 
-### <a name="showSingleFAQ"></a>5. Show A Specific FAQ, use `showSingleFAQ`:<br />
+### <a name="showSingleFAQ"></a>5. Show A Specific FAQ, use `showSingleFAQ` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 	[ECServiceSdk showSingleFAQ:faqId];
 
@@ -208,6 +210,8 @@ or
 **Coding Example：**
 
 	// Presenting FAQs to your customers
+	[ECServiceSdk setUserName:@"PLAYER_NAME"];
+	[ECServiceSdk setUserId:@"123ABC567DEF"];
 	NSMutableDictionary *config = [NSMutableDictionary dictionary];
 	NSMutableDictionary *customData = [NSMutableDictionary dictionary];
 	[customData setObject:@"vip,pay1" forKey:@"elva-tags"];
@@ -286,7 +290,7 @@ or
 **Best Practice：**
 > 1. Normally you don not need to use this method if you have passed the server ID in another method. 
 
-### <a name="showConversation"></a>10. Launch manual chat console, use `showConversation`(need to set [UserName](#UserName)):<br />
+### <a name="showConversation"></a>10. Launch manual chat console, use `showConversation` (need to set [`UserName`](#UserName)) :<br />
 
 	[ECServiceSdk showConversation:playerUid ServerId:serverId];
 
