@@ -163,7 +163,7 @@ or
 - __playerParseId__: Can be empty string, can NOT be NULL.
 - __showConversationFlag__: Should be "0" or "1". If set at "1", the manual conversation entry will be shown in the top right-hand corner of the AI conversation interface.
 - __config__: Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.
-- __defaultTabIndex__: Optional. The index of the first tab will to be shown when entering the operation interface. Default value of is the left-most tab, if you would like to show the AI conversation interface(the right-most) should be set to 999.
+- __defaultTabIndex__: Optional. The index of the first tab will to be shown when entering the operation interface. Default value is 0, default value of is the left-most tab, if you would like to show the AI conversation interface(the right-most) should be set to 999.
 	
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
 

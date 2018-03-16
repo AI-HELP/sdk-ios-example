@@ -151,7 +151,7 @@ appId:app唯一标识，从Web管理系统获取。<br />
 - __playerParseId__:传空字符串。<br />
 - __showConversationFlag(0或1)__:是否为vip, 0:标示非VIP；1:表示：VIP。此处为1时，将在机器人的聊天界面右上角，提供人工聊天的入口功能。<br />
 - __config__: 可选，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br />
-- __defaultTabIndex__:首次进入运营界面时候展示的tab的编号，默认为第一个tab，若需默认展示客服界面tab，设置值为999。<br />
+- __defaultTabIndex__:可选，进入运营界面时候展示的tab的编号。默认是0，也就是默认为第一个tab，若需默认展示客服界面tab，设置值为999。<br />
 
 ![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
 
