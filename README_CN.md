@@ -182,7 +182,7 @@ appId:app唯一标识，从Web管理系统获取。<br />
 
 **参数说明：**
 
-- __faqId__: FAQ的PublishID,可以在[AIHelp 后台](https://aihelp.net/elva)中，从FAQs菜单下找到指定FAQ，查看PublishID.<br />
+- __faqId__: FAQ的编号。打开[AIHelp 后台](https://aihelp.net/elva)中，在**机器人→常见问题**页面下找到指定FAQ的FAQ编号，注意：此FAQID不能填写客服后台未存在的FAQ编号。<br />
 - __config__: 可选，自定义Dictionary信息。参照智能客服主界面启动。<br />
 注：如果在AIHelp 后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
 
