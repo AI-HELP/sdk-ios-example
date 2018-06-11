@@ -23,7 +23,7 @@
 + (void) setUserName:(NSString*) playerName;//在需要的接口之前调用，建议游戏刚进入就默认调用
 + (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId;//请优先实现setUserName接口
 + (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId Config:(NSMutableDictionary*) config;
-+ (BOOL) setSDKLanguage:(NSString*) sdkLanguage;
++ (void) setSDKLanguage:(NSString*) sdkLanguage;
 + (void) setChangeDirection;
 + (void) setUseDevice;
 + (void) setEvaluateStar:(int) star;
@@ -31,16 +31,18 @@
 + (void) setSendCloseNotification:(BOOL) isSend;
 + (void) setAccelerateDomain:(NSString *)domain;
 
-+ (void) showVIPChat:(NSString*) appidWeb;
++ (void) showVIPChat:(NSString*) appidWeb VIPTags:(NSString *) vipTags;
 
 + (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary *)config;
 
 + (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary *)config defaultTabIndex:(int)defaultTabIndex;
 
++ (void) showQACommunity:(NSString *)playerUid PlayName:(NSString *)playerName;
+
 + (void) showStoreReview;
 
 + (void) handlePushNotification:(NSDictionary *) table DataFromInApp:(BOOL) dataFromInApp;
 
-+ (NSString *) getNotificationMessage;
++ (int) getNotificationMessageCount;
 
 @end

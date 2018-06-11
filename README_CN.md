@@ -1,6 +1,10 @@
 # 重点提醒：
 1. 必须在游戏启动代码中调用init接口进行AIHelp SDK的初始化。
-2. iOS10需要获取权限，具体方法参考[链接](http://blog.csdn.net/u012681458/article/details/51865435)
+2. iOS10需要在工程的**info.plist**添加权限:<br>
+	`Privacy - Photo Library Usage Description`<br>
+	`Privacy - Camera Usage Description`<br>
+	iOS11需要在工程的**info.plist**添加权限:<br>
+	`Privacy - Photo Library Additions Usage Description`<br>
 3. 接口简介：
 
 | 接口名 | 接口作用 |备注|
@@ -405,3 +409,5 @@ appId:app唯一标识，从Web管理系统获取。<br />
 
 **最佳实践：**
 > 引导玩家从不同入口看到不同的服务
+
+[链接]:http://blog.csdn.net/u012681458/article/details/51865435
