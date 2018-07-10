@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  ElvaTestIOS
+
+  Created by wwj on 16/5/30.
+  Copyright © 2016年 im30. All rights reserved.
+*/
+
+"ElvaChatService" = "ElvaChat Service";
+"offLine"="Bağlantı hatası, lütfen tekrar deneyin!";
+"ContactCustomerService" = "İletişim";
+"self_service_interface"="services";
+"Message" = "Message";
+"WasHelp"="Bunu faydalı buldunuz mu?";
+"NO"="Hayır";
+"YES"="Evet";
+"elva__mark_helpful_toast"="Bunu faydalı buldum!";
+"elva__mark_no"="Hayır";
+"elva__mark_unhelpful_toast"="Bunu faydalı bulmadım!";
+"elva__mark_yes"="Evet";
+"elva__mark_yes_no_question"="Bunu faydalı buldunuz mu?";
+"content_too_long"="Maks %ld karakter kullanılabilir!";
+"CustomerService"="HELP";
