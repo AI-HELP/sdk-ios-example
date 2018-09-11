@@ -6,7 +6,8 @@
 #import <Foundation/Foundation.h>
 @interface ECServiceSdk:NSObject
 
-
++ (void) registerUnityOnInitializedCallback:(NSString *) gameObject;
++ (void) registerUnityOnMessageArrivedCallback:(NSString *) gameObject;
 + (void) init:(NSString*) appSecret Domain:(NSString*) domain AppId:(NSString*) appId;
 + (void) showElva:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag;
 + (void) showElva:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary*) config;
@@ -44,5 +45,7 @@
 + (void) handlePushNotification:(NSDictionary *) table DataFromInApp:(BOOL) dataFromInApp;
 
 + (int) getNotificationMessageCount;
++ (void) showURL:(NSString *) url;
++ (void) setUnreadMessageFetchUid:(NSString*) playerUid;
 
 @end
