@@ -21,3 +21,13 @@
 "elva__mark_yes_no_question"="Bunu faydalı buldunuz mu?";
 "content_too_long"="Maks %ld karakter kullanılabilir!";
 "CustomerService"="HELP";
+"RewardBalance"="Your Tokens:";
+"GoTo" = "Go To The";
+"Forum" = "QA Forum";
+"Tokens" = "Tokens";
+"Token" = "Token";
+"NoReward" = "Not This Time";
+"CloseOK" ="OK";
+"RewardSuccess" = "Success";
+"RewardFailure" = "Fail";
+"TokenInsufficient" = "Your Tokens Is Insufficient.";

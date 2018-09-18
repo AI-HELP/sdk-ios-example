@@ -21,3 +21,13 @@
 "elva__mark_yes_no_question"="お役に立ちましたか";
 "content_too_long"="No more than %ld chars!";
 "CustomerService"="HELP";
+"RewardBalance"="あなたのトークン:";
+"GoTo" = "に行く";
+"Forum" = "Q&A フォーラム";
+"Tokens" = "Tokens";
+"Token" = "Token";
+"NoReward" = "今回は報われない";
+"CloseOK" ="閉じる";
+"RewardSuccess" = "成功報酬";
+"RewardFailure" = "報酬の不履行";
+"TokenInsufficient" = "不十分な点.";

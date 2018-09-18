@@ -21,3 +21,13 @@
 "elva__mark_yes_no_question"="这有帮助吗";
 "content_too_long"="不能超过%ld个字！";
 "CustomerService"="HELP";
+"RewardBalance"="您的积分余额:";
+"GoTo" = "前往";
+"Forum" = "问答社区";
+"Tokens" = "分";
+"Token" = "分";
+"NoReward" = "残忍拒绝，暂不打赏";
+"CloseOK" ="关闭";
+"RewardSuccess" = "打赏成功";
+"RewardFailure" = "打赏失败";
+"TokenInsufficient" = "积分余额不足";

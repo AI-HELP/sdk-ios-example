@@ -24,3 +24,13 @@
 "elva__mark_yes_no_question"="這有幫助嗎";
 "content_too_long"="不能超過%ld個字！";
 "CustomerService"="HELP";
+"RewardBalance"="您的積分餘額:";
+"GoTo" = "前往";
+"Forum" = "問答社區";
+"Tokens" = "分";
+"Token" = "分";
+"NoReward" = "殘忍拒絕,暫不打賞";
+"CloseOK" ="關閉";
+"RewardSuccess" = "打賞成功";
+"RewardFailure" = "打賞失敗";
+"TokenInsufficient" = "積分餘額不足";
