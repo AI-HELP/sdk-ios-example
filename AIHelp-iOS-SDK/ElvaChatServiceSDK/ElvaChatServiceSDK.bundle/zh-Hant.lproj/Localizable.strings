@@ -34,3 +34,4 @@
 "RewardSuccess" = "打賞成功";
 "RewardFailure" = "打賞失敗";
 "TokenInsufficient" = "積分餘額不足";
+"NeedMoreHelp" = "尋求更多幫助?";

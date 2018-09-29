@@ -31,4 +31,4 @@
 "RewardSuccess" = "Success";
 "RewardFailure" = "Fail";
 "TokenInsufficient" = "Your Tokens Is Insufficient.";
-
+"NeedMoreHelp" = "Need more help?";

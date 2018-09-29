@@ -31,3 +31,4 @@
 "RewardSuccess" = "打赏成功";
 "RewardFailure" = "打赏失败";
 "TokenInsufficient" = "积分余额不足";
+"NeedMoreHelp" = "寻求更多帮助?";
