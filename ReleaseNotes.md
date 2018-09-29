@@ -1,7 +1,10 @@
 # AIHelp iOS SDK Version Update
 
+## 1.4.2(latest)
+add offline robot.
+add reward modular.
 
-## 1.3.4 (latest)
+## 1.3.4 
 * Support FAQ Parent Sections. 
 * UI optimize and bug fixes. 
 
