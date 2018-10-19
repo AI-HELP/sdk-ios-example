@@ -3,6 +3,13 @@
 ## 1.4.2(latest)
 add offline robot.
 add reward modular.
+2018-10-19↓
+Adding armv7s architecture support
+Restoring link free response to _blank type jump
+Customer service input limit increased to 800
+Perfect the function of reward and reward
+Front end operation module
+
 
 ## 1.3.4 
 * Support FAQ Parent Sections. 
