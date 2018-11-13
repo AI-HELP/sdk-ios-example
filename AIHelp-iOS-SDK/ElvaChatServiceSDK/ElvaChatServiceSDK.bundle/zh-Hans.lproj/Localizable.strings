@@ -1,34 +1,18 @@
-/* 
-  Localizable.strings
-  ElvaTestIOS
-
-  Created by wwj on 16/5/30.
-  Copyright © 2016年 im30. All rights reserved.
-*/
-
-"ElvaChatService" = "聊天客服";
-"offLine"= "您的链接已经断开,请重新进入!";
-"ContactCustomerService" = "联系我们";
-"self_service_interface" = "自助服务";
-"Message" = "信息";
-"WasHelp"="此信息对您有帮助吗?";
-"NO"="否";
-"YES"="是";
-"elva__mark_helpful_toast"="你发现这有帮助";
-"elva__mark_no"="否";
-"elva__mark_unhelpful_toast"="你发现这无帮助";
-"elva__mark_yes"="是";
-"elva__mark_yes_no_question"="这有帮助吗";
+//中文简体zh-Hans
 "content_too_long"="不能超过%ld个字！";
+"ContactCustomerService" = "联系客服";
+"self_service_interface" = "自助服务";
+"offLine"= "您的链接已经断开,请重新进入!";
 "CustomerService"="HELP";
+"elva__mark_helpful_toast"="你发现这有帮助";
+"elva__mark_unhelpful_toast"="你发现这无帮助";
+"elva__mark_yes_no_question"="这有帮助吗";
+"elva__mark_no"="否";
+"elva__mark_yes"="是";
 "RewardBalance"="您的积分余额:";
-"GoTo" = "前往";
+"GoTo" = "到";
 "Forum" = "问答社区";
-"Tokens" = "分";
-"Token" = "分";
-"NoReward" = "残忍拒绝，暂不打赏";
-"CloseOK" ="关闭";
 "RewardSuccess" = "打赏成功";
 "RewardFailure" = "打赏失败";
-"TokenInsufficient" = "积分余额不足";
-"NeedMoreHelp" = "寻求更多帮助?";
+"TokenInsufficient" = "余额不足";
+"NeedMoreHelp" = "需要更多帮助？";

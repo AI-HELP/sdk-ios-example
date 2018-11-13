@@ -1,0 +1,32 @@
+//波兰语pl,pl-PL
+"content_too_long"="Nie więcej niż %ld znaków!";
+"ContactCustomerService" = "Obsługa klienta";
+"self_service_interface" = "Samoobsługa";
+"offLine"= "Brak dostępu do sieci, proszę spróbuj ponownie później.";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Uznałeś to za przydatne.";
+"elva__mark_unhelpful_toast"="Nie uznałeś tego za przydatne.";
+"elva__mark_yes_no_question"="Czy było to przydatne?";
+"elva__mark_no"="Nie";
+"elva__mark_yes"="Tak";
+"RewardBalance"="Twój bilans punktów:";
+"GoTo" = "Idź do";
+"Forum" = "Forum pytań i odpowiedzi.";
+"RewardSuccess" = "Sukces.";
+"RewardFailure" = "Porażka.";
+"TokenInsufficient" = "Niewystarczająca ilość punktów.";
+"NeedMoreHelp" = "Bisogno Di Più Aiuto？";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

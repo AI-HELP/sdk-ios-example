@@ -1,9 +1,14 @@
 # AIHelp iOS SDK Version Update
 
+## 1.4.3
+1. Initialization Data Fetch Optimization
+2. iOS Chatbot response Optimization
+3. Chatbot rate Optimization
+4. FAQ Contact Us Optimization
+
 ## 1.4.2(latest)
 add offline robot.
 add reward modular.
-2018-10-19↓
 Adding armv7s architecture support
 Restoring link free response to _blank type jump
 Customer service input limit increased to 800

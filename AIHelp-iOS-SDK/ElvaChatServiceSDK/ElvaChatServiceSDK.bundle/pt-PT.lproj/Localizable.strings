@@ -1,0 +1,24 @@
+//葡萄牙语pt,pt-BR,pt-PT
+"content_too_long"="Não pode ser mais de %ld palavras!";
+"ContactCustomerService" = "Contate-Nos";
+"self_service_interface" = "Self-Service";
+"offLine"= "Sua conexão foi desconectada, entre novamente!";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Isso é útil";
+"elva__mark_unhelpful_toast"="Isso não é útil";
+"elva__mark_yes_no_question"="É útil？";
+"elva__mark_no"="Não";
+"elva__mark_yes"="Sim";
+"RewardBalance"="Seus saldos de ponto:";
+"GoTo" = "Chegar";
+"Forum" = "Comunidade de pergunta e resposta";
+"RewardSuccess" = "Recompense com sucesso";
+"RewardFailure" = "Recompense não com sucesso";
+"TokenInsufficient" = "Saldos insuficientes";
+"NeedMoreHelp" = "Precisa mais ajuda?";
+
+
+
+
+
+

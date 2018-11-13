@@ -188,6 +188,8 @@ or
 	[customData setObject:@"vip,pay1" forKey:@"elva-tags"];
 	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
 	[config setObject:customData forKey:@"elva-custom-metadata"];
+    [config setObject:@"1" forKey:@"showContactButtonFlag"];   // Show Contact us in the top right of FAQ list
+    [config setObject:@"1" forKey:@"showConversationFlag"];    // Show Interface to contact manual reply from FAQ page,need set "showContactButtonFlag"
 	[ECServiceSdk showFAQs:config];
 
 **About Parameters：**

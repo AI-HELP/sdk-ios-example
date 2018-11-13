@@ -1,0 +1,32 @@
+//希腊语el-GR,el-CY
+"content_too_long"="Δεν μπορείτε να ξεπεράσετε τους %ld χαρακτήρες！";
+"ContactCustomerService" = "Επικοινωνήστε μας";
+"self_service_interface" = "Σελφ σέρβις";
+"offLine"= "Το δίκτυό σας αποσυνδέθηκε, παρακαλώ προσπαθήστε αργότερα!";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Σας βοήθησε";
+"elva__mark_unhelpful_toast"="Δεν σας βοήθησε";
+"elva__mark_yes_no_question"="Σας βοήθησε;";
+"elva__mark_no"="Όχι";
+"elva__mark_yes"="Ναι";
+"RewardBalance"="Το υπόλοιπο των πόντων σας:";
+"GoTo" = "Μέχρι";
+"Forum" = "Φόρουμ ερωτήσεων και απαντήσεων";
+"RewardSuccess" = "Επιτυχής ανταμοιβή";
+"RewardFailure" = "Αποτυχής ανταμοιβή";
+"TokenInsufficient" = "Το υπόλοιπό σας δεν επαρκεί";
+"NeedMoreHelp" = "Χρειάζεστε βοήθεια?";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

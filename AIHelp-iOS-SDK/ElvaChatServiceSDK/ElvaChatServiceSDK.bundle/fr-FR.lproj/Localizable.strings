@@ -1,0 +1,24 @@
+//法语fr,fr-FRfr-BE,fr-CA,fr-CH,fr-FR,fr-LU,fr-MC
+"content_too_long"="Pas plus de %ld de caractères";
+"ContactCustomerService" = "Contactez-nous";
+"self_service_interface" = "Libre service";
+"offLine"= "Votre connexion ne fonctionne pas, veuillez essayer de nouveau";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Est ce que cela vous aidé";
+"elva__mark_unhelpful_toast"="Vous n'avez pas trouvez cela utile";
+"elva__mark_yes_no_question"="Est-ce que cela a été utile?";
+"elva__mark_no"="Non";
+"elva__mark_yes"="Oui";
+"RewardBalance"="Vos jetons";
+"GoTo" = "Allez à";
+"Forum" = "FAQ";
+"RewardSuccess" = "Succès";
+"RewardFailure" = "Echec";
+"TokenInsufficient" = "Jeton insuffisant";
+"NeedMoreHelp" = "Besoin d'aide?";
+
+
+
+
+
+

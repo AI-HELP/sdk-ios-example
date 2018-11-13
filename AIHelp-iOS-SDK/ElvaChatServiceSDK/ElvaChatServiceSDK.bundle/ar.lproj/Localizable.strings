@@ -1,34 +1,18 @@
-/* 
-  Localizable.strings
-  ElvaTestIOS
-
-  Created by wwj on 16/5/30.
-  Copyright © 2016年 im30. All rights reserved.
-*/
-
-"ElvaChatService" = "ElvaChat Service";
-"offLine"="Your network is disconnected,please try again later";
-"ContactCustomerService" = "اتصل بنا";
-"self_service_interface"="services";
-"Message" = "Message";
-"WasHelp"="Was this helpful?";
-"NO"="NO";
-"YES"="YES";
-"elva__mark_helpful_toast"="هل وجدت هذا مُفيداً.";
-"elva__mark_no"="لا";
-"elva__mark_unhelpful_toast"="أنت لم تجد هذا مُفيداً.";
-"elva__mark_yes"="أجل";
-"elva__mark_yes_no_question"="هل كان هذا مُفيداً؟";
-"content_too_long"="No more than %ld chars!";
+//阿拉伯语ar
+"content_too_long"="لا تستخدم أكثر من %ld رمزا";
+"ContactCustomerService" = "اِتصل بنا";
+"self_service_interface" = "خدمة ذاتية";
+"offLine"= "لقد انفصلت الشبكة. يرجى المحاولة مجددا لاحقا";
 "CustomerService"="HELP";
-"RewardBalance"="Your Tokens:";
-"GoTo" = "Go To The";
-"Forum" = "QA Community";
-"Tokens" = "Tokens";
-"Token" = "Token";
-"NoReward" = "Not This Time";
-"CloseOK" ="OK";
-"RewardSuccess" = "Success";
-"RewardFailure" = "Fail";
-"TokenInsufficient" = "Your Tokens Is Insufficient.";
-"NeedMoreHelp" = "Need more help?";
+"elva__mark_helpful_toast"="تم تأكيد السؤال مُفيدا";
+"elva__mark_unhelpful_toast"="تم تعيين السؤال غير مفيد";
+"elva__mark_yes_no_question"="هل كان هذا مفيدا؟";
+"elva__mark_no"="لا";
+"elva__mark_yes"="نعم";
+"RewardBalance"="رموزك";
+"GoTo" = "اتجه الى";
+"Forum" = "منتدى الأسئلة و الإجابات";
+"RewardSuccess" = "نجاج";
+"RewardFailure" = "فشل";
+"TokenInsufficient" = "الرموز الخاصة بك غير كافية";
+"NeedMoreHelp" = "هل تريد المزيد من المساعدة؟";

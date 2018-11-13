@@ -31,6 +31,7 @@
 + (void) setNoMenu;
 + (void) setSendCloseNotification:(BOOL) isSend;
 + (void) setAccelerateDomain:(NSString *)domain;
++ (void) setOpenLog:(BOOL)isOpen;
 
 + (void) showVIPChat:(NSString*) appidWeb VIPTags:(NSString *) vipTags;
 

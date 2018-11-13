@@ -1,34 +1,18 @@
-/* 
-  Localizable.strings
-  ElvaTestIOS
-
-  Created by wwj on 16/5/30.
-  Copyright © 2016年 im30. All rights reserved.
-*/
-
-"ElvaChatService" = "ElvaChat Service";
-"offLine"="Your network is disconnected,please try again later";
+//日语ja
+"content_too_long"="％ld文字を超えてはならない！";
 "ContactCustomerService" = "お問い合わせ";
-"self_service_interface"="services";
-"Message" = "Message";
-"WasHelp"="Was this helpful?";
-"NO"="NO";
-"YES"="YES";
-"elva__mark_helpful_toast"="役に立ちました";
-"elva__mark_no"="いいえ";
-"elva__mark_unhelpful_toast"="役に立たなかった";
-"elva__mark_yes"="はい";
-"elva__mark_yes_no_question"="お役に立ちましたか";
-"content_too_long"="No more than %ld chars!";
+"self_service_interface" = "セルフサービス";
+"offLine"= "ネットのアクセスがエラー発生しました、もう一度やり直してください！";
 "CustomerService"="HELP";
-"RewardBalance"="あなたのトークン:";
+"elva__mark_helpful_toast"="役に立ったと評価されました";
+"elva__mark_unhelpful_toast"="役に立たなかったと評価されました";
+"elva__mark_yes_no_question"="お役に立ちましたか?";
+"elva__mark_no"="いいえ";
+"elva__mark_yes"="はい";
+"RewardBalance"="ポイント残高";
 "GoTo" = "に行く";
-"Forum" = "Q&A フォーラム";
-"Tokens" = "Tokens";
-"Token" = "Token";
-"NoReward" = "今回は報われない";
-"CloseOK" ="閉じる";
-"RewardSuccess" = "成功報酬";
-"RewardFailure" = "報酬の不履行";
-"TokenInsufficient" = "不十分な点.";
-"NeedMoreHelp" = "Need more help?";
+"Forum" = "QAフォーム";
+"RewardSuccess" = "奨励成功";
+"RewardFailure" = "奨励失敗";
+"TokenInsufficient" = "残高が足りません";
+"NeedMoreHelp" = "他の質問もある？";

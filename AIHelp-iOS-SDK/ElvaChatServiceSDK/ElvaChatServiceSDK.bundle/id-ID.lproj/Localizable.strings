@@ -1,0 +1,18 @@
+//印度尼西亚语id,id-ID
+"content_too_long"="Tidak dapat melebihi %ld karakter!";
+"ContactCustomerService" = "Hubungi Kami";
+"self_service_interface" = "Self-Service";
+"offLine"= "Koneksi internet anda terputus, harap coba beberapa saat lagi";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Anda merasa terbantu";
+"elva__mark_unhelpful_toast"="Anda merasa tidak terbantu";
+"elva__mark_yes_no_question"="Apakah ini membantu?";
+"elva__mark_no"="TIDAK";
+"elva__mark_yes"="YA";
+"RewardBalance"="Token Anda:";
+"GoTo" = "Pergi ke";
+"Forum" = "Forum Q&A";
+"RewardSuccess" = "Berhasil";
+"RewardFailure" = "Gagal";
+"TokenInsufficient" = "Saldo token Anda tidak mencukupi";
+"NeedMoreHelp" = "butuh lebih bantuan?";

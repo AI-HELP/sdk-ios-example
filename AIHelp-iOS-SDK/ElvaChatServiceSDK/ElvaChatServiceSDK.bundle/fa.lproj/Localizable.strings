@@ -1,0 +1,32 @@
+//法斯语fa,fa-IR
+"content_too_long"="نباید از %ld حروف بیشتر باشد.";
+"ContactCustomerService" = "با ما تماس بگیرید";
+"self_service_interface" = "پشتیبانی";
+"offLine"= "اینترنت شما قطع می باشد ، لطفا بعدا امتحان کنید.";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="این کمک مفیدی بود";
+"elva__mark_unhelpful_toast"="کمک مفیدی نبود";
+"elva__mark_yes_no_question"="آیا این مفید بود؟";
+"elva__mark_no"="نه";
+"elva__mark_yes"="بله";
+"RewardBalance"="امتیاز باقیمانده شما";
+"GoTo" = "برو به";
+"Forum" = "گروه پرسش و پاسخ";
+"RewardSuccess" = "موفقیت آمیز";
+"RewardFailure" = "ناموفق";
+"TokenInsufficient" = "امتیاز شما کافی نیست .";
+"NeedMoreHelp" = "نیاز به کمک بیشتری دارید؟";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

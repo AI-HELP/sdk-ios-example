@@ -1,34 +1,18 @@
-/* 
-  Localizable.strings
-  ElvaTestIOS
-
-  Created by wwj on 16/5/30.
-  Copyright © 2016年 im30. All rights reserved.
-*/
-
-"ElvaChatService" = "ElvaChat Service";
-"offLine"="Your network is disconnected,please try again later";
+//西班牙语es
+"content_too_long"="No más de %ld caracteres!";
 "ContactCustomerService" = "CONTÁCTANOS";
-"self_service_interface"="services";
-"Message" = "Message";
-"WasHelp"="Was this helpful?";
-"NO"="NO";
-"YES"="YES";
-"elva__mark_helpful_toast"="Le resultó útil";
-"elva__mark_no"="NO";
-"elva__mark_unhelpful_toast"="No le resultó útil";
-"elva__mark_yes"="Sí";
-"elva__mark_yes_no_question"="¿Sirvió de ayuda";
-"content_too_long"="No more than %ld chars!";
+"self_service_interface" = "Autoservicio";
+"offLine"= "Su red está desconectada, inténtelo de nuevo más tarde.";
 "CustomerService"="HELP";
-"RewardBalance"="Your Tokens:";
-"GoTo" = "Go To The";
-"Forum" = "QA Forum";
-"Tokens" = "Tokens";
-"Token" = "Token";
-"NoReward" = "Not This Time";
-"CloseOK" ="OK";
-"RewardSuccess" = "Success";
-"RewardFailure" = "Fail";
-"TokenInsufficient" = "Your Tokens Is Insufficient.";
-"NeedMoreHelp" = "Need more help?";
+"elva__mark_helpful_toast"="Le resultó útil";
+"elva__mark_unhelpful_toast"="No le resultó útil";
+"elva__mark_yes_no_question"="¿Sirvió de ayuda";
+"elva__mark_no"="NO";
+"elva__mark_yes"="Sí";
+"RewardBalance"="Sus puntos:";
+"GoTo" = "Ir a";
+"Forum" = "Foro de QA";
+"RewardSuccess" = "Éxito";
+"RewardFailure" = "Ha fallado";
+"TokenInsufficient" = "Sus puntos son insuficientes";
+"NeedMoreHelp" = "Necesitas más ayuda?";

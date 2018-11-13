@@ -1,0 +1,24 @@
+//瑞典语sv,sv-FI,sv-SE
+"content_too_long"="Får inte vara längre än %ld tecken!";
+"ContactCustomerService" = "Kontakta KS";
+"self_service_interface" = "Självservice";
+"offLine"= "Anslutning bruten, försök igen!";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Fick du hjälp av detta?";
+"elva__mark_unhelpful_toast"="Fick du inte hjälp av detta?";
+"elva__mark_yes_no_question"="Fick du hjälp av detta?";
+"elva__mark_no"="Nej";
+"elva__mark_yes"="Ja";
+"RewardBalance"="Dina poäng:";
+"GoTo" = "Gå till";
+"Forum" = "Frågeforum";
+"RewardSuccess" = "Lyckades";
+"RewardFailure" = "Misslyckades";
+"TokenInsufficient" = "Du har inte tillräckligt med poäng";
+"NeedMoreHelp" = "Behöver mer hjälp?";
+
+
+
+
+
+

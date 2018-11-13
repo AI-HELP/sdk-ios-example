@@ -1,0 +1,24 @@
+//德语de,de-AT,de-CH,de-DE,de-LI,de-LU
+"content_too_long"="Nicht mehr al%ld Zeichen!";
+"ContactCustomerService" = "Kontaktieren uns";
+"self_service_interface" = "Selbst-Service";
+"offLine"= "Ihr Netzwerk ist getrennt, bitte versuchen Sie es später noch einmal";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Sie fanden es hilfreich.";
+"elva__mark_unhelpful_toast"="Sie finden es nicht hilfreich.";
+"elva__mark_yes_no_question"="Hilft das?";
+"elva__mark_no"="Nein";
+"elva__mark_yes"="Ja";
+"RewardBalance"="Ihre Tokens:";
+"GoTo" = "Gehen in die";
+"Forum" = "Gemeinschaft der Fragen und Antworten";
+"RewardSuccess" = "Erfolg";
+"RewardFailure" = "Fehlgeschlagen";
+"TokenInsufficient" = "Tokens reichen nicht aus";
+"NeedMoreHelp" = "Benötigen weitere Hilfe?";
+
+
+
+
+
+

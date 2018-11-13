@@ -1,34 +1,18 @@
-/* 
-  Localizable.strings
-  ElvaTestIOS
-
-  Created by wwj on 16/5/30.
-  Copyright © 2016年 im30. All rights reserved.
-*/
-
-"ElvaChatService" = "ElvaChat Service";
-"offLine"="Your network is disconnected,please try again later";
+//泰语th
+"content_too_long"="ไม่เกิน %ld ตัวอักษร!";
 "ContactCustomerService" = "ติดต่อเรา";
-"self_service_interface"="services";
-"Message" = "Message";
-"WasHelp"="Was this helpful?";
-"NO"="NO";
-"YES"="YES";
-"elva__mark_helpful_toast"="มีประโยชน์สำหรับคุณ";
-"elva__mark_no"="ไม่ใช่";
-"elva__mark_unhelpful_toast"="ไม่มีประโยชน์สำหรับคุณ";
-"elva__mark_yes"="ใช่";
-"elva__mark_yes_no_question"="ข้อมูลดังกล่าวมีประโยชน์หรือไม่";
-"content_too_long"="No more than %ld chars!";
+"self_service_interface" = "Self-Service";
+"offLine"= "การเชื่อมต่อผิดพลาด กรุณาเข้าระบบอีกครั้ง!";
 "CustomerService"="HELP";
-"RewardBalance"="Your Tokens:";
-"GoTo" = "Go To The";
-"Forum" = "QA Forum";
-"Tokens" = "Tokens";
-"Token" = "Token";
-"NoReward" = "Not This Time";
-"CloseOK" ="OK";
-"RewardSuccess" = "Success";
-"RewardFailure" = "Fail";
-"TokenInsufficient" = "Your Tokens Is Insufficient.";
-"NeedMoreHelp" = "Need more help?";
+"elva__mark_helpful_toast"="คำถามนี้ถูกระบุว่ามีประโยชน์";
+"elva__mark_unhelpful_toast"="คำถามนี้ถูกระบุว่าไม่มีประโยชน์";
+"elva__mark_yes_no_question"="ข้อมูลดังกล่าวมีประโยชน์หรือไม่";
+"elva__mark_no"="ไม่ใช่";
+"elva__mark_yes"="ใช่";
+"RewardBalance"="แต้มของคุณเหลือ:";
+"GoTo" = "ถึง";
+"Forum" = "ถามตอบ";
+"RewardSuccess" = "ให้รางวัลสำเร็จ";
+"RewardFailure" = "ให้รางวัลล้มเหลว";
+"TokenInsufficient" = "จำนวนคงเหลือไม่พอ";
+"NeedMoreHelp" = "ต้องการความช่วยเหลือ?";

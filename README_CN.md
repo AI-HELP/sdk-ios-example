@@ -210,6 +210,8 @@ appId:app唯一标识，从Web管理系统获取。<br />
 	[customData setObject:@"vip,pay1" forKey:@"AIHelp-tags"];
 	[customData setObject:@"1.0.0" forKey:@"VersionCode"];
 	[config setObject:customData forKey:@"AIHelp-custom-metadata"];
+    [config setObject:@"1" forKey:@"showContactButtonFlag"];   // 显示可以从FAQ列表右上角进入机器人客服
+    [config setObject:@"1" forKey:@"showConversationFlag"];    // 显示可以从FAQ进入人工客服,需要同时设置showContactButtonFlag
 	[ECServiceSdk showFAQSection:@"100" Config:config];
 
 **参数说明：**

@@ -1,34 +1,18 @@
-/* 
-  Localizable.strings
-  ElvaTestIOS
-
-  Created by wwj on 16/5/30.
-  Copyright © 2016年 im30. All rights reserved.
-*/
-
-"ElvaChatService" = "ElvaChat Service";
-"offLine"="Your network is disconnected,please try again later";
+//韩语ko
+"content_too_long"="%ld 단어를 초과 할 수 없습니다!";
 "ContactCustomerService" = "연락하기";
-"self_service_interface"="services";
-"Message" = "Message";
-"WasHelp"="Was this helpful?";
-"NO"="NO";
-"YES"="YES";
-"elva__mark_helpful_toast"="도움이 되는 내용입니다";
-"elva__mark_no"="아니요";
-"elva__mark_unhelpful_toast"="도움이 안 되요";
-"elva__mark_yes"="예";
-"elva__mark_yes_no_question"="도움이 되는 내용인가요";
-"content_too_long"="No more than %ld chars!";
+"self_service_interface" = "셀프 서비스";
+"offLine"= "네트워크 연결이 끊어졌습니다. 나중에 다시 시도하십시오.";
 "CustomerService"="HELP";
-"RewardBalance"="Your Tokens:";
-"GoTo" = "Go To The";
-"Forum" = "QA Forum";
-"Tokens" = "Tokens";
-"Token" = "Token";
-"NoReward" = "Not This Time";
-"CloseOK" ="OK";
-"RewardSuccess" = "Success";
-"RewardFailure" = "Fail";
-"TokenInsufficient" = "Your Tokens Is Insufficient.";
-"NeedMoreHelp" = "Need more help?";
+"elva__mark_helpful_toast"="질문이 도움이 되었다고 표시되었습니다";
+"elva__mark_unhelpful_toast"="질문이 도움이 되지 않았다고 표시되었습니다";
+"elva__mark_yes_no_question"="이 내용이 유용했나요?";
+"elva__mark_no"="아니요";
+"elva__mark_yes"="예";
+"RewardBalance"="포인트 잔고:";
+"GoTo" = "가기";
+"Forum" = "Q&A 커뮤니티";
+"RewardSuccess" = "성공";
+"RewardFailure" = "실패";
+"TokenInsufficient" = "토큰이 부족합니다.";
+"NeedMoreHelp" = "도움이 더 필요하십니까?";
