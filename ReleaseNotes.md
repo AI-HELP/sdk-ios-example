@@ -1,12 +1,15 @@
 # AIHelp iOS SDK Version Update
 
+## 1.4.3.2(latest)
+1. Repairing AIML Matching Timeout Problem of 32-bit iPhone
+
 ## 1.4.3
 1. Initialization Data Fetch Optimization
 2. iOS Chatbot response Optimization
 3. Chatbot rate Optimization
 4. FAQ Contact Us Optimization
 
-## 1.4.2(latest)
+## 1.4.2
 add offline robot.
 add reward modular.
 Adding armv7s architecture support
