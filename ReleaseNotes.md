@@ -1,6 +1,9 @@
 # AIHelp iOS SDK Version Update
 
-## 1.4.3.2(latest)
+## 1.4.3.3(latest)
+1. The problem of retrieving en data is still empty when the number of data bars is zero.
+
+## 1.4.3.2
 1. Repairing AIML Matching Timeout Problem of 32-bit iPhone
 
 ## 1.4.3
