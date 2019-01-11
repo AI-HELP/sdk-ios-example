@@ -1,6 +1,9 @@
 # AIHelp iOS SDK Version Update
 
-## 1.4.3.3(latest)
+## 1.4.3.4(latest)
+Modification of proxy IP address in Iran
+
+## 1.4.3.3
 1. The problem of retrieving en data is still empty when the number of data bars is zero.
 
 ## 1.4.3.2
