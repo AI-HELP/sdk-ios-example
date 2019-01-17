@@ -1,6 +1,9 @@
 # AIHelp iOS SDK Version Update
 
-## 1.4.3.4(latest)
+## 1.4.3.5(latest)
+1. Fix the failure of opening album under iOS 10 when no vertical screen permission is available
+
+## 1.4.3.4
 Modification of proxy IP address in Iran
 
 ## 1.4.3.3
