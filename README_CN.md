@@ -4,11 +4,12 @@
 ## 一、下载iOS SDK
 1. 点击上一个页面右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
 ## 二、导入ElvaChatServiceSDK
-1. 导入ElvaChatServiceSDK的文件到项目中     
+1. 导入ElvaChatServiceSDK的文件夹到项目中
 ## 三、接入工程配置
 1. 在xcode Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：`unrecognized selector sent to instance exception`
 2. 如果您的Xcode工程本身没有引入webkit.framework，那么你需要手动增加webkit.framework到工程里。
-3.  iOS10需要在工程的**info.plist**添加权限:<br>
+3. 如果您的Xcode工程本身没有引入libsqlite3.tbd，那么你需要手动增加libsqlite3.tbd到工程里。
+4.  iOS10需要在工程的**info.plist**添加权限:<br>
     `Privacy - Photo Library Usage Description`<br>
     `Privacy - Camera Usage Description`<br>
     iOS11需要在工程的**info.plist**添加权限:<br>
@@ -430,8 +431,6 @@
 |参数|说明|
 |:------------- |:---------------|
 |**game_name**|游戏名称，设置后将显示在SDK中相关界面导航栏。|
-
-![setName](https://github.com/CS30-NET/Pictures/blob/master/setName-CN-IOS.jpg "setName")
 
 **最佳实践：**
 > 在初始化后调用该接口设置游戏名称，将显示在AIHelp相关界面标题栏。
