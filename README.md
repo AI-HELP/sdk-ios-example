@@ -39,7 +39,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 
 # Start using SDK
 
-##  <a name="init"></a>SDK initialization（Must be called during application/game initialization, otherwise you can't use AIHelp properly）<br>
+##  <a name="init"></a>1. SDK initialization（Must be called during application/game initialization, otherwise you can't use AIHelp properly）<br>
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2.  In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
         
@@ -131,7 +131,7 @@ or
 |__showConversationFlag__|Should be "0" or "1". If set "1", the manual conversation entry will be displayed in the upper right hand side of the AI conversation interface.|
 |__config__|Optional parameters for custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.|
 
-![showElva](https://github.com/AIHELP-NET/Pictures/blob/master/showElva-EN-iOS.png "showElva")
+![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-EN-IOS.jpg "showElva")
 
 **Best Practice：**
 
@@ -142,7 +142,7 @@ or
 
 
 
-## <a name="showConversation"></a>10. Launch manual chat console, use `showConversation` (need to set [`UserName`](#UserName)) :<br />
+## <a name="showConversation"></a>3. Launch manual chat console, use `showConversation` (need to set [`UserName`](#UserName)) :<br />
 
     [ECServiceSdk showConversation:playerUid ServerId:serverId];
 
@@ -177,7 +177,7 @@ or
 |__serverId:__|The Unique Server ID|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
-![showConversation](https://github.com/AIHELP-NET/Pictures/blob/master/showConversation-EN-iOS.png "showConversation")
+![showConversation](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showConversation-EN-IOS.png "showConversation")
 
 **Best Practice：**
 > 1. Normally you don not need to use this method unless you intend to allow users to enter manual conversations without engaging with the AI chat. You may use this method as a privilege for some users.
@@ -189,7 +189,7 @@ or
 
 
 
-## <a name="showElvaOP"></a>3. Launch The Operation Interface, use `showElvaOP`:<br />
+## <a name="showElvaOP"></a>4. Launch The Operation Interface, use `showElvaOP`:<br />
 The operation module is useful when you want to present updates, news, articles or any background information about your APP/Game to users.
 
     [ECServiceSdk showElvaOP:playerName 
@@ -241,7 +241,7 @@ or
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.|
 |__defaultTabIndex__|Optional. The index of the first tab will to be shown when entering the operation interface. Default value is 0, default value of is the left-most tab, if you would like to show the AI conversation interface(the right-most) should be set to 999.|
 
-![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
+![showElvaOP](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
 
 **Best Practice：**
 > 1. Use this API to present news, announcements, articles or any useful information to users/players. Configure and publish the information in AIHelp web console. 
@@ -255,7 +255,7 @@ or
 
 
 
-## <a name="showFAQs"></a>4. Display FAQs, use `showFAQs` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+## <a name="showFAQs"></a>5. Display FAQs, use `showFAQs` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 	[ECServiceSdk showFAQs];
 
@@ -304,14 +304,14 @@ or
 |:------------- |:---------------|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 	
-![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-iOS.jpg "showFAQs")
+![showFAQs](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-IOS.jpg "showFAQs")
 
 **Best Practice：**
 > 1. Use this method to show FAQs about your APP/Game properly. Configure FAQs in AIHelp Web Console. Each FAQ can be categroized into a section. If the FAQs are great in number, you can also add Parent Sections to categorize sections to make things clear and organized. 
 
 
 
-## <a name="showFAQSection"></a>4. Display section "FAQ"“, use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+## <a name="showFAQSection"></a>6. Display section "FAQ"“, use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 
     [ECServiceSdk showFAQSection:sectionPublishId];
@@ -369,7 +369,7 @@ or
 
 
 
-## <a name="showSingleFAQ"></a>5. Show A Specific FAQ, use `showSingleFAQ` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+## <a name="showSingleFAQ"></a>7. Show A Specific FAQ, use `showSingleFAQ` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 	[ECServiceSdk showSingleFAQ:faqId];
 
@@ -419,14 +419,14 @@ or
 |__faqId__|The PublishID of the FAQ item, you can check it at [AIHelp Web Console](https://aihelp.net/elva): Find the FAQ in the FAQ menu and copy its PublishID.|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 	
-![showSingleFAQ](https://github.com/AIHELP-NET/Pictures/blob/master/showSingleFAQ-EN-iOS.jpg "showSingleFAQ")
+![showSingleFAQ](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.jpg "showSingleFAQ")
 
 **Best Practice：**
 > 1. Use this method when you want to show a specific FAQ in a proper location of your APP/Game.
 
 
 
-## <a name="setName"></a>6. Set Your App's Name for AIHelp SDK to Display, use `setName`:<br />
+## <a name="setName"></a>8. Set Your App's Name for AIHelp SDK to Display, use `setName`:<br />
 
 	[ECServiceSdk setName:game_name];
 
@@ -448,7 +448,7 @@ or
 
 
 
-## <a name="setUserId"></a>7. Set the Unique User ID, use `setUserId`:<br />
+## <a name="setUserId"></a>9. Set the Unique User ID, use `setUserId`:<br />
 
 	[ECServiceSdk setUserId:playerUid];
 
@@ -470,7 +470,7 @@ or
 
 
 
-## <a name="setUserName"></a>8. Set User Name, use `setUserName`:<br />
+## <a name="setUserName"></a>10. Set User Name, use `setUserName`:<br />
 
 	[ECServiceSdk setUserName:playerName];
 
@@ -493,7 +493,7 @@ or
 
 
 
-## <a name="setServerId"></a>9. Set Unique Server ID, use `setServerId`:<br />
+## <a name="setServerId"></a>11. Set Unique Server ID, use `setServerId`:<br />
 
 	[ECServiceSdk setServerId:serverId];
 
@@ -515,7 +515,7 @@ or
 
 
 
-## <a name="setSDKLanguage"></a>11. Set the SDK Language, use `setSDKLanguage`:<br />
+## <a name="setSDKLanguage"></a>12. Set the SDK Language, use `setSDKLanguage`:<br />
 
 Setting the SDK Language will change the FAQs, Operational information, AI Chat and SDK display language. 
 
