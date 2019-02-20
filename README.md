@@ -311,7 +311,7 @@ or
 
 
 
-## <a name="showFAQSection"></a>6. Display section "FAQ"“, use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+## <a name="showFAQSection"></a>6. Display section "FAQ", use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 
     [ECServiceSdk showFAQSection:sectionPublishId];
@@ -416,7 +416,7 @@ or
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__faqId__|The PublishID of the FAQ item, you can check it at [AIHelp Web Console](https://aihelp.net/elva): Find the FAQ in the FAQ menu and copy its PublishID.|
+|__faqId__|Number of FAQ. Open [AIHelp Background](https://aihelp.net/elva) and find the FAQ number of the specified FAQ under the **Robot Frequent Questions** page. Note that this FAQID cannot fill in the FAQ number that does not exist in the customer service backstage.|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 	
 ![showSingleFAQ](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.jpg "showSingleFAQ")
