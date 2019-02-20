@@ -29,7 +29,7 @@
 | [**setUserName**](#setUserName) | 设置玩家(用户)名称|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
 
-
+注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
 
 
 
@@ -175,11 +175,10 @@
 |**serverId**|玩家所在的服务器编号。|
 |**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
 
-![showConversation](https://github.com/CS30-NET/Pictures/blob/master/showConversation-CN-IOS.png "showConversation")
-
 **最佳实践：**
 > 通常你不需要调用这个接口，除非你想在应用里设置触发点，让用户有机会直接进入人工客服聊天界面。
 
+![showConversation](https://github.com/CS30-NET/Pictures/blob/master/showConversation-CN-IOS.png "showConversation")
 
 
 
@@ -187,6 +186,7 @@
 
 
 ## <a name="showElvaOP"></a>运营主界面启动，调用 `showElvaOP ` 方法
+当您想向用户展示应用程序/游戏的更新、新闻、文章或任何背景信息时，操作模块非常有用。
 
 	[ECServiceSdk showElvaOP:playerName 
 					PlayerUid:playerUid 
@@ -213,7 +213,7 @@
     [tags addObject:@"pay1"];
 
     NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:@"vip,pay1" forKey:@"elva-tags"]; //添加Tag值标签
+    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
     [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
 
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
@@ -268,7 +268,7 @@
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
     NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:@"vip,pay1" forKey:@"elva-tags"]; //添加Tag值标签
+    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
     [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
     [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
@@ -285,7 +285,7 @@
         [config setObject:@"1" forKey:@"showContactButtonFlag"];
     }
     //只显示人工
-    else if (self.sw_person.on && !self.sw_robot.on) {
+    else if (!isShowRobot && isShowConversation) {
         [config setObject:@"1" forKey:@"showContactButtonFlag"];
         [config setObject:@"1" forKey:@"directConversation"];
     }
@@ -325,7 +325,7 @@
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
     NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:@"vip,pay1" forKey:@"elva-tags"]; //添加Tag值标签
+    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
     [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
     [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
@@ -342,7 +342,7 @@
         [config setObject:@"1" forKey:@"showContactButtonFlag"];
     }
     //只显示人工
-    else if (self.sw_person.on && !self.sw_robot.on) {
+    else if (!isShowRobot && !isShowConversation) {
         [config setObject:@"1" forKey:@"showContactButtonFlag"];
         [config setObject:@"1" forKey:@"directConversation"];
     }
@@ -379,7 +379,7 @@
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
     NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:@"vip,pay1" forKey:@"elva-tags"]; //添加Tag值标签
+    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
     [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
     [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
@@ -396,7 +396,7 @@
         [config setObject:@"1" forKey:@"showContactButtonFlag"];
     }
     //只显示人工
-    else if (self.sw_person.on && !self.sw_robot.on) {
+    else if (!isShowRobot && isShowConversation) {
         [config setObject:@"1" forKey:@"showContactButtonFlag"];
         [config setObject:@"1" forKey:@"directConversation"];
     }
@@ -460,27 +460,6 @@
 
 
 
-## <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
-
-	[ECServiceSdk setServerId:serverId];
-
-**代码示例：**
-
-	[ECServiceSdk setServerId:@"SERVER_ID"];
-	
-**参数说明:**
-
-|参数|说明|
-|:------------- |:---------------|
-|**serverId**|服务器ID。|
-
-**最佳实践：**
-> 通常你无需调用该接口，可以用其他接口传入服务器ID，但是若要使用[自助服务](#selfservice)，则必须调用。
-
-
-
-
-
 
 ## <a name="setUserName"></a>设置玩家名称信息，调用 `setUserName` 方法()
 
@@ -499,6 +478,28 @@
 **最佳实践：**
 > 1. 传入你的App的用户名称，这样在后台客户服务页面会展示用户的应用内名称，便于客服在服务用户时个性化称呼对方。
 > 2. 通常你无需调用该接口，可以用其他接口传入用户名称，但是若要使用[自助服务](#selfservice)，则必须调用。
+
+
+
+
+## <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
+
+    [ECServiceSdk setServerId:serverId];
+
+**代码示例：**
+
+    [ECServiceSdk setServerId:@"SERVER_ID"];
+
+**参数说明:**
+
+|参数|说明|
+|:------------- |:---------------|
+|**serverId**|服务器ID。|
+
+**最佳实践：**
+> 通常你无需调用该接口，可以用其他接口传入服务器ID，但是若要使用[自助服务](#selfservice)，则必须调用。
+
+
 
 
 
