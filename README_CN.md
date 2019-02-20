@@ -43,7 +43,8 @@
         [ECServiceSdk init:appSecret
                     Domain:domain
                      AppId:appId];
-* 参数说明:
+                     
+**参数说明:**
 |参数|说明|
 |:------------- |:---------------|
 |**appSecret**|app密钥，从Web管理系统获取。|
@@ -115,7 +116,8 @@
         }
 	*/
 	
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**playerName**|游戏中玩家名称。|
@@ -163,7 +165,8 @@
 
     [ECServiceSdk showConversation:@"PLAYER_ID" ServerId:@"123" Config:config];
     
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**playerUid**|玩家在游戏里的唯一标示id。|
@@ -221,7 +224,8 @@
                 PlayershowConversationFlag:@"1" 
                 Config:config];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**playerName**|游戏中玩家名称。|
@@ -285,7 +289,8 @@
     }
     [ECServiceSdk showFAQs:config];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**config**|可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工或机器人聊天的入口功能|
@@ -341,7 +346,8 @@
     }
     [ECServiceSdk showFAQSection:@"100" Config:config];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**sectionPublishId**|FAQ Section的PublishID（可以在[AIHelp 后台](https://aihelp.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。|
@@ -394,7 +400,8 @@
     }
     [ECServiceSdk showSingleFAQ:@"20" Config:config];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**faqId**|FAQ的编号。打开[AIHelp 后台](https://aihelp.net/elva)中，在**机器人→常见问题**页面下找到指定FAQ的FAQ编号，注意：此FAQID不能填写客服后台未存在的FAQ编号。|
@@ -417,7 +424,8 @@
 
     [ECServiceSdk setName:@"Your Game"];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**game_name**|游戏名称，设置后将显示在SDK中相关界面导航栏。|
@@ -438,7 +446,8 @@
 
 	[ECServiceSdk setUserId:@"123ABC567DEF"];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**playerUid**|玩家唯一ID|
@@ -458,7 +467,8 @@
 
 	[ECServiceSdk setServerId:@"SERVER_ID"];
 	
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**serverId**|服务器ID。|
@@ -479,7 +489,8 @@
 
 	[ECServiceSdk setUserName:@"PLAYER_NAME"];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**playerName**|玩家名称。|
@@ -500,7 +511,8 @@
 
 	[ECServiceSdk setSDKLanguage:@"en"];
 
-* 参数说明:
+**参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**language**|语言名称代码。如英语为en,简体中文为zh_CN。更多语言简称参见[AIHelp后台](https://aihelp.net/elva)，"设置"-->"语言"的Alias列。|
