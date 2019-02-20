@@ -45,6 +45,7 @@
                      AppId:appId];
                      
 **参数说明:**
+
 |参数|说明|
 |:------------- |:---------------|
 |**appSecret**|app密钥，从Web管理系统获取。|
@@ -429,6 +430,7 @@
 |参数|说明|
 |:------------- |:---------------|
 |**game_name**|游戏名称，设置后将显示在SDK中相关界面导航栏。|
+
 ![setName](https://github.com/CS30-NET/Pictures/blob/master/setName-CN-IOS.jpg "setName")
 
 **最佳实践：**
