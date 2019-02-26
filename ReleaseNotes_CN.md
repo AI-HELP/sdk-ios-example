@@ -1,6 +1,8 @@
 # AIHelp iOS SDK版本更新
+## 1.4.3.6(latest)
+增加setRootViewController接口，兼容部分应用因多个window导致无法正确弹出elva视图的问题
 
-## 1.4.3.5(latest)
+## 1.4.3.5
 修复无竖屏权限时，在iOS 10下打开相册失败的问题
 
 ## 1.4.3.4

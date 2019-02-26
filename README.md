@@ -29,6 +29,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 | [**setUserName**](#setUserName) | Set User In-App Name|
 | [**setServerId**](#setServerId) | Set Unique Server ID|
 | [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|
+| [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
 
 **Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
 
@@ -536,6 +537,29 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 **Best Practice：**
 > 1. Normally AIHelp will use the mobile's language configuration by default. If you intend to make a different language setting, you need to use this method right after the SDK initialization.
 > 2. If your allow users to change the APP language, then you need to use this method to make AIHelp the same lanague as your APP.
+
+
+
+
+
+## <a name="setRootViewController"></a>13. setRootViewController, use `setRootViewController`:<br />
+
+
+**Coding Example：**
+
+    [ECServiceSdk setRootViewController:viewController];
+
+**About Parameters：**
+
+| Parameters | Description |
+|:------------- |:---------------|
+|__viewController__|Set up a view controller for popping up 'AIHelp'|
+
+**Best Practice：**
+> 1. If there are multiple windows and the interface such as showElva is called directly, the interface is called when the page cannot pop up.
+
+
+
 
 
 ##  Set a Different Greeting Story Line.

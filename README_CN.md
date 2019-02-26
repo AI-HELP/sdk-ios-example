@@ -28,6 +28,7 @@
 | [**setUserId**](#setUserId) | 设置玩家(用户)ID|
 | [**setUserName**](#setUserName) | 设置玩家(用户)名称|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
+| [**setRootViewController**](#setRootViewController) | 设置视图控制器以弹出'AIHelp'|
 
 注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
 
@@ -530,12 +531,28 @@
 
 
 
-## <a name="setChangeDirection"></a>设置SDK竖屏显示，调用 `setChangeDirection` 方法
 
-	[ECServiceSdk setChangeDirection];
+## <a name="setRootViewController"></a>13.设置视图控制器以弹出'AIHelp' , use `setRootViewController`:<br />
 
-* 说明:
->调用这个接口后，无论游戏的展示方向是横屏还是竖屏，SDK都是以竖屏展示，此时，SDK的显示效果最佳。如果不调用这个接口SDK会以游戏的方向为准。
+
+**代码示例：**
+
+    [ECServiceSdk setRootViewController:viewController];
+
+**参数说明:**
+
+|参数|说明|
+|:------------- |:---------------|
+|__viewController__|设置视图控制器以弹出'aihlep'|
+
+**Best Practice：**
+> 1. 如果存在多个window,且直接调用showElva等接口，页面无法弹出时，调用此接口
+
+
+
+
+
+
 
 
 

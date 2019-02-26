@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class UIViewController;
 @interface ECServiceSdk:NSObject
 
 + (void) registerUnityOnInitializedCallback:(NSString *) gameObject;
@@ -27,11 +28,11 @@
 + (void) setSDKLanguage:(NSString*) sdkLanguage;
 + (void) setChangeDirection;
 + (void) setUseDevice;
++ (void) setOpenLog:(BOOL)isOpen;
 + (void) setEvaluateStar:(int) star;
 + (void) setNoMenu;
 + (void) setSendCloseNotification:(BOOL) isSend;
 + (void) setAccelerateDomain:(NSString *)domain;
-+ (void) setOpenLog:(BOOL)isOpen;
 
 + (void) showVIPChat:(NSString*) appidWeb VIPTags:(NSString *) vipTags;
 
@@ -49,4 +50,5 @@
 + (void) showURL:(NSString *) url;
 + (void) setUnreadMessageFetchUid:(NSString*) playerUid;
 
++ (void) setRootViewController:(UIViewController*)rootViewController;
 @end

@@ -1,6 +1,9 @@
 # AIHelp iOS SDK Version Update
 
-## 1.4.3.5(latest)
+## 1.4.3.6(latest)
+1. Increase the'setRootViewController'interface, compatible applications can not properly pop up Elva view due to multiple windows
+
+## 1.4.3.5
 1. Fix the failure of opening album under iOS 10 when no vertical screen permission is available
 
 ## 1.4.3.4

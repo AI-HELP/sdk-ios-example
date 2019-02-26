@@ -6,27 +6,15 @@
 	<dict>
 		<key>Headers/ECServiceSdk.h</key>
 		<data>
-		R7uVHQdO3BB2h54BiyZU7f45TXE=
+		3qkSWuYhisiImYCpjrFwZQKHJo8=
 		</data>
 		<key>Headers/ElvaChatServiceSDK.h</key>
 		<data>
 		zvjJNXUq1tMPygHWKxbHcw+t/to=
 		</data>
-		<key>Headers/UnityForwardDecls.h</key>
-		<data>
-		EoGij/5BmK7cWWbj+ECBEyHcipw=
-		</data>
-		<key>Headers/UnityInterface.h</key>
-		<data>
-		P/sjx4YTcqreb+VGlwJdSXt3mew=
-		</data>
-		<key>Headers/UnityRendering.h</key>
-		<data>
-		tpS6Ojd+1vYtSX3a9iHqKBisk70=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		aPsZodAxj3+lEfZDw7gcQlZ9RzY=
+		cwn8seN+v/rBB2Hi5VmWKU7uuW4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R7uVHQdO3BB2h54BiyZU7f45TXE=
+			3qkSWuYhisiImYCpjrFwZQKHJo8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0KWDBFl6RcB7XrS9PcZavOPm8G/WIh71auQmj5qgQQg=
+			YaV6GnSBKockzXHduoLTjGs+b9E/vz9xb+kT7dGbNuI=
 			</data>
 		</dict>
 		<key>Headers/ElvaChatServiceSDK.h</key>
@@ -55,39 +43,6 @@
 			<key>hash2</key>
 			<data>
 			E5u6tslHRsk1y/hRCzNYA+Y7hUk9TOeyzXU8+CH94kM=
-			</data>
-		</dict>
-		<key>Headers/UnityForwardDecls.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EoGij/5BmK7cWWbj+ECBEyHcipw=
-			</data>
-			<key>hash2</key>
-			<data>
-			qGe/u1NQdJ0ozw4DJssg4Hf7XQAr3Nhq38AtL5lBFCc=
-			</data>
-		</dict>
-		<key>Headers/UnityInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P/sjx4YTcqreb+VGlwJdSXt3mew=
-			</data>
-			<key>hash2</key>
-			<data>
-			1YyuYhkj1P+cTNpiFzPHUDv5xbwuaaoRor5YNa5ch4w=
-			</data>
-		</dict>
-		<key>Headers/UnityRendering.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tpS6Ojd+1vYtSX3a9iHqKBisk70=
-			</data>
-			<key>hash2</key>
-			<data>
-			2za8ddck31K1kpTAgJkI63QlousiGlaiXPRV/mtdEYw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -104,7 +59,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -135,24 +90,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -188,13 +131,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
