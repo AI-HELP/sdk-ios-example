@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ECServiceSdk.h"
 //! Project version number for ElvaChatServiceSDK.
 FOUNDATION_EXPORT double ElvaChatServiceSDKVersionNumber;
 

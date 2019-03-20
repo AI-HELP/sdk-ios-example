@@ -9,6 +9,7 @@
 1. 在xcode Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：`unrecognized selector sent to instance exception`
 2. 如果您的Xcode工程本身没有引入webkit.framework，那么你需要手动增加webkit.framework到工程里。
 3. 如果您的Xcode工程本身没有引入libsqlite3.tbd，那么你需要手动增加libsqlite3.tbd到工程里。
+3. 如果您的Xcode工程本身没有引入libc++.tbd，那么你需要手动增加libc++.tbd到工程里。
 4.  iOS10需要在工程的**info.plist**添加权限:<br>
     `Privacy - Photo Library Usage Description`<br>
     `Privacy - Camera Usage Description`<br>

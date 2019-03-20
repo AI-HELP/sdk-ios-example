@@ -9,6 +9,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 1. Add `-ObjC` to Build Settings-Other Linker Flags.
 2. Add framework to Link Binary with Libraries: `webkit.framework`.
 3. Add framework to Link Binary with Libraries: `libsqlite3.tbd`.
+3. Add framework to Link Binary with Libraries: `libc++.tbd`.
 4. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
     `Privacy - Camera Usage Description` <br>
     `Privacy - Photo Library Usage Description`<br>

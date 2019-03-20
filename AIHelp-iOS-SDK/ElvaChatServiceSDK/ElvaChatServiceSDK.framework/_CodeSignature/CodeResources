@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/ECServiceSdk.h</key>
 		<data>
-		3qkSWuYhisiImYCpjrFwZQKHJo8=
+		ipuWYnuRzKN+RdagomP1jDNfh1w=
 		</data>
 		<key>Headers/ElvaChatServiceSDK.h</key>
 		<data>
-		zvjJNXUq1tMPygHWKxbHcw+t/to=
+		l5Pi5Uy0ySwGDf2ovm5azlXc9oE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cwn8seN+v/rBB2Hi5VmWKU7uuW4=
+		kVB58fSdQyxPoqh2GVUSbgFl1c4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,22 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3qkSWuYhisiImYCpjrFwZQKHJo8=
+			ipuWYnuRzKN+RdagomP1jDNfh1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			YaV6GnSBKockzXHduoLTjGs+b9E/vz9xb+kT7dGbNuI=
+			E4ka7Mo2uwfY1PphINf1tvy7Bz0P5zSPGwj5sKPFY88=
 			</data>
 		</dict>
 		<key>Headers/ElvaChatServiceSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zvjJNXUq1tMPygHWKxbHcw+t/to=
+			l5Pi5Uy0ySwGDf2ovm5azlXc9oE=
 			</data>
 			<key>hash2</key>
 			<data>
-			E5u6tslHRsk1y/hRCzNYA+Y7hUk9TOeyzXU8+CH94kM=
+			Q6I5CfL50VIkzgGlxDoD6mNSC+ES3EgxEHXo7o3KciQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
