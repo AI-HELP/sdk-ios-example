@@ -26,8 +26,8 @@
 | [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**setName**](#setName) | 设置在客服系统中显示的游戏名称|在初始化之后调用|
-| [**setUserId**](#setUserId) | 设置玩家(用户)ID|
-| [**setUserName**](#setUserName) | 设置玩家(用户)名称|
+| [**setUserId**](#setUserId) | 设置玩家(用户)ID,如果拿不到uid，传入空字符串串@""，系统会生成一个唯一设备id|
+| [**setUserName**](#setUserName) | 设置玩家(用户)名称，如果拿不到uname，传入空字符串串@""，会使用默认昵称"anonymous"|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
 | [**setRootViewController**](#setRootViewController) | 设置视图控制器以弹出'AIHelp'|
 
@@ -124,8 +124,8 @@
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|游戏中玩家名称。|
-|**playerUid**|玩家在游戏里的唯一标示id。|
+|**playerName**|游戏中玩家名称。如果拿不到uname，传入空字符串串@""，会使用默认昵称"anonymous"|
+|**playerUid**|玩家在游戏里的唯一标示id。如果拿不到uid，传入空字符串串@""，系统会生成一个唯一设备id|
 |**serverId**|玩家所在的服务器编号。|
 |**playerParseId**|传空字符串。|
 |**showConversationFlag**|参数的值是 “0” 或 “1”，标识是否开启人工入口。为 “1” 时，将在机器人客服聊天界面右上角，提供人工客服聊天的入口。如下图。。|
@@ -173,7 +173,7 @@
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerUid**|玩家在游戏里的唯一标示id。|
+|**playerUid**|玩家在游戏里的唯一标示id。如果拿不到uid，传入空字符串串@""，系统会生成一个唯一设备id|
 |**serverId**|玩家所在的服务器编号。|
 |**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
 
@@ -232,8 +232,8 @@
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|游戏中玩家名称。|
-|**playerUid**|玩家在游戏里的唯一标示id。|
+|**playerName**|游戏中玩家名称。如果拿不到uname，传入空字符串串@""，会使用默认昵称"anonymous"|
+|**playerUid**|玩家在游戏里的唯一标示id。如果拿不到uid，传入空字符串串@""，系统会生成一个唯一设备id|
 |**serverId**|玩家所在的服务器编号。|
 |**playerParseId**|传空字符串。如:@""|
 |**showConversationFlag**|参数的值是 “0” 或 “1”，标识是否开启人工入口。为 “1” 时，将在机器人客服聊天界面右上角，提供人工客服聊天的入口。如下图。|
@@ -453,10 +453,11 @@
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerUid**|玩家唯一ID|
+|**playerUid**|玩家唯一ID,如果拿不到uid，传入空字符串串@""，系统会生成一个唯一设备id|
 
 **最佳实践：**
 > 通常你可以用在其他接口传入用户Id，无需调用该接口，但是若要使用[自助服务](#selfservice)，则必须调用。
+
 
 
 
@@ -475,7 +476,7 @@
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|玩家名称。|
+|**playerName**|玩家名称。如果拿不到uname，传入空字符串串@""，会使用默认昵称"anonymous"|
 
 **最佳实践：**
 > 1. 传入你的App的用户名称，这样在后台客户服务页面会展示用户的应用内名称，便于客服在服务用户时个性化称呼对方。
