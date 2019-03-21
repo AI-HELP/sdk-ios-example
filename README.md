@@ -26,8 +26,8 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 | [**showFAQSection**](#showFAQSection)| Show FAQ Section|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | Show Single FAQ|Need to Configure FAQ,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
 | [**setName**](#setName) |Set Your App's Name for AIHelp SDK to Display|Use it After Initialization|
-| [**setUserId**](#setUserId) | Set unique User ID|
-| [**setUserName**](#setUserName) | Set User In-App Name|
+| [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
+| [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
 | [**setServerId**](#setServerId) | Set Unique Server ID|
 | [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|
 | [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
@@ -126,8 +126,8 @@ or
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__playerName__|In-App User Name|
-|__playerUid__|In-App Unique User ID|
+|__playerName__|In-App User Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
+|__playerUid__|In-App Unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 |__serverId__|The Server ID|
 |__playerParseId__|Can be empty string, can NOT be NULL.|
 |__showConversationFlag__|Should be "0" or "1". If set "1", the manual conversation entry will be displayed in the upper right hand side of the AI conversation interface.|
@@ -175,7 +175,7 @@ or
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__playerUid__|Unique User ID|
+|__playerUid__|Unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 |__serverId:__|The Unique Server ID|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
@@ -235,8 +235,8 @@ or
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__playerName__|User Name in Game/APP|
-|__playerUid__|Unique User ID|
+|__playerName__|User Name in Game/APP.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
+|__playerUid__|Unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 |__serverId__|The Server ID|
 |__playerParseId__|Can be empty string, can NOT be NULL.|
 |__showConversationFlag__|Should be "0" or "1". If set at "1", the manual conversation entry will be shown in the top right-hand corner of the AI conversation interface.|
@@ -462,7 +462,7 @@ or
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__playerUid__|Unique User ID|
+|__playerUid__|Unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 
 **Best Practice：**
 > 1. Normally you don not need to use this method if you have passed the user ID in another method.
@@ -484,7 +484,7 @@ or
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__playerName__|User/Player Name|
+|__playerName__|User/Player Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
 
 **Best Practice：**
 > 1. Use this method to set the user name, which will be shown in the web console's conversation page for the user. You can address the user with this name during the chat.
