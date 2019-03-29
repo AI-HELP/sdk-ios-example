@@ -1,6 +1,10 @@
 # AIHelp iOS SDK Version Update
 
-## 1.4.4.0 (latest)
+## 1.4.4.1
+1. Repair part of user form can not select multiple pictures.
+2. Default Mobile Device Language without SetSDK Language Interface.
+
+## 1.4.4.0
 1. Increase the customer service name of the manual interface
 2. Increase parent sorting
 3. Client evaluation options are customizable, multiple choices, and allow players to enter text
