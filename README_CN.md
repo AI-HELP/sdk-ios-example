@@ -89,7 +89,8 @@
 					Config:config];
 
 **代码示例:**
-
+    
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -156,6 +157,7 @@
 
     [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要先调用此方法
     
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -209,7 +211,7 @@
     
 **代码示例：**
 
-
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -266,6 +268,7 @@
     [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
     [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
     
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -323,6 +326,7 @@
     [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
     [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
 
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -377,6 +381,7 @@
     [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
     [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
 
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -568,6 +573,7 @@
 	
 **代码示例：**
     
+    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
     NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];

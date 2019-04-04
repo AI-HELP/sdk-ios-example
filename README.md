@@ -92,6 +92,7 @@ or
 
 **Coding Example：**
 
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -156,6 +157,7 @@ or
 
     [ECServiceSdk setUserName:@"PLAYER_NAME"];  //This method needs to be invoked first
     
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -213,6 +215,7 @@ or
 
 **Coding Example：**
 
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -271,6 +274,7 @@ or
     [ECServiceSdk setUserName:@"PLAYER_NAME"];
     [ECServiceSdk setUserId:@"123ABC567DEF"];
     
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -328,6 +332,7 @@ or
     [ECServiceSdk setUserName:@"PLAYER_NAME"];
     [ECServiceSdk setUserId:@"123ABC567DEF"];
 
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -385,6 +390,7 @@ or
     [ECServiceSdk setUserName:@"PLAYER_NAME"];
     [ECServiceSdk setUserId:@"123ABC567DEF"];
 
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
@@ -572,6 +578,7 @@ If your APP provides multiple entries to AIHelp, and you intend to introduce dif
 
 **Coding Example：**
 
+    //You need to add the same label to'AIHelp Web Console'before it takes effect.
     NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
     [tags addObject:@"vip"];
     [tags addObject:@"pay1"];
