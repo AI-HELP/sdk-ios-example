@@ -1,5 +1,8 @@
 # AIHelp iOS SDK Version Update
 
+## 1.4.4.2
+1. repair unity project horizontal screen game + vertical screen lock open, resulting in device direction and screen interface direction inconsistent (i.e. sometimes horizontal screen and sometimes vertical screen)
+
 ## 1.4.4.1
 1. Repair part of user form can not select multiple pictures.
 2. Default Mobile Device Language without SetSDK Language Interface.

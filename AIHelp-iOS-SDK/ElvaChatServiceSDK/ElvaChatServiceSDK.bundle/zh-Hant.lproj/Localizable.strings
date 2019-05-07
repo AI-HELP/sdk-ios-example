@@ -1,6 +1,6 @@
 //中文繁体zh-Hant
 "content_too_long"="不能超過%ld個字！";
-"ContactCustomerService" = "聯系客服";
+"ContactCustomerService" = "聯繫客服";
 "self_service_interface" = "自助服務";
 "offLine"= "您的連結已經斷開,請重新進入!";
 "CustomerService"="HELP";

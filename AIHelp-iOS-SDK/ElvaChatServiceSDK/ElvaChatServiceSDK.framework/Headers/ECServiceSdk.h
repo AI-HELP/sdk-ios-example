@@ -50,6 +50,7 @@
 + (void) setEvaluateStar:(int) star;//设置默认评价星星个数
 
 + (void) setChangeDirection;
++ (void) setSDKInterfaceOrientationMask:(NSUInteger)interfaceOrientationMask;
 + (void) setNoMenu;
 
 + (void) setVIP:(NSString *)userName userId:(NSString *)userId config:(NSDictionary*)config;
