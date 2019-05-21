@@ -1,4 +1,6 @@
 # AIHelp iOS SDK Version Update
+## 1.4.4.3
+1. Repair the manual page display reward button display abnormal
 
 ## 1.4.4.2
 1. repair unity project horizontal screen game + vertical screen lock open, resulting in device direction and screen interface direction inconsistent (i.e. sometimes horizontal screen and sometimes vertical screen)
