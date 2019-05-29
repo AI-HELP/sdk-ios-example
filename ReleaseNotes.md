@@ -2,7 +2,7 @@
 
 ## 1.4.4.4
 1. Increase the disconnection reconnection function
-2. Fix iOS10 version, hyperlink in UITextView needs long press
+2. In versions below IOS 10,Fix hyperlink text clicks in the story line need to be long pressed
 3. Album supports iCloud update
 
 ## 1.4.4.3
