@@ -1,8 +1,8 @@
 //中文繁体zh-Hant
 "content_too_long"="不能超過%ld個字！";
-"ContactCustomerService" = "聯繫客服";
+"ContactCustomerService" = "聯系客服";
 "self_service_interface" = "自助服務";
-"offLine"= "您的連結已經斷開,請重新進入!";
+"offLine"= "您的網絡連接已經斷開,請檢查網絡!";
 "CustomerService"="HELP";
 "elva__mark_helpful_toast"="妳發現這有幫助";
 "elva__mark_unhelpful_toast"="妳發現這無幫助";

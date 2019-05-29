@@ -1,5 +1,10 @@
 # AIHelp iOS SDK Version Update
 
+## 1.4.4.4
+1. Increase the disconnection reconnection function
+2. Fix iOS10 version, hyperlink in UITextView needs long press
+3. Album supports iCloud update
+
 ## 1.4.4.3
 1. Repair the manual page display reward button display abnormal
 

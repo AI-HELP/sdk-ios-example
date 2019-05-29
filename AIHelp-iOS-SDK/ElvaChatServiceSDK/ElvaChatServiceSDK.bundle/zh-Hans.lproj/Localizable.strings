@@ -2,7 +2,7 @@
 "content_too_long"="不能超过%ld个字！";
 "ContactCustomerService" = "联系客服";
 "self_service_interface" = "自助服务";
-"offLine"= "您的链接已经断开,请重新进入!";
+"offLine"= "您的网络连接已经断开,请检查网络!";
 "CustomerService"="HELP";
 "elva__mark_helpful_toast"="你发现这有帮助";
 "elva__mark_unhelpful_toast"="你发现这无帮助";
