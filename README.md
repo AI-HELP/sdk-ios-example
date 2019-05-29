@@ -1,6 +1,6 @@
 [中文版接入文档](https://github.com/AI-HELP/iOS-SDK-stable/blob/master/README_CN.md)
 # AIHelp iOS SDK Integration Guide
-1. SDK supports iOS versions 8 and above.
+1. While reading this document, we assume that you've already had the experience of developing IOS. SDK supports iOS versions 8 and above.
 ## Ⅰ. Download iOS SDK
 Click the button "Clone or download" in the top right corner to download iOS SDK and then unzip the file.
 ## Ⅱ. Import ElvaChatServiceSDK into project
@@ -9,8 +9,8 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 1. Add `-ObjC` to Build Settings-Other Linker Flags.
 2. Add framework to Link Binary with Libraries: `webkit.framework`.
 3. Add framework to Link Binary with Libraries: `libsqlite3.tbd`.
-3. Add framework to Link Binary with Libraries: `libc++.tbd`.
-4. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
+4. Add framework to Link Binary with Libraries: `libc++.tbd`.
+5. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
     `Privacy - Camera Usage Description` <br>
     `Privacy - Photo Library Usage Description`<br>
     IOS 11 needs to add permissions to **info. plist** of the project:<br>
@@ -43,7 +43,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 
 ##  <a name="init"></a>1. SDK initialization（Must be called during application/game initialization, otherwise you can't use AIHelp properly）<br>
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
-2.  In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
+2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
         
         [ECServiceSdk init:appSecret 
                     Domain:domain
@@ -53,9 +53,9 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 
 | Parameters | Description |
 |:------------- |:---------------|
-| **appSecret**    | Your unique Developer API Key|
-| **domain**     | Your AIHelp Domain Name. For example: foo.AIHELP.NET|
-| **appId**     | A unique ID Assigned to your App.| 
+| **appSecret**    | Your unique Developer API Key,obtained from the web management system|
+| **domain**     | Your AIHelp Domain Name. For example: foo.AIHELP.NET,obtained from the web management system|
+| **appId**     | A unique ID Assigned to your App,obtained from the web management system| 
 
 Note: Please log into [AIHelp Web Console](https://aihelp.net/elva) with your registered email account to find the __appKey__, __domain__ and __appId__ In the _Application_ page of the _Settings_ Menu. 
 If your company doesn't have an account, you need to register an account at [AIHelp Website](http://aihelp.net/index.html)
@@ -139,7 +139,7 @@ or
 **Best Practice：**
 
 > 1. Use this method to launch your APP's customer service. Configure specific welcome texts and AI story lines in the AIHelp Web Console to better the customer support experiences.
-> 2. Enable Manual Conversation Entry to allow users' to chat with your human support team with the  parameter "__showConversationFlag__" setting to "__1__", you may use this method for any user or as a privilege for some users only.
+> 2. Enable Manual Conversation Entry to allow users' to chat with your customer support team with the  parameter "__showConversationFlag__" setting to "__1__", you may use this method for any user or as a privilege for some users only.
 
 
 
@@ -426,7 +426,9 @@ or
 |:------------- |:---------------|
 |__faqId__|Number of FAQ. Open [AIHelp Background](https://aihelp.net/elva) and find the FAQ number of the specified FAQ under the **Robot Frequent Questions** page. Note that this FAQID cannot fill in the FAQ number that does not exist in the customer service backstage.|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
-	
+
+Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, and the SDK is configured with related parameters, the FAQ will be displayed, and the function menu will be provided in the upper right corner to call the related self-service.
+
 ![showSingleFAQ](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.jpg "showSingleFAQ")
 
 **Best Practice：**
@@ -471,7 +473,7 @@ or
 |__playerUid__|Unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 
 **Best Practice：**
-> 1. Normally you don not need to use this method if you have passed the user ID in another method.
+> 1. Normally you do not need to use this method if you have passed the user ID in another method.
 
 
 
