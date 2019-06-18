@@ -1,6 +1,7 @@
 [中文版接入文档](https://github.com/AI-HELP/iOS-SDK-stable/blob/master/README_CN.md)
 # AIHelp iOS SDK Integration Guide
 1. While reading this document, we assume that you've already had the experience of developing IOS. SDK supports iOS versions 8 and above.
+2. Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.
 ## Ⅰ. Download iOS SDK
 Click the button "Clone or download" in the top right corner to download iOS SDK and then unzip the file.
 ## Ⅱ. Import ElvaChatServiceSDK into project
@@ -41,7 +42,8 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 
 # Start using SDK
 
-##  <a name="init"></a>1. SDK initialization（Must be called during application/game initialization, otherwise you can't use AIHelp properly）<br>
+##  <a name="init"></a>1. SDK initialization（Must be called during application/game initialization, otherwise you can't use AIHelp properly）
+## Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B. <br>
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
         
