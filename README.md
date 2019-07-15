@@ -43,7 +43,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 # Start using SDK
 
 ##  <a name="init"></a>1. SDK initialization（Must be called during application/game initialization, otherwise you can't use AIHelp properly）
-## Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B. <br>
+**Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
         
