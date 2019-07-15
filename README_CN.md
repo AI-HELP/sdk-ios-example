@@ -39,7 +39,7 @@
 
 
 # 开始使用SDK
-##  <a name="init"></a>SDK初始化（必须在游戏应用启动阶段调用）
+##  <a name="init"></a>SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
 1. 引入相关头文件 #import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>
 2. 在工程的 AppDelegate 中的`application:didFinishLaunchingWithOptions`方法中，调用 SDK 初始化方法。
