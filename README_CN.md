@@ -1,12 +1,12 @@
 [英文版接入文档](https://github.com/AI-HELP/iOS-SDK-stable/blob/master/README.md)
-# IOS SDK 接入说明
+## IOS SDK 接入说明
 1. 在您阅读此文档时，我们假定您已经具备了基础的 iOS 应用开发经验，并能够理解相关基础概念，SDK支持iOS8及以上iOS版本。
 2. 甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。
-## 一、下载iOS SDK
+### 一、下载iOS SDK
 1. 点击上一个页面右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
-## 二、导入ElvaChatServiceSDK
+### 二、导入ElvaChatServiceSDK
 1. 导入ElvaChatServiceSDK的文件夹到项目中
-## 三、接入工程配置
+### 三、接入工程配置
 1. 在xcode Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：`unrecognized selector sent to instance exception`
 2. 如果您的Xcode工程本身没有引入webkit.framework，那么你需要手动增加webkit.framework到工程里。
 3. 如果您的Xcode工程本身没有引入libsqlite3.tbd，那么你需要手动增加libsqlite3.tbd到工程里。
@@ -16,7 +16,7 @@
     `Privacy - Camera Usage Description`<br>
     iOS11需要在工程的**info.plist**添加权限:<br>
     `Privacy - Photo Library Additions Usage Description`<br>
-## 四、接口简介
+### 四、接口简介
 | 接口名 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
 | [**init**](#init)      | 初始化 | 
@@ -38,8 +38,9 @@
 
 
 
-# 开始使用SDK
-##  <a name="init"></a>SDK初始化（必须在应用启动阶段调用）
+## 开始使用SDK
+
+###  <a name="init"></a>SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
 1. 引入相关头文件 #import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>
 2. 在工程的 AppDelegate 中的`application:didFinishLaunchingWithOptions`方法中，调用 SDK 初始化方法。
@@ -58,9 +59,10 @@
 
 注：后面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 后台](https://aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[智能客服官网](http://aihelp.net/index.html)自助注册。<br />
 
-**代码示例**
+**初始化代码示例：（必须在应用启动阶段调用）** <br />
+**甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，
+如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
 ```
-// 一定要在应用初始化时进行初始化init操作，否则无法进入AIHelp智能客服系统。
 [ECServiceSdk init:@"YOUR_API_KEY"
             Domain:@"YOUR_DOMAIN_NAME"
              AppId:@"YOUR_APP_ID"];
@@ -72,7 +74,7 @@
 
 
 
-## <a name="showElva"></a>智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
+### <a name="showElva"></a>智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
 
 	[ECServiceSdk showElva:playerName
     				PlayerUid:playerUid
@@ -146,7 +148,7 @@
 
 
 
-## <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 已经调用)
+### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 已经调用)
 
     [ECServiceSdk showConversation:playerUid ServerId:serverId];
 
@@ -190,7 +192,7 @@
 
 
 
-## <a name="showElvaOP"></a>运营主界面启动，调用 `showElvaOP ` 方法
+### <a name="showElvaOP"></a>运营主界面启动，调用 `showElvaOP ` 方法
 当您想向用户展示应用程序/游戏的更新、新闻、文章或任何背景信息时，操作模块非常有用。
 
 	[ECServiceSdk showElvaOP:playerName 
@@ -256,7 +258,7 @@
 
 
 
-## <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
+### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
 
     [ECServiceSdk showFAQs];
 
@@ -314,7 +316,7 @@
 
 
 
-## <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
+### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
 
     [ECServiceSdk showFAQSection:sectionPublishId];
 
@@ -369,7 +371,7 @@
 
 
 
-## <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
+### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
 
 	[ECServiceSdk showSingleFAQ:faqId];
 
@@ -426,7 +428,7 @@
 
 
 
-## <a name="setName"></a>设置游戏名称信息，调用 `setName` 方法
+### <a name="setName"></a>设置游戏名称信息，调用 `setName` 方法
 
     [ECServiceSdk setName:game_name];
 
@@ -447,7 +449,7 @@
 
 
 
-## <a name="setUserId"></a>设置用户唯一id信息，调用 `setUserId` 方法(使用自助服务必须调用，参见展示单条FAQ)
+### <a name="setUserId"></a>设置用户唯一id信息，调用 `setUserId` 方法(使用自助服务必须调用，参见展示单条FAQ)
 
 	[ECServiceSdk setUserId:playerUid];
 
@@ -470,7 +472,7 @@
 
 
 
-## <a name="setUserName"></a>设置玩家名称信息，调用 `setUserName` 方法()
+### <a name="setUserName"></a>设置玩家名称信息，调用 `setUserName` 方法()
 
 	[ECServiceSdk setUserName:playerName];
 
@@ -491,7 +493,7 @@
 
 
 
-## <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
+### <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
 
     [ECServiceSdk setServerId:serverId];
 
@@ -514,7 +516,7 @@
 
 
 
-## <a name="setSDKLanguage"></a>设置SDK语言，调用 `setSDKLanguage` 方法
+### <a name="setSDKLanguage"></a>设置SDK语言，调用 `setSDKLanguage` 方法
 
 	[ECServiceSdk setSDKLanguage:language];
 	
@@ -540,7 +542,7 @@
 
 
 
-## <a name="setRootViewController"></a>13.设置视图控制器以弹出'AIHelp' , use `setRootViewController`:<br />
+### <a name="setRootViewController"></a>13.设置视图控制器以弹出'AIHelp' , use `setRootViewController`:<br />
 
 
 **代码示例：**
@@ -565,7 +567,7 @@
 
 
 
-## 设置另一个欢迎语。
+### 设置另一个欢迎语。
 
 如果你设置了进入AI客服的不同入口，希望用户从不同的入口进入AI客服时显示不同的欢迎语，进入不同故事线，可以通过设置config参数来实现： 
 

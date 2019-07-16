@@ -1,12 +1,12 @@
 [中文版接入文档](https://github.com/AI-HELP/iOS-SDK-stable/blob/master/README_CN.md)
-# AIHelp iOS SDK Integration Guide
+## AIHelp iOS SDK Integration Guide
 1. While reading this document, we assume that you've already had the experience of developing IOS. SDK supports iOS versions 8 and above.
 2. Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.
-## Ⅰ. Download iOS SDK
+### Ⅰ. Download iOS SDK
 Click the button "Clone or download" in the top right corner to download iOS SDK and then unzip the file.
-## Ⅱ. Import ElvaChatServiceSDK into project
+### Ⅱ. Import ElvaChatServiceSDK into project
 1. Copy the ElvaChatServiceSDK folder to your main directory.
-## Ⅲ. Project Settings
+### Ⅲ. Project Settings
 1. Add `-ObjC` to Build Settings-Other Linker Flags.
 2. Add framework to Link Binary with Libraries: `webkit.framework`.
 3. Add framework to Link Binary with Libraries: `libsqlite3.tbd`.
@@ -16,7 +16,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
     `Privacy - Photo Library Usage Description`<br>
     IOS 11 needs to add permissions to **info. plist** of the project:<br>
     `Privacy - Photo Library Additions Usage Description`<br>
-## Ⅳ. API Summary:
+### Ⅳ. API Summary:
 | Method | Purpose |Prerequisites|
 |:------------- |:---------------|:---------------|
 | [**init**](#init)      | SDK initialization | 
@@ -40,9 +40,9 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 
 
 
-# Start using SDK
+## Start using SDK
 
-##  <a name="init"></a>1. SDK initialization（Must be called during application initialization, otherwise you can't use AIHelp properly）
+###  <a name="init"></a>SDK initialization（Must be called during application initialization, otherwise you can't use AIHelp properly）
 **Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
@@ -62,10 +62,10 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 Note: Please log into [AIHelp Web Console](https://aihelp.net/elva) with your registered email account to find the __appKey__, __domain__ and __appId__ In the _Application_ page of the _Settings_ Menu. 
 If your company doesn't have an account, you need to register an account at [AIHelp Website](http://aihelp.net/index.html)
 
-**Coding Example：**
+**Coding Example：(Must be called during application initialization, otherwise you can't use AIHelp properly)**<br />
+**Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 
 ```
-// Must be called during application/game initialization, otherwise you can't use AIHelp properly.
 [ECServiceSdk init:@"YOUR_API_KEY"
             Domain:@"YOUR_DOMAIN_NAME"
             AppId:@"YOUR_APP_ID"];
@@ -73,9 +73,7 @@ If your company doesn't have an account, you need to register an account at [AIH
 
 
 
-
-
-## <a name="showElva"></a>2. Launch the AI Conversation Interface, Use `showElva`:<br />
+### <a name="showElva"></a>2. Launch the AI Conversation Interface, Use `showElva`:<br />
 
     [ECServiceSdk showElva:playerName
                 PlayerUid:playerUid
@@ -147,7 +145,7 @@ or
 
 
 
-## <a name="showConversation"></a>3. Launch manual chat console, use `showConversation` (need to set [`UserName`](#UserName)) :<br />
+### <a name="showConversation"></a>3. Launch manual chat console, use `showConversation` (need to set [`UserName`](#UserName)) :<br />
 
     [ECServiceSdk showConversation:playerUid ServerId:serverId];
 
@@ -195,7 +193,7 @@ or
 
 
 
-## <a name="showElvaOP"></a>4. Launch The Operation Interface, use `showElvaOP`:<br />
+### <a name="showElvaOP"></a>4. Launch The Operation Interface, use `showElvaOP`:<br />
 The operation module is useful when you want to present updates, news, articles or any background information about your APP/Game to users.
 
     [ECServiceSdk showElvaOP:playerName 
@@ -262,7 +260,7 @@ or
 
 
 
-## <a name="showFAQs"></a>5. Display FAQs, use `showFAQs` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+### <a name="showFAQs"></a>5. Display FAQs, use `showFAQs` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 	[ECServiceSdk showFAQs];
 
@@ -319,7 +317,7 @@ or
 
 
 
-## <a name="showFAQSection"></a>6. Display section "FAQ", use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+### <a name="showFAQSection"></a>6. Display section "FAQ", use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 
     [ECServiceSdk showFAQSection:sectionPublishId];
@@ -378,7 +376,7 @@ or
 
 
 
-## <a name="showSingleFAQ"></a>7. Show A Specific FAQ, use `showSingleFAQ` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
+### <a name="showSingleFAQ"></a>7. Show A Specific FAQ, use `showSingleFAQ` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
 	[ECServiceSdk showSingleFAQ:faqId];
 
@@ -438,7 +436,7 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 
-## <a name="setName"></a>8. Set Your App's Name for AIHelp SDK to Display, use `setName`:<br />
+### <a name="setName"></a>8. Set Your App's Name for AIHelp SDK to Display, use `setName`:<br />
 
 	[ECServiceSdk setName:game_name];
 
@@ -460,7 +458,7 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 
-## <a name="setUserId"></a>9. Set the Unique User ID, use `setUserId`:<br />
+### <a name="setUserId"></a>9. Set the Unique User ID, use `setUserId`:<br />
 
 	[ECServiceSdk setUserId:playerUid];
 
@@ -482,7 +480,7 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 
-## <a name="setUserName"></a>10. Set User Name, use `setUserName`:<br />
+### <a name="setUserName"></a>10. Set User Name, use `setUserName`:<br />
 
 	[ECServiceSdk setUserName:playerName];
 
@@ -505,7 +503,7 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 
-## <a name="setServerId"></a>11. Set Unique Server ID, use `setServerId`:<br />
+### <a name="setServerId"></a>11. Set Unique Server ID, use `setServerId`:<br />
 
 	[ECServiceSdk setServerId:serverId];
 
@@ -527,7 +525,7 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 
-## <a name="setSDKLanguage"></a>12. Set the SDK Language, use `setSDKLanguage`:<br />
+### <a name="setSDKLanguage"></a>12. Set the SDK Language, use `setSDKLanguage`:<br />
 
 Setting the SDK Language will change the FAQs, Operational information, AI Chat and SDK display language. 
 
@@ -553,7 +551,7 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 
 
 
-## <a name="setRootViewController"></a>13. setRootViewController, use `setRootViewController`:<br />
+### <a name="setRootViewController"></a>13. setRootViewController, use `setRootViewController`:<br />
 
 
 **Coding Example：**
@@ -573,7 +571,7 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 
 
 
-##  Set a Different Greeting Story Line.
+###  Set a Different Greeting Story Line.
 
 If your APP provides multiple entries to AIHelp, and you intend to introduce different AI welcome texts and story lines to users from different entries, you can set config parameter in [showElva](#showElva) or [showElvaOP](#showElvaOP)： 
 
