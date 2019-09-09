@@ -534,7 +534,7 @@
 |:------------- |:---------------|
 |**language**|语言名称代码。如英语为en,简体中文为zh_CN。更多语言简称参见[AIHelp后台](https://aihelp.net/elva)，"设置"-->"语言"的Alias列。|
 
-<img src="httXps://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="320" height="400" alt="语言Alias列">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="320" height="400" alt="语言Alias列">
 
 
 **最佳实践：**
