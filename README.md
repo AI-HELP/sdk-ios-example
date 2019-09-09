@@ -134,7 +134,7 @@ or
 |__showConversationFlag__|Should be "0" or "1". If set "1", the manual conversation entry will be displayed in the upper right hand side of the AI conversation interface.|
 |__config__|Optional parameters for custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.|
 
-![showElva](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-EN-IOS.jpg "showElva")
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-EN-IOS.jpg?raw=true" width="320" height="568" alt="showElva">
 
 **Best Practice：**
 
@@ -181,7 +181,7 @@ or
 |__serverId:__|The Unique Server ID|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
-![showConversation](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showConversation-EN-IOS.png "showConversation")
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showConversation-EN-IOS.png?raw=true" width="320" height="568" alt="showConversation">
 
 **Best Practice：**
 > 1. Normally you don not need to use this method unless you intend to allow users to enter manual conversations without engaging with the AI chat. You may use this method as a privilege for some users.
@@ -246,7 +246,8 @@ or
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.|
 |__defaultTabIndex__|Optional. The index of the first tab will to be shown when entering the operation interface. Default value is 0, default value of is the left-most tab, if you would like to show the AI conversation interface(the right-most) should be set to 999.|
 
-![showElvaOP](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png "showElvaOP")
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png?raw=true" width="320" height="568" alt="showElvaOP">
+
 
 **Best Practice：**
 > 1. Use this API to present news, announcements, articles or any useful information to users/players. Configure and publish the information in AIHelp web console. 
@@ -310,7 +311,7 @@ or
 |:------------- |:---------------|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 	
-![showFAQs](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-IOS.jpg "showFAQs")
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-IOS.jpg?raw=true" width="320" height="568" alt="showFAQs">
 
 **Best Practice：**
 > 1. Use this method to show FAQs about your APP/Game properly. Configure FAQs in AIHelp Web Console. Each FAQ can be categroized into a section. If the FAQs are great in number, you can also add Parent Sections to categorize sections to make things clear and organized. 
@@ -369,9 +370,7 @@ or
 |__sectionPublishId__|The PublishID of the FAQ item, you can check it at [AIHelp Web Console](https://aihelp.net/elva): Find the FAQ in the FAQ menu and copy its PublishID.|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
-![showFAQSection](https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg "showFAQSection")
-
-
+<img src="https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg?raw=true" width="320" height="568" alt="showFAQSection">
 
 
 
@@ -429,7 +428,7 @@ or
 
 Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, and the SDK is configured with related parameters, the FAQ will be displayed, and the function menu will be provided in the upper right corner to call the related self-service.
 
-![showSingleFAQ](https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.jpg "showSingleFAQ")
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.jpg?raw=true" width="320" height="568" alt="showSingleFAQ">
 
 **Best Practice：**
 > 1. Use this method when you want to show a specific FAQ in a proper location of your APP/Game.
@@ -541,7 +540,8 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 |:------------- |:---------------|
 |__language__|Standard Language Alias. For example: en is for English, zh_CN is for Simplified Chinese. More language labels can be viewed at [AIHelp Web Console](https://aihelp.net/elva):"Settings"-->"Language"->Alias.|
 
-![language](https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png "Language Alias")
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="320" height="400" alt="Language Alias">
+
 
 **Best Practice：**
 > 1. Normally AIHelp will use the mobile's language configuration by default. If you intend to make a different language setting, you need to use this method right after the SDK initialization.
