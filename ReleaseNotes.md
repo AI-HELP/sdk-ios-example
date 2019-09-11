@@ -1,5 +1,10 @@
 # AIHelp iOS SDK Version Update
 
+## 1.5.0.1
+1. Added faq point stamping information collection popup
+2. Add client to add draft function
+3. New operational module client article list can be customized by background color
+
 ## 1.4.4.4
 1. Increase the disconnection reconnection function
 2. In versions below IOS 10,Fix hyperlink text clicks in the story line need to be long pressed

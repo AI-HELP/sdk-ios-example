@@ -16,3 +16,8 @@
 "RewardFailure" = "Failed";
 "TokenInsufficient" = "Your tokens is insufficient";
 "NeedMoreHelp" = "Need more help?";
+"your question"="your question";
+"Cancel"="Cancel";
+"Oops, no relevant results were found"="Oops, no relevant results were found";
+"Success"="Success";
+"Failed"="Failed";

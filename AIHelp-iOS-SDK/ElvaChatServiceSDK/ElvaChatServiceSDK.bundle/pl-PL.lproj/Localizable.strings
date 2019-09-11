@@ -16,9 +16,10 @@
 "RewardFailure" = "Porażka.";
 "TokenInsufficient" = "Niewystarczająca ilość punktów.";
 "NeedMoreHelp" = "Bisogno Di Più Aiuto？";
-
-
-
+"your question"="Wprowadź pytanie";
+"Cancel"="Anuluj";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

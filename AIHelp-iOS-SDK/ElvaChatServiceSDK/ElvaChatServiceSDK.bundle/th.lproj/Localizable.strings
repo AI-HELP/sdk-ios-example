@@ -16,3 +16,7 @@
 "RewardFailure" = "ให้รางวัลล้มเหลว";
 "TokenInsufficient" = "จำนวนคงเหลือไม่พอ";
 "NeedMoreHelp" = "ต้องการความช่วยเหลือ?";
+"your question"="คำถามของคุณ";
+"Cancel"="ยกเลิก";
+"Success"="Success";
+"Failed"="Failed";

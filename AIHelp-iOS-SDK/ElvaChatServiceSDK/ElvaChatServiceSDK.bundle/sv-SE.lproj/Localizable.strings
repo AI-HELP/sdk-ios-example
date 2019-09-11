@@ -16,9 +16,10 @@
 "RewardFailure" = "Misslyckades";
 "TokenInsufficient" = "Du har inte tillräckligt med poäng";
 "NeedMoreHelp" = "Behöver mer hjälp?";
-
-
-
+"your question"="Ange fråga";
+"Cancel"="annullera";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

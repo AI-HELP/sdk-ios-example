@@ -16,8 +16,9 @@
 "RewardFailure" = "Αποτυχής ανταμοιβή";
 "TokenInsufficient" = "Το υπόλοιπό σας δεν επαρκεί";
 "NeedMoreHelp" = "Χρειάζεστε βοήθεια?";
-
-
+"your question"="Εισάγετε ερώτηση";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

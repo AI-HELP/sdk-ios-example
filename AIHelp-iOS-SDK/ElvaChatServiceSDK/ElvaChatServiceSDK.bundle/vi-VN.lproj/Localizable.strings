@@ -16,9 +16,10 @@
 "RewardFailure" = "Thưởng thất bại";
 "TokenInsufficient" = "Không còn đủ";
 "NeedMoreHelp" = "cần thêm giúp?";
-
-
-
+"your question"="Lỗi nhập";
+"Cancel"="hủy bỏ";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

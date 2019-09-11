@@ -16,3 +16,8 @@
 "RewardFailure" = "실패";
 "TokenInsufficient" = "토큰이 부족합니다.";
 "NeedMoreHelp" = "도움이 더 필요하십니까?";
+"your question"="귀하의 질문";
+"Cancel"="취소";
+"Oops, no relevant results were found"="해당 검색 결과가 없습니다.";
+"Success"="Success";
+"Failed"="Failed";

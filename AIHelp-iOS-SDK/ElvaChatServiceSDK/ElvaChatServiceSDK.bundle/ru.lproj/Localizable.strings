@@ -16,3 +16,8 @@
 "RewardFailure" = "Неудачно";
 "TokenInsufficient" = "Недостаточно баллов";
 "NeedMoreHelp" = "Нужна помощь?";
+"your question"="Ваш вопрос";
+"Cancel"="отменить";
+"Oops, no relevant results were found"="Извините, по вашему запросу ничего не найдено.";
+"Success"="Success";
+"Failed"="Failed";

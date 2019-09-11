@@ -16,9 +16,9 @@
 "RewardFailure" = "Echec";
 "TokenInsufficient" = "Jeton insuffisant";
 "NeedMoreHelp" = "Besoin d'aide?";
-
-
-
-
+"your question"="Votre question";
+"Cancel"="Annuler";
+"Success"="Success";
+"Failed"="Failed";
 
 

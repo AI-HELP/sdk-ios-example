@@ -16,3 +16,7 @@
 "RewardFailure" = "奨励失敗";
 "TokenInsufficient" = "残高が足りません";
 "NeedMoreHelp" = "他の質問もある？";
+"your question"="あなたの質問";
+"Cancel"="キャンセル";
+"Success"="Success";
+"Failed"="Failed";

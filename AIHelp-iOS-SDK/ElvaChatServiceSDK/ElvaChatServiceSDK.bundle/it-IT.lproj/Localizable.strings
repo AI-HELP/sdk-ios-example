@@ -16,9 +16,10 @@
 "RewardFailure" = "Premiazione fallita";
 "TokenInsufficient" = "Bilancio insufficiente";
 "NeedMoreHelp" = "Serve ancora aiuto?";
-
-
-
+"your question"="Inserire problema";
+"Cancel"="Annulla";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

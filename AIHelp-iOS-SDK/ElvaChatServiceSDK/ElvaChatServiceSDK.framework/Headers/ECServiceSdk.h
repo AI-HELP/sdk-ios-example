@@ -50,7 +50,7 @@
 + (void) setEvaluateStar:(int) star;//设置默认评价星星个数
 
 + (void) setChangeDirection;
-+ (void) setSDKInterfaceOrientationMask:(NSUInteger)interfaceOrientationMask;
++ (void) setSDKInterfaceOrientationMask:(NSUInteger)interfaceOrientationMask;//参数参考UIInterfaceOrientationMask
 + (void) setNoMenu;
 
 + (void) setVIP:(NSString *)userName userId:(NSString *)userId config:(NSDictionary*)config;
@@ -65,4 +65,7 @@
 
 
 + (NSString*)sdkVersionInfo;
++ (BOOL) isInSDKPageView;
++ (void) setSDKEdgeInsetsWithTop:(float)top bottom:(float)bottom enable:(BOOL)enable;
++ (void) setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;//0~1
 @end

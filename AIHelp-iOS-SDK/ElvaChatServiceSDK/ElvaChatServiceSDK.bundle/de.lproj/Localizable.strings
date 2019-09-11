@@ -16,9 +16,9 @@
 "RewardFailure" = "Fehlgeschlagen";
 "TokenInsufficient" = "Tokens reichen nicht aus";
 "NeedMoreHelp" = "Benötigen weitere Hilfe?";
-
-
-
-
-
+"your question"="Ihre Frage";
+"Cancel"="stornieren";
+"Oops, no relevant results were found"="Tut mir Leid， Keine Ergebnisse gefunden.";
+"Success"="Success";
+"Failed"="Failed";
 

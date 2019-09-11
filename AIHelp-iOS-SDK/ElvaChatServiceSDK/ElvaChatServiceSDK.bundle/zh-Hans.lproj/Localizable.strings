@@ -16,3 +16,9 @@
 "RewardFailure" = "打赏失败";
 "TokenInsufficient" = "余额不足";
 "NeedMoreHelp" = "需要更多帮助？";
+"your question"="输入问题";
+"Cancel"="取消";
+"Oops, no relevant results were found"="抱歉，未找到相关结果";
+"Success"="成功";
+"Failed"="失败";
+"Please tell us more details"="请告知我们具体原因";

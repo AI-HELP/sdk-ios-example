@@ -16,9 +16,10 @@
 "RewardFailure" = "ناموفق";
 "TokenInsufficient" = "امتیاز شما کافی نیست .";
 "NeedMoreHelp" = "نیاز به کمک بیشتری دارید؟";
-
-
-
+"your question"="سوال شما؟";
+"Cancel"="لغو";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

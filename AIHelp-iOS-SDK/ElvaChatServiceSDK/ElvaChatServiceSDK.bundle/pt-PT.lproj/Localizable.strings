@@ -16,9 +16,10 @@
 "RewardFailure" = "Recompense não com sucesso";
 "TokenInsufficient" = "Saldos insuficientes";
 "NeedMoreHelp" = "Precisa mais ajuda?";
-
-
-
+"your question"="Entra a pergunta";
+"Cancel"="cancelar";
+"Success"="Success";
+"Failed"="Failed";
 
 
 

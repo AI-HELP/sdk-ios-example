@@ -284,22 +284,28 @@
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
     [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
-    BOOL isShowRobot = YES;
-    BOOL isShowConversation = YES;
-    //显示机器人和人工的入口
-    if (isShowRobot && isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-        [config setObject:@"1" forKey:@"showConversationFlag"];
+
+    //一、联系我们按钮显示逻辑
+    //0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
+    //1、一直显示：设置'showContactButtonFlag'
+    //2、永不显示：设置'hideContactButtonFlag'
+    int showType = 0;
+    switch (showType) {
+        case 0:break;
+        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
     }
-    //只显示机器人
-    else if (isShowRobot && !isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+    //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
+    //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
+    //1、直接进入人工页面：设置'directConversation'
+    //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
+    int logicType = 0;
+    switch (logicType) {
+        case 0:break;
+        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
     }
-    //只显示人工
-    else if (!isShowRobot && isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-        [config setObject:@"1" forKey:@"directConversation"];
-    }
+    
     [ECServiceSdk showFAQs:config];
 
 **参数说明:**
@@ -342,23 +348,28 @@
     [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
     [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+    
+    //一、联系我们按钮显示逻辑
+    //0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
+    //1、一直显示：设置'showContactButtonFlag'
+    //2、永不显示：设置'hideContactButtonFlag'
+    int showType = 0;
+    switch (showType) {
+        case 0:break;
+        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+    }
+    //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
+    //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
+    //1、直接进入人工页面：设置'directConversation'
+    //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
+    int logicType = 0;
+    switch (logicType) {
+        case 0:break;
+        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+    }
 
-    BOOL isShowRobot = YES;
-    BOOL isShowConversation = YES;
-    //显示机器人和人工的入口
-    if (isShowRobot && isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-        [config setObject:@"1" forKey:@"showConversationFlag"];
-    }
-    //只显示机器人
-    else if (isShowRobot && !isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-    }
-    //只显示人工
-    else if (!isShowRobot && !isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-        [config setObject:@"1" forKey:@"directConversation"];
-    }
     [ECServiceSdk showFAQSection:@"100" Config:config];
 
 **参数说明:**
@@ -397,23 +408,28 @@
     [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
     NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
     [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+    
+    //一、联系我们按钮显示逻辑
+    //0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
+    //1、一直显示：设置'showContactButtonFlag'
+    //2、永不显示：设置'hideContactButtonFlag'
+    int showType = 0;
+    switch (showType) {
+        case 0:break;
+        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+    }
+    //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
+    //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
+    //1、直接进入人工页面：设置'directConversation'
+    //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
+    int logicType = 0;
+    switch (logicType) {
+        case 0:break;
+        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+    }
 
-    BOOL isShowRobot = YES;
-    BOOL isShowConversation = YES;
-    //显示机器人和人工的入口
-    if (isShowRobot && isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-        [config setObject:@"1" forKey:@"showConversationFlag"];
-    }
-    //只显示机器人
-    else if (isShowRobot && !isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-    }
-    //只显示人工
-    else if (!isShowRobot && isShowConversation) {
-        [config setObject:@"1" forKey:@"showContactButtonFlag"];
-        [config setObject:@"1" forKey:@"directConversation"];
-    }
     [ECServiceSdk showSingleFAQ:@"20" Config:config];
 
 **参数说明:**

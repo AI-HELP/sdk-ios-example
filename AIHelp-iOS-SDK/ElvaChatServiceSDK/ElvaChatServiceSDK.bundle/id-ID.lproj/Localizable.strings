@@ -16,3 +16,7 @@
 "RewardFailure" = "Gagal";
 "TokenInsufficient" = "Saldo token Anda tidak mencukupi";
 "NeedMoreHelp" = "butuh lebih bantuan?";
+"your question"="masukkan pertanyaan"; 
+"Cancel"="membatalkan";
+"Success"="Success";
+"Failed"="Failed";
