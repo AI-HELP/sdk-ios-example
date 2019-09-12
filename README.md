@@ -7,15 +7,14 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 ### Ⅱ. Import ElvaChatServiceSDK into project
 1. Copy the ElvaChatServiceSDK folder to your main directory.
 ### Ⅲ. Project Settings
-1. Add `-ObjC` to Build Settings-Other Linker Flags.
-2. Add framework to Link Binary with Libraries: `webkit.framework`.
-3. Add framework to Link Binary with Libraries: `libsqlite3.tbd`.
-4. Add framework to Link Binary with Libraries: `libc++.tbd`.
-5. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
-    `Privacy - Camera Usage Description` <br>
-    `Privacy - Photo Library Usage Description`<br>
-    IOS 11 needs to add permissions to **info. plist** of the project:<br>
-    `Privacy - Photo Library Additions Usage Description`<br>
+1. Add `-ObjC` to **Build Settings**->**Other Linker Flags**.
+2. Add framework to **Link Binary with Libraries**:<br>
+`WebKit.framework` 
+`libsqlite3.tbd`
+3. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
+`Privacy - Camera Usage Description` <br>
+`Privacy - Photo Library Usage Description`<br>
+`Privacy - Photo Library Additions Usage Description`<br>
 ### Ⅳ. API Summary:
 | Method | Purpose |Prerequisites|
 |:------------- |:---------------|:---------------|
@@ -46,11 +45,11 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 **Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
-        
-        [ECServiceSdk init:appSecret 
-                    Domain:domain
-                    AppId:appId];
-
+```objc
+[ECServiceSdk init:appSecret 
+            Domain:domain
+             AppId:appId];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -65,64 +64,64 @@ If your company doesn't have an account, you need to register an account at [AIH
 **Coding Example：(Must be called during application initialization, otherwise you can't use AIHelp properly)**<br />
 **Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 
-```
+```objc
 [ECServiceSdk init:@"YOUR_API_KEY"
             Domain:@"YOUR_DOMAIN_NAME"
-            AppId:@"YOUR_APP_ID"];
+             AppId:@"YOUR_APP_ID"];
 ```
 
 
 
 ### <a name="showElva"></a>2. Launch the AI Conversation Interface, Use `showElva`:<br />
-
-    [ECServiceSdk showElva:playerName
-                PlayerUid:playerUid
-                ServerId:serverId
-                PlayerParseId:playerParseId
-                PlayershowConversationFlag:showConversationFlag];
-
+```objc
+[ECServiceSdk showElva:playerName
+             PlayerUid:playerUid
+              ServerId:serverId
+         PlayerParseId:playerParseId                
+PlayershowConversationFlag:showConversationFlag];
+```
 or
-
-    [ECServiceSdk showElva:playerName
-                PlayerUid:playerUid
-                ServerId:serverId
-                PlayerParseId:playerParseId
-                PlayershowConversationFlag:showConversationFlag
-                Config:config];
-
+```objc
+[ECServiceSdk showElva:playerName
+            PlayerUid:playerUid
+             ServerId:serverId
+        PlayerParseId:playerParseId
+PlayershowConversationFlag:showConversationFlag
+               Config:config];
+```
 **Coding Example：**
+```objc
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
-
-    [ECServiceSdk showElva:@"USER_NAME"
-                PlayerUid:@"USER_ID"
-                ServerId:@"123"
-                PlayerParseId:@""
-                PlayershowConversationFlag:@"1"
+[ECServiceSdk showElva:@"USER_NAME"
+             PlayerUid:@"USER_ID"
+              ServerId:@"123"
+         PlayerParseId:@""
+PlayershowConversationFlag:@"1"
                 Config:config];
 
-    /* `config` sample content
-        {
-            "elva-custom-metadata": {
-                "elva-tags": [
-                    "vip",
-                    "pay1"
-                ],
-                "VersionCode": "1.0.0"
-            }
-        }
-    */
-    
+/* `config` sample content
+{
+    "elva-custom-metadata": {
+        "elva-tags": [
+            "vip",
+            "pay1"
+        ],
+        "VersionCode": "1.0.0"
+    }
+}
+*/
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -134,7 +133,7 @@ or
 |__showConversationFlag__|Should be "0" or "1". If set "1", the manual conversation entry will be displayed in the upper right hand side of the AI conversation interface.|
 |__config__|Optional parameters for custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.|
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-EN-IOS.jpg?raw=true" width="320" height="568" alt="showElva">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-EN-IOS.png?raw=true" width="414" alt="showElva">
 
 **Best Practice：**
 
@@ -146,33 +145,33 @@ or
 
 
 ### <a name="showConversation"></a>3. Launch manual chat console, use `showConversation` (need to set [`UserName`](#UserName)) :<br />
-
-    [ECServiceSdk showConversation:playerUid ServerId:serverId];
-
+```objc
+[ECServiceSdk showConversation:playerUid ServerId:serverId];
+```
 or
-
-    [ECServiceSdk showConversation:playerUid ServerId:serverId Config:config];
-
+```objc
+[ECServiceSdk showConversation:playerUid ServerId:serverId Config:config];
+```
 **Coding Example：**
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  //This method needs to be invoked first
 
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  //This method needs to be invoked first
-    
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
-    [ECServiceSdk showConversation:@"PLAYER_ID" 
-                        ServerId:@"123" 
+[ECServiceSdk showConversation:@"PLAYER_ID" 
+                      ServerId:@"123" 
                         Config:config];
-
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -181,7 +180,7 @@ or
 |__serverId:__|The Unique Server ID|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showConversation-EN-IOS.png?raw=true" width="320" height="568" alt="showConversation">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showConversation-EN-IOS.png?raw=true" width="414" alt="showConversation">
 
 **Best Practice：**
 > 1. Normally you don not need to use this method unless you intend to allow users to enter manual conversations without engaging with the AI chat. You may use this method as a privilege for some users.
@@ -195,45 +194,45 @@ or
 
 ### <a name="showElvaOP"></a>4. Launch The Operation Interface, use `showElvaOP`:<br />
 The operation module is useful when you want to present updates, news, articles or any background information about your APP/Game to users.
-
-    [ECServiceSdk showElvaOP:playerName 
-                    PlayerUid:playerUid 
-                    ServerId:serverId 
-                    PlayerParseId:playerParseId 
-                    PlayershowConversationFlag:showConversationFlag 
-                    Config:config];
-
+```objc
+[ECServiceSdk showElvaOP:playerName 
+               PlayerUid:playerUid 
+                ServerId:serverId 
+           PlayerParseId:playerParseId 
+PlayershowConversationFlag:showConversationFlag 
+                  Config:config];
+```
 or
-
-    [ECServiceSdk showElvaOP:playerName 
-                    PlayerUid:playerUid 
-                    ServerId:serverId 
-                    PlayerParseId:playerParseId 
-                    PlayershowConversationFlag:showConversationFlag 
-                    Config:config
-                    defaultTabIndex:defaultTabIndex];
-
+```objc
+[ECServiceSdk showElvaOP:playerName 
+               PlayerUid:playerUid 
+                ServerId:serverId 
+           PlayerParseId:playerParseId 
+PlayershowConversationFlag:showConversationFlag 
+                  Config:config
+         defaultTabIndex:defaultTabIndex];
+```
 **Coding Example：**
+```objc
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
-    
-    [ECServiceSdk showElvaOP:@"USER_NAME" 
-                    PlayerUid:@"USER_ID" 
-                    ServerId:@"123" 
-                    PlayerParseId:@"" 
-                    PlayershowConversationFlag:@"1" 
-                    Config:config];
-
+[ECServiceSdk showElvaOP:@"USER_NAME" 
+               PlayerUid:@"USER_ID" 
+                ServerId:@"123" 
+           PlayerParseId:@"" 
+PlayershowConversationFlag:@"1" 
+                  Config:config];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -246,8 +245,7 @@ or
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see the above coding example. Please note that you also need to configure the same tag information in the Web console so that each conversation can be correctly tagged.|
 |__defaultTabIndex__|Optional. The index of the first tab will to be shown when entering the operation interface. Default value is 0, default value of is the left-most tab, if you would like to show the AI conversation interface(the right-most) should be set to 999.|
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP_Android.png?raw=true" width="320" height="568" alt="showElvaOP">
-
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP-EN-IOS.png?raw=true" width="414" alt="showElvaOP">
 
 **Best Practice：**
 > 1. Use this API to present news, announcements, articles or any useful information to users/players. Configure and publish the information in AIHelp web console. 
@@ -262,61 +260,61 @@ or
 
 
 ### <a name="showFAQs"></a>5. Display FAQs, use `showFAQs` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
-
-	[ECServiceSdk showFAQs];
-
+```objc
+[ECServiceSdk showFAQs];
+```
 or
-
-	[ECServiceSdk showFAQs:config];
-
+```objc
+[ECServiceSdk showFAQs:config];
+```
 **Coding Example：**
+```objc
+// Presenting FAQs to your customers
+[ECServiceSdk setUserName:@"PLAYER_NAME"];
+[ECServiceSdk setUserId:@"123ABC567DEF"];
 
-    // Presenting FAQs to your customers
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];
-    [ECServiceSdk setUserId:@"123ABC567DEF"];
-    
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
-    
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
-    
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
-    
-    //I、Contact us button display logic
-    //0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
-    //1、Always displayed: set 'showContactButtonFlag'
-    //2、Keep hiden: set the 'hideContactButtonFlag'
-    int showType = 0;
-    switch (showType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-    }
-    //II、Click the contact us button
-    //0、Default: Enter the robot page
-    //1、Conversation: set 'directConversation'
-    //2、Robot+Conversation: set 'showConversationFlag'
-    int logicType = 0;
-    switch (logicType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-    }
-    
-    [ECServiceSdk showFAQs:config];
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
+
+//I、Contact us button display logic
+//0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
+//1、Always displayed: set 'showContactButtonFlag'
+//2、Keep hiden: set the 'hideContactButtonFlag'
+int showType = 0;
+switch (showType) {
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+}
+//II、Click the contact us button
+//0、Default: Enter the robot page
+//1、Conversation: set 'directConversation'
+//2、Robot+Conversation: set 'showConversationFlag'
+int logicType = 0;
+switch (logicType) {
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+}
+
+[ECServiceSdk showFAQs:config];
+```
 **About Parameters：**
 
 | Parameters | Description |
 |:------------- |:---------------|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
-	
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-IOS.jpg?raw=true" width="320" height="568" alt="showFAQs">
+
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-EN-IOS.png?raw=true" width="414" alt="showFAQs">
 
 **Best Practice：**
 > 1. Use this method to show FAQs about your APP/Game properly. Configure FAQs in AIHelp Web Console. Each FAQ can be categroized into a section. If the FAQs are great in number, you can also add Parent Sections to categorize sections to make things clear and organized. 
@@ -325,54 +323,54 @@ or
 
 ### <a name="showFAQSection"></a>6. Display section "FAQ", use `showFAQSection` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
 
-
-    [ECServiceSdk showFAQSection:sectionPublishId];
-
+```objc
+[ECServiceSdk showFAQSection:sectionPublishId];
+```
 or
-
-    [ECServiceSdk showFAQSection:sectionPublishId Config:config];
-
+```objc
+[ECServiceSdk showFAQSection:sectionPublishId Config:config];
+```
 **Coding Example：**
+```objc
+// Presenting FAQs to your customers
+[ECServiceSdk setUserName:@"PLAYER_NAME"];
+[ECServiceSdk setUserId:@"123ABC567DEF"];
 
-    // Presenting FAQs to your customers
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];
-    [ECServiceSdk setUserId:@"123ABC567DEF"];
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
+//I、Contact us button display logic
+//0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
+//1、Always displayed: set 'showContactButtonFlag'
+//2、Keep hiden: set the 'hideContactButtonFlag'
+int showType = 0;
+switch (showType) {
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+}
+//II、Click the contact us button
+//0、Default: Enter the robot page
+//1、Conversation: set 'directConversation'
+//2、Robot+Conversation: set 'showConversationFlag'
+int logicType = 0;
+switch (logicType) {
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+}
 
-    //I、Contact us button display logic
-    //0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
-    //1、Always displayed: set 'showContactButtonFlag'
-    //2、Keep hiden: set the 'hideContactButtonFlag'
-    int showType = 0;
-    switch (showType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-    }
-    //II、Click the contact us button
-    //0、Default: Enter the robot page
-    //1、Conversation: set 'directConversation'
-    //2、Robot+Conversation: set 'showConversationFlag'
-    int logicType = 0;
-    switch (logicType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-    }
-  
-    [ECServiceSdk showFAQSection:@"100" Config:config];
-
+[ECServiceSdk showFAQSection:@"100" Config:config];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -380,60 +378,59 @@ or
 |__sectionPublishId__|The PublishID of the FAQ item, you can check it at [AIHelp Web Console](https://aihelp.net/elva): Find the FAQ in the FAQ menu and copy its PublishID.|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
-<img src="https://github.com/CS30-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg?raw=true" width="320" height="568" alt="showFAQSection">
-
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQSection-CN-IOS.png?raw=true" width="414" alt="showFAQSection">
 
 
 
 ### <a name="showSingleFAQ"></a>7. Show A Specific FAQ, use `showSingleFAQ` (need to set [`setUserName`](#setUserName) and set [`setUserId`](#setUserId)) :<br />
-
-	[ECServiceSdk showSingleFAQ:faqId];
-
+```objc
+[ECServiceSdk showSingleFAQ:faqId];
+```
 or
-
-	[ECServiceSdk showSingleFAQ:faqId Config:config];
-
+```objc
+[ECServiceSdk showSingleFAQ:faqId Config:config];
+```
 **Coding Example：**
+```objc
+// Presenting FAQs to your customers
+[ECServiceSdk setUserName:@"PLAYER_NAME"];
+[ECServiceSdk setUserId:@"123ABC567DEF"];
 
-    // Presenting FAQs to your customers
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];
-    [ECServiceSdk setUserId:@"123ABC567DEF"];
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
-    
-    //I、Contact us button display logic
-    //0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
-    //1、Always displayed: set 'showContactButtonFlag'
-    //2、Keep hiden: set the 'hideContactButtonFlag'
-    int showType = 0;
-    switch (showType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-    }
-    //II、Click the contact us button
-    //0、Default: Enter the robot page
-    //1、Conversation: set 'directConversation'
-    //2、Robot+Conversation: set 'showConversationFlag'
-    int logicType = 0;
-    switch (logicType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-    }
+//I、Contact us button display logic
+//0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
+//1、Always displayed: set 'showContactButtonFlag'
+//2、Keep hiden: set the 'hideContactButtonFlag'
+int showType = 0;
+switch (showType) {
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+}
+//II、Click the contact us button
+//0、Default: Enter the robot page
+//1、Conversation: set 'directConversation'
+//2、Robot+Conversation: set 'showConversationFlag'
+int logicType = 0;
+switch (logicType) {
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+}
 
-    [ECServiceSdk showSingleFAQ:@"20" Config:config];
-
+[ECServiceSdk showSingleFAQ:@"20" Config:config];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -443,7 +440,7 @@ or
 
 Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, and the SDK is configured with related parameters, the FAQ will be displayed, and the function menu will be provided in the upper right corner to call the related self-service.
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.jpg?raw=true" width="320" height="568" alt="showSingleFAQ">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-EN-IOS.png?raw=true" width="414" alt="showSingleFAQ">
 
 **Best Practice：**
 > 1. Use this method when you want to show a specific FAQ in a proper location of your APP/Game.
@@ -451,13 +448,13 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 ### <a name="setName"></a>8. Set Your App's Name for AIHelp SDK to Display, use `setName`:<br />
-
-	[ECServiceSdk setName:game_name];
-
+```objc
+[ECServiceSdk setName:game_name];
+```
 **Coding Example：**
-
-	[ECServiceSdk setName:@"Your Game"];
-
+```objc
+[ECServiceSdk setName:@"Your Game"];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -473,13 +470,13 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 ### <a name="setUserId"></a>9. Set the Unique User ID, use `setUserId`:<br />
-
-	[ECServiceSdk setUserId:playerUid];
-
+```objc
+[ECServiceSdk setUserId:playerUid];
+```
 **Coding Example：**
-
-	[ECServiceSdk setUserId:@"123ABC567DEF"];
-
+```objc
+[ECServiceSdk setUserId:@"123ABC567DEF"];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -495,13 +492,13 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 ### <a name="setUserName"></a>10. Set User Name, use `setUserName`:<br />
-
-	[ECServiceSdk setUserName:playerName];
-
+```objc
+[ECServiceSdk setUserName:playerName];
+```
 **Coding Example：**
-
-	[ECServiceSdk setUserName:@"PLAYER_NAME"];
-
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -518,13 +515,13 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 
 ### <a name="setServerId"></a>11. Set Unique Server ID, use `setServerId`:<br />
-
-	[ECServiceSdk setServerId:serverId];
-
+```objc
+[ECServiceSdk setServerId:serverId];
+```
 **Coding Example：**
-
-	[ECServiceSdk setServerId:@"SERVER_ID"];
-
+```objc
+[ECServiceSdk setServerId:@"SERVER_ID"];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -542,20 +539,20 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 ### <a name="setSDKLanguage"></a>12. Set the SDK Language, use `setSDKLanguage`:<br />
 
 Setting the SDK Language will change the FAQs, Operational information, AI Chat and SDK display language. 
-
-	[ECServiceSdk setSDKLanguage:language];
-	
+```objc
+[ECServiceSdk setSDKLanguage:language];
+```    
 **Coding Example：**
-
-	[ECServiceSdk setSDKLanguage:@"en"];
-
+```objc
+[ECServiceSdk setSDKLanguage:@"en"];
+```
 **About Parameters：**
 
 | Parameters | Description |
 |:------------- |:---------------|
 |__language__|Standard Language Alias. For example: en is for English, zh_CN is for Simplified Chinese. More language labels can be viewed at [AIHelp Web Console](https://aihelp.net/elva):"Settings"-->"Language"->Alias.|
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="320" height="400" alt="Language Alias">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="414" alt="Language Alias">
 
 
 **Best Practice：**
@@ -570,9 +567,9 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 
 
 **Coding Example：**
-
-    [ECServiceSdk setRootViewController:viewController];
-
+```objc
+[ECServiceSdk setRootViewController:viewController];
+```
 **About Parameters：**
 
 | Parameters | Description |
@@ -589,51 +586,52 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 ###  Set a Different Greeting Story Line.
 
 If your APP provides multiple entries to AIHelp, and you intend to introduce different AI welcome texts and story lines to users from different entries, you can set config parameter in [showElva](#showElva) or [showElvaOP](#showElvaOP)： 
-
-	NSMutableDictionary *welcomeText = [NSMutableDictionary dictionary];
-	[welcomeText setObject:@"usersay" forKey:@"anotherWelcomeText"];
+```objc
+NSMutableDictionary *welcomeText = [NSMutableDictionary dictionary];
+[welcomeText setObject:@"usersay" forKey:@"anotherWelcomeText"];
 
 **Coding Example：**
 
-    //You need to add the same label to'AIHelp Web Console'before it takes effect.
-    NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+//You need to add the same label to'AIHelp Web Console'before it takes effect.
+NSMutableArray * tags = [NSMutableArray array]; //Definition of `tag` container
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
-    [customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];////Definition of `customData` container
+[customData setObject:tags forKey:@"elva-tags"]; //Add `Tag` label
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //Add `custom` parameters
 
-    // note：anotherWelcomeText is key, should be unchanged.
-    [customData setObject:@"usersay" forKey:@"anotherWelcomeText"]; //Set a Different Greeting Story Line
-    
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
+// note：anotherWelcomeText is key, should be unchanged.
+[customData setObject:@"usersay" forKey:@"anotherWelcomeText"]; //Set a Different Greeting Story Line
+
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of `config` container
+[config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
+```
 
 
-	
-
-	[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
-                  PlayerUid:@"TEST_UID_123"
-                  ServerId:@"TEST_SRV_ID_123"
-                  PlayerParseId:@""
-                  PlayershowConversationFlag:@"1"
-                  Config:config];
+```objc
+[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
+             PlayerUid:@"TEST_UID_123"
+              ServerId:@"TEST_SRV_ID_123"
+         PlayerParseId:@""
+PlayershowConversationFlag:@"1"
+                Config:config];
+```
 or
-
-	[ECServiceSdk showElvaOP:@"TEST_PLAYER_NAME"
-                  PlayerUid:@"TEST_UID_123"
-                  ServerId:@"TEST_SRV_ID_123"
-                  PlayerParseId:@""
-                  PlayershowConversationFlag:@"1"
+```objc
+[ECServiceSdk showElvaOP:@"TEST_PLAYER_NAME"
+               PlayerUid:@"TEST_UID_123"
+                ServerId:@"TEST_SRV_ID_123"
+           PlayerParseId:@""
+PlayershowConversationFlag:@"1"
                   Config:config];
-
+```
 or
-    
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  
-    [ECServiceSdk setUserId:@"123ABC567DEF"];   
-    [ECServiceSdk showFAQs:config];
-
+```objc   
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  
+[ECServiceSdk setUserId:@"123ABC567DEF"];   
+[ECServiceSdk showFAQs:config];
+```
 **Best Practice：**
 > 1. Introduce different story lines to users from different sources.
 
