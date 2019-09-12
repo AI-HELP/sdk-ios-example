@@ -133,7 +133,7 @@ PlayershowConversationFlag:@"1"
 |**showConversationFlag**|参数的值是 “0” 或 “1”，标识是否开启人工入口。为 “1” 时，将在机器人客服聊天界面右上角，提供人工客服聊天的入口。如下图。。|
 |**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
 
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/showElva-CN-IOS.jpg?raw=true" width="320" height="568" alt="showElva">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-CN-IOS.png?raw=true" width="414" alt="showElva">
 
 **最佳实践：**
 
@@ -183,8 +183,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 **最佳实践：**
 > 通常你不需要调用这个接口，除非你想在应用里设置触发点，让用户有机会直接进入人工客服聊天界面。
 
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/showConversation-CN-IOS.png?raw=true" width="320" height="568" alt="showConversation">
-
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showConversation-CN-IOS.png?raw=true" width="414" alt="showConversation">
 
 
 
@@ -245,8 +244,7 @@ PlayershowConversationFlag:@"1"
 |**defaultTabIndex**|可选，进入运营界面时候展示的tab的编号。默认是0，也就是默认为第一个tab，若需默认展示客服界面tab，设置值为999。|
 
 
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/showElvaOP-CN-IOS.png?raw=true" width="320" height="568" alt="showElvaOP">
-
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP-CN-IOS.png?raw=true" width="414" alt="showElvaOP">
 
 
 **最佳实践：**
@@ -313,9 +311,7 @@ switch (logicType) {
 |:------------- |:---------------|
 |**config**|可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工或机器人聊天的入口功能|
 
-
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/showFAQs-CN-IOS.png?raw=true" width="320" height="568" alt="showFAQs">
-
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-CN-IOS.png?raw=true" width="414" alt="showFAQs">
 
 **最佳实践：**
 > 在您应用的FAQ主入口触发这个接口的调用。在AIHelp 后台页面配置并分类FAQ，如果您的FAQ较多，可以增加一个父级分类。
@@ -378,8 +374,7 @@ switch (logicType) {
 |**sectionPublishId**|FAQ Section的PublishID（可以在[AIHelp 后台](https://aihelp.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。|
 |**config**|可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工或机器人聊天的入口功能|
 
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/showFAQSection-CN-IOS.jpg?raw=true" width="320" height="568" alt="showFAQSection">
-
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQSection-CN-IOS.png?raw=true" width="414" alt="showFAQSection">
 
 
 
@@ -439,8 +434,8 @@ switch (logicType) {
 |**config**|可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工或机器人聊天的入口功能|
 
 注：如果在AIHelp 后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
-<img src="https://github.com/AIHELP-NET/Pictures/blob/master/showSingleFAQ-CN-IOS.png?raw=true" width="320" height="568" alt="showSingleFAQ">
 
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-CN-IOS.png?raw=true" width="414" alt="showSingleFAQ">
 
 
 
@@ -549,7 +544,7 @@ switch (logicType) {
 |:------------- |:---------------|
 |**language**|语言名称代码。如英语为en,简体中文为zh_CN。更多语言简称参见[AIHelp后台](https://aihelp.net/elva)，"设置"-->"语言"的Alias列。|
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="320" height="400" alt="语言Alias列">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/Language-alias.png?raw=true" width="414" alt="语言Alias列">
 
 
 **最佳实践：**
