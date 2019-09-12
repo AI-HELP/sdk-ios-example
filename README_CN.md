@@ -1,4 +1,5 @@
 [英文版接入文档](https://github.com/AI-HELP/iOS-SDK-stable/blob/master/README.md)
+
 ## IOS SDK 接入说明
 1. 在您阅读此文档时，我们假定您已经具备了基础的 iOS 应用开发经验，并能够理解相关基础概念，SDK支持iOS8及以上iOS版本。
 2. 甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。
@@ -7,30 +8,31 @@
 ### 二、导入ElvaChatServiceSDK
 1. 导入ElvaChatServiceSDK的文件夹到项目中
 ### 三、接入工程配置
-1. 在xcode Build Settings里面Other Linker Flags 设置值-ObjC，否则会出现：`unrecognized selector sent to instance exception`
-2. 如果您的Xcode工程本身没有引入webkit.framework，那么你需要手动增加webkit.framework到工程里。
-3. 如果您的Xcode工程本身没有引入libsqlite3.tbd，那么你需要手动增加libsqlite3.tbd到工程里。
-3. 如果您的Xcode工程本身没有引入libc++.tbd，那么你需要手动增加libc++.tbd到工程里。
-4.  iOS10需要在工程的**info.plist**添加权限:<br>
-    `Privacy - Photo Library Usage Description`<br>
-    `Privacy - Camera Usage Description`<br>
-    iOS11需要在工程的**info.plist**添加权限:<br>
-    `Privacy - Photo Library Additions Usage Description`<br>
+1. 在**Xcode Build Settings**里面**Other Linker Flags** 设置值**-ObjC**，否则会出现：`unrecognized selector sent to instance exception`
+2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：<br>
+`libsqlite3.tbd`<br>
+`WebKit.framework`<br>
+3. 设置SDK所需权限, 在项目工程的**info.plist**中增加权限<br>
+`Privacy - Photo Library Usage Description`<br>
+`Privacy - Camera Usage Description`<br>
+`Privacy - Photo Library Additions Usage Description`<br>
 ### 四、接口简介
-| 接口名 | 接口作用 |备注|
+| 可选接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
-| [**init**](#init)      | 初始化 | 
+| [**init**](#init)      | 初始化 | 必须在应用启动阶段调用,否则SDK无法使用|
 | [**showElva**](#showElva)      | 启动机器人客服界面| 
-| [**showConversation**](#showConversation)|进入人工客服界面| 需调用[setUserName](#setUserName) |
-| [**showElvaOP**](#showElvaOP) | 启动运营界面| 需配置运营模块|
+| [**showConversation**](#showConversation)|启动人工客服界面| 需调用[setUserName](#setUserName) |
+| [**showElvaOP**](#showElvaOP) | 启动运营界面| |
 | [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**setName**](#setName) | 设置在客服系统中显示的游戏名称|在初始化之后调用|
-| [**setUserId**](#setUserId) | 设置玩家(用户)ID,如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
-| [**setUserName**](#setUserName) | 设置玩家(用户)名称，如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
-| [**setRootViewController**](#setRootViewController) | 设置视图控制器以弹出'AIHelp'|
+
+| 建议接口 | 接口作用 |备注|
+|:------------- |:---------------|:---------------|
+| [**setName**](#setName) | 设置游戏名称|设置后在SDK导航栏会显示游戏的名称|
+| [**setUserId**](#setUserId) | 设置玩家(用户)ID|如果游客玩家拿不到userId,请传入空字符串@"",SDK会生成唯一设备id来区分不同的用户|
+| [**setUserName**](#setUserName) | 设置玩家(用户)名称|如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
 
 注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
 
@@ -42,13 +44,11 @@
 
 ###  <a name="init"></a>SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
-1. 引入相关头文件 #import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>
+1. 引入相关头文件 `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. 在工程的 AppDelegate 中的`application:didFinishLaunchingWithOptions`方法中，调用 SDK 初始化方法。
-
-        [ECServiceSdk init:appSecret
-                    Domain:domain
-                     AppId:appId];
-                     
+```objc
+[ECServiceSdk init:appSecret Domain:domain AppId:appId];
+```                  
 **参数说明:**
 
 |参数|说明|
@@ -62,10 +62,8 @@
 **初始化代码示例：（必须在应用启动阶段调用）** <br />
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，
 如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
-```
-[ECServiceSdk init:@"YOUR_APP_KEY"
-            Domain:@"YOUR_DOMAIN_NAME"
-             AppId:@"YOUR_APP_ID"];
+```objc
+[ECServiceSdk init:@"YOUR_APP_KEY" Domain:@"YOUR_DOMAIN_NAME" AppId:@"YOUR_APP_ID"];
 ```
 
 
@@ -75,55 +73,55 @@
 
 
 ### <a name="showElva"></a>智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
-
-	[ECServiceSdk showElva:playerName
-    				PlayerUid:playerUid
-    				ServerId:serverId
-    				PlayerParseId:playerParseId
-    				PlayershowConversationFlag:showConversationFlag];
-			
+```objc
+[ECServiceSdk showElva:playerName
+             PlayerUid:playerUid
+              ServerId:serverId
+         PlayerParseId:playerParseId
+PlayershowConversationFlag:showConversationFlag];
+```            
 或
-
-	[ECServiceSdk showElva:playerName
-					PlayerUid:playerUid
-					ServerId:serverId
-					PlayerParseId:playerParseId
-					PlayershowConversationFlag:showConversationFlag
-					Config:config];
-
+```objc
+[ECServiceSdk showElva:playerName
+             PlayerUid:playerUid
+              ServerId:serverId
+         PlayerParseId:playerParseId
+PlayershowConversationFlag:showConversationFlag
+                Config:config];
+```
 **代码示例:**
-    
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
-    
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
-    
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
-    
-    [ECServiceSdk showElva:@"USER_NAME"
-    				PlayerUid:@"USER_ID"
-    				ServerId:@"123"
-    				PlayerParseId:@""
-    				PlayershowConversationFlag:@"1"
-    				Config:config];
-    				
-	/* config 示例内容:
-        {
-            "elva-custom-metadata": {
-                "elva-tags": [
-                    "vip",
-                    "pay1"
-                ],
-                "VersionCode": "1.0.0"
-            }
+```objc
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
+
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
+
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+
+[ECServiceSdk showElva:@"USER_NAME"
+             PlayerUid:@"USER_ID"
+              ServerId:@"123"
+         PlayerParseId:@""
+PlayershowConversationFlag:@"1"
+                Config:config];
+
+/* config 示例内容:
+    {
+        "elva-custom-metadata": {
+            "elva-tags": [
+                "vip",
+                "pay1"
+            ],
+            "VersionCode": "1.0.0"       
         }
-	*/
-	
+}
+*/
+```
 **参数说明:**
 
 |参数|说明|
@@ -149,31 +147,31 @@
 
 
 ### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 已经调用)
-
-    [ECServiceSdk showConversation:playerUid ServerId:serverId];
-
+```objc
+[ECServiceSdk showConversation:playerUid ServerId:serverId];
+```
 或
-
-    [ECServiceSdk showConversation:playerUid ServerId:serverId Config:config];
-
+```objc
+[ECServiceSdk showConversation:playerUid ServerId:serverId Config:config];
+```
 **代码示例：**
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要先调用此方法
 
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要先调用此方法
-    
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
-    
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
-    
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    [ECServiceSdk showConversation:@"PLAYER_ID" ServerId:@"123" Config:config];
-    
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
+
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+
+[ECServiceSdk showConversation:@"PLAYER_ID" ServerId:@"123" Config:config];
+```
 **参数说明:**
 
 |参数|说明|
@@ -194,45 +192,46 @@
 
 ### <a name="showElvaOP"></a>运营主界面启动，调用 `showElvaOP ` 方法
 当您想向用户展示应用程序/游戏的更新、新闻、文章或任何背景信息时，操作模块非常有用。
-
-	[ECServiceSdk showElvaOP:playerName 
-					PlayerUid:playerUid 
-					ServerId:serverId 
-					PlayerParseId:playerParseId 
-					PlayershowConversationFlag:showConversationFlag 
-					Config:config];
-
+```objc
+[ECServiceSdk showElvaOP:playerName 
+               PlayerUid:playerUid 
+                ServerId:serverId 
+           PlayerParseId:playerParseId 
+PlayershowConversationFlag:showConversationFlag 
+                  Config:config];
+```
 或
 
-	[ECServiceSdk showElvaOP:playerName 
-					PlayerUid:playerUid 
-					ServerId:serverId 
-					PlayerParseId:playerParseId 
-					PlayershowConversationFlag:showConversationFlag 
-					Config:config
-					defaultTabIndex:defaultTabIndex];
-    
+```objc
+[ECServiceSdk showElvaOP:playerName 
+               PlayerUid:playerUid 
+                ServerId:serverId 
+           PlayerParseId:playerParseId 
+PlayershowConversationFlag:showConversationFlag 
+                  Config:config
+         defaultTabIndex:defaultTabIndex];
+``` 
 **代码示例：**
+```objc
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
-
-    [ECServiceSdk showElvaOP:@"USER_NAME" 
-                PlayerUid:@"USER_ID" 
-                ServerId:@"123" 
-                PlayerParseId:@"" 
-                PlayershowConversationFlag:@"1" 
-                Config:config];
-
+[ECServiceSdk showElvaOP:@"USER_NAME" 
+PlayerUid:@"USER_ID" 
+ServerId:@"123" 
+PlayerParseId:@"" 
+PlayershowConversationFlag:@"1" 
+Config:config];
+```
 **参数说明:**
 
 |参数|说明|
@@ -262,52 +261,52 @@
 
 
 ### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
-
-    [ECServiceSdk showFAQs];
-
+```objc
+[ECServiceSdk showFAQs];
+```
 或
-
-    [ECServiceSdk showFAQs:config];
-
+```objc
+[ECServiceSdk showFAQs:config];
+```
 **代码示例：**
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
+[ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
 
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
-    [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
-    
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
 
-    //一、联系我们按钮显示逻辑
-    //0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
-    //1、一直显示：设置'showContactButtonFlag'
-    //2、永不显示：设置'hideContactButtonFlag'
-    int showType = 0;
-    switch (showType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-    }
-    //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
-    //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
-    //1、直接进入人工页面：设置'directConversation'
-    //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
-    int logicType = 0;
-    switch (logicType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-    }
-    
-    [ECServiceSdk showFAQs:config];
+//一、联系我们按钮显示逻辑
+//0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
+//1、一直显示：设置'showContactButtonFlag'
+//2、永不显示：设置'hideContactButtonFlag'
+int showType = 0;
+switch (showType) {
+case 0:break;
+case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+}
+//二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
+//0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
+//1、直接进入人工页面：设置'directConversation'
+//2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
+int logicType = 0;
+switch (logicType) {
+case 0:break;
+case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+}
 
+[ECServiceSdk showFAQs:config];
+```
 **参数说明:**
 
 |参数|说明|
@@ -327,51 +326,51 @@
 
 
 ### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
-
-    [ECServiceSdk showFAQSection:sectionPublishId];
-
+```objc
+[ECServiceSdk showFAQSection:sectionPublishId];
+```
 或
-
-    [ECServiceSdk showFAQSection:sectionPublishId Config:config];
-
+```objc
+[ECServiceSdk showFAQSection:sectionPublishId Config:config];
+```
 **代码示例：**
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
+[ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
 
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
-    [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
-    
-    //一、联系我们按钮显示逻辑
-    //0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
-    //1、一直显示：设置'showContactButtonFlag'
-    //2、永不显示：设置'hideContactButtonFlag'
-    int showType = 0;
-    switch (showType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-    }
-    //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
-    //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
-    //1、直接进入人工页面：设置'directConversation'
-    //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
-    int logicType = 0;
-    switch (logicType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-    }
+//一、联系我们按钮显示逻辑
+//0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
+//1、一直显示：设置'showContactButtonFlag'
+//2、永不显示：设置'hideContactButtonFlag'
+int showType = 0;
+switch (showType) {
+case 0:break;
+case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+}
+//二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
+//0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
+//1、直接进入人工页面：设置'directConversation'
+//2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
+int logicType = 0;
+switch (logicType) {
+case 0:break;
+case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+}
 
-    [ECServiceSdk showFAQSection:@"100" Config:config];
-
+[ECServiceSdk showFAQSection:@"100" Config:config];
+```
 **参数说明:**
 
 |参数|说明|
@@ -387,51 +386,51 @@
 
 
 ### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
-
-	[ECServiceSdk showSingleFAQ:faqId];
-
+```objc
+[ECServiceSdk showSingleFAQ:faqId];
+```
 或
-
-	[ECServiceSdk showSingleFAQ:faqId Config:config];
-
+```objc
+[ECServiceSdk showSingleFAQ:faqId Config:config];
+```
 **代码示例：**
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
+[ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
 
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
-    [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
-    
-    //一、联系我们按钮显示逻辑
-    //0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
-    //1、一直显示：设置'showContactButtonFlag'
-    //2、永不显示：设置'hideContactButtonFlag'
-    int showType = 0;
-    switch (showType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-        case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-    }
-    //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
-    //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
-    //1、直接进入人工页面：设置'directConversation'
-    //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
-    int logicType = 0;
-    switch (logicType) {
-        case 0:break;
-        case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-        case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-    }
+//一、联系我们按钮显示逻辑
+//0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
+//1、一直显示：设置'showContactButtonFlag'
+//2、永不显示：设置'hideContactButtonFlag'
+int showType = 0;
+switch (showType) {
+case 0:break;
+case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+}
+//二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
+//0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
+//1、直接进入人工页面：设置'directConversation'
+//2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
+int logicType = 0;
+switch (logicType) {
+case 0:break;
+case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+}
 
-    [ECServiceSdk showSingleFAQ:@"20" Config:config];
-
+[ECServiceSdk showSingleFAQ:@"20" Config:config];
+```
 **参数说明:**
 
 |参数|说明|
@@ -449,13 +448,13 @@
 
 
 ### <a name="setName"></a>设置游戏名称信息，调用 `setName` 方法
-
-    [ECServiceSdk setName:game_name];
-
+```objc
+[ECServiceSdk setName:game_name];
+```
 **代码示例：**
-
-    [ECServiceSdk setName:@"Your Game"];
-
+```objc
+[ECServiceSdk setName:@"Your Game"];
+```
 **参数说明:**
 
 |参数|说明|
@@ -470,13 +469,13 @@
 
 
 ### <a name="setUserId"></a>设置用户唯一id信息，调用 `setUserId` 方法(使用自助服务必须调用，参见展示单条FAQ)
-
-	[ECServiceSdk setUserId:playerUid];
-
+```objc
+[ECServiceSdk setUserId:playerUid];
+```
 **代码示例：**
-
-	[ECServiceSdk setUserId:@"123ABC567DEF"];
-
+```objc
+[ECServiceSdk setUserId:@"123ABC567DEF"];
+```
 **参数说明:**
 
 |参数|说明|
@@ -493,13 +492,13 @@
 
 
 ### <a name="setUserName"></a>设置玩家名称信息，调用 `setUserName` 方法()
-
-	[ECServiceSdk setUserName:playerName];
-
+```objc
+[ECServiceSdk setUserName:playerName];
+```
 **代码示例：**
-
-	[ECServiceSdk setUserName:@"PLAYER_NAME"];
-
+```objc
+[ECServiceSdk setUserName:@"PLAYER_NAME"];
+```
 **参数说明:**
 
 |参数|说明|
@@ -514,13 +513,13 @@
 
 
 ### <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
-
-    [ECServiceSdk setServerId:serverId];
-
+```objc
+[ECServiceSdk setServerId:serverId];
+```
 **代码示例：**
-
-    [ECServiceSdk setServerId:@"SERVER_ID"];
-
+```objc
+[ECServiceSdk setServerId:@"SERVER_ID"];
+```
 **参数说明:**
 
 |参数|说明|
@@ -537,13 +536,13 @@
 
 
 ### <a name="setSDKLanguage"></a>设置SDK语言，调用 `setSDKLanguage` 方法
-
-	[ECServiceSdk setSDKLanguage:language];
-	
+```objc
+[ECServiceSdk setSDKLanguage:language];
+```
 **代码示例：**
-
-	[ECServiceSdk setSDKLanguage:@"en"];
-
+```objc
+[ECServiceSdk setSDKLanguage:@"en"];
+```
 **参数说明:**
 
 |参数|说明|
@@ -567,19 +566,17 @@
 
 
 **代码示例：**
-
-    [ECServiceSdk setRootViewController:viewController];
-
+```objc
+[ECServiceSdk setRootViewController:viewController];
+```
 **参数说明:**
 
 |参数|说明|
 |:------------- |:---------------|
 |__viewController__|设置视图控制器以弹出'aihlep'|
 
-**Best Practice：**
+**最佳实践：**
 > 1. 如果存在多个window,且直接调用showElva等接口，页面无法弹出时，调用此接口
-
-
 
 
 
@@ -591,51 +588,53 @@
 ### 设置另一个欢迎语。
 
 如果你设置了进入AI客服的不同入口，希望用户从不同的入口进入AI客服时显示不同的欢迎语，进入不同故事线，可以通过设置config参数来实现： 
-
-	NSMutableDictionary *welcomeText = [NSMutableDictionary dictionary];
-	[welcomeText setObject:@"usersay" forKey:@"anotherWelcomeText"];
-	
+```objc
+NSMutableDictionary *welcomeText = [NSMutableDictionary dictionary];
+[welcomeText setObject:@"usersay" forKey:@"anotherWelcomeText"];
+```
 **代码示例：**
-    
-    //您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
-    NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
-    [tags addObject:@"vip"];
-    [tags addObject:@"pay1"];
+```objc
+//您需要将相同的标签添加到“AIHELP Web控制台”才能生效。
+NSMutableArray * tags = [NSMutableArray array]; //定义tag容器
+[tags addObject:@"vip"];
+[tags addObject:@"pay1"];
 
-    NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
-    [customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
-    [customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
-    
-    // 注：anotherWelcomeText是key，不能改变。需要改变的是usersay，保持和故事线中配置的UserSay内容一样
-    [customData setObject:@"usersay" forKey:@"anotherWelcomeText"]; //添加自定义欢迎语
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+[customData setObject:tags forKey:@"elva-tags"]; //添加Tag值标签
+[customData setObject:@"1.0.0" forKey:@"VersionCode"];  //添加自定义的参数
 
-    NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
-    [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+// 注：anotherWelcomeText是key，不能改变。需要改变的是usersay，保持和故事线中配置的UserSay内容一样
+[customData setObject:@"usersay" forKey:@"anotherWelcomeText"]; //添加自定义欢迎语
 
-
-	//如果是在智能客服主界面中	
-	[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
-                  PlayerUid:@"TEST_UID_123"
-                  ServerId:@"TEST_SRV_ID_123"
-                  PlayerParseId:@""
-                  PlayershowConversationFlag:@"1"
-                  Config:config];
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+```
+```objc
+//如果是在智能客服主界面中    
+[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
+PlayerUid:@"TEST_UID_123"
+ServerId:@"TEST_SRV_ID_123"
+PlayerParseId:@""
+PlayershowConversationFlag:@"1"
+Config:config];
+```
 或
-
-	//如果是在智能客服运营主界面中
-	[ECServiceSdk showElvaOP:@"TEST_PLAYER_NAME"
-                  PlayerUid:@"TEST_UID_123"
-                  ServerId:@"TEST_SRV_ID_123"
-                  PlayerParseId:@""
-                  PlayershowConversationFlag:@"1"
-                  Config:config];
+```objc
+//如果是在智能客服运营主界面中
+[ECServiceSdk showElvaOP:@"TEST_PLAYER_NAME"
+PlayerUid:@"TEST_UID_123"
+ServerId:@"TEST_SRV_ID_123"
+PlayerParseId:@""
+PlayershowConversationFlag:@"1"
+Config:config];
+```
 或   
-
-    //如果是在FAQ列表页面中进入机器人
-    [ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
-    [ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
-    [ECServiceSdk showFAQs:config];
-
+```objc
+//如果是在FAQ列表页面中进入机器人
+[ECServiceSdk setUserName:@"PLAYER_NAME"];  //需要调用此方法
+[ECServiceSdk setUserId:@"123ABC567DEF"];   //需要调用此方法
+[ECServiceSdk showFAQs:config];
+```
 **最佳实践：**
 > 引导玩家从不同入口看到不同的服务
 
