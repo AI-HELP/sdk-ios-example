@@ -378,7 +378,7 @@ switch (logicType) {
 |__sectionPublishId__|The PublishID of the FAQ item, you can check it at [AIHelp Web Console](https://aihelp.net/elva): Find the FAQ in the FAQ menu and copy its PublishID.|
 |__config__|Custom Dictionary information. You can pass specific Tag information using vector elva-tags, see above coding example. Please note that you also need to configure the same tag information in the Web console to make each conversation be correctly tagged.|
 
-<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQSection-CN-IOS.png?raw=true" width="414" alt="showFAQSection">
+<img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQSection-EN-IOS.png?raw=true" width="414" alt="showFAQSection">
 
 
 
