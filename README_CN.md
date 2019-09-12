@@ -226,11 +226,11 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
 [ECServiceSdk showElvaOP:@"USER_NAME" 
-PlayerUid:@"USER_ID" 
-ServerId:@"123" 
-PlayerParseId:@"" 
+               PlayerUid:@"USER_ID" 
+                ServerId:@"123" 
+           PlayerParseId:@"" 
 PlayershowConversationFlag:@"1" 
-Config:config];
+                  Config:config];
 ```
 **参数说明:**
 
@@ -290,9 +290,9 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 //2、永不显示：设置'hideContactButtonFlag'
 int showType = 0;
 switch (showType) {
-case 0:break;
-case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
 }
 //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
 //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
@@ -300,9 +300,9 @@ case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
 //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
 int logicType = 0;
 switch (logicType) {
-case 0:break;
-case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
 }
 
 [ECServiceSdk showFAQs:config];
@@ -354,9 +354,9 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 //2、永不显示：设置'hideContactButtonFlag'
 int showType = 0;
 switch (showType) {
-case 0:break;
-case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
 }
 //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
 //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
@@ -364,9 +364,9 @@ case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
 //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
 int logicType = 0;
 switch (logicType) {
-case 0:break;
-case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
 }
 
 [ECServiceSdk showFAQSection:@"100" Config:config];
@@ -414,9 +414,9 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 //2、永不显示：设置'hideContactButtonFlag'
 int showType = 0;
 switch (showType) {
-case 0:break;
-case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
+    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
 }
 //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
 //0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
@@ -424,9 +424,9 @@ case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
 //2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
 int logicType = 0;
 switch (logicType) {
-case 0:break;
-case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
+    case 0:break;
+    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
+    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
 }
 
 [ECServiceSdk showSingleFAQ:@"20" Config:config];
@@ -612,21 +612,21 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 ```objc
 //如果是在智能客服主界面中    
 [ECServiceSdk showElva:@"TEST_PLAYER_NAME"
-PlayerUid:@"TEST_UID_123"
-ServerId:@"TEST_SRV_ID_123"
-PlayerParseId:@""
+             PlayerUid:@"TEST_UID_123"
+              ServerId:@"TEST_SRV_ID_123"
+         PlayerParseId:@""
 PlayershowConversationFlag:@"1"
-Config:config];
+                Config:config];
 ```
 或
 ```objc
 //如果是在智能客服运营主界面中
 [ECServiceSdk showElvaOP:@"TEST_PLAYER_NAME"
-PlayerUid:@"TEST_UID_123"
-ServerId:@"TEST_SRV_ID_123"
-PlayerParseId:@""
+               PlayerUid:@"TEST_UID_123"
+                ServerId:@"TEST_SRV_ID_123"
+           PlayerParseId:@""
 PlayershowConversationFlag:@"1"
-Config:config];
+                  Config:config];
 ```
 或   
 ```objc
