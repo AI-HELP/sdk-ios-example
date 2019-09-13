@@ -16,33 +16,8 @@
 `Privacy - Photo Library Usage Description`<br>
 `Privacy - Camera Usage Description`<br>
 `Privacy - Photo Library Additions Usage Description`<br>
-### 四、接口简介
-| 可选接口 | 接口作用 |备注|
-|:------------- |:---------------|:---------------|
-| [**init**](#init)      | 初始化 | 必须在应用启动阶段调用,否则SDK无法使用|
-| [**showElva**](#showElva)      | 启动机器人客服界面| 
-| [**showConversation**](#showConversation)|启动人工客服界面| 需调用[setUserName](#setUserName) |
-| [**showElvaOP**](#showElvaOP) | 启动运营界面| |
-| [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
 
-| 建议接口 | 接口作用 |备注|
-|:------------- |:---------------|:---------------|
-| [**setName**](#setName) | 设置游戏名称|设置后在SDK导航栏会显示游戏的名称|
-| [**setUserId**](#setUserId) | 设置玩家(用户)ID|如果游客玩家拿不到userId,请传入空字符串@"",SDK会生成唯一设备id来区分不同的用户|
-| [**setUserName**](#setUserName) | 设置玩家(用户)名称|如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
-
-注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
-
-
-
-
-
-## 开始使用SDK
-
-###  <a name="init"></a>SDK初始化（必须在应用启动阶段调用）
+###  四、SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
 1. 引入相关头文件 `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. 在工程的 AppDelegate 中的`application:didFinishLaunchingWithOptions`方法中，调用 SDK 初始化方法。
@@ -65,12 +40,30 @@
 ```objc
 [ECServiceSdk init:@"YOUR_APP_KEY" Domain:@"YOUR_DOMAIN_NAME" AppId:@"YOUR_APP_ID"];
 ```
+### 五、接口简介
+| 可选接口 | 接口作用 |备注|
+|:------------- |:---------------|:---------------|
+| [**showElva**](#showElva)      | 启动机器人客服界面| 
+| [**showConversation**](#showConversation)|启动人工客服界面| 需调用[setUserName](#setUserName) |
+| [**showElvaOP**](#showElvaOP) | 启动运营界面| |
+| [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
+
+| 建议接口 | 接口作用 |备注|
+|:------------- |:---------------|:---------------|
+| [**setName**](#setName) | 设置游戏名称|设置后在SDK导航栏会显示游戏的名称|
+| [**setUserId**](#setUserId) | 设置玩家(用户)ID|如果游客玩家拿不到userId,请传入空字符串@"",SDK会生成唯一设备id来区分不同的用户|
+| [**setUserName**](#setUserName) | 设置玩家(用户)名称|如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+
+注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
 
 
 
 
 
-
+## 开始使用SDK
 
 ### <a name="showElva"></a>智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
 ```objc

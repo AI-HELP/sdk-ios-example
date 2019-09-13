@@ -15,33 +15,8 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 `Privacy - Camera Usage Description` <br>
 `Privacy - Photo Library Usage Description`<br>
 `Privacy - Photo Library Additions Usage Description`<br>
-### Ⅳ. API Summary:
-| Method | Purpose |Prerequisites|
-|:------------- |:---------------|:---------------|
-| [**init**](#init)      | SDK initialization | 
-| [**showElva**](#showElva)      | Launch AI Conversation Interface|
-| [**showConversation**](#showConversation)|Launch Manual Conversation Interface| Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
-| [**showElvaOP**](#showElvaOP) | Launch Operation Interface| Need to configure Operation Sections|
-| [**showFAQs**](#showFAQs) | Show all FAQs by Sections|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
-| [**showFAQSection**](#showFAQSection)| Show FAQ Section|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
-| [**showSingleFAQ**](#showSingleFAQ) | Show Single FAQ|Need to Configure FAQ,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
-| [**setName**](#setName) |Set Your App's Name for AIHelp SDK to Display|Use it After Initialization|
-| [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
-| [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
-| [**setServerId**](#setServerId) | Set Unique Server ID|
-| [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|
-| [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
 
-**Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
-
-
-
-
-
-
-## Start using SDK
-
-###  <a name="init"></a>SDK initialization（Must be called during application initialization, otherwise you can't use AIHelp properly）
+###  IV、SDK initialization（Must be called during application initialization, otherwise you can't use AIHelp properly）
 **Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
@@ -69,6 +44,32 @@ If your company doesn't have an account, you need to register an account at [AIH
             Domain:@"YOUR_DOMAIN_NAME"
              AppId:@"YOUR_APP_ID"];
 ```
+
+### V. API Summary:
+| Method | Purpose |Prerequisites|
+|:------------- |:---------------|:---------------|
+| [**showElva**](#showElva)      | Launch AI Conversation Interface|
+| [**showConversation**](#showConversation)|Launch Manual Conversation Interface| Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**showElvaOP**](#showElvaOP) | Launch Operation Interface| Need to configure Operation Sections|
+| [**showFAQs**](#showFAQs) | Show all FAQs by Sections|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**showFAQSection**](#showFAQSection)| Show FAQ Section|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**showSingleFAQ**](#showSingleFAQ) | Show Single FAQ|Need to Configure FAQ,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**setName**](#setName) |Set Your App's Name for AIHelp SDK to Display|Use it After Initialization|
+| [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
+| [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
+| [**setServerId**](#setServerId) | Set Unique Server ID|
+| [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|
+| [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
+
+**Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
+
+
+
+
+
+
+## Start using SDK
+
 
 
 
