@@ -8,7 +8,7 @@
 ### 二、导入ElvaChatServiceSDK
 1. 导入ElvaChatServiceSDK的文件夹到项目中
 ### 三、接入工程配置
-1. 在**Xcode Build Settings**里面**Other Linker Flags** 设置值**-ObjC**，否则会出现：`unrecognized selector sent to instance exception`
+1. 在**Xcode Build Settings**里面**Other Linker Flags** 设置值 **-ObjC**，否则会出现：`unrecognized selector sent to instance exception`
 2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：<br>
 `libsqlite3.tbd`<br>
 `WebKit.framework`<br>
