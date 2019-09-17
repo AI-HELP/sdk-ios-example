@@ -249,7 +249,7 @@ PlayershowConversationFlag:@"1"
 <img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElvaOP-EN-IOS.png?raw=true" width="414" alt="showElvaOP">
 
 **Best Practice：**
-> 1. Use this API to present news, announcements, articles or any useful information to users/players. Configure and publish the information in AIHelp web console. 
+> 1. Use this API to present news, announcements, articles or any useful information to users. Configure and publish the information in AIHelp web console. 
 
 
 
@@ -504,7 +504,7 @@ Note:If the FAQ's SelfServiceInterface is configured in the AIHelp background, a
 
 | Parameters | Description |
 |:------------- |:---------------|
-|__playerName__|User/Player Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
+|__playerName__|User Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
 
 **Best Practice：**
 > 1. Use this method to set the user name, which will be shown in the web console's conversation page for the user. You can address the user with this name during the chat.

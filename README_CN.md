@@ -4,18 +4,19 @@
 1. SDK支持iOS8及以上iOS版本。
 2. 甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。
 ### 一、下载iOS SDK
-1. 点击上一个页面右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
+1. 点击[这里](https://github.com/AI-HELP/AIhelp-iOS-SDK)右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
 ### 二、导入ElvaChatServiceSDK
-1. 导入ElvaChatServiceSDK的文件夹到项目中
+1. 导入ElvaChatServiceSDK的文件夹到项目工程中
 ### 三、接入工程配置
 1. 在**Xcode Build Settings**里面**Other Linker Flags** 设置值 **-ObjC**，否则会出现：`unrecognized selector sent to instance exception`
 2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：<br>
 `libsqlite3.tbd`<br>
 `WebKit.framework`<br>
-3. 设置SDK所需权限, 在项目工程的**info.plist**中增加权限<br>
-`Privacy - Photo Library Usage Description`<br>
-`Privacy - Camera Usage Description`<br>
-`Privacy - Photo Library Additions Usage Description`<br>
+3. 设置SDK所需权限, 在项目工程的**info.plist**中增加权限：<br>
+允许使用相册访问权限 `Privacy - Photo Library Usage Description`<br>
+允许使用相机使用权限 `Privacy - Camera Usage Description`<br>
+允许使用照片添加权限 `Privacy - Photo Library Additions Usage Description`<br>
+
 
 ###  四、SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
@@ -32,7 +33,7 @@
 |**domain**|app域名，从Web管理系统获取。|
 |**appId**|app唯一标识，从Web管理系统获取。|
 
-注：后面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 后台](https://aihelp.net/elva)。在Settings菜单Applications页面查看。初次使用，请先登录[智能客服官网](http://aihelp.net/index.html)自助注册。<br />
+注：上面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 客服后台](https://aihelp.net/elva)。<br />在Settings菜单Applications页面查看。初次使用，请先登录[AIHelp 官网](http://aihelp.net/index.html)自助注册。<br />
 
 **初始化代码示例：（必须在应用启动阶段调用）** <br />
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，
@@ -49,13 +50,13 @@
 | [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|
+| [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|默认使用手机系统语言设置，设置后可以调用应用内设置语言|
 
 | 建议接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
 | [**setName**](#setName) | 设置游戏名称|设置后在SDK导航栏会显示游戏的名称|
-| [**setUserId**](#setUserId) | 设置玩家(用户)ID|如果游客玩家拿不到userId,请传入空字符串@"",SDK会生成唯一设备id来区分不同的用户|
-| [**setUserName**](#setUserName) | 设置玩家(用户)名称|如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+| [**setUserId**](#setUserId) | 设置用户ID|如果游客用户拿不到userId,请传入空字符串@"",SDK会生成唯一设备id来区分不同的用户|
+| [**setUserName**](#setUserName) | 设置用户名称|如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
 
 注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
 
@@ -119,12 +120,12 @@ PlayershowConversationFlag:@"1"
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|游戏中玩家名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
-|**playerUid**|玩家在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
-|**serverId**|玩家所在的服务器编号。|
+|**playerName**|游戏中用户名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+|**playerUid**|用户在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
+|**serverId**|用户所在的服务器编号。|
 |**playerParseId**|传空字符串。|
 |**showConversationFlag**|参数的值是 “0” 或 “1”，标识是否开启人工入口。为 “1” 时，将在机器人客服聊天界面右上角，提供人工客服聊天的入口。如下图。。|
-|**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
+|**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 客服后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
 
 <img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showElva-CN-IOS.png?raw=true" width="414" alt="showElva">
 
@@ -139,7 +140,7 @@ PlayershowConversationFlag:@"1"
 
 
 
-### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 已经调用)
+### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 已经调用)
 ```objc
 [ECServiceSdk showConversation:playerUid ServerId:serverId];
 ```
@@ -169,9 +170,9 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerUid**|玩家在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
-|**serverId**|玩家所在的服务器编号。|
-|**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
+|**playerUid**|用户在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
+|**serverId**|用户所在的服务器编号。|
+|**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 客服后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
 
 **最佳实践：**
 > 通常你不需要调用这个接口，除非你想在应用里设置触发点，让用户有机会直接进入人工客服聊天界面。
@@ -228,12 +229,12 @@ PlayershowConversationFlag:@"1"
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|游戏中玩家名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
-|**playerUid**|玩家在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
-|**serverId**|玩家所在的服务器编号。|
+|**playerName**|游戏中用户名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+|**playerUid**|用户在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
+|**serverId**|用户所在的服务器编号。|
 |**playerParseId**|传空字符串。如:@""|
 |**showConversationFlag**|参数的值是 “0” 或 “1”，标识是否开启人工入口。为 “1” 时，将在机器人客服聊天界面右上角，提供人工客服聊天的入口。如下图。|
-|**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
+|**config**|可选参数，自定义Dictionary信息。可以在此处设置特定的Tag信息。<br>**说明**:elva-tags对应的值为array类型，此处传入自定义的标签，需要在[AIHelp 客服后台](https://aihelp.net/elva)配置同名称的标签才能生效。|
 |**defaultTabIndex**|可选，进入运营界面时候展示的tab的编号。默认是0，也就是默认为第一个tab，若需默认展示客服界面tab，设置值为999。|
 
 
@@ -242,7 +243,7 @@ PlayershowConversationFlag:@"1"
 
 **最佳实践：**
 > 1. 在您应用的运营入口触发这个接口的调用。
-在AIHelp 后台配置运营分页（tab)并且发布跟应用相关的运营公告内容。就通过AIHelp展示这些内容给用户。运营界面的最后一个分页总是机器人客服聊天界面。
+在AIHelp 客服后台配置运营分页（tab)并且发布跟应用相关的运营公告内容。就通过AIHelp展示这些内容给用户。运营界面的最后一个分页总是机器人客服聊天界面。
 > 2. 在tab页面，用户可以在页面右上角进入FAQ页面查看；在机器人客服页面（Help页面），用户可以在页面右上角进入人工客服，此人工客服入口可以通过参数设置条件，根据条件打开或关闭，只让一部分用户看到这个入口。
 
 
@@ -251,7 +252,7 @@ PlayershowConversationFlag:@"1"
 
 
 
-### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
+### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)
 ```objc
 [ECServiceSdk showFAQs];
 ```
@@ -307,14 +308,14 @@ switch (logicType) {
 <img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQs-CN-IOS.png?raw=true" width="414" alt="showFAQs">
 
 **最佳实践：**
-> 在您应用的FAQ主入口触发这个接口的调用。在AIHelp 后台页面配置并分类FAQ，如果您的FAQ较多，可以增加一个父级分类。
+> 在您应用的FAQ主入口触发这个接口的调用。在AIHelp 客服后台页面配置并分类FAQ，如果您的FAQ较多，可以增加一个父级分类。
 
 
 
 
 
 
-### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
+### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
 ```objc
 [ECServiceSdk showFAQSection:sectionPublishId];
 ```
@@ -364,7 +365,7 @@ switch (logicType) {
 
 |参数|说明|
 |:------------- |:---------------|
-|**sectionPublishId**|FAQ Section的PublishID（可以在[AIHelp 后台](https://aihelp.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。|
+|**sectionPublishId**|FAQ Section的PublishID（可以在[AIHelp 客服后台](https://aihelp.net/elva) 中，从FAQs菜单下[Section]菜单，查看PublishID）。|
 |**config**|可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工或机器人聊天的入口功能|
 
 <img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showFAQSection-CN-IOS.png?raw=true" width="414" alt="showFAQSection">
@@ -373,7 +374,7 @@ switch (logicType) {
 
 
 
-### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置玩家名称信息 [`setUserName`](#setUserName) 和设置玩家唯一id信息 [`setUserId`](#setUserId) 已经调用)
+### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)
 ```objc
 [ECServiceSdk showSingleFAQ:faqId];
 ```
@@ -423,10 +424,10 @@ switch (logicType) {
 
 |参数|说明|
 |:------------- |:---------------|
-|**faqId**|FAQ的编号。打开[AIHelp 后台](https://aihelp.net/elva)中，在**机器人→常见问题**页面下找到指定FAQ的FAQ编号，注意：此FAQID不能填写客服后台未存在的FAQ编号。|
+|**faqId**|FAQ的编号。打开[AIHelp 客服后台](https://aihelp.net/elva)中，在**机器人→常见问题**页面下找到指定FAQ的FAQ编号，注意：此FAQID不能填写客服后台未存在的FAQ编号。|
 |**config**|可选，自定义Dictionary信息。可以在此处设置特定的Tag信息和是否提供人工或机器人聊天的入口功能|
 
-注：如果在AIHelp 后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
+注：如果在AIHelp 客服后台配置了FAQ的SelfServiceInterface，并且SDK配置了相关参数，将在显示FAQ的同时，右上角提供功能菜单，可以对相关的自助服务进行调用。<br />
 
 <img src="https://github.com/AI-HELP/Docs-Screenshots/blob/master/showSingleFAQ-CN-IOS.png?raw=true" width="414" alt="showSingleFAQ">
 
@@ -468,7 +469,7 @@ switch (logicType) {
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerUid**|玩家唯一ID,如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
+|**playerUid**|用户唯一ID,如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
 
 **最佳实践：**
 > 通常你可以用在其他接口传入用户Id，无需调用该接口，但是若要使用[自助服务](#selfservice)，则必须调用。
@@ -479,7 +480,7 @@ switch (logicType) {
 
 
 
-### <a name="setUserName"></a>设置玩家名称信息，调用 `setUserName` 方法()
+### <a name="setUserName"></a>设置用户名称信息，调用 `setUserName` 方法()
 ```objc
 [ECServiceSdk setUserName:playerName];
 ```
@@ -491,7 +492,7 @@ switch (logicType) {
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|玩家名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+|**playerName**|用户名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
 
 **最佳实践：**
 > 1. 传入你的App的用户名称，这样在后台客户服务页面会展示用户的应用内名称，便于客服在服务用户时个性化称呼对方。
@@ -624,6 +625,6 @@ PlayershowConversationFlag:@"1"
 [ECServiceSdk showFAQs:config];
 ```
 **最佳实践：**
-> 引导玩家从不同入口看到不同的服务
+> 引导用户从不同入口看到不同的服务
 
 [链接]:http://blog.csdn.net/u012681458/article/details/51865435
