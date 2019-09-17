@@ -58,7 +58,7 @@ If your company doesn't have an account, you need to register an account at [AIH
 | [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 | [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
 | [**setServerId**](#setServerId) | Set Unique Server ID|
-| [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|By default, the phone system language setting is used, and the in-app setting language can be called after setting.|
+| [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|By default, the phone system language setting is used, and the in-app setting language can be called after setting|
 | [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
 
 **Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
