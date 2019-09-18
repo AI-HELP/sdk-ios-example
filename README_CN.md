@@ -13,9 +13,9 @@
 `libsqlite3.tbd`<br>
 `WebKit.framework`<br>
 3. 设置SDK所需权限, 在项目工程的**info.plist**中增加权限：<br>
-允许使用相册访问权限 `Privacy - Photo Library Usage Description`<br>
-允许使用相机使用权限 `Privacy - Camera Usage Description`<br>
-允许使用照片添加权限 `Privacy - Photo Library Additions Usage Description`<br>
+`Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服<br>
+`Privacy - Camera Usage Description` 需要访问您的相机权限，才能拍摄问题图片并反馈给客服<br>
+ `Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册<br>
 
 
 ###  四、SDK初始化（必须在应用启动阶段调用）
