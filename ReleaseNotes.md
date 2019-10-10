@@ -1,5 +1,9 @@
 # AIHelp iOS SDK Version Update
 
+## 1.5.0.4
+1. Remove 'MapKit.framework'
+2. Fixing the Xcode11 + iOS13 SDK compiler prevents SDK form pages from uploading pictures
+
 ## 1.5.0.1
 1. Added faq point stamping information collection popup
 2. Add client to add draft function
