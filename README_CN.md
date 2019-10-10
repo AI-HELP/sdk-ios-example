@@ -15,7 +15,7 @@
 3. 设置SDK所需权限, 在项目工程的**info.plist**中增加权限：<br>
 `Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服<br>
 `Privacy - Camera Usage Description` 需要访问您的相机权限，才能拍摄问题图片并反馈给客服<br>
- `Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册<br>
+`Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册<br>
 
 
 ###  四、SDK初始化（必须在应用启动阶段调用）
@@ -275,27 +275,19 @@ NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自�
 NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
 [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
-
 //一、联系我们按钮显示逻辑
-//0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
-//1、一直显示：设置'showContactButtonFlag'
-//2、永不显示：设置'hideContactButtonFlag'
-int showType = 0;
-switch (showType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-}
+//    0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮。不用处理 config。
+//    1、一直显示：请设置'showContactButtonFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+//    2、永不显示：请设置'hideContactButtonFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
+
 //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
-//0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
-//1、直接进入人工页面：设置'directConversation'
-//2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
-int logicType = 0;
-switch (logicType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-}
+//    0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）。不用处理 config。
+//    1、直接进入人工页面：请设置'directConversation'，添加如下代码
+//        [config setObject:@"1" forKey:@"directConversation"];
+//    2、进入机器人页面+人工客服入口按钮：请设置'showConversationFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"showConversationFlag"];
 
 [ECServiceSdk showFAQs:config];
 ```
@@ -339,25 +331,18 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
 //一、联系我们按钮显示逻辑
-//0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
-//1、一直显示：设置'showContactButtonFlag'
-//2、永不显示：设置'hideContactButtonFlag'
-int showType = 0;
-switch (showType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-}
+//    0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮。不用处理 config。
+//    1、一直显示：请设置'showContactButtonFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+//    2、永不显示：请设置'hideContactButtonFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
+
 //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
-//0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
-//1、直接进入人工页面：设置'directConversation'
-//2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
-int logicType = 0;
-switch (logicType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-}
+//    0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）。不用处理 config。
+//    1、直接进入人工页面：请设置'directConversation'，添加如下代码
+//        [config setObject:@"1" forKey:@"directConversation"];
+//    2、进入机器人页面+人工客服入口按钮：请设置'showConversationFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"showConversationFlag"];
 
 [ECServiceSdk showFAQSection:@"100" Config:config];
 ```
@@ -398,25 +383,18 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 [config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
 
 //一、联系我们按钮显示逻辑
-//0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
-//1、一直显示：设置'showContactButtonFlag'
-//2、永不显示：设置'hideContactButtonFlag'
-int showType = 0;
-switch (showType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-}
+//    0、默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮。不用处理 config。
+//    1、一直显示：请设置'showContactButtonFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+//    2、永不显示：请设置'hideContactButtonFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
+
 //二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
-//0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
-//1、直接进入人工页面：设置'directConversation'
-//2、进入机器人页面+人工客服入口按钮：设置'showConversationFlag'
-int logicType = 0;
-switch (logicType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-}
+//    0、默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）。不用处理 config。
+//    1、直接进入人工页面：请设置'directConversation'，添加如下代码
+//        [config setObject:@"1" forKey:@"directConversation"];
+//    2、进入机器人页面+人工客服入口按钮：请设置'showConversationFlag'，添加如下代码
+//        [config setObject:@"1" forKey:@"showConversationFlag"];
 
 [ECServiceSdk showSingleFAQ:@"20" Config:config];
 ```

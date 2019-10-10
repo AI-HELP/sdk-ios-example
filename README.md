@@ -287,25 +287,18 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of 
 [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
 //I、Contact us button display logic
-//0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
-//1、Always displayed: set 'showContactButtonFlag'
-//2、Keep hiden: set the 'hideContactButtonFlag'
-int showType = 0;
-switch (showType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-}
+//    0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button.
+//    1、Always displayed: set 'showContactButtonFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+//    2、Keep hiden: set the 'hideContactButtonFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
+
 //II、Click the contact us button
-//0、Default: Enter the robot page
-//1、Conversation: set 'directConversation'
-//2、Robot+Conversation: set 'showConversationFlag'
-int logicType = 0;
-switch (logicType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-}
+//    0、Default: Enter the robot page
+//    1、Conversation: set 'directConversation', add below code to your source
+//        [config setObject:@"1" forKey:@"directConversation"];
+//    2、Robot+Conversation: set 'showConversationFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"showConversationFlag"];
 
 [ECServiceSdk showFAQs:config];
 ```
@@ -350,25 +343,18 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of 
 [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
 //I、Contact us button display logic
-//0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
-//1、Always displayed: set 'showContactButtonFlag'
-//2、Keep hiden: set the 'hideContactButtonFlag'
-int showType = 0;
-switch (showType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-}
+//    0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button.
+//    1、Always displayed: set 'showContactButtonFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+//    2、Keep hiden: set the 'hideContactButtonFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
+
 //II、Click the contact us button
-//0、Default: Enter the robot page
-//1、Conversation: set 'directConversation'
-//2、Robot+Conversation: set 'showConversationFlag'
-int logicType = 0;
-switch (logicType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-}
+//    0、Default: Enter the robot page
+//    1、Conversation: set 'directConversation', add below code to your source
+//        [config setObject:@"1" forKey:@"directConversation"];
+//    2、Robot+Conversation: set 'showConversationFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"showConversationFlag"];
 
 [ECServiceSdk showFAQSection:@"100" Config:config];
 ```
@@ -410,25 +396,18 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //Definition of 
 [config setObject:customData forKey:@"elva-custom-metadata"]; //Store `customData` in containers
 
 //I、Contact us button display logic
-//0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button 
-//1、Always displayed: set 'showContactButtonFlag'
-//2、Keep hiden: set the 'hideContactButtonFlag'
-int showType = 0;
-switch (showType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"showContactButtonFlag"];break;
-    case 2:[config setObject:@"1" forKey:@"hideContactButtonFlag"];break;
-}
+//    0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button.
+//    1、Always displayed: set 'showContactButtonFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+//    2、Keep hiden: set the 'hideContactButtonFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
+
 //II、Click the contact us button
-//0、Default: Enter the robot page
-//1、Conversation: set 'directConversation'
-//2、Robot+Conversation: set 'showConversationFlag'
-int logicType = 0;
-switch (logicType) {
-    case 0:break;
-    case 1:[config setObject:@"1" forKey:@"directConversation"];break;
-    case 2:[config setObject:@"1" forKey:@"showConversationFlag"];break;
-}
+//    0、Default: Enter the robot page
+//    1、Conversation: set 'directConversation', add below code to your source
+//        [config setObject:@"1" forKey:@"directConversation"];
+//    2、Robot+Conversation: set 'showConversationFlag', add below code to your source
+//        [config setObject:@"1" forKey:@"showConversationFlag"];
 
 [ECServiceSdk showSingleFAQ:@"20" Config:config];
 ```
