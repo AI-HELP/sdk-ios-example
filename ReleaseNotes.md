@@ -1,5 +1,8 @@
 # AIHelp iOS SDK Version Update
 
+## 1.5.1.0
+1. When there are unfinished customer complaints, directly enter the manual customer service
+
 ## 1.5.0.4
 1. Remove 'MapKit.framework'
 2. Fixing the Xcode11 + iOS13 SDK compiler prevents SDK form pages from uploading pictures
