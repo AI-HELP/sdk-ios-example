@@ -622,7 +622,7 @@ or
 **code example：**
 ```objc
 NSMutableDictionary *customData = [NSMutableDictionary dictionary];
-// private_welcome_str is key, should be unchanged.
+// note:private_welcome_str is key, should be unchanged.
 [customData setObject:@"usersay" forKey:@"private_welcome_str"];//Set different artificial greetings
 
 NSMutableDictionary *config = [NSMutableDictionary dictionary]; 
