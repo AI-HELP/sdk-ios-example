@@ -552,7 +552,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### 设置另一个欢迎语。
+### 设置机器人客服界面另一个欢迎语。
 
 如果你设置了进入AI客服的不同入口，希望用户从不同的入口进入AI客服时显示不同的欢迎语，进入不同故事线，可以通过设置config参数来实现： 
 ```objc
@@ -605,4 +605,28 @@ PlayershowConversationFlag:@"1"
 **最佳实践：**
 > 引导用户从不同入口看到不同的服务
 
-[链接]:http://blog.csdn.net/u012681458/article/details/51865435
+
+
+
+### 设置人工客服界面的另一个欢迎语
+如果您想定制人工客服的欢迎语,您需要在调用对应接口的config参数里传入一对新的key,value key是:"private_welcome_str",value为您想要的定制的内容 
+**代码示例：**
+```objc
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];//定义自定义参数容器
+// 注：private_welcome_str是key，不能改变。需要改变的是usersay
+[customData setObject:@"usersay" forKey:@"private_welcome_str"]; //添加自定义人工欢迎语
+
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config参数容器
+[config setObject:customData forKey:@"elva-custom-metadata"]; //将customData存入容器
+
+[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
+             PlayerUid:@"TEST_UID_123"
+              ServerId:@"TEST_SRV_ID_123"
+         PlayerParseId:@""
+PlayershowConversationFlag:@"1"
+                Config:config];
+```
+
+**最佳实践：**
+> 引导用户从不同入口看到不同的服务
+

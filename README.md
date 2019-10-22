@@ -616,5 +616,24 @@ or
 > 1. Introduce different story lines to users from different sources.
 
 
+### Set different artificial greetings
 
+ If you want to customize the welcome message of the manual customer service, you need to pass a new pair of keys in the configuration parameters of the corresponding interface. The key is: "private_welcome_str", valued for the customized content you want
+**code example：**
+```objc
+NSMutableDictionary *customData = [NSMutableDictionary dictionary];
+// private_welcome_str is key, should be unchanged.
+[customData setObject:@"usersay" forKey:@"private_welcome_str"];//Set different artificial greetings
 
+NSMutableDictionary *config = [NSMutableDictionary dictionary]; 
+[config setObject:customData forKey:@"elva-custom-metadata"];
+
+[ECServiceSdk showElva:@"TEST_PLAYER_NAME"
+             PlayerUid:@"TEST_UID_123"
+              ServerId:@"TEST_SRV_ID_123"
+         PlayerParseId:@""
+PlayershowConversationFlag:@"1"
+                Config:config];
+```
+**Best Practice：**
+> 1. Introduce different story lines to users from different sources.
