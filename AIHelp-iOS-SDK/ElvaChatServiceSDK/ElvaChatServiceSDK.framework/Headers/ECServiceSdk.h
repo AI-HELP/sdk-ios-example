@@ -4,6 +4,14 @@
 //
 
 #import <Foundation/Foundation.h>
+/*
+ * notify the application when some state changes in Elva.
+ * eventCode:
+ *    2: Elva UI Visible Changed
+ *          state (0) : will show elva ui
+ *          state (1) : all elva ui are closed
+ */
+typedef void (*ElvaEventCallBack)(const int eventCode, const int state);
 @class UIViewController;
 @interface ECServiceSdk:NSObject
 #pragma mark - ------init------
@@ -68,4 +76,6 @@
 + (BOOL) isInSDKPageView;
 + (void) setSDKEdgeInsetsWithTop:(float)top bottom:(float)bottom enable:(BOOL)enable;
 + (void) setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;//0~1
+
++ (void) setEventListener:(ElvaEventCallBack)callback;
 @end

@@ -1,5 +1,9 @@
 # AIHelp iOS SDK Version Update
 
+## 1.6.0.0
+1. Support dark mode (iOS )
+2. If you use "showConversation", after the player's evaluation is over, return to the game page.
+
 ## 1.5.1.0
 1. When there are unfinished customer complaints, directly enter the manual customer service
 
