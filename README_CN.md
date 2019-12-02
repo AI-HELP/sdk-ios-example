@@ -51,6 +51,7 @@
 | [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|默认使用手机系统语言设置，设置后可以调用应用内设置语言|
+| [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | 设置SDK显示方向|需要设备显示对应方向的权限| 设置SDK显示方向|
 
 | 建议接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
@@ -630,3 +631,52 @@ PlayershowConversationFlag:@"1"
 **最佳实践：**
 > 引导用户从不同入口看到不同的服务
 
+
+### <a name="setSDKInterfaceOrientationMask"></a>客服系统横竖屏方向设置
+##### 步骤一，设置方向权限
+方法1:在项目的`General`->`Deployment Info`->`Device Orientation`中勾选设备所需支持的设备方向
+`Portrait`、
+`Upside Down`、
+`Upside Down`、
+`Landscape Right`
+
+方法二:在`Appdelegate`中实现`application:supportedInterfaceOrientationsForWindow:`方法，并返回设备所需支持的设备方向
+  
+```objc
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskAll;
+}
+```
+**注意**：
+1:表单中上传图片使用了系统的相机和相册功能，必须要开启竖屏选项权限，否则在调用系统相机功能会导致应用crash
+2:如果游戏是横屏的，并开启了竖屏权限影响了游戏的方向，可以在`RootViewController.m`文件中添加`supportedInterfaceOrientations`方法，并返回游戏的支持方向
+```objc
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+```
+##### 步骤二，设置SDK方向
+**代码示例：**
+```objc
+//示例1：设置SDK显示方向支持所有方向
+[ECServiceSdk setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskAll];
+
+//示例2：设置SDK显示方向为横屏
+[ECServiceSdk setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskLandscape];
+
+//示例3：设置SDK显示方向为竖屏
+[ECServiceSdk setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskPortrait];
+```
+**参数参考**
+```objc
+typedef NS_OPTIONS(NSUInteger, UIInterfaceOrientationMask) {
+    UIInterfaceOrientationMaskPortrait,         // 设备(屏幕)直立
+    UIInterfaceOrientationMaskLandscapeLeft,    // 设备(屏幕)向左横置
+    UIInterfaceOrientationMaskLandscapeRight,   // 设备(屏幕)向右橫置
+    UIInterfaceOrientationMaskPortraitUpsideDown,// 设备(屏幕)直立，上下顛倒
+    UIInterfaceOrientationMaskLandscape,        // 设备(屏幕)横置,包含向左和向右   
+    UIInterfaceOrientationMaskAll,              // 设备(屏幕)可以支持上下左右四个方向
+    UIInterfaceOrientationMaskAllButUpsideDown  // 设备(屏幕)可以支持上左右三个个方向，但不支持直立上下颠倒
+}
+
+```
