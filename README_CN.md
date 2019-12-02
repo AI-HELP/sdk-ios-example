@@ -648,7 +648,7 @@ PlayershowConversationFlag:@"1"
 }
 ```
 **注意**：
-1:表单中上传图片使用了系统的相机和相册功能，必须要开启竖屏选项权限，否则在调用系统相机功能会导致应用crash
+1:表单中上传图片使用了系统的相机和相册功能，必须要开启竖屏选项权限，否则在调用系统相机功能会导致应用crash<br />
 2:如果游戏是横屏的，并开启了竖屏权限影响了游戏的方向，可以在`RootViewController.m`文件中添加`supportedInterfaceOrientations`方法，并返回游戏的支持方向
 ```objc
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
