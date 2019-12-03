@@ -57,7 +57,6 @@ If your company doesn't have an account, you need to register an account at [AIH
 | [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|By default, the phone system language setting is used, and the in-app setting language can be called after setting|
 | [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
 | [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | SDK display orientation | Requite the orientation permissions of the device|
-
 | [**setName**](#setName) |Set Your App's Name for AIHelp SDK to Display|Use it After Initialization|
 | [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 | [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
