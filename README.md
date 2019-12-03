@@ -54,12 +54,16 @@ If your company doesn't have an account, you need to register an account at [AIH
 | [**showFAQs**](#showFAQs) | Show all FAQs by Sections|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
 | [**showFAQSection**](#showFAQSection)| Show FAQ Section|Need to Configure FAQs,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | Show Single FAQ|Need to Configure FAQ,Need to [setUserName](#setUserName) and [setUserId](#setUserId)|
+| [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|By default, the phone system language setting is used, and the in-app setting language can be called after setting|
+| [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
+| [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | SDK display orientation | Requite the orientation permissions of the device|
+
 | [**setName**](#setName) |Set Your App's Name for AIHelp SDK to Display|Use it After Initialization|
 | [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 | [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
 | [**setServerId**](#setServerId) | Set Unique Server ID|
-| [**setSDKLanguage**](#setSDKLanguage) | Set SDK Language|By default, the phone system language setting is used, and the in-app setting language can be called after setting|
-| [**setRootViewController**](#setRootViewController) | Set up a view controller for popping up 'AIHelp'|
+
+
 
 **Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
 
@@ -637,3 +641,51 @@ PlayershowConversationFlag:@"1"
 ```
 **Best Practice：**
 > 1. Introduce different story lines to users from different sources.
+
+
+
+
+### <a name="setSDKInterfaceOrientationMask"></a>Set SDK display orientation
+##### I、Set orientation permissions
+**case 1**: Click `Project`->`General`->`Deployment Info`->`Device Orientation`
+and enable
+`Portrait`,`Upside Down`,`Upside Down`,`Landscape Right`
+**case 2**: In `AppDelegate`,add
+`application:supportedInterfaceOrientationsForWindow:` method and returns the device orientations that the device needs to support
+  
+```objc
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskAll;
+}
+```
+**Note:**<br />
+1:The camera and photo album functions are used to upload pictures in the form. You must enable the `UIInterfaceOrientationMaskPortrait` option, otherwise the application will crash when calling the camera function.<br />
+2:If the game is in landscape orientation and the vertical screen permission is enabled, which affects the orientation of the game, you can add the `supportedInterfaceOrientations` method to the `RootViewController.m` file and return the supported orientation of the game
+```objc
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+```
+##### II、SDK display orientation
+**code example：**
+```objc
+//demo 1  Support all orientations in SDK display orientation setting
+[ECServiceSdk setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskAll];
+
+//demo 2  Support landscape orientation in SDK display orientation setting
+[ECServiceSdk setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskLandscape];
+
+//demo 3  Support vertical orientations in SDK display orientation setting
+[ECServiceSdk setSDKInterfaceOrientationMask:UIInterfaceOrientationMaskPortrait];
+```
+**About Parameters:**
+```objc
+typedef NS_OPTIONS(NSUInteger, UIInterfaceOrientationMask) {
+    UIInterfaceOrientationMaskPortrait,     
+    UIInterfaceOrientationMaskLandscapeLeft,    
+    UIInterfaceOrientationMaskLandscapeRight,   
+    UIInterfaceOrientationMaskPortraitUpsideDown,
+    UIInterfaceOrientationMaskLandscape,        
+    UIInterfaceOrientationMaskAll,              
+    UIInterfaceOrientationMaskAllButUpsideDown
+}

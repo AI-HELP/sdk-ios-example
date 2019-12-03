@@ -51,7 +51,7 @@
 | [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|默认使用手机系统语言设置，设置后可以调用应用内设置语言|
-| [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | 设置SDK显示方向|需要设备显示对应方向的权限| 设置SDK显示方向|
+| [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | 设置SDK显示方向|需要设备显示对应方向的权限|
 
 | 建议接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
@@ -647,7 +647,7 @@ PlayershowConversationFlag:@"1"
     return UIInterfaceOrientationMaskAll;
 }
 ```
-**注意**：
+**注意**：<br />
 1:表单中上传图片使用了系统的相机和相册功能，必须要开启竖屏选项权限，否则在调用系统相机功能会导致应用crash<br />
 2:如果游戏是横屏的，并开启了竖屏权限影响了游戏的方向，可以在`RootViewController.m`文件中添加`supportedInterfaceOrientations`方法，并返回游戏的支持方向
 ```objc
