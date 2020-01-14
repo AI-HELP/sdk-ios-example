@@ -10,7 +10,7 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 1. Add `-ObjC` to **Build Settings**->**Other Linker Flags**.
 2. Add framework to **Link Binary with Libraries**:<br>
 `WebKit.framework` 
-`libsqlite3.tbd`
+`libsqlite3.tbd`  
 3. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
 `Privacy - Camera Usage Description` <br>
 `Privacy - Photo Library Usage Description`<br>
@@ -21,19 +21,19 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. In the `application: didFinishLaunchingWithOptions`method of `AppDelegate` of the project, the SDK initialization method is invoked.
 ```objc
-[ECServiceSdk init:appSecret 
-            Domain:domain
-             AppId:appId];
+[ECServiceSdk init:app_key 
+            Domain:app_domain
+             AppId:app_id];
 ```
 **About Parameters：**
 
 | Parameters | Description |
 |:------------- |:---------------|
-| **appSecret**    | Your unique Developer API Key,obtained from the web management system|
-| **domain**     | Your AIHelp Domain Name. For example: foo.AIHELP.NET,obtained from the web management system|
-| **appId**     | A unique ID Assigned to your App,obtained from the web management system| 
+| **app_key**    | Your unique Developer API Key, can be obtained from our web management system by `APP Key`|
+| **app_domain** | Your AIHelp Domain Name. For example: foo.AIHELP.NET, can be obtained from our web management system by `Domain`|
+| **app_id**     | A unique ID Assigned to your App, can be obtained from our web management system by `Platforms(AppID)`| 
 
-Note: Please log into [AIHelp Web Console](https://aihelp.net/elva) with your registered email account to find the __appKey__, __domain__ and __appId__ In the _Application_ page of the _Settings_ Menu. 
+Note: Please log into [AIHelp Web Console](https://aihelp.net/elva) with your registered email account to find the `APP Key`, `Domain` and `Platforms(AppID)` In the _Application_ page of the _Settings_ Menu. 
 If your company doesn't have an account, you need to register an account at [AIHelp Website](http://aihelp.net/index.html)
 
 **Coding Example：(Must be called during application initialization, otherwise you can't use AIHelp properly)**<br />

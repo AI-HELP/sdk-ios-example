@@ -10,18 +10,17 @@
 ### 三、接入工程配置
 1. 必须在 **Xcode Build Settings** 里面 **Other Linker Flags** 设置值 **-ObjC**。  
 该项如果设置错误，运行时就会出现异常：`unrecognized selector sent to instance exception`  
-![](https://github.com/AI-HELP/AIhelp-iOS-SDK/blob/master/images/Add%20Link%20Flag%20(-ObjC).png)
+
 2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：  
-`libsqlite3.tbd`<br>  
-`WebKit.framework`<br>  
-![](https://github.com/AI-HELP/AIhelp-iOS-SDK/blob/master/images/Add%20Frameworks.png)
+`libsqlite3.tbd`  
+`WebKit.framework`  
 
 3. 设置SDK所需权限, 在项目工程的 **info.plist** 中增加3个权限：  
 `Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服  
 `Privacy - Camera Usage Description` 需要访问您的相机权限，才能拍摄问题图片并反馈给客服  
 `Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册  
 
-您可以一项一项的在XCode里面添加权限，也可以直接用文本编辑器打开 **info.plist** 添加如下内容：  
+也可以一项一项的在XCode里面添加权限，也可以直接用文本编辑器打开 **info.plist** 添加如下内容：  
 ```xml
 <key>NSCameraUsageDescription</key>  
 <string>需要访问您的相机权限，才能拍摄问题图片并反馈给客服</string>  
@@ -31,40 +30,41 @@
 <string>需要访问您的相册权限，才能将图片上传反馈给客服</string>  
 ```
 
-![](https://github.com/AI-HELP/AIhelp-iOS-SDK/blob/master/images/Add%20Privacy%20(Info.plist).png)
-
 ###  四、SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
 1. 引入相关头文件 `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
 2. 在工程的 AppDelegate 中的`application:didFinishLaunchingWithOptions`方法中，调用 SDK 初始化方法。
 ```objc
-[ECServiceSdk init:appSecret Domain:domain AppId:appId];
+[ECServiceSdk init:app_key Domain:app_domain AppId:app_id];
 ```                  
 **参数说明:**
 
 |参数|说明|
 |:------------- |:---------------|
-|**appSecret**|app密钥，从Web管理系统获取。|
-|**domain**|app域名，从Web管理系统获取。|
-|**appId**|app唯一标识，从Web管理系统获取。|
+|**app_key**|app密钥，可以从Web管理系统获取 `APP Key` |
+|**app_domain**|app域名，可以从Web管理系统获取 `Domain` |
+|**app_id**|app唯一标识，可以从Web管理系统获取 `Platforms(AppID)` |
 
-注：上面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 客服后台](https://aihelp.net/elva)。<br />在Settings菜单Applications页面查看。初次使用，请先登录[AIHelp 官网](http://aihelp.net/index.html)自助注册。<br />
+注：上面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 客服后台](https://aihelp.net/elva)。  
+在Settings菜单Applications页面查看。  
+初次使用，请先登录[AIHelp 官网](http://aihelp.net/index.html)自助注册。<br />
 
 **初始化代码示例：（必须在应用启动阶段调用）** <br />
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，
 如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
 ```objc
 [ECServiceSdk init:@"YOUR_APP_KEY" Domain:@"YOUR_DOMAIN_NAME" AppId:@"YOUR_APP_ID"];
-```
+```  
+
 ### 五、接口简介
 | 可选接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
 | [**showElva**](#showElva)      | 启动机器人客服界面| 
-| [**showConversation**](#showConversation)|启动人工客服界面| 需调用[setUserName](#setUserName) |
+| [**showConversation**](#showConversation)|启动人工客服界面| 需先调用[setUserName](#setUserName) |
 | [**showElvaOP**](#showElvaOP) | 启动运营界面| |
-| [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
-| [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showFAQs**](#showFAQs) | 展示全部FAQ菜单|需配置FAQ,需先调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showFAQSection**](#showFAQSection)| 展示FAQ分类|需配置FAQ,需先调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
+| [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需先调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|默认使用手机系统语言设置，设置后可以调用应用内设置语言|
 | [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | 设置SDK显示方向|需要设备显示对应方向的权限|
 
@@ -72,13 +72,9 @@
 |:------------- |:---------------|:---------------|
 | [**setName**](#setName) | 设置游戏名称|设置后在SDK导航栏会显示游戏的名称|
 | [**setUserId**](#setUserId) | 设置用户ID|如果游客用户拿不到userId,请传入空字符串@"",SDK会生成唯一设备id来区分不同的用户|
-| [**setUserName**](#setUserName) | 设置用户名称|如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+| [**setUserName**](#setUserName) | 设置用户名称|如果拿不到userName，传入空字符串@""，会使用默认昵称"anonymous"|
 
-注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，详情见下
-
-
-
-
+注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，具体API细节见下方描述  
 
 ## 开始使用SDK
 
@@ -136,7 +132,7 @@ PlayershowConversationFlag:@"1"
 
 |参数|说明|
 |:------------- |:---------------|
-|**playerName**|游戏中用户名称。如果拿不到uname，传入空字符串@""，会使用默认昵称"anonymous"|
+|**playerName**|游戏中用户名称。如果拿不到userName，传入空字符串@""，会使用默认昵称"anonymous"|
 |**playerUid**|用户在游戏里的唯一标示id。如果拿不到uid，传入空字符串@""，系统会生成一个唯一设备id|
 |**serverId**|用户所在的服务器编号。|
 |**playerParseId**|传空字符串。|
