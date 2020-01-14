@@ -22,7 +22,18 @@ void ECService_onEventChanged(const int eventCode, const int state) {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [ECServiceSdk setEventListener:ECService_onEventChanged];
     [ECServiceSdk setOpenLog:YES];
-    [ECServiceSdk init:@"app_secret" Domain:@"app_domain" AppId:@"app_id"];
+    [ECServiceSdk init:@"input your app key at here"
+                Domain:@"input your app domain at here"
+                 AppId:@"input your app id at here"];
+    // (CN) 注：
+    // 上面这三个参数，请使用注册时的邮箱地址作为登录名登录 [AIHelp 客服后台] (https://aihelp.net/elva)。
+    //    在Settings菜单Applications页面查看。
+    //    初次使用，请先登录[AIHelp 官网](http://aihelp.net/index.html) 自助注册。<br />
+    // (EN) Note:
+    // Please log into [AIHelp Web Console](https://aihelp.net/elva)
+    // with your registered email account to find the `APP Key`, `Domain` and `Platforms(AppID)`
+    // In the _Application_ page of the _Settings_ Menu.
+    // If your company doesn't have an account, you need to register an account at [AIHelp Website](http://aihelp.net/index.html)
     return YES;
 }
 

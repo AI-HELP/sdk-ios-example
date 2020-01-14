@@ -65,11 +65,23 @@
                                             @"vip":@"vip2",
                                             @"coins":@"0"}
                                     } mutableCopy];
+    //I、Contact us button display logic
+    //    0、Default: Not displayed,In FAQ details page,Click the 'No' button to display the 'Contact Us' button.
+    //    1、Always displayed: set 'showContactButtonFlag', add below code to your source
+    //        [config setObject:@"1" forKey:@"showContactButtonFlag"];
+    //    2、Keep hiden: set the 'hideContactButtonFlag', add below code to your source
+    //        [config setObject:@"1" forKey:@"hideContactButtonFlag"];
     // 一、联系我们按钮显示逻辑
     //  默认：FAQ列表页和详情页不显示，点击“踩”，显示联系我们按钮
     //  一直显示：设置 'showContactButtonFlag'
     //  永不显示：设置 'hideContactButtonFlag'
     [config setObject:@"1" forKey:@"showContactButtonFlag"];
+    //II、Click the contact us button
+    //    0、Default: Enter the robot page
+    //    1、Conversation: set 'directConversation', add below code to your source
+    //        [config setObject:@"1" forKey:@"directConversation"];
+    //    2、Robot+Conversation: set 'showConversationFlag', add below code to your source
+    //        [config setObject:@"1" forKey:@"showConversationFlag"];
     // 二、点击联系我们按钮（经过一步骤，显示了联系我们按钮的前提）进入客服页面的逻辑
     //  默认：进入机器人页面（无进行中客诉时，不显示人工客服按钮）
     //  直接进入人工页面：设置 'directConversation'
