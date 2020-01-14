@@ -10,11 +10,11 @@
 ### 三、接入工程配置
 1. 必须在 **Xcode Build Settings** 里面 **Other Linker Flags** 设置值 **-ObjC**。  
 该项如果设置错误，运行时就会出现异常：`unrecognized selector sent to instance exception`  
-![](https://github.com/AI-HELP/AIhelp-iOS-SDK/images/Add%20Link%20Flag%20(-ObjC).png)
+![](https://github.com/AI-HELP/AIhelp-iOS-SDK/blob/master/images/Add%20Link%20Flag%20(-ObjC).png)
 2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：  
 `libsqlite3.tbd`<br>  
 `WebKit.framework`<br>  
-![](https://github.com/AI-HELP/AIhelp-iOS-SDK/images/Add%20Frameworks.png)
+![](https://github.com/AI-HELP/AIhelp-iOS-SDK/blob/master/images/Add%20Frameworks.png)
 
 3. 设置SDK所需权限, 在项目工程的 **info.plist** 中增加3个权限：  
 `Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服  
@@ -31,7 +31,7 @@
 <string>需要访问您的相册权限，才能将图片上传反馈给客服</string>  
 ```
 
-![](https://github.com/AI-HELP/AIhelp-iOS-SDK/images/Add%20Privacy%20(Info.plist).png)
+![](https://github.com/AI-HELP/AIhelp-iOS-SDK/blob/master/images/Add%20Privacy%20(Info.plist).png)
 
 ###  四、SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**
