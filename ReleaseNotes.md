@@ -70,7 +70,6 @@ Customer service input limit increased to 800
 Perfect the function of reward and reward
 Front end operation module
 
-
 ## 1.3.4 
 * Support FAQ Parent Sections. 
 * UI optimize and bug fixes. 
@@ -87,8 +86,10 @@ Front end operation module
 * url with https protocol
 * the form short connection display title
 * support from the FAQ directly into the manual
+
 ## 1.1.6
 1, in accordance with the device id to support customer complaints
+
 ## 1.1.5
 * FAQ like, support Russian, Korean, Spanish, Japanese, Arabic, Thai
 * customer service reply picture direct display

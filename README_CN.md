@@ -6,17 +6,32 @@
 ### 一、下载iOS SDK
 1. 点击[这里](https://github.com/AI-HELP/AIhelp-iOS-SDK)右上角的“Clone or download”按钮下载IOS SDK，下载完成后解压文件。
 ### 二、导入ElvaChatServiceSDK
-1. 导入ElvaChatServiceSDK的文件夹到项目工程中
+1. 导入文件夹 ElvaChatServiceSDK 到项目工程中
 ### 三、接入工程配置
-1. 在**Xcode Build Settings**里面**Other Linker Flags** 设置值 **-ObjC**，否则会出现：`unrecognized selector sent to instance exception`
-2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：<br>
-`libsqlite3.tbd`<br>
-`WebKit.framework`<br>
-3. 设置SDK所需权限, 在项目工程的**info.plist**中增加权限：<br>
-`Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服<br>
-`Privacy - Camera Usage Description` 需要访问您的相机权限，才能拍摄问题图片并反馈给客服<br>
-`Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册<br>
+1. 必须在 **Xcode Build Settings** 里面 **Other Linker Flags** 设置值 **-ObjC**。  
+该项如果设置错误，运行时就会出现异常：`unrecognized selector sent to instance exception`  
+![](https://github.com/AI-HELP/AIhelp-iOS-SDK/images/Add%20Link%20Flag%20(-ObjC).png)
+2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：  
+`libsqlite3.tbd`<br>  
+`WebKit.framework`<br>  
+![](https://github.com/AI-HELP/AIhelp-iOS-SDK/images/Add%20Frameworks.png)
 
+3. 设置SDK所需权限, 在项目工程的 **info.plist** 中增加3个权限：  
+`Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服  
+`Privacy - Camera Usage Description` 需要访问您的相机权限，才能拍摄问题图片并反馈给客服  
+`Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册  
+
+您可以一项一项的在XCode里面添加权限，也可以直接用文本编辑器打开 **info.plist** 添加如下内容：  
+```xml
+<key>NSCameraUsageDescription</key>  
+<string>需要访问您的相机权限，才能拍摄问题图片并反馈给客服</string>  
+<key>NSPhotoLibraryAddUsageDescription</key>  
+<string>需要照片添加权限，才能保存图片到相册</string>  
+<key>NSPhotoLibraryUsageDescription</key>  
+<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>  
+```
+
+![](https://github.com/AI-HELP/AIhelp-iOS-SDK/images/Add%20Privacy%20(Info.plist).png)
 
 ###  四、SDK初始化（必须在应用启动阶段调用）
 **甲方有义务按照乙方接入文档说明的正常接入方式和调用方式使用乙方服务，如甲方通过技术手段影响乙方计费，乙方有权在通知甲方的同时立即单方面终止服务，并要求甲方承担责任。**

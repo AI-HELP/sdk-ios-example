@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0CD82D23CD780700C1C47F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0CD82C23CD780700C1C47F /* libsqlite3.0.tbd */; };
+		AC0CD82F23CD780D00C1C47F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0CD82E23CD780D00C1C47F /* WebKit.framework */; };
+		AC0CD83323CD781600C1C47F /* MQTTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0CD83023CD781600C1C47F /* MQTTFramework.framework */; };
+		AC0CD83423CD781600C1C47F /* ElvaChatServiceSDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0CD83123CD781600C1C47F /* ElvaChatServiceSDK.bundle */; };
+		AC0CD83523CD781600C1C47F /* ElvaChatServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0CD83223CD781600C1C47F /* ElvaChatServiceSDK.framework */; };
+		AC0CD83823CDAE2E00C1C47F /* ElvaChatServiceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC0CD83123CD781600C1C47F /* ElvaChatServiceSDK.bundle */; };
+		AC0CD83B23CDB56900C1C47F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0CD83A23CDB56900C1C47F /* UIKit.framework */; };
+		F641118C23C828CD004AAE5B /* DataViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F641118723C828CD004AAE5B /* DataViewController.mm */; };
+		F641118D23C828CD004AAE5B /* ModelController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F641118823C828CD004AAE5B /* ModelController.mm */; };
+		F641118E23C828CD004AAE5B /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F641118923C828CD004AAE5B /* RootViewController.mm */; };
+		F6AEDF2623A3BD7600F5D15E /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6AEDF2523A3BD7600F5D15E /* AppDelegate.mm */; };
+		F6AEDF2F23A3BD7600F5D15E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AEDF2D23A3BD7600F5D15E /* Main.storyboard */; };
+		F6AEDF3123A3BD7800F5D15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AEDF3023A3BD7800F5D15E /* Assets.xcassets */; };
+		F6AEDF3423A3BD7800F5D15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AEDF3223A3BD7800F5D15E /* LaunchScreen.storyboard */; };
+		F6AEDF3723A3BD7800F5D15E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AEDF3623A3BD7800F5D15E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC0CD82C23CD780700C1C47F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
+		AC0CD82E23CD780D00C1C47F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		AC0CD83023CD781600C1C47F /* MQTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MQTTFramework.framework; path = ../ElvaChatServiceSDK/MQTTFramework.framework; sourceTree = "<group>"; };
+		AC0CD83123CD781600C1C47F /* ElvaChatServiceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ElvaChatServiceSDK.bundle; path = ../ElvaChatServiceSDK/ElvaChatServiceSDK.bundle; sourceTree = "<group>"; };
+		AC0CD83223CD781600C1C47F /* ElvaChatServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ElvaChatServiceSDK.framework; path = ../ElvaChatServiceSDK/ElvaChatServiceSDK.framework; sourceTree = "<group>"; };
+		AC0CD83A23CDB56900C1C47F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F63F1CFF23BF51D7000CD254 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../3rdParty/glfw-3.3.1/lib-macos/libglfw3.a"; sourceTree = "<group>"; };
+		F63F1D0E23BF58AC000CD254 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F63F1D1023BF58BF000CD254 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F63F1D1223BF58C6000CD254 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F63F1D1423BF59EA000CD254 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F63F1D1623BF5B0E000CD254 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F641118623C828CD004AAE5B /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		F641118723C828CD004AAE5B /* DataViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataViewController.mm; sourceTree = "<group>"; };
+		F641118823C828CD004AAE5B /* ModelController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelController.mm; sourceTree = "<group>"; };
+		F641118923C828CD004AAE5B /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		F641118A23C828CD004AAE5B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F641118B23C828CD004AAE5B /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		F641118F23C82AC6004AAE5B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		F64F68C823AE4E31009E1F66 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		F64F68CA23AE4E47009E1F66 /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
+		F64F68CC23AE4E4E009E1F66 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F64F68DC23B0BFA2009E1F66 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../3rdParty/openssl/prebuilt/mac/libcrypto.a; sourceTree = "<group>"; };
+		F64F68DD23B0BFA2009E1F66 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../3rdParty/openssl/prebuilt/mac/libssl.a; sourceTree = "<group>"; };
+		F6A516CC23C7326D00569125 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516CE23C7328000569125 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D023C732BB00569125 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D123C732BB00569125 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D223C732BB00569125 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D323C732BB00569125 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/EventKitUI.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D423C732BB00569125 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D523C732BB00569125 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6A516D623C732BB00569125 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F6AEDF2223A3BD7600F5D15E /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AEDF2423A3BD7600F5D15E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6AEDF2523A3BD7600F5D15E /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		F6AEDF2E23A3BD7600F5D15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6AEDF3023A3BD7800F5D15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6AEDF3323A3BD7800F5D15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6AEDF3523A3BD7800F5D15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6AEDF3623A3BD7800F5D15E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6FECA8523B1CFE600D384BA /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/lib/libz.1.2.11.tbd; sourceTree = DEVELOPER_DIR; };
+		F6FECA8723B1CFEA00D384BA /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/lib/libiconv.2.4.0.tbd; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6AEDF1F23A3BD7600F5D15E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0CD83B23CDB56900C1C47F /* UIKit.framework in Frameworks */,
+				AC0CD83323CD781600C1C47F /* MQTTFramework.framework in Frameworks */,
+				AC0CD83423CD781600C1C47F /* ElvaChatServiceSDK.bundle in Frameworks */,
+				AC0CD83523CD781600C1C47F /* ElvaChatServiceSDK.framework in Frameworks */,
+				AC0CD82F23CD780D00C1C47F /* WebKit.framework in Frameworks */,
+				AC0CD82D23CD780700C1C47F /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F64F68C623AE4E1E009E1F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC0CD83A23CDB56900C1C47F /* UIKit.framework */,
+				AC0CD83123CD781600C1C47F /* ElvaChatServiceSDK.bundle */,
+				AC0CD83223CD781600C1C47F /* ElvaChatServiceSDK.framework */,
+				AC0CD83023CD781600C1C47F /* MQTTFramework.framework */,
+				AC0CD82E23CD780D00C1C47F /* WebKit.framework */,
+				AC0CD82C23CD780700C1C47F /* libsqlite3.0.tbd */,
+				F641118F23C82AC6004AAE5B /* libc++.tbd */,
+				F6A516D123C732BB00569125 /* CoreAudio.framework */,
+				F6A516D623C732BB00569125 /* CoreFoundation.framework */,
+				F6A516D023C732BB00569125 /* CoreImage.framework */,
+				F6A516D423C732BB00569125 /* CoreText.framework */,
+				F6A516D223C732BB00569125 /* EventKit.framework */,
+				F6A516D323C732BB00569125 /* EventKitUI.framework */,
+				F6A516D523C732BB00569125 /* GLKit.framework */,
+				F6A516CE23C7328000569125 /* OpenGLES.framework */,
+				F6A516CC23C7326D00569125 /* UIKit.framework */,
+				F63F1D1623BF5B0E000CD254 /* IOKit.framework */,
+				F63F1D1423BF59EA000CD254 /* Cocoa.framework */,
+				F63F1D1223BF58C6000CD254 /* CoreImage.framework */,
+				F63F1D1023BF58BF000CD254 /* CoreGraphics.framework */,
+				F63F1D0E23BF58AC000CD254 /* OpenGL.framework */,
+				F63F1CFF23BF51D7000CD254 /* libglfw3.a */,
+				F6FECA8723B1CFEA00D384BA /* libiconv.2.4.0.tbd */,
+				F6FECA8523B1CFE600D384BA /* libz.1.2.11.tbd */,
+				F64F68DC23B0BFA2009E1F66 /* libcrypto.a */,
+				F64F68DD23B0BFA2009E1F66 /* libssl.a */,
+				F64F68CC23AE4E4E009E1F66 /* libz.tbd */,
+				F64F68CA23AE4E47009E1F66 /* libz.1.2.11.tbd */,
+				F64F68C823AE4E31009E1F66 /* libiconv.2.4.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6AED8BC23A337B100F5D15E = {
+			isa = PBXGroup;
+			children = (
+				F6AEDF2323A3BD7600F5D15E /* demo */,
+				F6AEDF1623A3BD4600F5D15E /* Products */,
+				F64F68C623AE4E1E009E1F66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6AEDF1623A3BD4600F5D15E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6AEDF2223A3BD7600F5D15E /* demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6AEDF2323A3BD7600F5D15E /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				F6AEDF2423A3BD7600F5D15E /* AppDelegate.h */,
+				F6AEDF2523A3BD7600F5D15E /* AppDelegate.mm */,
+				F6AEDF3023A3BD7800F5D15E /* Assets.xcassets */,
+				F641118623C828CD004AAE5B /* DataViewController.h */,
+				F641118723C828CD004AAE5B /* DataViewController.mm */,
+				F6AEDF3523A3BD7800F5D15E /* Info.plist */,
+				F6AEDF3223A3BD7800F5D15E /* LaunchScreen.storyboard */,
+				F6AEDF3623A3BD7800F5D15E /* main.m */,
+				F6AEDF2D23A3BD7600F5D15E /* Main.storyboard */,
+				F641118B23C828CD004AAE5B /* ModelController.h */,
+				F641118823C828CD004AAE5B /* ModelController.mm */,
+				F641118A23C828CD004AAE5B /* RootViewController.h */,
+				F641118923C828CD004AAE5B /* RootViewController.mm */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6AEDF2123A3BD7600F5D15E /* demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6AEDF3823A3BD7800F5D15E /* Build configuration list for PBXNativeTarget "demo" */;
+			buildPhases = (
+				F6AEDF1E23A3BD7600F5D15E /* Sources */,
+				F6AEDF1F23A3BD7600F5D15E /* Frameworks */,
+				F6AEDF2023A3BD7600F5D15E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demo;
+			productName = demo;
+			productReference = F6AEDF2223A3BD7600F5D15E /* demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6AED8BD23A337B100F5D15E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					F6AEDF2123A3BD7600F5D15E = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = F6AED8C023A337B100F5D15E /* Build configuration list for PBXProject "demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6AED8BC23A337B100F5D15E;
+			productRefGroup = F6AEDF1623A3BD4600F5D15E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6AEDF2123A3BD7600F5D15E /* demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6AEDF2023A3BD7600F5D15E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0CD83823CDAE2E00C1C47F /* ElvaChatServiceSDK.bundle in Resources */,
+				F6AEDF3423A3BD7800F5D15E /* LaunchScreen.storyboard in Resources */,
+				F6AEDF3123A3BD7800F5D15E /* Assets.xcassets in Resources */,
+				F6AEDF2F23A3BD7600F5D15E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6AEDF1E23A3BD7600F5D15E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AEDF2623A3BD7600F5D15E /* AppDelegate.mm in Sources */,
+				F641118C23C828CD004AAE5B /* DataViewController.mm in Sources */,
+				F6AEDF3723A3BD7800F5D15E /* main.m in Sources */,
+				F641118E23C828CD004AAE5B /* RootViewController.mm in Sources */,
+				F641118D23C828CD004AAE5B /* ModelController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6AEDF2D23A3BD7600F5D15E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AEDF2E23A3BD7600F5D15E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6AEDF3223A3BD7800F5D15E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AEDF3323A3BD7800F5D15E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6AED8C123A337B100F5D15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F6AED8C223A337B100F5D15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F6AEDF3923A3BD7800F5D15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7RD3ZGL7DT;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ElvaChatServiceSDK";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"CC_TARGET_PLATFORM=1",
+					HAVE_CONFIG_H,
+					CONFIG_BIGNUM,
+					DUMP_LEAKS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ElvaChatServiceSDK";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aihelp.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		F6AEDF3A23A3BD7800F5D15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7RD3ZGL7DT;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ElvaChatServiceSDK";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					"CC_TARGET_PLATFORM=1",
+					HAVE_CONFIG_H,
+					CONFIG_BIGNUM,
+					DUMP_LEAKS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../ElvaChatServiceSDK";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aihelp.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6AED8C023A337B100F5D15E /* Build configuration list for PBXProject "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AED8C123A337B100F5D15E /* Debug */,
+				F6AED8C223A337B100F5D15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6AEDF3823A3BD7800F5D15E /* Build configuration list for PBXNativeTarget "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AEDF3923A3BD7800F5D15E /* Debug */,
+				F6AEDF3A23A3BD7800F5D15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6AED8BD23A337B100F5D15E /* Project object */;
+}
