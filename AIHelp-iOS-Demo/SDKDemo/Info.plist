@@ -41,11 +41,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>需要访问您的相机权限，才能拍摄问题图片并反馈给客服</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>需要照片添加权限，才能保存图片到相册</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>
 </dict>
 </plist>

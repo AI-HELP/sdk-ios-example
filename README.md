@@ -29,9 +29,9 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 
 | Parameters | Description |
 |:------------- |:---------------|
-| **app_key**    | Your unique Developer API Key, can be obtained from our web management system by `APP Key`|
-| **app_domain** | Your AIHelp Domain Name. For example: foo.AIHELP.NET, can be obtained from our web management system by `Domain`|
-| **app_id**     | A unique ID Assigned to your App, can be obtained from our web management system by `Platforms(AppID)`| 
+| **app_key**    | Your unique Developer API Key. Can be obtained from our web management system by `APP Key`|
+| **app_domain** | Your AIHelp Domain Name. For example: foo.AIHELP.NET. Can be obtained from our web management system by `Domain`|
+| **app_id**     | A unique ID Assigned to your App. Can be obtained from our web management system by `Platforms(AppID)`| 
 
 Note: Please log into [AIHelp Web Console](https://aihelp.net/elva) with your registered email account to find the `APP Key`, `Domain` and `Platforms(AppID)` In the _Application_ page of the _Settings_ Menu. 
 If your company doesn't have an account, you need to register an account at [AIHelp Website](http://aihelp.net/index.html)
