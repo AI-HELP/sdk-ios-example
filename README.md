@@ -45,7 +45,11 @@ If your company doesn't have an account, you need to register an account at [AIH
              AppId:@"YOUR_APP_ID"];
 ```
 
-### V. API Summary:
+
+
+
+## Start using SDK
+### 1. API Summary:
 | Method | Purpose |Prerequisites|
 |:------------- |:---------------|:---------------|
 | [**showElva**](#showElva)      | Launch AI Conversation Interface|
@@ -67,11 +71,6 @@ If your company doesn't have an account, you need to register an account at [AIH
 **Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
 
 
-
-
-
-
-## Start using SDK
 
 
 
@@ -546,27 +545,11 @@ Setting the SDK Language will change the FAQs, Operational information, AI Chat 
 
 
 
-### <a name="setRootViewController"></a>13. setRootViewController, use `setRootViewController`:<br />
-
-
-**Coding Example：**
-```objc
-[ECServiceSdk setRootViewController:viewController];
-```
-**About Parameters：**
-
-| Parameters | Description |
-|:------------- |:---------------|
-|__viewController__|Set up a view controller for popping up 'AIHelp'|
-
-**Best Practice：**
-> 1. If there are multiple windows and the interface such as showElva is called directly, the interface is called when the page cannot pop up.
 
 
 
 
-
-###  Set a Different Greeting Story Line.
+###  13.Set a Different Greeting Story Line.
 
 If your APP provides multiple entries to AIHelp, and you intend to introduce different AI welcome texts and story lines to users from different entries, you can set config parameter in [showElva](#showElva) or [showElvaOP](#showElvaOP)： 
 ```objc
@@ -619,7 +602,7 @@ or
 > 1. Introduce different story lines to users from different sources.
 
 
-### Set different artificial greetings
+### 14.Set different artificial greetings
 
  If you want to customize the welcome message of the manual customer service, you need to pass a new pair of keys in the configuration parameters of the corresponding interface. The key is: "private_welcome_str", valued for the customized content you want
 **code example：**
@@ -644,7 +627,28 @@ PlayershowConversationFlag:@"1"
 
 
 
-### <a name="setSDKInterfaceOrientationMask"></a>Set SDK display orientation
+
+### <a name="setRootViewController"></a>15. setRootViewController, use `setRootViewController`:<br />
+
+
+**Coding Example：**
+```objc
+[ECServiceSdk setRootViewController:viewController];
+```
+**About Parameters：**
+
+| Parameters | Description |
+|:------------- |:---------------|
+|__viewController__|Set up a view controller for popping up 'AIHelp'|
+
+**Best Practice：**
+> 1. If there are multiple windows and the interface such as showElva is called directly, the interface is called when the page cannot pop up.
+
+
+
+
+
+### <a name="setSDKInterfaceOrientationMask"></a>16.Set SDK display orientation
 ##### I、Set orientation permissions
 **case 1**: Click `Project`->`General`->`Deployment Info`->`Device Orientation`
 and enable
