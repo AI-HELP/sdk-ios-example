@@ -56,7 +56,10 @@
 [ECServiceSdk init:@"YOUR_APP_KEY" Domain:@"YOUR_DOMAIN_NAME" AppId:@"YOUR_APP_ID"];
 ```  
 
-### 五、接口简介
+
+## 开始使用SDK
+
+### 1.界面说明
 | 可选接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
 | [**showElva**](#showElva)      | 启动机器人客服界面| 
@@ -76,9 +79,9 @@
 
 注：您并不需要调用以上所有接口，尤其当您的游戏/应用只设置一个客服入口时，有的接口所展示的界面包含了其他接口，具体API细节见下方描述  
 
-## 开始使用SDK
 
-### <a name="showElva"></a>智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
+
+### <a name="showElva"></a>2.智能客服主界面启动，调用 `showElva` 方法，启动机器人界面<br />
 ```objc
 [ECServiceSdk showElva:playerName
              PlayerUid:playerUid
@@ -152,7 +155,7 @@ PlayershowConversationFlag:@"1"
 
 
 
-### <a name="showConversation"></a>直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 已经调用)
+### <a name="showConversation"></a>3.直接进行人工客服聊天，调用 `showConversation` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 已经调用)
 ```objc
 [ECServiceSdk showConversation:playerUid ServerId:serverId];
 ```
@@ -195,7 +198,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="showElvaOP"></a>运营主界面启动，调用 `showElvaOP ` 方法
+### <a name="showElvaOP"></a>4.运营主界面启动，调用 `showElvaOP ` 方法
 当您想向用户展示应用程序/游戏的更新、新闻、文章或任何背景信息时，操作模块非常有用。
 ```objc
 [ECServiceSdk showElvaOP:playerName 
@@ -264,7 +267,7 @@ PlayershowConversationFlag:@"1"
 
 
 
-### <a name="showFAQs"></a>展示FAQ列表，调用 `showFAQs` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)
+### <a name="showFAQs"></a>5.展示FAQ列表，调用 `showFAQs` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)
 ```objc
 [ECServiceSdk showFAQs];
 ```
@@ -319,7 +322,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="showFAQSection"></a>展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
+### <a name="showFAQSection"></a>6.展示相关部分FAQ，调用 `showFAQSection` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)<br />
 ```objc
 [ECServiceSdk showFAQSection:sectionPublishId];
 ```
@@ -371,7 +374,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="showSingleFAQ"></a>展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)
+### <a name="showSingleFAQ"></a>7.展示单条FAQ，调用 `showSingleFAQ` 方法(必须确保设置用户名称信息 [`setUserName`](#setUserName) 和设置用户唯一id信息 [`setUserId`](#setUserId) 已经调用)
 ```objc
 [ECServiceSdk showSingleFAQ:faqId];
 ```
@@ -426,7 +429,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="setName"></a>设置游戏名称信息，调用 `setName` 方法
+### <a name="setName"></a>8.设置游戏名称信息，调用 `setName` 方法
 ```objc
 [ECServiceSdk setName:game_name];
 ```
@@ -447,7 +450,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="setUserId"></a>设置用户唯一id信息，调用 `setUserId` 方法(使用自助服务必须调用，参见展示单条FAQ)
+### <a name="setUserId"></a>9.设置用户唯一id信息，调用 `setUserId` 方法(使用自助服务必须调用，参见展示单条FAQ)
 ```objc
 [ECServiceSdk setUserId:playerUid];
 ```
@@ -470,7 +473,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="setUserName"></a>设置用户名称信息，调用 `setUserName` 方法()
+### <a name="setUserName"></a>10.设置用户名称信息，调用 `setUserName` 方法()
 ```objc
 [ECServiceSdk setUserName:playerName];
 ```
@@ -491,7 +494,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="setServerId"></a>设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
+### <a name="setServerId"></a>11.设置服务器编号信息，调用 `setServerId` 方法(使用自助服务必须调用，参见展示单条FAQ)
 ```objc
 [ECServiceSdk setServerId:serverId];
 ```
@@ -514,7 +517,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-### <a name="setSDKLanguage"></a>设置SDK语言，调用 `setSDKLanguage` 方法
+### <a name="setSDKLanguage"></a>12.设置SDK语言，调用 `setSDKLanguage` 方法
 ```objc
 [ECServiceSdk setSDKLanguage:language];
 ```
@@ -538,33 +541,7 @@ NSMutableDictionary *config = [NSMutableDictionary dictionary]; //定义config�
 
 
 
-
-
-
-### <a name="setRootViewController"></a>13.设置视图控制器以弹出'AIHelp' , use `setRootViewController`:<br />
-
-
-**代码示例：**
-```objc
-[ECServiceSdk setRootViewController:viewController];
-```
-**参数说明:**
-
-|参数|说明|
-|:------------- |:---------------|
-|__viewController__|设置视图控制器以弹出'aihlep'|
-
-**最佳实践：**
-> 1. 如果存在多个window,且直接调用showElva等接口，页面无法弹出时，调用此接口
-
-
-
-
-
-
-
-
-### 设置机器人客服界面另一个欢迎语。
+### 13.设置机器人客服界面另一个欢迎语。
 
 如果你设置了进入AI客服的不同入口，希望用户从不同的入口进入AI客服时显示不同的欢迎语，进入不同故事线，可以通过设置config参数来实现： 
 ```objc
@@ -620,7 +597,7 @@ PlayershowConversationFlag:@"1"
 
 
 
-### 设置人工客服界面的另一个欢迎语
+### 14.设置人工客服界面的另一个欢迎语
 如果您想定制人工客服的欢迎语,您需要在调用对应接口的config参数里传入一对新的key,value key是:"private_welcome_str",value为您想要的定制的内容 
 **代码示例：**
 ```objc
@@ -643,7 +620,27 @@ PlayershowConversationFlag:@"1"
 > 引导用户从不同入口看到不同的服务
 
 
-### <a name="setSDKInterfaceOrientationMask"></a>客服系统横竖屏方向设置
+
+### <a name="setRootViewController"></a>15.设置视图控制器以弹出'AIHelp' , use `setRootViewController`:<br />
+
+
+**代码示例：**
+```objc
+[ECServiceSdk setRootViewController:viewController];
+```
+**参数说明:**
+
+|参数|说明|
+|:------------- |:---------------|
+|__viewController__|设置视图控制器以弹出'aihlep'|
+
+**最佳实践：**
+> 1. 如果存在多个window,且直接调用showElva等接口，页面无法弹出时，调用此接口
+
+
+
+
+### <a name="setSDKInterfaceOrientationMask"></a>16.客服系统横竖屏方向设置
 ##### 步骤一，设置方向权限
 方法1:在项目的`General`->`Deployment Info`->`Device Orientation`中勾选设备所需支持的设备方向
 `Portrait`、
