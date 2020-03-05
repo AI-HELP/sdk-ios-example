@@ -11,11 +11,12 @@ Click the button "Clone or download" in the top right corner to download iOS SDK
 2. Add framework to **Link Binary with Libraries**:<br>
 `WebKit.framework` 
 `libsqlite3.tbd`  
+`libresolv.tbd`
 3. Please check the **Info.plist** and **TARGETS->info->Custom iOS Target Properties** in your project file for these permissions:<br>
 `Privacy - Camera Usage Description` <br>
 `Privacy - Photo Library Usage Description`<br>
 `Privacy - Photo Library Additions Usage Description`<br>
-
+`Privacy - Microphone Usage Description`<br>
 ###  IV、SDK initialization（Must be called during application initialization, otherwise you can't use AIHelp properly）
 **Party A is obliged to use Party B's services according to the correct plug-in method and calling method described by Party B's documents. If Party A uses any technical method to influence Party B's billing, Party B will have the right to notify Party A while unilaterally terminating the service immediately and ask Party A to assume responsibility for infulencing the billing of Party B.**
 1. Introduce header file `#import <ElvaChatServiceSDK/ElvaChatServiceSDK.h>`
@@ -65,7 +66,8 @@ If your company doesn't have an account, you need to register an account at [AIH
 | [**setUserId**](#setUserId) | Set unique User ID.If there is no uid,use string @"",The system automatically generates a unique user ID|
 | [**setUserName**](#setUserName) | Set User In-App Name.If there is no uname,use string @"",The system uses the default nickname "anonymous"|
 | [**setServerId**](#setServerId) | Set Unique Server ID|
-
+| [**setNetCheckTarget**](#setNetCheckTarget) | Network information collection function|
+| [**setPushToken**](#setPushToken) | Associated push notifications|
 
 
 **Note：It is not necessary for you to use all the APIs, especially when you only have one user interface for the customer service in your application. Some APIs already contains entry to other APIs, see below for details**
@@ -692,3 +694,67 @@ typedef NS_OPTIONS(NSUInteger, UIInterfaceOrientationMask) {
     UIInterfaceOrientationMaskAll,              
     UIInterfaceOrientationMaskAllButUpsideDown
 }
+```
+
+
+
+### <a name="setNetCheckTarget"></a>17.Network information collection function
+
+**Description:**
+Configure specific labels in the background in advance, and set trigger labels in two types of detection, ping and traceroute.
+If the player clicks on the robot complaint page with a set label, the network detection will be triggered.
+If the network monitoring finds that the delay is more than 300ms, the player will be prompted to submit a network monitoring log to the prompt box of the customer complaint.
+If you click 'Yes' in the prompt box, the detected log message will be sent to the human complaint.
+Click 'No' in the prompt box to cancel sending.
+(Note: When ping and traceroute have the same label, then the traceroute method will be used by default)
+
+**code example：**
+```objc
+//1、Set a callback function to receive the log (log: log related content)
+BOOL ECService_onPingCallBack(const NSString * log) {
+    NSLog(@"%@",log);
+    //Return value: 
+    //YES means you can continue, it will prompt the player to submit this log as a guest complaint.
+    //NO means do not submit a customer complaint for this log, the end of detection.
+    return YES;
+}
+```
+
+```objc
+//2、Set the target IP and callback function used to detect the network. 
+//If callback or set to NULL, it is equivalent to enable the function by default, equivalent to the callback function returns YES
+[ECServiceSdk setNetCheckInfoWithIp:@"www.baidu.com" callback:ECService_onPingCallBack];
+```
+**About Parameters:**
+
+| Parameters | Description |
+|:------------- |:---------------|
+|__ip__|Set detection domain name|
+|__callback__| Set the callback function. The function contains a parameter of type NSString and a return value of type BOOL |
+
+| Parameters | Description |
+|:------------- |:---------------|
+|__log__|The network related logs collected by the SDK are returned to the game|
+|__returnValue__| YES means you can continue, it will prompt the player to submit this log as a guest complaint.<br>NO means do not submit a customer complaint for this log, the end of detection. |
+
+**Best Practice：**
+> This function is set in the background to trigger the label "Stuck". When the player submits the form containing the label "Stuck", this function will be triggered. The player can synchronize the information related to network detection into the manual customer complaint, which is convenient for investigation
+
+
+
+
+### <a name="setPushToken"></a>18.Associated push notifications
+
+```objc
+[ECServiceSdk setPushToken:token pushPlatform:ElvaTokenPlatformAPNS];
+```
+
+**About Parameters:**
+
+| Parameters | Description |
+|:------------- |:---------------|
+|__pushToken__|NSString type token generated according to different platform rules|
+|__pushPlatform__|Push platform <br> 1: APNS <br> 2: firebase-FCM <br> 3: Aurora push <br> 4: One push|
+
+**Best Practice：**
+> If your application is connected to the push function and uploads related information in the background, this method can be used to associate the push service to AIHelp. When the customer service responds, a one-hop notification request will be sent to the push platform, and the client will receive the Notice
