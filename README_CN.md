@@ -12,22 +12,25 @@
 该项如果设置错误，运行时就会出现异常：`unrecognized selector sent to instance exception`  
 
 2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：  
-`libsqlite3.tbd`  
+`libsqlite3.tbd`
+`libresolv.tbd`
 `WebKit.framework`  
 
 3. 设置SDK所需权限, 在项目工程的 **info.plist** 中增加3个权限：  
 `Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服  
 `Privacy - Camera Usage Description` 需要访问您的相机权限，才能拍摄问题图片并反馈给客服  
 `Privacy - Photo Library Additions Usage Description` 需要照片添加权限，才能保存图片到相册  
-
-也可以一项一项的在XCode里面添加权限，也可以直接用文本编辑器打开 **info.plist** 添加如下内容：  
+`Privacy - Microphone Usage Description`需要访问您的麦克风权限，才能在表单页上传视频录像并反馈给客服
+也可以一项一项的在Xcode里面添加权限，也可以直接用文本编辑器打开 **info.plist** 添加如下内容：  
 ```xml
 <key>NSCameraUsageDescription</key>  
 <string>需要访问您的相机权限，才能拍摄问题图片并反馈给客服</string>  
 <key>NSPhotoLibraryAddUsageDescription</key>  
 <string>需要照片添加权限，才能保存图片到相册</string>  
 <key>NSPhotoLibraryUsageDescription</key>  
-<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>  
+<string>需要访问您的相册权限，才能将图片上传反馈给客服</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>需要访问您的麦克风权限，才能在表单页上传视频录像并反馈给客服</string>
 ```
 
 ###  四、SDK初始化（必须在应用启动阶段调用）
@@ -70,6 +73,8 @@
 | [**showSingleFAQ**](#showSingleFAQ) | 展示单条FAQ|需配置FAQ,需先调用[setUserName](#setUserName) 和[setUserId](#setUserId)|
 | [**setSDKLanguage**](#setSDKLanguage) | 设置SDK语言|默认使用手机系统语言设置，设置后可以调用应用内设置语言|
 | [**setSDKInterfaceOrientationMask**](#setSDKInterfaceOrientationMask) | 设置SDK显示方向|需要设备显示对应方向的权限|
+| [**setNetCheckTarget**](#setNetCheckTarget) | 网络信息收集功能|
+| [**setPushToken**](#setPushToken) | 推送功能关联|
 
 | 建议接口 | 接口作用 |备注|
 |:------------- |:---------------|:---------------|
@@ -688,3 +693,65 @@ typedef NS_OPTIONS(NSUInteger, UIInterfaceOrientationMask) {
 }
 
 ```
+
+
+
+
+### <a name="setNetCheckTarget"></a>17.网络信息收集功能
+
+**功能说明:**
+预先在后台配置好特定标签，在ping和traceroute两种类型检测中设定可触发标签。
+玩家在机器人客诉页面，如果点击的内容带有设定的标签，就会触发网络检测。
+网络监测如果发现延迟超过300ms，就会提示玩家把网络监测日志提交客诉的提示框。
+如果点击提示框中'是'，则发送检测的日志消息到人工客诉。
+点击点击提示框中'否'，则取消发送。
+（注意：当ping和traceroute设置了相同标签，那么默认会使用traceroute方式检测）
+
+**代码示例：**
+```objc
+//1、设置一个接收log日志的回调函数（log：日志相关内容）
+BOOL ECService_onPingCallBack(const NSString * log) {
+    NSLog(@"收到日志:%@",log);
+    //返回值：YES表示可以继续，会提示玩家把这个log当客诉提交。NO表示这个log不要提交客诉，检测到此结束。
+    return YES;
+}
+```
+
+```objc
+//2、设定用于检测网络的目标ip和回调函数,如果callback或设置为NULL,则默认相当于启用该功能，相当于回调函数返回YES
+[ECServiceSdk setNetCheckInfoWithIp:@"www.baidu.com" callback:ECService_onPingCallBack];
+```
+**参数说明:**
+
+|接口参数|说明|
+|:------------- |:---------------|
+|__ip__|设置检测域名|
+|__callback__|设置回调函数，函数包含一个NSString类型的参数和一个BOOL类型的返回值|
+
+|回调参数|说明|
+|:------------- |:---------------|
+|__log__|SDK收集到的网络相关日志返还给游戏|
+|__返回值__|YES表示可以继续，会提示玩家把这个log当客诉提交。NO表示这个log不要提交客诉，检测到此结束。|
+
+**最佳实践：**
+> 后台设置该功能触发标签'卡顿',当玩家提交表单包含'卡顿'的标签时，会触发该功能，玩家可以把网络检测相关的信息同步到人工客诉当中，方便调查
+
+
+
+
+
+### <a name="setPushToken"></a>18.推送功能关联：个推，极光，APNS
+
+```objc
+[ECServiceSdk setPushToken:token pushPlatform:ElvaTokenPlatformAPNS];
+```
+
+**参数说明:**
+
+|参数|说明|
+|:------------- |:---------------|
+|__pushToken__|根据不同平台规则生成的NSString类型的token|
+|__pushPlatform__|推送平台<br>1:APNS<br> 2:firebase-FCM<br>3:极光推送<br>4:个推|
+
+**最佳实践：**
+> 如果您的应用接入了推送功能，并在后台上传相关信息后，使用此方法可以关联推送服务到AIHelp,当客服回复后，会发送一跳通知请求到推送平台，客户端就可以收到该通知

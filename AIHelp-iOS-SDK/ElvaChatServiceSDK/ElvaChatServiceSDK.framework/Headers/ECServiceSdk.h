@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 /*
  * notify the application when some state changes in Elva.
  * eventCode:
@@ -12,7 +13,14 @@
  *          state (1) : all elva ui are closed
  */
 typedef void (*ElvaEventCallBack)(const int eventCode, const int state);
+typedef BOOL (*ElvaPingCallBack)(const NSString * log);
 @class UIViewController;
+typedef NS_ENUM(int,ElvaTokenPlatform) {
+    ElvaTokenPlatformAPNS               = 1,//APNS
+    ElvaTokenPlatformFirebase           = 2,//firebase-FCM
+    ElvaTokenPlatformJpush              = 3,//极光推送
+    ElvaTokenPlatformGeTui              = 4,//个推
+};
 @interface ECServiceSdk:NSObject
 #pragma mark - ------init------
 + (void) init:(NSString*) appSecret Domain:(NSString*) domain AppId:(NSString*) appId;
@@ -78,4 +86,6 @@ typedef void (*ElvaEventCallBack)(const int eventCode, const int state);
 + (void) setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;//0~1
 
 + (void) setEventListener:(ElvaEventCallBack)callback;
++ (void) setPushToken:(NSString*)pushToken pushPlatform:(ElvaTokenPlatform)pushPlatform;//platform参考1:APNS 2:firebase 3:极光推送 4:个推
++ (void)setNetCheckInfoWithIp:(NSString*)ip callback:(ElvaPingCallBack)callback;
 @end

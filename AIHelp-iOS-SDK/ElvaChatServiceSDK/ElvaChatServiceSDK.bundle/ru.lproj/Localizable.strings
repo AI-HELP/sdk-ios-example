@@ -21,3 +21,8 @@
 "Oops, no relevant results were found"="Извините, по вашему запросу ничего не найдено.";
 "Success"="Success";
 "Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Размер файла превышает лимит, загрузите файл размером менее %d МБ";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Отправьте нам данные диагностики сети, чтобы мы могли улучшить качество соединения.";
+"After checking, the network is available"="После проверки сеть доступна";

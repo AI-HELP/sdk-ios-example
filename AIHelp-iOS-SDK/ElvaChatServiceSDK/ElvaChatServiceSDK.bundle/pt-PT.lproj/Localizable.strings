@@ -20,6 +20,8 @@
 "Cancel"="cancelar";
 "Success"="Success";
 "Failed"="Failed";
-
-
-
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="O tamanho do arquivo excede o limite, faça o upload do arquivo com menos de %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Mandare il rapporto della condizione di rete? Ci aiuterà a migliorare le qualità della connessione.";
+"After checking, the network is available"="Após a verificação, a rede está disponível";

@@ -20,3 +20,8 @@
 "Cancel"="ยกเลิก";
 "Success"="Success";
 "Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="ขนาดไฟล์เกินขีด จำกัด โปรดอัปโหลดไฟล์ที่มีขนาดเล็กกว่า %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="จะส่งสถานการณ์อินเตอร์เน็ตมาให้เรา นี่จะช่วยเราแก้ไขคุณภาพอินเตอร์เน็ตของคุณได้มาก";
+"After checking, the network is available"="หลังจากตรวจสอบเครือข่ายจะพร้อมใช้งาน";

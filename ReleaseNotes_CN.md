@@ -1,5 +1,12 @@
 # AIHelp iOS SDK版本更新
 
+## 1.7.2.0
+1. 更新SDK需要麦克风`NSMicrophoneUsageDescription`使用权限声明和`libresolv.tbd`依赖库
+2. 新增消息发送状态提示及重发功能
+3. 新增推送功能：个推，极光，APNS
+4. 精确回答和相似回答统计
+5. 新增网络信息收集功能
+
 ## 1.6.0.0
 1. 支持暗黑模式（iOS）
 2. 调用showConversation接口，玩家评价结束后，返回到游戏页面

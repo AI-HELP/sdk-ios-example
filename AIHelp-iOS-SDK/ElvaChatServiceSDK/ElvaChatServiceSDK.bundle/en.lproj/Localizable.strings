@@ -21,3 +21,12 @@
 "Oops, no relevant results were found"="Oops, no relevant results were found";
 "Success"="Success";
 "Failed"="Failed";
+"Please tell us more details"="Please tell us more details";
+"Network Error, Please check your network"="Network Error, Please check your network";
+"Retry"="Retry";
+"Loading......"="Loading......";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="The file size exceeds the limit, please upload the file smaller than %dM";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Send us the network diagnostics? It'll help us improve connection quality.";
+"After checking, the network is available"="After checking, the network is available";

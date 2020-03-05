@@ -20,6 +20,8 @@
 "Cancel"="annullera";
 "Success"="Success";
 "Failed"="Failed";
-
-
-
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Filstorleken överskrider gränsen, ladda upp filen mindre än %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Huruvida vi ska skicka nätverksvillkor, vilket hjälper oss att förbättra kvaliteten på din nätverksanslutning";
+"After checking, the network is available"="Efter kontroll är nätverket tillgängligt";

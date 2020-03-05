@@ -22,4 +22,8 @@
 "Success"="成功";
 "Failed"="失敗";
 "Please tell us more details"="原因を具体的に書いてください。";
-
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="ファイルサイズが制限を超えています。%dMB未満のファイルをアップロードしてください";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="ネットワークの接続情報を送信していただけませんか。安定したインターネット接続を維持することに役立ちます。";
+"After checking, the network is available"="確認後、ネットワークは利用可能です";

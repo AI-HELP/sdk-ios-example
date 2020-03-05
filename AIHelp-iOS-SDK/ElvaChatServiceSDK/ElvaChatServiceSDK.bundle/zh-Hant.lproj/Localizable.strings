@@ -22,3 +22,11 @@
 "Success"="成功";
 "Failed"="失敗";
 "Please tell us more details"="請告知我們具體原因";
+"Network Error, Please check your network"="網絡請求失敗，請檢查您的網絡";
+"Retry"="重試";
+"Loading......"="正在全力加載";
+"media_upload_err_format"="文件格式不支持，目前只能上傳 mp4, 3gp, mov, png, jpg, jpeg, gif 格式的文件";
+"media_upload_err_size"="文件大小超過限制，請上傳小於%dM的文件";
+"media_upload_err_net"="網絡傳輸超時，文件上傳失敗";
+"Send us the network diagnostics? It'll help us improve connection quality."="是否將網絡狀況發送給我們，這將幫助我們改善與您的網絡連接質量";
+"After checking, the network is available"="經檢測，網絡是正常的";

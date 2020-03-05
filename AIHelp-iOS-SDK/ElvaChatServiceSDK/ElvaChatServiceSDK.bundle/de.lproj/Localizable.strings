@@ -21,4 +21,8 @@
 "Oops, no relevant results were found"="Tut mir Leid， Keine Ergebnisse gefunden.";
 "Success"="Success";
 "Failed"="Failed";
-
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Die Dateigröße überschreitet das Limit. Bitte laden Sie die Datei mit einer Größe von weniger als %d MB hoch";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Willst du uns den Status der Netzwerkverbindung senden damit wir die Qualität der Verbindung verbessern können?";
+"After checking, the network is available"="Nach der Überprüfung ist das Netzwerk verfügbar";

@@ -20,10 +20,11 @@
 "Cancel"="Anuluj";
 "Success"="Success";
 "Failed"="Failed";
-
-
-
-
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Rozmiar pliku przekracza limit, prześlij plik mniejszy niż %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Czy wysłać nam warunki sieciowe, które pomogą nam poprawić jakość twojego połączenia sieciowego";
+"After checking, the network is available"="Po sprawdzeniu sieć jest dostępna";
 
 
 

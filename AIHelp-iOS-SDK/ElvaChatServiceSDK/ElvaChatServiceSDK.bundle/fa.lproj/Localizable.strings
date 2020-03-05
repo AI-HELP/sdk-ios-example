@@ -1,4 +1,4 @@
-//法斯语fa,fa-IR
+//波斯语fa,fa-IR
 "content_too_long"="نباید از %ld حروف بیشتر باشد.";
 "ContactCustomerService" = "با ما تماس بگیرید";
 "self_service_interface" = "پشتیبانی";
@@ -20,14 +20,12 @@
 "Cancel"="لغو";
 "Success"="Success";
 "Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="اندازه پرونده فراتر از حد است ، لطفا پرونده را کوچکتر از %dM بارگذاری کنید";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
 
-
-
-
-
-
-
-
+"Send us the network diagnostics? It'll help us improve connection quality."="این که آیا شرایط شبکه را برای ما ارسال کنیم ، که به ما در بهبود کیفیت اتصال شبکه شما کمک خواهد کرد";
+"After checking, the network is available"="پس از بررسی ، شبکه موجود است";
 
 
 

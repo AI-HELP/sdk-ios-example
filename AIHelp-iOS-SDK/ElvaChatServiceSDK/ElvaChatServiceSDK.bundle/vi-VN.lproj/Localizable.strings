@@ -20,6 +20,8 @@
 "Cancel"="hủy bỏ";
 "Success"="Success";
 "Failed"="Failed";
-
-
-
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Kích thước tệp vượt quá giới hạn, vui lòng tải lên tệp nhỏ hơn %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send us the network diagnostics? It'll help us improve connection quality."="Có gửi cho chúng tôi các điều kiện mạng hay không, điều này sẽ giúp chúng tôi cải thiện chất lượng kết nối mạng của bạn";
+"After checking, the network is available"="Sau khi kiểm tra, mạng có sẵn";
