@@ -12,9 +12,9 @@
 该项如果设置错误，运行时就会出现异常：`unrecognized selector sent to instance exception`  
 
 2. 添加依赖库，在项目设置**target** -> 选项卡**General** ->**Linked Frameworks and Libraries**添加如下依赖库：  
-`libsqlite3.tbd`
-`libresolv.tbd`
-`WebKit.framework`  
+`libsqlite3.tbd`</br>
+`libresolv.tbd`</br>
+`WebKit.framework`  </br>
 
 3. 设置SDK所需权限, 在项目工程的 **info.plist** 中增加4个权限：  
 `Privacy - Photo Library Usage Description` 需要访问您的相册权限，才能将图片上传反馈给客服  

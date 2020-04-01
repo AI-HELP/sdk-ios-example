@@ -1,5 +1,8 @@
 # AIHelp iOS SDK Version Update
 
+## 1.7.2.1
+1. Fix form page cannot upload video
+
 ## 1.7.2.0
 1. Added message sending status prompt and resend function
 2. Added push function: Push, Aurora, APNS
