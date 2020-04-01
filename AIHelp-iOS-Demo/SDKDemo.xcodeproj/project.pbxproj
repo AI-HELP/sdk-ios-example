@@ -14,6 +14,7 @@
 		297387EC2368525900126DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297387EB2368525900126DE3 /* Assets.xcassets */; };
 		297387EF2368525900126DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297387ED2368525900126DE3 /* LaunchScreen.storyboard */; };
 		297387F22368525900126DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 297387F12368525900126DE3 /* main.m */; };
+		29A635332434874F001BC0D0 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A635322434874F001BC0D0 /* libresolv.tbd */; };
 		AC8D906C23D452820058CE4A /* ElvaChatServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8D906A23D452820058CE4A /* ElvaChatServiceSDK.framework */; };
 		AC8D906D23D452820058CE4A /* MQTTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8D906B23D452820058CE4A /* MQTTFramework.framework */; };
 		AC8D906F23D452950058CE4A /* ElvaChatServiceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8D906E23D452950058CE4A /* ElvaChatServiceSDK.bundle */; };
@@ -34,6 +35,7 @@
 		297387EE2368525900126DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297387F02368525900126DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		297387F12368525900126DE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29A635322434874F001BC0D0 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		AC8D906A23D452820058CE4A /* ElvaChatServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ElvaChatServiceSDK.framework; path = "../AIHelp-iOS-SDK/ElvaChatServiceSDK/ElvaChatServiceSDK.framework"; sourceTree = "<group>"; };
 		AC8D906B23D452820058CE4A /* MQTTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MQTTFramework.framework; path = "../AIHelp-iOS-SDK/ElvaChatServiceSDK/MQTTFramework.framework"; sourceTree = "<group>"; };
 		AC8D906E23D452950058CE4A /* ElvaChatServiceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ElvaChatServiceSDK.bundle; path = "../AIHelp-iOS-SDK/ElvaChatServiceSDK/ElvaChatServiceSDK.bundle"; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A635332434874F001BC0D0 /* libresolv.tbd in Frameworks */,
 				ACFEA23223EDA89F00F07D86 /* libsqlite3.tbd in Frameworks */,
 				ACFEA23023EDA89000F07D86 /* WebKit.framework in Frameworks */,
 				AC8D906C23D452820058CE4A /* ElvaChatServiceSDK.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		AC8D906923D452820058CE4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29A635322434874F001BC0D0 /* libresolv.tbd */,
 				ACFEA23123EDA89F00F07D86 /* libsqlite3.tbd */,
 				ACFEA22F23EDA89000F07D86 /* WebKit.framework */,
 				AC8D906A23D452820058CE4A /* ElvaChatServiceSDK.framework */,
