@@ -14,6 +14,8 @@
  */
 typedef void (*ElvaEventCallBack)(const int eventCode, const int state);
 typedef BOOL (*ElvaPingCallBack)(const NSString * log);
+typedef void (*ElvaAllowUploadLogMessageCallback)(void);
+
 @class UIViewController;
 typedef NS_ENUM(int,ElvaTokenPlatform) {
     ElvaTokenPlatformAPNS               = 1,//APNS
@@ -73,6 +75,7 @@ typedef NS_ENUM(int,ElvaTokenPlatform) {
 
 + (void) registerUnityOnInitializedCallback:(NSString *) gameObject;
 + (void) registerUnityOnMessageArrivedCallback:(NSString *) gameObject;
++ (void) registerUnityOnSendMessageSuccessCallback:(NSString *) gameObject;
 + (void) registerDeviceToken:(NSString*) deviceToken isVIP:(Boolean) isVip;
 + (void) handlePushNotification:(NSDictionary *) table DataFromInApp:(BOOL) dataFromInApp;
 + (int) getNotificationMessageCount;
@@ -88,4 +91,6 @@ typedef NS_ENUM(int,ElvaTokenPlatform) {
 + (void) setEventListener:(ElvaEventCallBack)callback;
 + (void) setPushToken:(NSString*)pushToken pushPlatform:(ElvaTokenPlatform)pushPlatform;//platform参考1:APNS 2:firebase 3:极光推送 4:个推
 + (void)setNetCheckInfoWithIp:(NSString*)ip callback:(ElvaPingCallBack)callback;
++ (void)setAllowUploadLogMessageCallback:(ElvaAllowUploadLogMessageCallback)callback;
++ (void)setUploadLogFileAtPath:(NSString*)path;
 @end
