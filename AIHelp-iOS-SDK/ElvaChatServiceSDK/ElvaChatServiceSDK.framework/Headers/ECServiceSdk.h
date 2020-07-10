@@ -14,6 +14,8 @@
  */
 typedef void (*ElvaEventCallBack)(const int eventCode, const int state);
 typedef BOOL (*ElvaPingCallBack)(const NSString * log);
+typedef void (*ElvaInitCallBack)(void);
+typedef void (*ElvaMessageCallBack)(const NSString * jsonString);
 typedef void (*ElvaAllowUploadLogMessageCallback)(void);
 
 @class UIViewController;
@@ -28,14 +30,14 @@ typedef NS_ENUM(int,ElvaTokenPlatform) {
 + (void) init:(NSString*) appSecret Domain:(NSString*) domain AppId:(NSString*) appId;
 #pragma mark - ------showElva------
 + (void) showElva:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag;
-+ (void) showElva:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary*) config;
++ (void) showElva:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSDictionary*) config;
 #pragma mark - ------showConversation------
 + (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId;//请优先实现setUserName接口
-+ (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId Config:(NSMutableDictionary*) config;
++ (void) showConversation:(NSString*) playerUid ServerId:(NSString*) serverId Config:(NSDictionary*) config;
 #pragma mark - ------showElvaOP------
-+ (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary *)config;
++ (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSDictionary *)config;
 
-+ (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSMutableDictionary *)config defaultTabIndex:(int)defaultTabIndex;
++ (void) showElvaOP:(NSString*) playerName PlayerUid:(NSString*) playerUid ServerId:(NSString*) serverId PlayerParseId:(NSString*) playerParseId PlayershowConversationFlag:(NSString*) playershowConversationFlag Config:(NSDictionary *)config defaultTabIndex:(int)defaultTabIndex;
 #pragma mark - ------showFAQ------
 + (void) showFAQs;
 + (void) showFAQs:(NSDictionary*)config;
@@ -43,10 +45,10 @@ typedef NS_ENUM(int,ElvaTokenPlatform) {
 + (void) showFAQs:(NSString*)playerName playerUid:(NSString*)playerUid config:(NSDictionary*)config;
 
 + (void) showFAQSection:(NSString*) sectionPublishId;
-+ (void) showFAQSection:(NSString*) sectionPublishId Config:(NSMutableDictionary*) config;
++ (void) showFAQSection:(NSString*) sectionPublishId Config:(NSDictionary*) config;
 
 + (void) showSingleFAQ:(NSString*) faqId;
-+ (void) showSingleFAQ:(NSString*) faqId Config:(NSMutableDictionary*) config;
++ (void) showSingleFAQ:(NSString*) faqId Config:(NSDictionary*) config;
 
 #pragma mark - ------other------
 + (void) showVIPChat:(NSString*) appidWeb VIPTags:(NSString *) vipTags;
@@ -91,6 +93,11 @@ typedef NS_ENUM(int,ElvaTokenPlatform) {
 + (void) setEventListener:(ElvaEventCallBack)callback;
 + (void) setPushToken:(NSString*)pushToken pushPlatform:(ElvaTokenPlatform)pushPlatform;//platform参考1:APNS 2:firebase 3:极光推送 4:个推
 + (void)setNetCheckInfoWithIp:(NSString*)ip callback:(ElvaPingCallBack)callback;
+
+
++ (void)setOnMessageArrivedCallback:(ElvaMessageCallBack)callback;//红点消息的回调
++ (void)setOnInitializedCallback:(ElvaInitCallBack)callback;//初始化回调
+
 + (void)setAllowUploadLogMessageCallback:(ElvaAllowUploadLogMessageCallback)callback;
 + (void)setUploadLogFileAtPath:(NSString*)path;
 @end

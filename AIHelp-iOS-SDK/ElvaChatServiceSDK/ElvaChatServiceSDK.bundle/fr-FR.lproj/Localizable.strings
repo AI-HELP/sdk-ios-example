@@ -9,13 +9,6 @@
 "elva__mark_yes_no_question"="Est-ce que cela a été utile?";
 "elva__mark_no"="Non";
 "elva__mark_yes"="Oui";
-"RewardBalance"="Vos jetons";
-"GoTo" = "Allez à";
-"Forum" = "FAQ";
-"RewardSuccess" = "Succès";
-"RewardFailure" = "Echec";
-"TokenInsufficient" = "Jeton insuffisant";
-"NeedMoreHelp" = "Besoin d'aide?";
 "your question"="Votre question";
 "Cancel"="Annuler";
 "Success"="Success";
@@ -23,5 +16,9 @@
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="La taille du fichier dépasse la limite, veuillez télécharger le fichier de moins de %d Mo";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Échec de l'envoi, veuillez évaluer le ticket actuel, puis en renvoyer un.";
+"Useful"="Utile";
+"Useless"="Inutile";
+"View details"="Voir les détails";
 "Send us the network diagnostics? It'll help us improve connection quality."="Nous envoyer le diagnostique réseau? Cela nous aidera à améliorer la qualité de la connexion.";
 "After checking, the network is available"="Après vérification, le réseau est disponible";

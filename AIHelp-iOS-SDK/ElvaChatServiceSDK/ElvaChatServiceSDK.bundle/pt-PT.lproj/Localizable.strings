@@ -9,13 +9,6 @@
 "elva__mark_yes_no_question"="É útil？";
 "elva__mark_no"="Não";
 "elva__mark_yes"="Sim";
-"RewardBalance"="Seus saldos de ponto:";
-"GoTo" = "Chegar";
-"Forum" = "Comunidade de pergunta e resposta";
-"RewardSuccess" = "Recompense com sucesso";
-"RewardFailure" = "Recompense não com sucesso";
-"TokenInsufficient" = "Saldos insuficientes";
-"NeedMoreHelp" = "Precisa mais ajuda?";
 "your question"="Entra a pergunta";
 "Cancel"="cancelar";
 "Success"="Success";
@@ -23,5 +16,9 @@
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="O tamanho do arquivo excede o limite, faça o upload do arquivo com menos de %d MB";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Falha no envio. Avalie o ticket atual e reenvie um";
+"Useful"="Útil";
+"Useless"="Sem utilidade";
+"View details"="Ver detalhes";
 "Send us the network diagnostics? It'll help us improve connection quality."="Mandare il rapporto della condizione di rete? Ci aiuterà a migliorare le qualità della connessione.";
 "After checking, the network is available"="Após a verificação, a rede está disponível";

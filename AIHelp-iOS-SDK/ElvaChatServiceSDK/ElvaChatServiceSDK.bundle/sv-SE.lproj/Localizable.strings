@@ -9,13 +9,6 @@
 "elva__mark_yes_no_question"="Fick du hjälp av detta?";
 "elva__mark_no"="Nej";
 "elva__mark_yes"="Ja";
-"RewardBalance"="Dina poäng:";
-"GoTo" = "Gå till";
-"Forum" = "Frågeforum";
-"RewardSuccess" = "Lyckades";
-"RewardFailure" = "Misslyckades";
-"TokenInsufficient" = "Du har inte tillräckligt med poäng";
-"NeedMoreHelp" = "Behöver mer hjälp?";
 "your question"="Ange fråga";
 "Cancel"="annullera";
 "Success"="Success";
@@ -23,5 +16,9 @@
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="Filstorleken överskrider gränsen, ladda upp filen mindre än %d MB";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Skicka misslyckades. Vänligen utvärdera den aktuella biljetten och skicka sedan in den igen";
+"Useful"="Användbar";
+"Useless"="Onyttig";
+"View details"="Visa detaljer";
 "Send us the network diagnostics? It'll help us improve connection quality."="Huruvida vi ska skicka nätverksvillkor, vilket hjälper oss att förbättra kvaliteten på din nätverksanslutning";
 "After checking, the network is available"="Efter kontroll är nätverket tillgängligt";

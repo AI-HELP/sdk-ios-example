@@ -9,19 +9,16 @@
 "elva__mark_yes_no_question"="Σας βοήθησε;";
 "elva__mark_no"="Όχι";
 "elva__mark_yes"="Ναι";
-"RewardBalance"="Το υπόλοιπο των πόντων σας:";
-"GoTo" = "Μέχρι";
-"Forum" = "Φόρουμ ερωτήσεων και απαντήσεων";
-"RewardSuccess" = "Επιτυχής ανταμοιβή";
-"RewardFailure" = "Αποτυχής ανταμοιβή";
-"TokenInsufficient" = "Το υπόλοιπό σας δεν επαρκεί";
-"NeedMoreHelp" = "Χρειάζεστε βοήθεια?";
 "your question"="Εισάγετε ερώτηση";
 "Success"="Success";
 "Failed"="Failed";
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="Το μέγεθος του αρχείου υπερβαίνει το όριο, μεταφορτώστε το αρχείο μικρότερο από %d MB";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Η αποστολή απέτυχε, εκτιμήστε το τρέχον εισιτήριο και υποβάλετε ξανά ένα";
+"Useful"="Χρήσιμος";
+"Useless"="Αχρηστος";
+"View details"="Δείτε λεπτομέρειες";
 "Send us the network diagnostics? It'll help us improve connection quality."="Είτε θέλετε να μας στείλετε τις συνθήκες δικτύου, οι οποίες θα μας βοηθήσουν να βελτιώσουμε την ποιότητα της σύνδεσής σας στο δίκτυο";
 "After checking, the network is available"="Μετά τον έλεγχο, το δίκτυο είναι διαθέσιμο";
 

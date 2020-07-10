@@ -1,5 +1,15 @@
 # AIHelp iOS SDK Version Update
 
+## 1.7.4
+1. Add message prompt, stay in FAQ list page to receive messages, customer service entrance display message prompt
+2. Optimize player upload pictures not easy to find problems. The player uploads the picture, automatically locates to the last picture, facilitates the player to choose
+3. Fixed an issue where players were able to send pictures after customer complaints
+4. Optimize the experience of sending pictures or videos
+5. Other bug fixes
+
+## 1.7.2.2
+1. Add log upload function
+
 ## 1.7.2.1
 1. Fix form page cannot upload video
 

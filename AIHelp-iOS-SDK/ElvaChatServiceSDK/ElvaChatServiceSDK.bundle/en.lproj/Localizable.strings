@@ -9,13 +9,6 @@
 "elva__mark_yes_no_question"="Was this helpful?";
 "elva__mark_no"="NO";
 "elva__mark_yes"="YES";
-"RewardBalance"="Your tokens:";
-"GoTo" = "Go to the";
-"Forum" = "QA Forum";
-"RewardSuccess" = "Success";
-"RewardFailure" = "Failed";
-"TokenInsufficient" = "Your tokens is insufficient";
-"NeedMoreHelp" = "Need more help?";
 "your question"="your question";
 "Cancel"="Cancel";
 "Oops, no relevant results were found"="Oops, no relevant results were found";
@@ -28,5 +21,9 @@
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="The file size exceeds the limit, please upload the file smaller than %dM";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Send failed, please evaluate the current ticket then resubmit one";
+"Useful"="Useful";
+"Useless"="Useless";
+"View details"="View details";
 "Send us the network diagnostics? It'll help us improve connection quality."="Send us the network diagnostics? It'll help us improve connection quality.";
 "After checking, the network is available"="After checking, the network is available";
