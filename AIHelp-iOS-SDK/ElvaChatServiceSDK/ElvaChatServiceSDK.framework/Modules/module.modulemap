@@ -1,6 +1,0 @@
-framework module ElvaChatServiceSDK {
-  umbrella header "ElvaChatServiceSDK.h"
-
-  export *
-  module * { export * }
-}
