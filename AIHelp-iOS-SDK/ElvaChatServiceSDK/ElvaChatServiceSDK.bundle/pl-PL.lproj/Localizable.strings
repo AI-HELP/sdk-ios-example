@@ -1,0 +1,24 @@
+//波兰语pl,pl-PL
+"content_too_long"="Nie więcej niż %ld znaków!";
+"ContactCustomerService" = "Obsługa klienta";
+"self_service_interface" = "Samoobsługa";
+"offLine"= "Brak dostępu do sieci, proszę spróbuj ponownie później.";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Uznałeś to za przydatne.";
+"elva__mark_unhelpful_toast"="Nie uznałeś tego za przydatne.";
+"elva__mark_yes_no_question"="Czy było to przydatne?";
+"elva__mark_no"="Nie";
+"elva__mark_yes"="Tak";
+"your question"="Wprowadź pytanie";
+"Cancel"="Anuluj";
+"Success"="Success";
+"Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Rozmiar pliku przekracza limit, prześlij plik mniejszy niż %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Wysyłanie nie powiodło się, sprawdź aktualny bilet, a następnie prześlij go ponownie";
+"Useful"="Przydatny";
+"Useless"="Nieprzydatny";
+"View details"="Pokaż szczegóły";
+"Send us the network diagnostics? It'll help us improve connection quality."="Czy wysłać nam warunki sieciowe, które pomogą nam poprawić jakość twojego połączenia sieciowego";
+"After checking, the network is available"="Po sprawdzeniu sieć jest dostępna";

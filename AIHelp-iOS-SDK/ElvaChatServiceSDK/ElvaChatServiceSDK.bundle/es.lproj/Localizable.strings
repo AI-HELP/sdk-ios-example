@@ -1,0 +1,25 @@
+//西班牙语es
+"content_too_long"="No más de %ld caracteres!";
+"ContactCustomerService" = "CONTÁCTANOS";
+"self_service_interface" = "Autoservicio";
+"offLine"= "Su red está desconectada, inténtelo de nuevo más tarde.";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Le resultó útil";
+"elva__mark_unhelpful_toast"="No le resultó útil";
+"elva__mark_yes_no_question"="¿Sirvió de ayuda";
+"elva__mark_no"="NO";
+"elva__mark_yes"="Sí";
+"your question"="Tu pregunta";
+"Cancel"="Cancelar";
+"Oops, no relevant results were found"="Lo sentimos mucho que no se puede encontrar ningún dato.";
+"Success"="Success";
+"Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="El tamaño del archivo excede el límite, cargue el archivo de menos de %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Envío fallido, evalúe el ticket actual y vuelva a enviar uno";
+"Useful"="Útil";
+"Useless"="Inútil";
+"View details"="Ver detalles";
+"Send us the network diagnostics? It'll help us improve connection quality."="Envíenos los diagnósticos de red por favor. Nos ayudará a mejorar la calidad de la conexión.";
+"After checking, the network is available"="Después de verificar, la red está disponible";

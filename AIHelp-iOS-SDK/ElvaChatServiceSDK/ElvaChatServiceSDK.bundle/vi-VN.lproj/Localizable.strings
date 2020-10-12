@@ -1,0 +1,24 @@
+//越南语vi,vi-VN
+"content_too_long"="Không vượt quá %ld ký tự!";
+"ContactCustomerService" = "Liên hệ CSKH";
+"self_service_interface" = "Dịch vụ tự động";
+"offLine"= "Đã mất kết nối, hãy vào lại!";
+"CustomerService"="HELP";
+"elva__mark_helpful_toast"="Phát hiện có hỗ trợ";
+"elva__mark_unhelpful_toast"="Phát hiện không có hỗ trợ";
+"elva__mark_yes_no_question"="Ở đây có hỗ trợ không?";
+"elva__mark_no"="Không";
+"elva__mark_yes"="Có";
+"your question"="Lỗi nhập";
+"Cancel"="hủy bỏ";
+"Success"="Success";
+"Failed"="Failed";
+"media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
+"media_upload_err_size"="Kích thước tệp vượt quá giới hạn, vui lòng tải lên tệp nhỏ hơn %d MB";
+"media_upload_err_net"="Transmission timed out, file uploading failed.";
+"Send failed, please evaluate the current ticket then resubmit one"="Gửi thất bại, vui lòng đánh giá vé hiện tại sau đó gửi lại một";
+"Useful"="Hữu ích";
+"Useless"="Vô ích";
+"View details"="Xem chi tiết";
+"Send us the network diagnostics? It'll help us improve connection quality."="Có gửi cho chúng tôi các điều kiện mạng hay không, điều này sẽ giúp chúng tôi cải thiện chất lượng kết nối mạng của bạn";
+"After checking, the network is available"="Sau khi kiểm tra, mạng có sẵn";
