@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "AIHelpSDK"
-  s.version           = "2.1.0"
+  s.version           = "2.1.1"
   s.summary           = "AIHelpSDK for iOS"
   s.homepage          = "https://github.com/AI-HELP/AIHelp-iOS-SDK"
   s.license      = { :type => "Apache-2.0", :file => "LICENSE" }
