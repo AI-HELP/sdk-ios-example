@@ -23,6 +23,7 @@ typedef NS_ENUM(int,AIHelpFAQShowConversationMoment) {             /* Conversati
     AIHelpFAQShowConversationMomentNever            = 1,           // Never show
     AIHelpFAQShowConversationMomentAlways           = 2,           // Always show
     AIHelpFAQShowConversationMomentAfterMarkingUnhelpful = 3,      // Show after unhelpful with Faq detail
+    AIHelpFAQShowConversationMomentOnlyInAnswerPage = 4,           // only in answer page show
 };
 
 

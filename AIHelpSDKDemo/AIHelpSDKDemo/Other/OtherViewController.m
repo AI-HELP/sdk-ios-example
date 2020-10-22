@@ -45,5 +45,10 @@ void AIHelp_unreadMessageArrived(const int count)  {
 - (IBAction)pushClick:(UIButton *)sender {
     [AIHelpSupportSDK setPushToken:@"PUSH_TOKEN" pushPlatform:AIHelpTokenPlatformGeTui];
 }
+- (IBAction)getSDKVersion:(UIButton *)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:[AIHelpSupportSDK getSDKVersion] preferredStyle:(UIAlertControllerStyleAlert)];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:(UIAlertActionStyleDefault) handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

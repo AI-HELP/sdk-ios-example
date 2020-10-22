@@ -66,13 +66,27 @@
                         <constraint firstAttribute="height" constant="50" id="Vvs-nd-zPN"/>
                     </constraints>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGB-qT-DUe">
+                    <rect key="frame" x="118.5" y="354" width="177" height="50"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="177" id="BsS-8o-sd3"/>
+                        <constraint firstAttribute="height" constant="50" id="use-tA-coj"/>
+                    </constraints>
+                    <state key="normal" title="getSDKVersion"/>
+                    <connections>
+                        <action selector="getSDKVersion:" destination="-1" eventType="touchUpInside" id="Ozy-w1-M9V"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="APB-bx-mJN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="2RW-o0-81d"/>
+                <constraint firstItem="XGB-qT-DUe" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="35i-Qu-qoI"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="APB-bx-mJN" secondAttribute="trailing" constant="20" id="SB6-vO-Lkd"/>
                 <constraint firstItem="Y0q-2s-Kcv" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="eEo-oR-DeM"/>
+                <constraint firstItem="XGB-qT-DUe" firstAttribute="top" secondItem="Y0q-2s-Kcv" secondAttribute="bottom" constant="60" id="gt2-9c-JXc"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Y0q-2s-Kcv" secondAttribute="trailing" constant="20" id="w8x-ue-ryo"/>
                 <constraint firstItem="Y0q-2s-Kcv" firstAttribute="top" secondItem="APB-bx-mJN" secondAttribute="bottom" constant="80" id="yNj-AB-3TN"/>
                 <constraint firstItem="APB-bx-mJN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="ywC-yP-kLn"/>
