@@ -1,0 +1,20 @@
+PODS:
+  - AIHelpSDK (2.0.0)
+  - MBProgressHUD (1.2.0)
+
+DEPENDENCIES:
+  - AIHelpSDK (~> 2.0.0)
+  - MBProgressHUD (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - AIHelpSDK
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  AIHelpSDK: 83b45361917b0dc457fe06875488e3fb21ef6765
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+
+PODFILE CHECKSUM: 6fc54f2b380b5aa09790e8b70480769632d6e4ee
+
+COCOAPODS: 1.10.0.rc.1

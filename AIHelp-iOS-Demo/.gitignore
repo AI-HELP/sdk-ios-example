@@ -1,9 +1,0 @@
-.DS_Store
-# Editor directories and files
-.idea
-.vscode
-*.suo
-
-xcuserdata
-xcshareddata
-

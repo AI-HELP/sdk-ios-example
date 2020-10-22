@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtherViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-2s-Kcv">
+                    <rect key="frame" x="20" y="244" width="374" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFQ-F6-6uj">
+                            <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <state key="normal" title="netWorkCheck"/>
+                            <connections>
+                                <action selector="networkCheckClick:" destination="-1" eventType="touchUpInside" id="zbW-Bz-xg0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDe-IV-GbK">
+                            <rect key="frame" x="197" y="0.0" width="177" height="50"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <state key="normal" title="uploadLog"/>
+                            <connections>
+                                <action selector="uploadLogClick:" destination="-1" eventType="touchUpInside" id="Y5X-1d-8in"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6ln-EY-AI2"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="APB-bx-mJN">
+                    <rect key="frame" x="20" y="114" width="374" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFM-zB-9aE">
+                            <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <state key="normal" title="UnreadMessage"/>
+                            <connections>
+                                <action selector="UnreadMessageClick:" destination="-1" eventType="touchUpInside" id="4Or-Ow-8Pf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4g-7m-Psa">
+                            <rect key="frame" x="197" y="0.0" width="177" height="50"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <state key="normal" title="push"/>
+                            <connections>
+                                <action selector="pushClick:" destination="-1" eventType="touchUpInside" id="Vxq-Gc-Jd2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Vvs-nd-zPN"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="APB-bx-mJN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="2RW-o0-81d"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="APB-bx-mJN" secondAttribute="trailing" constant="20" id="SB6-vO-Lkd"/>
+                <constraint firstItem="Y0q-2s-Kcv" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="eEo-oR-DeM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Y0q-2s-Kcv" secondAttribute="trailing" constant="20" id="w8x-ue-ryo"/>
+                <constraint firstItem="Y0q-2s-Kcv" firstAttribute="top" secondItem="APB-bx-mJN" secondAttribute="bottom" constant="80" id="yNj-AB-3TN"/>
+                <constraint firstItem="APB-bx-mJN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="ywC-yP-kLn"/>
+            </constraints>
+            <point key="canvasLocation" x="-64" y="84"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

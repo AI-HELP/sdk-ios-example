@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F350D4CC62DAA6C38D4FFEE /* Pods_AIHelpSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB30B741DD52AC61668A2C43 /* Pods_AIHelpSDKDemo.framework */; };
+		B10AED6A2540522700969586 /* AITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AED692540522700969586 /* AITabBarController.m */; };
+		B10AED73254052D000969586 /* ModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AED71254052D000969586 /* ModeViewController.m */; };
+		B10AED74254052D000969586 /* ModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10AED72254052D000969586 /* ModeViewController.xib */; };
+		B10AED7A254052DF00969586 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AED78254052DF00969586 /* SettingViewController.m */; };
+		B10AED7B254052DF00969586 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10AED79254052DF00969586 /* SettingViewController.xib */; };
+		B10AED80254052ED00969586 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10AED7E254052ED00969586 /* OtherViewController.m */; };
+		B10AED81254052ED00969586 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10AED7F254052ED00969586 /* OtherViewController.xib */; };
+		B12E08AD253149370036F7F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B12E08AC253149370036F7F2 /* AppDelegate.m */; };
+		B12E08B6253149370036F7F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12E08B4253149370036F7F2 /* Main.storyboard */; };
+		B12E08B82531493A0036F7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12E08B72531493A0036F7F2 /* Assets.xcassets */; };
+		B12E08BB2531493A0036F7F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12E08B92531493A0036F7F2 /* LaunchScreen.storyboard */; };
+		B12E08BE2531493A0036F7F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B12E08BD2531493A0036F7F2 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5185768B47FDD605F71F3D26 /* Pods-AIHelpSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIHelpSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7485F3DD604AB8F86E14BCE7 /* Pods-AIHelpSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIHelpSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B10AED682540522700969586 /* AITabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITabBarController.h; sourceTree = "<group>"; };
+		B10AED692540522700969586 /* AITabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITabBarController.m; sourceTree = "<group>"; };
+		B10AED70254052D000969586 /* ModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModeViewController.h; sourceTree = "<group>"; };
+		B10AED71254052D000969586 /* ModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeViewController.m; sourceTree = "<group>"; };
+		B10AED72254052D000969586 /* ModeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModeViewController.xib; sourceTree = "<group>"; };
+		B10AED77254052DF00969586 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		B10AED78254052DF00969586 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B10AED79254052DF00969586 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		B10AED7D254052ED00969586 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		B10AED7E254052ED00969586 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		B10AED7F254052ED00969586 /* OtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		B12E08A8253149370036F7F2 /* AIHelpSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIHelpSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12E08AB253149370036F7F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B12E08AC253149370036F7F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B12E08B5253149370036F7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B12E08B72531493A0036F7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B12E08BA2531493A0036F7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B12E08BC2531493A0036F7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12E08BD2531493A0036F7F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB30B741DD52AC61668A2C43 /* Pods_AIHelpSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIHelpSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B12E08A5253149370036F7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F350D4CC62DAA6C38D4FFEE /* Pods_AIHelpSDKDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B10AED6C2540523700969586 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B10AED682540522700969586 /* AITabBarController.h */,
+				B10AED692540522700969586 /* AITabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B10AED6D2540525C00969586 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				B10AED70254052D000969586 /* ModeViewController.h */,
+				B10AED71254052D000969586 /* ModeViewController.m */,
+				B10AED72254052D000969586 /* ModeViewController.xib */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		B10AED6E254052A700969586 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B10AED77254052DF00969586 /* SettingViewController.h */,
+				B10AED78254052DF00969586 /* SettingViewController.m */,
+				B10AED79254052DF00969586 /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B10AED6F254052B100969586 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B10AED7D254052ED00969586 /* OtherViewController.h */,
+				B10AED7E254052ED00969586 /* OtherViewController.m */,
+				B10AED7F254052ED00969586 /* OtherViewController.xib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B12E089F253149370036F7F2 = {
+			isa = PBXGroup;
+			children = (
+				B12E08AA253149370036F7F2 /* AIHelpSDKDemo */,
+				B12E08A9253149370036F7F2 /* Products */,
+				D72453718175D70395AF12AE /* Pods */,
+				DBF6C353C1774F2E87955590 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B12E08A9253149370036F7F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B12E08A8253149370036F7F2 /* AIHelpSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B12E08AA253149370036F7F2 /* AIHelpSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B10AED6F254052B100969586 /* Other */,
+				B10AED6E254052A700969586 /* Setting */,
+				B10AED6D2540525C00969586 /* Mode */,
+				B10AED6C2540523700969586 /* Base */,
+				B12E08AB253149370036F7F2 /* AppDelegate.h */,
+				B12E08AC253149370036F7F2 /* AppDelegate.m */,
+				B12E08B4253149370036F7F2 /* Main.storyboard */,
+				B12E08B72531493A0036F7F2 /* Assets.xcassets */,
+				B12E08B92531493A0036F7F2 /* LaunchScreen.storyboard */,
+				B12E08BC2531493A0036F7F2 /* Info.plist */,
+				B12E08BD2531493A0036F7F2 /* main.m */,
+			);
+			path = AIHelpSDKDemo;
+			sourceTree = "<group>";
+		};
+		D72453718175D70395AF12AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5185768B47FDD605F71F3D26 /* Pods-AIHelpSDKDemo.debug.xcconfig */,
+				7485F3DD604AB8F86E14BCE7 /* Pods-AIHelpSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBF6C353C1774F2E87955590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB30B741DD52AC61668A2C43 /* Pods_AIHelpSDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B12E08A7253149370036F7F2 /* AIHelpSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12E08C12531493A0036F7F2 /* Build configuration list for PBXNativeTarget "AIHelpSDKDemo" */;
+			buildPhases = (
+				2B94D930C3782CA58B519732 /* [CP] Check Pods Manifest.lock */,
+				B12E08A4253149370036F7F2 /* Sources */,
+				B12E08A5253149370036F7F2 /* Frameworks */,
+				B12E08A6253149370036F7F2 /* Resources */,
+				3BCC8087E7162095D5623FC5 /* [CP] Copy Pods Resources */,
+				78BF82B2ADCF9D380E14F810 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIHelpSDKDemo;
+			productName = AIHelpSDKDemo;
+			productReference = B12E08A8253149370036F7F2 /* AIHelpSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B12E08A0253149370036F7F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B12E08A7253149370036F7F2 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B12E08A3253149370036F7F2 /* Build configuration list for PBXProject "AIHelpSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B12E089F253149370036F7F2;
+			productRefGroup = B12E08A9253149370036F7F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B12E08A7253149370036F7F2 /* AIHelpSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B12E08A6253149370036F7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12E08BB2531493A0036F7F2 /* LaunchScreen.storyboard in Resources */,
+				B10AED81254052ED00969586 /* OtherViewController.xib in Resources */,
+				B10AED7B254052DF00969586 /* SettingViewController.xib in Resources */,
+				B12E08B82531493A0036F7F2 /* Assets.xcassets in Resources */,
+				B12E08B6253149370036F7F2 /* Main.storyboard in Resources */,
+				B10AED74254052D000969586 /* ModeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B94D930C3782CA58B519732 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIHelpSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BCC8087E7162095D5623FC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78BF82B2ADCF9D380E14F810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIHelpSDKDemo/Pods-AIHelpSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B12E08A4253149370036F7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12E08AD253149370036F7F2 /* AppDelegate.m in Sources */,
+				B10AED6A2540522700969586 /* AITabBarController.m in Sources */,
+				B12E08BE2531493A0036F7F2 /* main.m in Sources */,
+				B10AED80254052ED00969586 /* OtherViewController.m in Sources */,
+				B10AED73254052D000969586 /* ModeViewController.m in Sources */,
+				B10AED7A254052DF00969586 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B12E08B4253149370036F7F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12E08B5253149370036F7F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B12E08B92531493A0036F7F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B12E08BA2531493A0036F7F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B12E08BF2531493A0036F7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B12E08C02531493A0036F7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B12E08C22531493A0036F7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5185768B47FDD605F71F3D26 /* Pods-AIHelpSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AIHelpSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aihelp.AIHelpSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B12E08C32531493A0036F7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7485F3DD604AB8F86E14BCE7 /* Pods-AIHelpSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AIHelpSDKDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aihelp.AIHelpSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B12E08A3253149370036F7F2 /* Build configuration list for PBXProject "AIHelpSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12E08BF2531493A0036F7F2 /* Debug */,
+				B12E08C02531493A0036F7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12E08C12531493A0036F7F2 /* Build configuration list for PBXNativeTarget "AIHelpSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12E08C22531493A0036F7F2 /* Debug */,
+				B12E08C32531493A0036F7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B12E08A0253149370036F7F2 /* Project object */;
+}
