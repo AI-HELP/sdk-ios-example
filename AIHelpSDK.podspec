@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'AIHelpSDK/MQTTFramework.framework','AIHelpSDK/AIHelpSupportSDK.framework'
   s.frameworks = 'WebKit'
   s.library = 'sqlite3','resolv'
-  s.public_header_files = 'AIHelpSDK/AIHelpSupportSDK.framework/**/*.h'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
 end
