@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"mode";
+    
 }
 
 - (IBAction)humanClick:(UIButton *)sender {
