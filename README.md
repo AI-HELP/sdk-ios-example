@@ -2,11 +2,11 @@
 
 
 
-# AIHelp iOS SDK Samples
+# AIHelp iOS SDK Example
 
 
 
-This reposirory contains all code examples of AIHelp iOS SDK v2.1.0.
+This reposirory contains all code examples of AIHelp iOS latest SDK.
 
 With this sample project, you can learn how to integrated AIHelp into a real project.
 
