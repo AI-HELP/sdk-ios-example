@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.title = @"mode";
 }
+
 - (IBAction)humanClick:(UIButton *)sender {
     AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
     conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
