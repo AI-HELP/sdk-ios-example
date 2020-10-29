@@ -97,10 +97,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/AIHelpSDK/AIHelp-iOS-SDK/AIHelpSDK/AIHelpSupportSDK.bundle"
+  install_resource "${PODS_ROOT}/AIHelpSDK/AIHelpSDK/AIHelpSupportSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/AIHelpSDK/AIHelp-iOS-SDK/AIHelpSDK/AIHelpSupportSDK.bundle"
+  install_resource "${PODS_ROOT}/AIHelpSDK/AIHelpSDK/AIHelpSupportSDK.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
