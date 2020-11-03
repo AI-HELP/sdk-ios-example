@@ -261,4 +261,7 @@ typedef void (*AISupportPingCallBack)(const NSString * log);
  * @param alpha the alpha
  */
 + (void)setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
+
+
++ (void)runAccelerationForChina;
 @end
