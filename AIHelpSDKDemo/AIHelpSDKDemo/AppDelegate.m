@@ -35,9 +35,9 @@ void AIHelp_onInitializationCallback() {
 {
     
     [AIHelpSupportSDK initWithApiKey:@"THIS IS YOUR APP KEY"
-                              domainName:@"aihelp.net"
-                                      appId:@"TryElva_platform_09ebf7fa-8d45-4843-bd59-cfda3d8a8dc0"
-                                   language:@"en"];
+                              domainName:@"THIS IS YOUR DOMAIN"
+                                      appId:@"THIS IS YOUR APP ID"
+                                   language:@"THIS IS LANGUAGE"];
     [AIHelpSupportSDK setOnInitializedCallback:AIHelp_onInitializationCallback];
     [AIHelpSupportSDK enableLogging:NO];
 }
