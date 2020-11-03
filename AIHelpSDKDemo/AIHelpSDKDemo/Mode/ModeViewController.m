@@ -49,7 +49,7 @@
     conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
     conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
     faqBuilder.conversationConfig = conversationBuilder.build;
-    [AIHelpSupportSDK showFAQSection:@"404" config:faqBuilder.build];
+    [AIHelpSupportSDK showFAQSection:@"SECTION ID" config:faqBuilder.build];
 }
 
 - (IBAction)singleFAQ:(UIButton *)sender {
@@ -59,7 +59,7 @@
     conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
     conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
     faqBuilder.conversationConfig = conversationBuilder.build;
-    [AIHelpSupportSDK showSingleFAQ:@"1671"  config:faqBuilder.build];
+    [AIHelpSupportSDK showSingleFAQ:@"FAQ ID"  config:faqBuilder.build];
 }
 
 - (IBAction)operationClick:(UIButton *)sender {
