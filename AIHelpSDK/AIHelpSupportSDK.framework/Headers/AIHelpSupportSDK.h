@@ -264,4 +264,7 @@ typedef void (*AISupportPingCallBack)(const NSString * log);
 
 
 + (void)runAccelerationForChina;
+
+
++ (void)showUrl:(NSString *)url;
 @end
