@@ -36,7 +36,7 @@
     AIHelpFAQConfigBuilder *faqBuilder = [[AIHelpFAQConfigBuilder alloc] init];
     AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
     faqBuilder.showConversationMoment = AIHelpFAQShowConversationMomentAlways;
-    conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
+    conversationBuilder.conversationIntent = AIHelpConversationIntentBotSupport;
     conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
     faqBuilder.conversationConfig = conversationBuilder.build;
     [AIHelpSupportSDK showAllFAQSections:faqBuilder.build];
