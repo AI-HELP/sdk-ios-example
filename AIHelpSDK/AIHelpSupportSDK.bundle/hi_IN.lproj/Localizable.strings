@@ -1,0 +1,27 @@
+//印地语 hi_IN
+"content_too_long"="%ld वर्णों से अधिक नहीं हो सकता!";
+"offLine"= "आपका नेटवर्क काट दिया गया है, कृपया अपने नेटवर्क की जाँच करें!";
+"CustomerService"="HELP";
+"elva__mark_no"="नहीं";
+"elva__mark_yes"="हाँ";
+"your question"="इनपुट प्रश्न";
+"Cancel"="रद्द करना";
+"Oops, no relevant results were found"="क्षमा करें, कोई संबंधित परिणाम नहीं मिले";
+"Success"="सफलता";
+"Failed"="विफल";
+"Network Error, Please check your network"="नेटवर्क अनुरोध विफल हुआ, कृपया अपना नेटवर्क जांचें";
+"Retry"="पुन: प्रयास करें";
+"Loading......"="शायद ही लोड हो रहा हो";
+"media_upload_err_size"="फ़ाइल का आकार सीमा से अधिक है, कृपया %dM से कम फ़ाइल अपलोड करें";
+"Send failed, please evaluate the current ticket then resubmit one"="मूल्यांकन में विफल, कृपया मूल्यांकन के बाद ग्राहक की शिकायत को पुनः सबमिट करें";
+"View details"="विवरण देखें";
+"Send us the network diagnostics? It'll help us improve connection quality."="हमें नेटवर्क की स्थिति भेजनी है या नहीं, इससे हमें आपके नेटवर्क कनेक्शन की गुणवत्ता में सुधार करने में मदद मिलेगी";
+"After checking, the network is available"="जाँच करने के बाद, आपका नेटवर्क ठीक काम करता है";
+"Thanks for your feedback!"="आपकी प्रतिक्रिया के लिए धन्यवाद!";
+"Suggestions"="सुझाव";
+"Please input messages"="कृपया सामग्री दर्ज करें";
+"Confirm"="पुष्टि करें";
+"No data"="वर्तमान में कोई डेटा उपलब्ध नहीं है";
+"Please input your feedback"="कृपया अपने बहुमूल्य सुझाव हमें भेजें";
+"Would you like to review the App?"="इस एप्लिकेशन की तरह, यह एक समीक्षा दे?";
+"Rate"="च दर को जाना";

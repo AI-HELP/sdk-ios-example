@@ -1,0 +1,27 @@
+//缅甸语 my_MM
+"content_too_long"="%ld အက္ခရာများကိုမကျော်လွန်နိုင်ပါ။";
+"offLine"= "သင်၏ကွန်ယက်ချိတ်ဆက်မှုပြတ်တောက်သွားပြီး ကျေးဇူးပြု၍ သင်၏ကွန်ယက်ကိုစစ်ဆေးပါ။";
+"CustomerService"="HELP";
+"elva__mark_no"="မဟုတ်ဘူး";
+"elva__mark_yes"="ဟုတ်တယ်";
+"your question"="input ဆိုတဲ့မေးခွန်းကို";
+"Cancel"="ပယ်ဖျက်ပါ";
+"Oops, no relevant results were found"="စိတ်မရှိပါနဲ့ဆက်စပ်သောရလဒ်များကိုရှာမတွေ့ပါ";
+"Success"="အောင်မြင်သည်";
+"Failed"="မအောင်မြင်";
+"Network Error, Please check your network"="ကွန်ယက်တောင်းဆိုမှုမအောင်မြင်ပါ၊ ကျေးဇူးပြု၍ သင်၏ကွန်ယက်ကိုစစ်ဆေးပါ";
+"Retry"="ပြန်ကြိုးစားပါ";
+"Loading......"="တင်ခဲသည်";
+"media_upload_err_size"="ဖိုင်အရွယ်အစားသည်ကန့်သတ်ချက်ထက်ကျော်လွန်သည်၊ %dM အောက်ထက်နိမ့်သောဖိုင်တစ်ခုကိုပို့ပါ";
+"Send failed, please evaluate the current ticket then resubmit one"="ပေးပို့ခြင်းမအောင်မြင်ပါ၊ ကျေးဇူးပြု၍ အကဲဖြတ်ပြီးနောက်ဖောက်သည်၏တိုင်ကြားချက်ကိုပြန်လည်ပေးပို့ပါ";
+"View details"="အသေးစိတ်ကြည့်ရှုပါ";
+"Send us the network diagnostics? It'll help us improve connection quality."="ကျွန်တော်တို့ကို network status ပို့ဖို့ပဲဖြစ်ဖြစ်၊ ဒါကသင့်ရဲ့ network connection အရည်အသွေးကိုတိုးတက်စေပါလိမ့်မယ်";
+"After checking, the network is available"="စစ်ဆေးပြီးသည်နှင့်သင်၏ကွန်ရက်ကောင်းမွန်သည်";
+"Thanks for your feedback!"="သင့်ရဲ့တုံ့ပြန်ချက်အတွက်ကျေးဇူးတင်ပါတယ်!";
+"Suggestions"="အကြံပြုချက်များ";
+"Please input messages"="အကြောင်းအရာဖြည့်ပါ";
+"Confirm"="အတည်ပြုပါ";
+"No data"="လက်ရှိဒေတာမရှိပါ";
+"Please input your feedback"="ကျေးဇူးပြု၍ သင်၏အဖိုးတန်အကြံပြုချက်များကိုကျွန်ုပ်တို့ထံပေးပို့ပါ";
+"Would you like to review the App?"="ဒီအက်ပလီကေးရှင်းလိုပဲပြန်လည်သုံးသပ်ချက်ပေးပါ။";
+"Rate"="အဆင့်ကိုသွားပါ";

@@ -1,0 +1,27 @@
+//泰米尔语 ta_IN
+"content_too_long"="%ld எழுத்துக்களைத் தாண்ட முடியாது!";
+"offLine"= "உங்கள் பிணையம் துண்டிக்கப்பட்டுள்ளது, தயவுசெய்து உங்கள் பிணையத்தை சரிபார்க்கவும்!";
+"CustomerService"="HELP";
+"elva__mark_no"="இல்லை";
+"elva__mark_yes"="ஆம்";
+"your question"="உள்ளீட்டு கேள்வி";
+"Cancel"="ரத்துசெய்";
+"Oops, no relevant results were found"="மன்னிக்கவும், தொடர்புடைய முடிவுகள் எதுவும் கிடைக்கவில்லை";
+"Success"="வெற்றி";
+"Failed"="தோல்வி";
+"Network Error, Please check your network"="பிணைய கோரிக்கை தோல்வியுற்றது, உங்கள் பிணையத்தை சரிபார்க்கவும்";
+"Retry"="மீண்டும் முயற்சிக்கவும்";
+"Loading......"="கடினமாக ஏற்றுகிறது";
+"media_upload_err_size"="கோப்பு அளவு வரம்பை மீறுகிறது, தயவுசெய்து ஒரு கோப்பை %dM க்கும் குறைவாக பதிவேற்றவும்";
+"Send failed, please evaluate the current ticket then resubmit one"="அனுப்புவது தோல்வியுற்றது, மதிப்பீட்டிற்குப் பிறகு வாடிக்கையாளர் புகாரை மீண்டும் சமர்ப்பிக்கவும்";
+"View details"="விவரங்களைக் காண்க";
+"Send us the network diagnostics? It'll help us improve connection quality."="நெட்வொர்க் நிலையை எங்களுக்கு அனுப்ப வேண்டுமா, இது உங்கள் பிணைய இணைப்பு தரத்தை மேம்படுத்த எங்களுக்கு உதவும்";
+"After checking, the network is available"="சரிபார்த்த பிறகு, உங்கள் பிணையம் நன்றாக வேலை செய்கிறது";
+"Thanks for your feedback!"="உங்கள் கருத்துக்கு நன்றி!";
+"Suggestions"="பரிந்துரைகள்";
+"Please input messages"="உள்ளடக்கத்தை உள்ளிடவும்";
+"Confirm"="உறுதிப்படுத்தவும்";
+"No data"="தற்போது தரவு எதுவும் கிடைக்கவில்லை";
+"Please input your feedback"="உங்கள் மதிப்புமிக்க பரிந்துரைகளை எங்களுக்கு அனுப்புங்கள்";
+"Would you like to review the App?"="இந்த பயன்பாட்டைப் போலவே, அதை மதிப்பாய்வு செய்யவா?";
+"Rate"="விகிதத்திற்குச் செல்லுங்கள்";

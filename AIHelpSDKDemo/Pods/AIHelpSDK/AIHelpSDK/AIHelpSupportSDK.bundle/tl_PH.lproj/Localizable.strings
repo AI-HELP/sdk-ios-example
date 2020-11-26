@@ -1,0 +1,27 @@
+//菲律宾语 tl_PH
+"content_too_long"="Hindi maaaring lumagpas sa %ld na mga character!";
+"offLine"= "Ang iyong network ay na-disconnect, mangyaring suriin ang iyong network!";
+"CustomerService"="HELP";
+"elva__mark_no"="Hindi";
+"elva__mark_yes"="Oo";
+"your question"="Input na tanong";
+"Cancel"="Kanselahin";
+"Oops, no relevant results were found"="Paumanhin, walang nahanap na kaugnay na mga resulta";
+"Success"="Tagumpay";
+"Failed"="Nabigo";
+"Network Error, Please check your network"="Nabigo ang kahilingan sa network, mangyaring suriin ang iyong network";
+"Retry"="Subukang muli";
+"Loading......"="Naglo-load nang mahirap";
+"media_upload_err_size"="Lumampas sa sukat ang laki ng file, mangyaring mag-upload ng isang file na mas mababa sa %dM";
+"Send failed, please evaluate the current ticket then resubmit one"="Nabigo ang pagpapadala, mangyaring muling isumite ang reklamo ng customer pagkatapos ng pagsusuri";
+"View details"="Tignan ang detalye";
+"Send us the network diagnostics? It'll help us improve connection quality."="Ipadala ba sa amin ang katayuan ng network, makakatulong ito sa amin na mapabuti ang kalidad ng iyong koneksyon sa network";
+"After checking, the network is available"="Matapos suriin, gumana nang maayos ang iyong network";
+"Thanks for your feedback!"="Salamat sa iyong puna!";
+"Suggestions"="Mga Mungkahi";
+"Please input messages"="Mangyaring maglagay ng nilalaman";
+"Confirm"="Kumpirmahin";
+"No data"="Walang magagamit na data sa kasalukuyan";
+"Please input your feedback"="Mangyaring ipasa ang iyong mahalagang mga mungkahi sa amin";
+"Would you like to review the App?"="Tulad ng app na ito, bigyan ito ng pagsusuri?";
+"Rate"="Pumunta sa rate";

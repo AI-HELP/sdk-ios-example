@@ -1,0 +1,27 @@
+//孟加拉语 bn_IN
+"content_too_long"="%ld অক্ষর অতিক্রম করতে পারবেন না!";
+"offLine"= "আপনার নেটওয়ার্কটি সংযোগ বিচ্ছিন্ন হয়ে গেছে, দয়া করে আপনার নেটওয়ার্কটি পরীক্ষা করুন!";
+"CustomerService"="HELP";
+"elva__mark_no"="না";
+"elva__mark_yes"="হ্যাঁ";
+"your question"="ইনপুট প্রশ্ন";
+"Cancel"="বাতিল";
+"Oops, no relevant results were found"="দুঃখিত, কোন সম্পর্কিত ফলাফল পাওয়া যায় নি";
+"Success"="সাফল্য";
+"Failed"="ব্যর্থ";
+"Network Error, Please check your network"="নেটওয়ার্কের অনুরোধ ব্যর্থ হয়েছে, দয়া করে আপনার নেটওয়ার্কটি পরীক্ষা করুন";
+"Retry"="পুনরায় চেষ্টা করা";
+"Loading......"="হার্ডলি লোড হচ্ছে";
+"media_upload_err_size"="ফাইলের আকার সীমা ছাড়িয়ে গেছে, দয়া করে %dM এর চেয়ে কম ফাইল আপলোড করুন";
+"Send failed, please evaluate the current ticket then resubmit one"="প্রেরণ ব্যর্থ হয়েছে, মূল্যায়নের পরে গ্রাহক অভিযোগ পুনরায় জমা দিন";
+"View details"="বিস্তারিত দেখুন";
+"Send us the network diagnostics? It'll help us improve connection quality."="আমাদের নেটওয়ার্ক স্থিতি প্রেরণ করা হবে না, এটি আমাদের আপনার নেটওয়ার্ক সংযোগের মান উন্নত করতে সহায়তা করবে";
+"After checking, the network is available"="চেক করার পরে, আপনার নেটওয়ার্ক ভাল কাজ করে";
+"Thanks for your feedback!"="আপনার প্রতিক্রিয়ার জন্য ধন্যবাদ!";
+"Suggestions"="পরামর্শ";
+"Please input messages"="বিষয়বস্তু প্রবেশ করুন";
+"Confirm"="কনফার্ম";
+"No data"="বর্তমানে কোনও ডেটা উপলব্ধ নেই";
+"Please input your feedback"="আপনার মূল্যবান পরামর্শ আমাদের কাছে ফরোয়ার্ড করুন";
+"Would you like to review the App?"="এই অ্যাপ্লিকেশনটি পছন্দ করুন, এটি একটি পর্যালোচনা দিন?";
+"Rate"="হারে যান";
