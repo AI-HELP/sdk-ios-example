@@ -37,4 +37,11 @@
 "Please input your feedback"="Podaj swoją opinię";
 "Would you like to review the App?"="Podoba Ci się ta aplikacja?";
 "Rate"="Ocenić";
-
+"Monday"="poniedziałek";
+"Tuesday"="wtorek";
+"Wednesday"="środa";
+"Thursday"="czwartek";
+"Friday"="piątek";
+"Saturday"="sobota";
+"Sunday"="niedziela";
+"Yesterday"="Wczoraj";

@@ -37,7 +37,14 @@
 "Please input your feedback"="Εισαγάγετε τα σχόλιά σας";
 "Would you like to review the App?"="Σας αρέσει αυτή η εφαρμογή, βαθμολογήστε την;";
 "Rate"="Για να βαθμολογήσετε";
-
+"Monday"="Δευτέρα";
+"Tuesday"="Τρίτη";
+"Wednesday"="Τετάρτη";
+"Thursday"="Πέμπτη";
+"Friday"="Παρασκευή";
+"Saturday"="Σάββατο";
+"Sunday"="Κυριακή";
+"Yesterday"="Εχθές";
 
 
 

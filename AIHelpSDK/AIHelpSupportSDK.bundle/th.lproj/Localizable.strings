@@ -37,3 +37,11 @@
 "Please input your feedback"="โปรดป้อนความคิดเห็นของคุณ";
 "Would you like to review the App?"="ชอบแอปนี้ให้คะแนนไหม";
 "Rate"="ให้คะแนน";
+"Monday"="วันจันทร์";
+"Tuesday"="วันอังคาร";
+"Wednesday"="วันพุธ";
+"Thursday"="วันพฤหัสบดี";
+"Friday"="วันศุกร์";
+"Saturday"="วันเสาร์";
+"Sunday"="วันอาทิตย์";
+"Yesterday"="เมื่อวานนี้";

@@ -37,5 +37,12 @@
 "Please input your feedback"="لطفا نظرات خود را وارد کنید";
 "Would you like to review the App?"="مانند این برنامه ، آن را ارزیابی کنید؟";
 "Rate"="برای امتیاز دادن";
-
+"Monday"="دوشنبه";
+"Tuesday"="سهشنبه";
+"Wednesday"="چهار شنبه";
+"Thursday"="پنج شنبه";
+"Friday"="جمعه";
+"Saturday"="شنبه";
+"Sunday"="یکشنبه";
+"Yesterday"="دیروز";
 

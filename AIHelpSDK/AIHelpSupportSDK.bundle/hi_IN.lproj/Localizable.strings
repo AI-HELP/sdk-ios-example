@@ -25,3 +25,11 @@
 "Please input your feedback"="कृपया अपने बहुमूल्य सुझाव हमें भेजें";
 "Would you like to review the App?"="इस एप्लिकेशन की तरह, यह एक समीक्षा दे?";
 "Rate"="च दर को जाना";
+"Monday"="सोमवार";
+"Tuesday"="मंगलवार";
+"Wednesday"="बुधवार";
+"Thursday"="गुरूवार";
+"Friday"="शुक्रवार";
+"Saturday"="शनिवार";
+"Sunday"="रविवार";
+"Yesterday"="बिता कल";

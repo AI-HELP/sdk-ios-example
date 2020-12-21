@@ -25,3 +25,11 @@
 "Please input your feedback"="আপনার মূল্যবান পরামর্শ আমাদের কাছে ফরোয়ার্ড করুন";
 "Would you like to review the App?"="এই অ্যাপ্লিকেশনটি পছন্দ করুন, এটি একটি পর্যালোচনা দিন?";
 "Rate"="হারে যান";
+"Monday"="সোমবার";
+"Tuesday"="মঙ্গলবার";
+"Wednesday"="বুধবার";
+"Thursday"="বৃহস্পতিবার";
+"Friday"="শুক্রবার";
+"Saturday"="শনিবার";
+"Sunday"="রবিবার";
+"Yesterday"="গতকাল";

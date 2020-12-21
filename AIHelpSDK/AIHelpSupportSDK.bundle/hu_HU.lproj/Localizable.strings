@@ -25,3 +25,11 @@
 "Please input your feedback"="Kérjük, továbbítsa értékes javaslatait nekünk";
 "Would you like to review the App?"="Tetszik ez az alkalmazás, adjon neki véleményt?";
 "Rate"="Menjen az értékeléshez";
+"Monday"="hétfő";
+"Tuesday"="kedd";
+"Wednesday"="szerda";
+"Thursday"="csütörtök";
+"Friday"="péntek";
+"Saturday"="szombat";
+"Sunday"="vasárnap";
+"Yesterday"="Tegnap";

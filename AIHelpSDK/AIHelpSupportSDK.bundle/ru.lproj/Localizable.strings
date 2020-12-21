@@ -14,10 +14,6 @@
 "Oops, no relevant results were found"="Извините, по вашему запросу ничего не найдено.";
 "Success"="Success";
 "Failed"="Failed";
-//"Please tell us more details"="Please tell us more details";
-//"Network Error, Please check your network"="Network Error, Please check your network";
-//"Retry"="Retry";
-//"Loading......"="Loading......";
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="Размер файла превышает лимит, загрузите файл размером менее %d МБ";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
@@ -37,3 +33,11 @@
 "Please input your feedback"="Пожалуйста, введите свой отзыв";
 "Would you like to review the App?"="Любите это приложение и оцените его?";
 "Rate"="Гол";
+"Monday"="понедельник";
+"Tuesday"="вторник";
+"Wednesday"="Среда";
+"Thursday"="Четверг";
+"Friday"="Пятница";
+"Saturday"="суббота";
+"Sunday"="Воскресенье";
+"Yesterday"="Вчерашний день";

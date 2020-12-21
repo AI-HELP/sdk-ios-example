@@ -15,9 +15,6 @@
 "Success"="成功";
 "Failed"="失敗";
 "Please tell us more details"="原因を具体的に書いてください。";
-//"Network Error, Please check your network"="Network Error, Please check your network";
-//"Retry"="Retry";
-//"Loading......"="Loading......";
 "media_upload_err_format"="Unsupported files. Currently, only 'mp4, 3gp, png, jpg, jpeg, gif' available when uploading.";
 "media_upload_err_size"="ファイルサイズが制限を超えています。%dMB未満のファイルをアップロードしてください";
 "media_upload_err_net"="Transmission timed out, file uploading failed.";
@@ -37,3 +34,11 @@
 "Please input your feedback"="フィードバックを入力してください";
 "Would you like to review the App?"="アプリを確認しますか？";
 "Rate"="割合";
+"Monday"="月曜";
+"Tuesday"="火曜日";
+"Wednesday"="水曜日";
+"Thursday"="木曜日";
+"Friday"="金曜日";
+"Saturday"="土曜日";
+"Sunday"="日曜日";
+"Yesterday"="昨日";
