@@ -13,8 +13,6 @@ typedef void (*AISupportInitCallBack)(void);
 typedef void (*AISupportMessageCallBack)(const int unreadCount);
 typedef void (*AISupportPingCallBack)(const NSString * log);
 typedef void (*AISupportIsSpecificFormCallBack)(void);
-typedef void (*AISupportOpenSDKCallBack)(void);
-typedef void (*AISupportCloseSDKCallBack)(void);
 
 @interface AIHelpSupportSDK : NSObject
 
@@ -272,8 +270,4 @@ typedef void (*AISupportCloseSDKCallBack)(void);
 + (void)showUrl:(NSString *)url;
 
 + (void)setOnSpecificFormSubmittedCallback:(AISupportIsSpecificFormCallBack)callBack;
-
-+ (void)setOnAIHelpSessionOpenCallback:(AISupportOpenSDKCallBack)callback;
-
-+ (void)setOnAIHelpSessionCloseCallback:(AISupportCloseSDKCallBack)callback;
 @end
