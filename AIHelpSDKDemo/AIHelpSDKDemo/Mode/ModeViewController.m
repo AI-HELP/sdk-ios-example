@@ -33,10 +33,16 @@
 }
 
 - (IBAction)allFAQSection:(UIButton *)sender {
+    AIHelpUserConfigBuilder *userBuilder = [[AIHelpUserConfigBuilder alloc] init];
+    userBuilder.userId = @"hdhdhbsk22jb";
+    userBuilder.userName = @"33333";
+    userBuilder.customData = @{@"testKey":@"testValue",@"vip":@"vip1",@"coins":@"0"};
+    [AIHelpSupportSDK updateUserInfo:userBuilder.build];
+    
     AIHelpFAQConfigBuilder *faqBuilder = [[AIHelpFAQConfigBuilder alloc] init];
     AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
     faqBuilder.showConversationMoment = AIHelpFAQShowConversationMomentAlways;
-    conversationBuilder.conversationIntent = AIHelpConversationIntentBotSupport;
+    conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
     conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
     faqBuilder.conversationConfig = conversationBuilder.build;
     [AIHelpSupportSDK showAllFAQSections:faqBuilder.build];
