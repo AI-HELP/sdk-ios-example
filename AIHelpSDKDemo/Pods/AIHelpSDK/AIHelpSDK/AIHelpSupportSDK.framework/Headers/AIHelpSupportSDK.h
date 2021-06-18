@@ -6,13 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AIHelpSupportSDK/AIHelpSDKConfig.h>
 #import <UIKit/UIKit.h>
-#import "AIHelpSDKConfig.h"
 
 typedef void (*AISupportInitCallBack)(void);
 typedef void (*AISupportMessageCallBack)(const int unreadCount);
 typedef void (*AISupportPingCallBack)(const NSString * log);
 typedef void (*AISupportIsSpecificFormCallBack)(void);
+typedef void (*AISupportOpenSDKCallBack)(void);
+typedef void (*AISupportCloseSDKCallBack)(void);
 
 @interface AIHelpSupportSDK : NSObject
 
@@ -227,13 +229,6 @@ typedef void (*AISupportIsSpecificFormCallBack)(void);
 + (void)startUnreadMessageCountPolling:(AISupportMessageCallBack)callback;
 
 /**
- * Set up the SDK rootViewController
- *
- * @param rootViewController rootViewController, default: keyWindow.rootViewController
- */
-+ (void)setRootViewController:(UIViewController*)rootViewController;
-
-/**
  * Set the SDK display mode
  *
  * Default following system
@@ -244,30 +239,21 @@ typedef void (*AISupportIsSpecificFormCallBack)(void);
  */
 + (void)setSDKAppearanceMode:(int)mode;
 
-/**
- * Adjust the upper and lower display spacing between SDK pages and screen edges
- *
- * @param top  the top of the screen
- * @param bottom  the bottom of the screen
- * @param enable switch
- */
-+ (void)setSDKEdgeInsetsWithTop:(float)top bottom:(float)bottom enable:(BOOL)enable;
-
-/**
- * Set the SDK edge color
- *
- * @param red  rgb->red
- * @param green  rgb->green
- * @param blue  rgb->blue
- * @param alpha the alpha
- */
-+ (void)setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
-
 
 + (void)runAccelerationForChina;
 
 
 + (void)showUrl:(NSString *)url;
 
+
++ (void)setOnAIHelpSessionOpenCallback:(AISupportOpenSDKCallBack)callback;
+
++ (void)setOnAIHelpSessionCloseCallback:(AISupportCloseSDKCallBack)callback;
+
 + (void)setOnSpecificFormSubmittedCallback:(AISupportIsSpecificFormCallBack)callBack;
+
++ (void)setSDKEdgeInsetsWithTop:(float)top bottom:(float)bottom enable:(BOOL)enable;
++ (void)setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
+
+
 @end

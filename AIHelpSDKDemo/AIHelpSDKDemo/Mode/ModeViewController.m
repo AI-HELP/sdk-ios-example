@@ -29,6 +29,7 @@
 
 - (IBAction)robotClick:(UIButton *)sender {
     AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
+    conversationBuilder.conversationIntent = AIHelpConversationIntentBotSupport;
     [AIHelpSupportSDK showConversation:conversationBuilder.build];
 }
 

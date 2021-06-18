@@ -34,12 +34,14 @@ typedef NS_ENUM(int,AIHelpFAQShowConversationMoment) {             /* Conversati
 @end
 
 @interface AIHelpUserConfigBuilder : NSObject
-@property (nonatomic, strong)NSString       *userId;        // default is unique deviceId
-@property (nonatomic, strong)NSString       *userName;      // default is "anonymous"
-@property (nonatomic, strong)NSString       *serverId;      // default is nil
+@property (nonatomic, copy)NSString       *userId;        // default is unique deviceId
+@property (nonatomic, copy)NSString       *userName;      // default is "anonymous"
+@property (nonatomic, copy)NSString       *serverId;      // default is nil
 @property (nonatomic, strong)NSArray        *userTags;      // If you assign this field with existing tags from aihelp admin dashboard, the tickets created by current user will take these tags by default.
 @property (nonatomic, strong)NSDictionary   *customData;    // Set custom meta data you want to see in the aihelp admin dashboard.
 @property (nonatomic, assign)BOOL           isSyncCrmInfo;  // If you set this to true, when you update current user's information, the sdk will sync user's information to you crm database.
+@property(nonatomic,copy)NSString *pushToken;
+@property(nonatomic,assign)AIHelpTokenPlatform pushPlatform;
 - (AIHelpUserConfig *)build;
 @end
 
@@ -53,8 +55,8 @@ typedef NS_ENUM(int,AIHelpFAQShowConversationMoment) {             /* Conversati
 @interface AIHelpConversationConfigBuilder : NSObject
 @property (nonatomic, assign)AIHelpConversationIntent conversationIntent;    // show elva bot page or show conversation page
 @property (nonatomic, assign)BOOL alwaysShowHumanSupportButtonInBotPage;         // default is NO.if you set ture,user can always see the contact us button
-@property (nonatomic, strong)NSString *welcomeMessage;           // default is http://aihelp.net/dashboard setting. you can show different welcome msg by different users with this param, It has a higher priority.
-@property (nonatomic, strong)NSString *storyNode;                   // set specific story node for specific scene. With this api call, you can show different stories in different scenes. the story node's User Say content you configured in aihelp admin dashboard.(http://aihelp.net/dashboard)
+@property (nonatomic, copy)NSString *welcomeMessage;           // default is http://aihelp.net/dashboard setting. you can show different welcome msg by different users with this param, It has a higher priority.
+@property (nonatomic, copy)NSString *storyNode;                   // set specific story node for specific scene. With this api call, you can show different stories in different scenes. the story node's User Say content you configured in aihelp admin dashboard.(http://aihelp.net/dashboard)
 - (AIHelpConversationConfig *)build;
 @end
 
@@ -80,7 +82,7 @@ typedef NS_ENUM(int,AIHelpFAQShowConversationMoment) {             /* Conversati
 
 @interface AIHelpOperationConfigBuilder : NSObject
 @property (nonatomic, assign)int selectIndex;                                  // default is elva tab.  If you set a negative index, or index larger than the total tab counts, the selected tab will still be elva.
-@property (nonatomic, strong)NSString *conversationTitle;                        // default is "HELP", you can change the operation conversation bot title
+@property (nonatomic, copy)NSString *conversationTitle;                        // default is "HELP", you can change the operation conversation bot title
 @property (nonatomic, strong)AIHelpConversationConfig *conversationConfig;            // see config -> ECServiceConversationConfig
 - (AIHelpOperationConfig *)build;
 @end
