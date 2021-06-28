@@ -6,7 +6,7 @@ target 'AIHelpSDKDemo' do
   use_frameworks!
 
   # Pods for AIHelpSDKDemo
-  pod 'AIHelpSDK', '~> 2.3.0'
+  pod 'AIHelpSDK', '~> 2.3.2'
   pod 'MBProgressHUD', '~> 1.2.0'
 
 end
