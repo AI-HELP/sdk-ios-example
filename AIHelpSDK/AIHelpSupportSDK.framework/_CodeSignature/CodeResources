@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/AIHelpSDKConfig.h</key>
 		<data>
-		WGg3ieilJvsDRR28DPixcqSKuCI=
+		DXxtsVzvFpcJVrm4h61f2/LMokw=
 		</data>
 		<key>Headers/AIHelpSupportSDK.h</key>
 		<data>
-		sQ9P5qxZJQ/XnimpNBjV+FsmOm4=
+		oNZGCx/eZxcZriOPjlGN5W4N/mE=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -27,22 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WGg3ieilJvsDRR28DPixcqSKuCI=
+			DXxtsVzvFpcJVrm4h61f2/LMokw=
 			</data>
 			<key>hash2</key>
 			<data>
-			vSIfUSWRSvp3VpDCKjDVUPnWDXTCszkQC8bRIFl8cIE=
+			HxMzacAob6AEQjYs4VWSGxRRmyFSxPX8e3mer8CK2Xk=
 			</data>
 		</dict>
 		<key>Headers/AIHelpSupportSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sQ9P5qxZJQ/XnimpNBjV+FsmOm4=
+			oNZGCx/eZxcZriOPjlGN5W4N/mE=
 			</data>
 			<key>hash2</key>
 			<data>
-			s1gifazJj81kPn4vSnHNZZWh39LWH6S80HuPTtacklU=
+			Mgdw8A6EQHE/39ucHtItmZarKJFcedW4tF8S0BGY4lg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

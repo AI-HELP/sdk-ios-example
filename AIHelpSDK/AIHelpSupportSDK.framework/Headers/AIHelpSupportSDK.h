@@ -244,7 +244,7 @@ typedef void (*AISupportCloseSDKCallBack)(void);
  *
  * @param countryOrRegion ISO country code, please check https://www.iso.org/obp/ui/#search to learn more.
  */
-+ (void)additionalSupportFor:(PublishCountryOrRegion)countryOrRegion;
++ (void)additionalSupportFor:(AIHelpPublishCountryOrRegion)countryOrRegion;
 
 
 
