@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "AIHelpSDK"
-  s.version           = "2.3.6"
+  s.version           = "2.5.0"
   s.summary           = "AIHelpSDK for iOS"
   s.homepage          = "https://github.com/AI-HELP/sdk-ios-example"
   s.license      = { :type => "Apache-2.0", :file => "LICENSE" }
@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
   s.source            = { :git => "https://github.com/AI-HELP/sdk-ios-example.git", :tag => "#{s.version}" }
 
   s.resources    = 'AIHelpSDK/AIHelpSupportSDK.bundle'
-  s.vendored_frameworks = 'AIHelpSDK/MQTTFramework.framework','AIHelpSDK/AIHelpSupportSDK.framework'
+  s.vendored_frameworks = 'AIHelpSDK/AIHelpSupportSDK.framework'
   s.frameworks = 'WebKit'
-  s.library = 'sqlite3','resolv'
+  s.library = 'sqlite3'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
 end

@@ -44,6 +44,7 @@
 		B12E08BA2531493A0036F7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12E08BC2531493A0036F7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12E08BD2531493A0036F7F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B150812B26C0D6B200592D5E /* AIHelpSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIHelpSDKDemo.entitlements; sourceTree = "<group>"; };
 		FB30B741DD52AC61668A2C43 /* Pods_AIHelpSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIHelpSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +120,7 @@
 		B12E08AA253149370036F7F2 /* AIHelpSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B150812B26C0D6B200592D5E /* AIHelpSDKDemo.entitlements */,
 				B10AED6F254052B100969586 /* Other */,
 				B10AED6E254052A700969586 /* Setting */,
 				B10AED6D2540525C00969586 /* Mode */,
@@ -434,16 +436,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIHelpSDKDemo/AIHelpSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N39XKD3HP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AIHelpSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = aihelp.AIHelpSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = aihelp.net.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,16 +458,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIHelpSDKDemo/AIHelpSDKDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N39XKD3HP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AIHelpSDKDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = aihelp.AIHelpSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = aihelp.net.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
