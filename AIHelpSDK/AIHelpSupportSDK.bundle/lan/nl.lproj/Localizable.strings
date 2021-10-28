@@ -41,5 +41,6 @@
 "aihelp_thursday"="donderdag";
 "aihelp_friday"="vrijdag";
 "aihelp_saturday"="zaterdag";
-
+"aihelp_saturday_data_acquisition_failed"="Gegevensverzameling mislukt";
+"aihelp_send"="versturen";
 

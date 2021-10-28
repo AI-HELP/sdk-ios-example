@@ -41,5 +41,6 @@
 "aihelp_thursday"="Четверг";
 "aihelp_friday"="Пятница";
 "aihelp_saturday"="суббота";
-
+"aihelp_saturday_data_acquisition_failed"="Не удалось получить данные";
+"aihelp_send"="Отправить";
 

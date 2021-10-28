@@ -40,5 +40,6 @@
 "aihelp_thursday"="الخميس";
 "aihelp_friday"="يوم الجمعة";
 "aihelp_saturday"="يوم السبت";
-
+"aihelp_saturday_data_acquisition_failed"="فشل الحصول على البيانات";
+"aihelp_send"="يرسل";
 

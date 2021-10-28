@@ -41,5 +41,6 @@
 "aihelp_thursday"="joi";
 "aihelp_friday"="vineri";
 "aihelp_saturday"="sâmbătă";
-
+"aihelp_saturday_data_acquisition_failed"="Achiziționarea datelor nu a reușit";
+"aihelp_send"="trimite";
 

@@ -41,5 +41,6 @@
 "aihelp_thursday"="गुरूवार";
 "aihelp_friday"="शुक्रवार";
 "aihelp_saturday"="शनिवार";
-
+"aihelp_saturday_data_acquisition_failed"="डाटा अधिग्रहण विफल";
+"aihelp_send"="भेजना";
 

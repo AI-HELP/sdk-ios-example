@@ -41,5 +41,6 @@
 "aihelp_thursday"="ကြာသပတေးနေ့";
 "aihelp_friday"="သောကြာနေ့";
 "aihelp_saturday"="စနေနေ့";
-
+"aihelp_saturday_data_acquisition_failed"="ဒေတာရယူမှုမအောင်မြင်ပါ";
+"aihelp_send"="ပို့ပါ";
 

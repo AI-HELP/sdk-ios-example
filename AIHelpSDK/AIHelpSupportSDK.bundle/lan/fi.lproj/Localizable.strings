@@ -40,5 +40,6 @@
 "aihelp_thursday"="torstai";
 "aihelp_friday"="perjantai";
 "aihelp_saturday"="Lauantai";
-
+"aihelp_saturday_data_acquisition_failed"="Tietojen hankinta epäonnistui";
+"aihelp_send"="lähettää";
 

@@ -41,5 +41,6 @@
 "aihelp_thursday"="Kamis";
 "aihelp_friday"="Jumat";
 "aihelp_saturday"="Sabtu";
-
+"aihelp_saturday_data_acquisition_failed"="Akuisisi data gagal";
+"aihelp_send"="mengirim";
 

@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.gitignore</key>
-		<data>
-		ynPeFjN8Z50EokcbQ7AAjbrQSVo=
-		</data>
 		<key>Headers/AIHelpSDKConfig.h</key>
 		<data>
 		WwX/chDzWoUSbkpDXnFdRzOQxcE=
@@ -18,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ns/afIeQlX+s5Wyauz4hhTGz9Wo=
+		e8osfESNh2SxQCPTWe3csj+xMcI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,17 +23,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>.gitignore</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ynPeFjN8Z50EokcbQ7AAjbrQSVo=
-			</data>
-			<key>hash2</key>
-			<data>
-			QnH7tYTLphI368toFueEHGns8f2B+/UsFaH7yTYnTDI=
-			</data>
-		</dict>
 		<key>Headers/AIHelpSDKConfig.h</key>
 		<dict>
 			<key>hash</key>

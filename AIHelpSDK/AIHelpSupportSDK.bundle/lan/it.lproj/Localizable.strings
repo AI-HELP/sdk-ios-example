@@ -41,5 +41,6 @@
 "aihelp_thursday"="giovedi";
 "aihelp_friday"="Venerdì";
 "aihelp_saturday"="Sabato";
-
+"aihelp_saturday_data_acquisition_failed"="Acquisizione dati non riuscita";
+"aihelp_send"="Inviare";
 

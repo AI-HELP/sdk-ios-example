@@ -41,5 +41,6 @@
 "aihelp_thursday"="Huwebes";
 "aihelp_friday"="Biyernes";
 "aihelp_saturday"="Sabado";
-
+"aihelp_saturday_data_acquisition_failed"="Nabigo ang pagkuha ng data";
+"aihelp_send"="magpadala";
 

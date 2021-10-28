@@ -41,5 +41,6 @@
 "aihelp_thursday"="Thứ năm";
 "aihelp_friday"="Thứ sáu";
 "aihelp_saturday"="ngày thứ bảy";
-
+"aihelp_saturday_data_acquisition_failed"="Thu thập dữ liệu không thành công";
+"aihelp_send"="gửi";
 

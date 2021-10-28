@@ -41,5 +41,5 @@
 "aihelp_thursday"="Πέμπτη";
 "aihelp_friday"="Παρασκευή";
 "aihelp_saturday"="Σάββατο";
-
-
+"aihelp_saturday_data_acquisition_failed"="Η απόκτηση δεδομένων απέτυχε";
+"aihelp_send"="στείλετε";

@@ -41,5 +41,6 @@
 "aihelp_thursday"="پنج شنبه";
 "aihelp_friday"="جمعه";
 "aihelp_saturday"="شنبه";
-
+"aihelp_saturday_data_acquisition_failed"="جمع آوری اطلاعات ناموفق بود";
+"aihelp_send"="ارسال";
 

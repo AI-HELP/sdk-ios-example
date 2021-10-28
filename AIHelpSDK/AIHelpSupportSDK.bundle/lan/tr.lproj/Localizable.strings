@@ -41,5 +41,6 @@
 "aihelp_thursday"="Perşembe";
 "aihelp_friday"="Cuma";
 "aihelp_saturday"="Cumartesi";
-
+"aihelp_saturday_data_acquisition_failed"="Veri toplama başarısız oldu";
+"aihelp_send"="göndermek";
 

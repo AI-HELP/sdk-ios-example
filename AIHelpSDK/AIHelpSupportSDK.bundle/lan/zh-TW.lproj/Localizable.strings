@@ -42,5 +42,5 @@
 "aihelp_saturday"="週六";
 "aihelp_sunday"="週日";
 "aihelp_yesterday"="昨天";
-
-
+"aihelp_saturday_data_acquisition_failed"="數據獲取失敗";
+"aihelp_send"="發送";

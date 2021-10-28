@@ -41,5 +41,6 @@
 "aihelp_thursday"="বৃহস্পতিবার";
 "aihelp_friday"="শুক্রবার";
 "aihelp_saturday"="শনিবার";
-
+"aihelp_saturday_data_acquisition_failed"="ডেটা অর্জন ব্যর্থ হয়েছে";
+"aihelp_send"="পাঠান";
 

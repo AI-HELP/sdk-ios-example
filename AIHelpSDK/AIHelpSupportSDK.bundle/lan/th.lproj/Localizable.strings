@@ -41,5 +41,6 @@
 "aihelp_thursday"="วันพฤหัสบดี";
 "aihelp_friday"="วันศุกร์";
 "aihelp_saturday"="วันเสาร์";
-
+"aihelp_saturday_data_acquisition_failed"="การรับข้อมูลล้มเหลว";
+"aihelp_send"="ส่ง";
 

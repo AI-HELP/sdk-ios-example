@@ -41,5 +41,7 @@
 "aihelp_thursday"="목요일";
 "aihelp_friday"="금요일";
 "aihelp_saturday"="토요일";
+"aihelp_saturday_data_acquisition_failed"="데이터 수집 실패";
+"aihelp_send"="보내다";
 
 

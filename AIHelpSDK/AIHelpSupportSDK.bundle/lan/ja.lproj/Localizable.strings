@@ -41,5 +41,7 @@
 "aihelp_saturday"="土曜日";
 "aihelp_sunday"="日曜日";
 "aihelp_yesterday"="昨日";
+"aihelp_saturday_data_acquisition_failed"="データ取得に失敗しました";
+"aihelp_send"="发信";
 
 

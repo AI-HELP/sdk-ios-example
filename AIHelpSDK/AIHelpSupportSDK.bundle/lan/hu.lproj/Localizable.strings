@@ -41,5 +41,6 @@
 "aihelp_thursday"="csütörtök";
 "aihelp_friday"="péntek";
 "aihelp_saturday"="szombat";
-
+"aihelp_saturday_data_acquisition_failed"="Az adatgyűjtés sikertelen";
+"aihelp_send"="Küld";
 

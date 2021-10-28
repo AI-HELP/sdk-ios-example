@@ -42,6 +42,8 @@
 "aihelp_thursday"="周四";
 "aihelp_friday"="周五";
 "aihelp_saturday"="周六";
+"aihelp_saturday_data_acquisition_failed"="数据获取失败";
+"aihelp_send"="发送";
 
 
 
