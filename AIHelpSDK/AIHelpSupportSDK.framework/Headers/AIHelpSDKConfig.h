@@ -51,8 +51,6 @@ typedef NS_ENUM(int, AIHelpFAQSupportEntrance) {
 @property (nonatomic, strong)NSArray        *userTags;      // If you assign this field with existing tags from aihelp admin dashboard, the tickets created by current user will take these tags by default.
 @property (nonatomic, strong)NSDictionary   *customData;    // Set custom meta data you want to see in the aihelp admin dashboard.
 @property (nonatomic, assign)BOOL           isSyncCrmInfo;  // If you set this to true, when you update current user's information, the sdk will sync user's information to you crm database.
-@property(nonatomic,copy)NSString *pushToken;
-@property(nonatomic,assign)AIHelpTokenPlatform pushPlatform;
 - (AIHelpUserConfig *)build;
 @end
 
