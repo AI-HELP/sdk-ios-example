@@ -8,16 +8,15 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+// The following two macros supply the incantation so that the C
+// preprocessor does not try to parse the version as a floating
+// point number. See
+// https://www.guyrutenberg.com/2008/12/20/expanding-macros-into-string-constants-in-c/
+// #define STR(x) STR_EXPAND(x)
+// #define STR_EXPAND(x) #x
 
-// https://blog.csdn.net/weixin_45390999/article/details/104481185
-// https://juejin.cn/post/6844903441492344840
-// XCode更换Info.plist位置 Build Settings->ALL Combined下的Packaging->Info.plist File修改路径
-// GCC_PREPROCESSOR_DEFINITIONS https://blog.csdn.net/vbirdbest/article/details/53454014
-// https://thoughtbot.com/blog/xcode-build-settings-part-1-preprocessing
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) AIHELP_SDK_VERSION='$(AIHELP_SDK_VERSION)'
 
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) AIHELP_SDK_VERSION_STRING='$(AIHELP_SDK_VERSION_STRING)'
-
-AIHELP_SDK_VERSION_STRING = @"4.1.4"
-AIHELP_SDK_VERSION = 4.1.4
+AIHELP_SDK_VERSION = 4.1.5
 AIHELP_SDK_BUILD_VERSION = 1
 

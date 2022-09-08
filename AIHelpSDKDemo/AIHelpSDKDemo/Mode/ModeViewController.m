@@ -16,69 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.title = @"mode";
-    
 }
 
-- (IBAction)humanClick:(UIButton *)sender {
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
-    conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
-    [AIHelpSupportSDK showConversation:conversationBuilder.build];
+- (IBAction)showWithEntranceId:(UIButton *)sender {
+    [AIHelpSupportSDK showWithEntranceId:@"THIS IS YOUR ENTRANCE ID"];
 }
 
-- (IBAction)robotClick:(UIButton *)sender {
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    conversationBuilder.conversationIntent = AIHelpConversationIntentBotSupport;
-    [AIHelpSupportSDK showConversation:conversationBuilder.build];
+- (IBAction)showWithApiConfig:(UIButton *)sender {
+    AIHelpApiConfigBuilder *builder = [[AIHelpApiConfigBuilder alloc] init];
+    builder.entranceId = @"THIS IS YOUR ENTRANCE ID";
+    builder.welcomeMessage = @"THIS IS YOUR WELCOME MESSAGE";
+    [AIHelpSupportSDK showWithApiConfig:builder.build];
 }
-
-- (IBAction)allFAQSection:(UIButton *)sender {
-    AIHelpUserConfigBuilder *userBuilder = [[AIHelpUserConfigBuilder alloc] init];
-    userBuilder.userId = @"hdhdhbsk22jb";
-    userBuilder.userName = @"33333";
-    userBuilder.customData = @{@"testKey":@"testValue",@"vip":@"vip1",@"coins":@"0"};
-    [AIHelpSupportSDK updateUserInfo:userBuilder.build];
-    
-    AIHelpFAQConfigBuilder *faqBuilder = [[AIHelpFAQConfigBuilder alloc] init];
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    faqBuilder.showConversationMoment = AIHelpFAQShowConversationMomentAlways;
-    conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
-    conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
-    faqBuilder.conversationConfig = conversationBuilder.build;
-    [AIHelpSupportSDK showAllFAQSections:faqBuilder.build];
-}
-
-- (IBAction)FAQSecton:(UIButton *)sender {
-    AIHelpFAQConfigBuilder *faqBuilder = [[AIHelpFAQConfigBuilder alloc] init];
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    faqBuilder.showConversationMoment = AIHelpFAQShowConversationMomentAlways;
-    conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
-    conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
-    faqBuilder.conversationConfig = conversationBuilder.build;
-    [AIHelpSupportSDK showFAQSection:@"SECTION ID" config:faqBuilder.build];
-}
-
-- (IBAction)singleFAQ:(UIButton *)sender {
-    AIHelpFAQConfigBuilder *faqBuilder = [[AIHelpFAQConfigBuilder alloc] init];
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    faqBuilder.showConversationMoment = AIHelpFAQShowConversationMomentAlways;
-    conversationBuilder.conversationIntent = AIHelpConversationIntentHumanSupport;
-    conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
-    faqBuilder.conversationConfig = conversationBuilder.build;
-    [AIHelpSupportSDK showSingleFAQ:@"FAQ ID"  config:faqBuilder.build];
-}
-
-- (IBAction)operationClick:(UIButton *)sender {
-    AIHelpOperationConfigBuilder *operationBuilder = [[AIHelpOperationConfigBuilder alloc] init];
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    operationBuilder.selectIndex = INT_MAX;
-    operationBuilder.conversationTitle = @"Support";
-    conversationBuilder.alwaysShowHumanSupportButtonInBotPage = YES;
-    conversationBuilder.welcomeMessage = @"You can configure special welcome message for your end users at here.";
-    operationBuilder.conversationConfig = conversationBuilder.build;
-    [AIHelpSupportSDK showOperation:operationBuilder.build];
-}
-
 
 @end
