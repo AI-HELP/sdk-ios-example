@@ -36,8 +36,8 @@ void AIHelp_onInitializationCallback() {
     [AIHelpSupportSDK enableLogging:YES];
     [AIHelpSupportSDK initWithApiKey:@"TryElva_platform_09ebf7fa-8d45-4843-bd59-cfda3d8a8dc0"
                               domainName:@"release.aihelp.net"
-                                      appId:@"TryElva_platform_09ebf7fa-8d45-4843-bd59-cfda3d8a8dc0"
-                                   language:@"en"];
+                                      appId:@"xx_platform_efbc5231bc71459444d69cb489d9a7d2"
+                                   language:@"zh_CN"];
     [AIHelpSupportSDK setOnInitializedCallback:AIHelp_onInitializationCallback];
 }
 
