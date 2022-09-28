@@ -34,10 +34,10 @@ void AIHelp_onInitializationCallback() {
 - (void)initAIHelpSDK
 {
     [AIHelpSupportSDK enableLogging:YES];
-    [AIHelpSupportSDK initWithApiKey:@"TryElva_platform_09ebf7fa-8d45-4843-bd59-cfda3d8a8dc0"
-                              domainName:@"release.aihelp.net"
-                                      appId:@"xx_platform_efbc5231bc71459444d69cb489d9a7d2"
-                                   language:@"zh_CN"];
+    [AIHelpSupportSDK initWithApiKey:@"THIS IS YOUR APP KEY"
+                              domainName:@"THIS IS YOUR DOMAIN"
+                                      appId:@"THIS IS YOUR APP ID"
+                                   language:@"THIS IS YOUR LANGUAGE(OPTIONAL)"];
     [AIHelpSupportSDK setOnInitializedCallback:AIHelp_onInitializationCallback];
 }
 

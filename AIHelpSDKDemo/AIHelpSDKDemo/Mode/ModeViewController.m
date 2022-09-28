@@ -21,19 +21,14 @@
 }
 
 - (IBAction)showWithEntranceId:(UIButton *)sender {
-//    [AIHelpSupportSDK showWithEntranceId:@"THIS IS YOUR ENTRANCE ID"];
-    
-    AIHelpConversationConfigBuilder *conversationBuilder = [[AIHelpConversationConfigBuilder alloc] init];
-    conversationBuilder.storyNode = @"Delete Account";
-        [AIHelpSupportSDK showConversation:conversationBuilder.build];
-    
+    [AIHelpSupportSDK showWithEntranceId:@"THIS IS YOUR ENTRANCE ID"];
 }
 
 - (IBAction)showWithApiConfig:(UIButton *)sender {
-//    AIHelpApiConfigBuilder *builder = [[AIHelpApiConfigBuilder alloc] init];
-//    builder.entranceId = @"THIS IS YOUR ENTRANCE ID";
-//    builder.welcomeMessage = @"THIS IS YOUR WELCOME MESSAGE";
-//    [AIHelpSupportSDK showWithApiConfig:builder.build];
+    AIHelpApiConfigBuilder *builder = [[AIHelpApiConfigBuilder alloc] init];
+    builder.entranceId = @"THIS IS YOUR ENTRANCE ID";
+    builder.welcomeMessage = @"THIS IS YOUR WELCOME MESSAGE";
+    [AIHelpSupportSDK showWithApiConfig:builder.build];
 }
 
 @end
