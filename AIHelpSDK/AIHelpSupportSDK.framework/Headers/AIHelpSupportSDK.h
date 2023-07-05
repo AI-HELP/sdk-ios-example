@@ -9,13 +9,14 @@
 #import <AIHelpSupportSDK/AIHelpSDKConfig.h>
 #import <UIKit/UIKit.h>
 
-typedef void (*AISupportInitCallBack)(void);
+typedef void (*AISupportInitCallBack)(const bool isSuccess, const char * message);
 typedef void (*AISupportMessageCallBack)(const int unreadCount);
-typedef void (*AISupportPingCallBack)(const NSString * log);
+typedef void (*AISupportPingCallBack)(const char * log);
 typedef void (*AISupportIsSpecificFormCallBack)(void);
 typedef void (*AISupportOpenSDKCallBack)(void);
 typedef void (*AISupportCloseSDKCallBack)(void);
 typedef void (*AISupportOperationUnReadCallBack)(const bool hasUnreadArticles);
+typedef void (*AISupportSpecificUrlClickedCallBack)(const char * url);
 
 @interface AIHelpSupportSDK : NSObject
 
@@ -41,93 +42,18 @@ typedef void (*AISupportOperationUnReadCallBack)(const bool hasUnreadArticles);
 + (void)initWithApiKey:(NSString *)apiKey domainName:(NSString *)domainName appId:(NSString *)appId language:(NSString *)language;
 
 /**
- * Show the AIHelp conversation screen, which is Elva bot by default.
+ * Show the AIHelp conversation screen.
  *
- * If you want to change your conversation intent or custom your welcome message, please check next method  for more information.
+ * If you want to custom your welcome message, please check next method for more information.
  */
-+ (void)showConversation;
++ (BOOL)showWithEntranceId:(NSString *)entranceId;
 
 /**
- * Show the AIHelp conversation screen, with Optional Arguments.
- *
- * User CAN NOT get in touch with customer service in Bot page, unless there is an unfinished ticket or they submit a form from elva bot.
- * However, You could configure your default conversation intent with AIHelpConversationConfig.
- * For instance, You can show different welcome msg for different customer, make your customer service always online for your VIPs, even skipping BOT conversation and show customer service by default for them.
- * check AIHelpConversationConfig for more information.
- * @param conversationConfig configure different conversation actions
+ Show the AIHelp conversation screen.
  */
-+ (void)showConversation:(AIHelpConversationConfig *)conversationConfig;
++ (BOOL)showWithApiConfig:(AIHelpApiConfig *)apiConfig;
 
-/**
- * Show the AIHelp screen with only the faqs, which is root section by default.
- *
- * To show the AIHelp screen with only the faq sections with search with optional arguments, you can use this api.
- * If you want to pass some options to configure your faqs display, check next method  for more information.
- */
-+ (void)showAllFAQSections;
-
-/**
- * Show the AIHelp screen with only the faqs, with Optional Arguments.
- *
- * User can get in touch with your customer service via FAQs, you can configure this with ECServiceFAQConfig, Such as the EXACT moment user can see the CONTACT US button.
- * Besides, as you can get conversation via FAQs, you can configure your conversation configs wiith AIHelpConversationConfig.
- * @param config the configs which contains custom configurations for faqs & supports
- */
-+ (void)showAllFAQSections:(AIHelpFAQConfig *)config;
-
-/**
- * Show the AIHelp screen with faqs from a particular section.
- *
- * This api takes on the default options, if you want to pass some options to configure your faqs display, check next method  for more information.
- * @param sectionId the publish id associated with the faq section which is shown in the FAQ page on the admin side.(https://aihelp.net/dashboard/#/FAQ)
- */
-+ (void)showFAQSection:(NSString *)sectionId;
-
-/**
- * Show the AIHelp screen with faqs from a particular section, with Optional Arguments.
- *
- * User can get in touch with your customer service via FAQs, you can configure this with ECServiceFAQConfig,Such as the EXACT moment user can see the CONTACT US button.
- * Besides, as you can get conversation via FAQs, you can configure your conversation configs wiith AIHelpConversationConfig.
- *
- * @param sectionId the publish id associated with the faq section which is shown in the FAQ page on the admin side.(https://aihelp.net/dashboard/#/FAQ)
- * @param config the configs which contains custom configurations for faqs & supports
- */
-+ (void)showFAQSection:(NSString *)sectionId config:(AIHelpFAQConfig *)config;
-
-/**
- * Show the AIHelp screen with a single faq.
- *
- * This api takes on the default options, if you want to pass some options to configure your faq display, check next method for more information.
- * @param faqId    the publish id associated with the faq which is shown when you expand a single FAQ.(https://aihelp.net/dashboard/#/FAQ)
- */
-+ (void)showSingleFAQ:(NSString *)faqId;
-
-/**
- * Show the AIHelp screen with a single faq, with Optional Arguments.
- *
- * User can get in touch with your customer service via FAQs, you can configure this with ECServiceFAQConfig.
- * Such as the EXACT moment user can see the CONTACT US button, Besides, as you can get conversation via FAQs, you can configure your conversation configs wiith AIHelpConversationConfig.
- * @param faqId     the publish id associated with the faq which is shown when you expand a single FAQ.(https://aihelp.net/dashboard/#/FAQ)
- * @param config   the configs which contains custom configurations for faqs & supports
- */
-+ (void)showSingleFAQ:(NSString *)faqId config:(AIHelpFAQConfig *)config;
-
-/**
- * Show the AIHelp operation screen.
- *
- * This api takes on the default options, which selects Elva Bot by default.
- * If you want to change the operation default selection or elva bot title, please check next method for more information.
- */
-+ (void)showOperation;
-
-/**
- * Show the AIHelp operation screen, with Optional Arguments.
- *
- * You can change your default selection or elva bot title by passing in ECServiceOperationConfig.
- * Besides, as you can get conversation via FAQs, you can configure your conversation configs wiith AIHelpConversationConfig.
- * @param config the configs which contains custom configurations for operations & supports
- */
-+ (void)showOperation:(AIHelpOperationConfig *)config;
++ (void)showSingleFAQ:(NSString *)faqId showConversationMoment:(AIHelpFAQShowConversationMoment)showConversationMoment;
 
 /**
  * Update a user's profile via UserConfig.
@@ -259,8 +185,11 @@ typedef void (*AISupportOperationUnReadCallBack)(const bool hasUnreadArticles);
 
 + (void)setOnOperationUnreadChangedCallback:(AISupportOperationUnReadCallBack)callback;
 
++ (void)setOnSpecificUrlClickedCallback:(AISupportSpecificUrlClickedCallBack)callback;
+
 + (void)setSDKEdgeInsetsWithTop:(float)top bottom:(float)bottom enable:(BOOL)enable;
 + (void)setSDKEdgeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
 
++ (void)close;
 
 @end
