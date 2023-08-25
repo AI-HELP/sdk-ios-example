@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Responder conteúdo";
 "aihelp_task_content"="Conteúdo do ingresso";
 "aihelp_task_status"="status do ticket";
-"aihelp_media_upload_err_size_ios"="O tamanho do arquivo excede o limite, envie o arquivo menor que %@M";
+"aihelp_media_upload_err_size_ios"="O tamanho do arquivo excede o limite, faça o upload do arquivo menor que %ldM";
 "aihelp_media_upload_err_size_android"="O tamanho do arquivo excede o limite, faça o upload do arquivo menor que %sM";
 "aihelp_reply"="Responder";
 "aihelp_allow_photo_access"="Permitir acesso à foto";

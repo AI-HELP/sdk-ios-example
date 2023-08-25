@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Contenu de la réponse";
 "aihelp_task_content"="Contenu du billet";
 "aihelp_task_status"="État du billet";
-"aihelp_media_upload_err_size_ios"="La taille du fichier dépasse la limite, veuillez télécharger le fichier plus petit que %@M";
+"aihelp_media_upload_err_size_ios"="La taille du fichier dépasse la limite, veuillez télécharger le fichier plus petit que %ldM";
 "aihelp_media_upload_err_size_android"="La taille du fichier dépasse la limite, veuillez télécharger le fichier plus petit que %sM";
 "aihelp_reply"="Répondre";
 "aihelp_allow_photo_access"="Autoriser l'accès aux photos";

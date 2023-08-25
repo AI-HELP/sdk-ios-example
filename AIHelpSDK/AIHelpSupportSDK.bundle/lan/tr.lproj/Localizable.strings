@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Yanıt içeriği";
 "aihelp_task_content"="Bilet içeriği";
 "aihelp_task_status"="Bilet durumu";
-"aihelp_media_upload_err_size_ios"="Dosya boyutu sınırı aşıyor, lütfen dosyayı %@M'den küçük yükleyin";
+"aihelp_media_upload_err_size_ios"="Dosya boyutu sınırı aşıyor, lütfen dosyayı %ldM'den küçük yükleyin";
 "aihelp_media_upload_err_size_android"="Dosya boyutu sınırı aşıyor, lütfen dosyayı %sM'den küçük yükleyin";
 "aihelp_reply"="Cevap vermek";
 "aihelp_allow_photo_access"="Fotoğraf Erişimine İzin Ver";

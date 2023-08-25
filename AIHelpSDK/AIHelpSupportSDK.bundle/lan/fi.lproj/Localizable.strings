@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Vastaa sisältöön";
 "aihelp_task_content"="Lipun sisältö";
 "aihelp_task_status"="Lipun tila";
-"aihelp_media_upload_err_size_ios"="Tiedoston koko ylittää rajan. Lataa tiedosto, joka on pienempi kuin %@M";
+"aihelp_media_upload_err_size_ios"="Tiedoston koko ylittää rajan. Lataa tiedosto, joka on pienempi kuin %ldM";
 "aihelp_media_upload_err_size_android"="Tiedoston koko ylittää rajan. Lataa tiedosto, joka on pienempi kuin %sM";
 "aihelp_reply"="Vastaa";
 "aihelp_allow_photo_access"="Salli valokuvien käyttö";

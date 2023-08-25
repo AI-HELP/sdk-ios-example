@@ -73,7 +73,7 @@
 "aihelp_reply_content"="返信内容";
 "aihelp_task_content"="チケットの内容";
 "aihelp_task_status"="チケットステータス";
-"aihelp_media_upload_err_size_ios"="ファイルサイズが制限を超えています。%@M より小さいファイルをアップロードしてください。";
+"aihelp_media_upload_err_size_ios"="ファイルサイズが制限を超えています。%ldM より小さいファイルをアップロードしてください。";
 "aihelp_media_upload_err_size_android"="ファイルサイズが制限を超えています。%sM より小さいファイルをアップロードしてください。";
 "aihelp_reply"="返信";
 "aihelp_allow_photo_access"="写真へのアクセスを許可する";

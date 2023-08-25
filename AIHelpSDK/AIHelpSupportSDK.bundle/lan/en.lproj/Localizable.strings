@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Reply content";
 "aihelp_task_content"="Ticket content";
 "aihelp_task_status"="Ticket status";
-"aihelp_media_upload_err_size_ios"="The file size exceeds the limit, please upload the file smaller than %@M";
+"aihelp_media_upload_err_size_ios"="The file size exceeds the limit, please upload the file smaller than %ldM";
 "aihelp_media_upload_err_size_android"="The file size exceeds the limit, please upload the file smaller than %sM";
 "aihelp_reply"="Reply";
 "aihelp_allow_photo_access"="Allow Photo Access";

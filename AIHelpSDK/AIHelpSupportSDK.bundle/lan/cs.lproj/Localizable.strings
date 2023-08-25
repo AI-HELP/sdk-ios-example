@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Obsah odpovědi";
 "aihelp_task_content"="Obsah vstupenky";
 "aihelp_task_status"="Stav lístku";
-"aihelp_media_upload_err_size_ios"="Velikost souboru překračuje limit, nahrajte prosím soubor menší než %@M";
+"aihelp_media_upload_err_size_ios"="Velikost souboru překračuje limit, nahrajte prosím soubor menší než %ldM";
 "aihelp_media_upload_err_size_android"="Velikost souboru překračuje limit, nahrajte soubor menší než %sM";
 "aihelp_reply"="Odpověď";
 "aihelp_allow_photo_access"="Povolit přístup k fotografiím";

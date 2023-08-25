@@ -73,7 +73,7 @@
 "aihelp_reply_content"="ឆ្លើយតបមាតិកា";
 "aihelp_task_content"="ខ្លឹមសារសំបុត្រ";
 "aihelp_task_status"="ស្ថានភាពសំបុត្រ";
-"aihelp_media_upload_err_size_ios"="ទំហំឯកសារលើសពីដែនកំណត់ សូមបង្ហោះឯកសារតូចជាង %@M";
+"aihelp_media_upload_err_size_ios"="ទំហំឯកសារលើសពីដែនកំណត់ សូមបង្ហោះឯកសារតូចជាង %ldM";
 "aihelp_media_upload_err_size_android"="ទំហំឯកសារលើសពីដែនកំណត់ សូមបង្ហោះឯកសារតូចជាង %sM";
 "aihelp_reply"="ឆ្លើយតប";
 "aihelp_allow_photo_access"="អនុញ្ញាតឱ្យចូលប្រើរូបថត";

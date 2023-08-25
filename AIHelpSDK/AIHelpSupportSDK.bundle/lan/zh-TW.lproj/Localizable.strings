@@ -73,7 +73,7 @@
 "aihelp_reply_content"="回復內容";
 "aihelp_task_content"="工單內容";
 "aihelp_task_status"="處理進度";
-"aihelp_media_upload_err_size_ios"="文件大小超過限制，請上傳小於 %@M 的檔案";
+"aihelp_media_upload_err_size_ios"="文件大小超出限制，請上傳小於 %ldM 的文件";
 "aihelp_media_upload_err_size_android"="文件大小超過限制，請上傳小於 %sM 的檔案";
 "aihelp_reply"="回復";
 "aihelp_allow_photo_access"="允許照片訪問";

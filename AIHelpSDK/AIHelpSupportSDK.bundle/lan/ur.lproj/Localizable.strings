@@ -73,7 +73,7 @@
 "aihelp_reply_content"="مواد کا جواب دیں۔";
 "aihelp_task_content"="ٹکٹ کا مواد";
 "aihelp_task_status"="ٹکٹ کی حیثیت";
-"aihelp_media_upload_err_size_ios"="فائل کا سائز حد سے زیادہ ہے، براہ کرم %@M سے چھوٹی فائل اپ لوڈ کریں۔";
+"aihelp_media_upload_err_size_ios"="فائل کا سائز حد سے زیادہ ہے، براہ کرم %ldM سے چھوٹی فائل اپ لوڈ کریں۔";
 "aihelp_media_upload_err_size_android"="فائل کا سائز حد سے زیادہ ہے، براہ کرم %sM سے چھوٹی فائل اپ لوڈ کریں۔";
 "aihelp_reply"="جواب دیں۔";
 "aihelp_allow_photo_access"="تصویر تک رسائی کی اجازت دیں۔";

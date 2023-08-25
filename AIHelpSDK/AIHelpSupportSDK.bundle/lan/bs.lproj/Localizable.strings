@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Sadržaj odgovora";
 "aihelp_task_content"="Sadržaj ulaznica";
 "aihelp_task_status"="Status karte";
-"aihelp_media_upload_err_size_ios"="Veličina fajla premašuje ograničenje, uploadujte fajl manji od %@M";
+"aihelp_media_upload_err_size_ios"="Veličina datoteke premašuje ograničenje, uploadajte datoteku manju od %ldM";
 "aihelp_media_upload_err_size_android"="Veličina fajla premašuje ograničenje, pošaljite fajl manji od %sM";
 "aihelp_reply"="Odgovori";
 "aihelp_allow_photo_access"="Dozvolite pristup fotografijama";

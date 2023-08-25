@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Inhoud beantwoorden";
 "aihelp_task_content"="Ticket inhoud";
 "aihelp_task_status"="Ticketstatus";
-"aihelp_media_upload_err_size_ios"="De bestandsgrootte overschrijdt de limiet, upload het bestand kleiner dan %@M";
+"aihelp_media_upload_err_size_ios"="De bestandsgrootte overschrijdt de limiet, upload het bestand kleiner dan %ldM";
 "aihelp_media_upload_err_size_android"="De bestandsgrootte overschrijdt de limiet, upload het bestand kleiner dan %sM";
 "aihelp_reply"="Antwoord";
 "aihelp_allow_photo_access"="Toegang tot foto's toestaan";

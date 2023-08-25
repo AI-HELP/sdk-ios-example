@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Περιεχόμενο απάντησης";
 "aihelp_task_content"="Περιεχόμενο εισιτηρίων";
 "aihelp_task_status"="Κατάσταση εισιτηρίου";
-"aihelp_media_upload_err_size_ios"="Το μέγεθος του αρχείου υπερβαίνει το όριο, μεταφορτώστε το αρχείο μικρότερο από %@M";
+"aihelp_media_upload_err_size_ios"="Το μέγεθος του αρχείου υπερβαίνει το όριο, μεταφορτώστε το αρχείο μικρότερο από %ldM";
 "aihelp_media_upload_err_size_android"="Το μέγεθος του αρχείου υπερβαίνει το όριο, μεταφορτώστε το αρχείο μικρότερο από %sM";
 "aihelp_reply"="Απάντηση";
 "aihelp_allow_photo_access"="Να επιτρέπεται η πρόσβαση φωτογραφιών";

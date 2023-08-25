@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Konten balasan";
 "aihelp_task_content"="Konten tiket";
 "aihelp_task_status"="Status tiket";
-"aihelp_media_upload_err_size_ios"="Ukuran file melebihi batas, harap unggah file yang lebih kecil dari %@M";
+"aihelp_media_upload_err_size_ios"="Ukuran file melebihi batas, harap unggah file lebih kecil dari %ldM";
 "aihelp_media_upload_err_size_android"="Ukuran file melebihi batas, harap unggah file yang lebih kecil dari %sM";
 "aihelp_reply"="Membalas";
 "aihelp_allow_photo_access"="Izinkan Akses Foto";

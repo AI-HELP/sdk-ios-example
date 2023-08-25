@@ -73,7 +73,7 @@
 "aihelp_reply_content"="ప్రత్యుత్తరం కంటెంట్";
 "aihelp_task_content"="టిక్కెట్ కంటెంట్";
 "aihelp_task_status"="టికెట్ స్థితి";
-"aihelp_media_upload_err_size_ios"="ఫైల్ పరిమాణం పరిమితిని మించిపోయింది, దయచేసి %@M కంటే చిన్న ఫైల్‌ను అప్‌లోడ్ చేయండి";
+"aihelp_media_upload_err_size_ios"="ఫైల్ పరిమాణం పరిమితిని మించిపోయింది, దయచేసి %ldM కంటే చిన్న ఫైల్‌ను అప్‌లోడ్ చేయండి";
 "aihelp_media_upload_err_size_android"="ఫైల్ పరిమాణం పరిమితిని మించిపోయింది, దయచేసి %sM కంటే చిన్న ఫైల్‌ను అప్‌లోడ్ చేయండి";
 "aihelp_reply"="ప్రత్యుత్తరం ఇవ్వండి";
 "aihelp_allow_photo_access"="ఫోటో యాక్సెస్‌ను అనుమతించండి";

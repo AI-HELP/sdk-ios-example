@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Svarindhold";
 "aihelp_task_content"="Billetindhold";
 "aihelp_task_status"="Billetstatus";
-"aihelp_media_upload_err_size_ios"="Filstørrelsen overskrider grænsen, upload venligst filen mindre end %@M";
+"aihelp_media_upload_err_size_ios"="Filstørrelsen overskrider grænsen, upload venligst filen mindre end %ldM";
 "aihelp_media_upload_err_size_android"="Filstørrelsen overskrider grænsen, upload venligst filen mindre end %sM";
 "aihelp_reply"="Svar";
 "aihelp_allow_photo_access"="Tillad billedadgang";

@@ -73,7 +73,7 @@
 "aihelp_reply_content"="பதில் உள்ளடக்கம்";
 "aihelp_task_content"="டிக்கெட் உள்ளடக்கம்";
 "aihelp_task_status"="டிக்கெட் நிலை";
-"aihelp_media_upload_err_size_ios"="கோப்பின் அளவு வரம்பை மீறுகிறது, %@M ஐ விட சிறிய கோப்பை பதிவேற்றவும்";
+"aihelp_media_upload_err_size_ios"="கோப்பின் அளவு வரம்பை மீறுகிறது, %ldM ஐ விட சிறிய கோப்பை பதிவேற்றவும்";
 "aihelp_media_upload_err_size_android"="கோப்பின் அளவு வரம்பை மீறுகிறது, %sM ஐ விட சிறிய கோப்பை பதிவேற்றவும்";
 "aihelp_reply"="பதில்";
 "aihelp_allow_photo_access"="புகைப்பட அணுகலை அனுமதிக்கவும்";

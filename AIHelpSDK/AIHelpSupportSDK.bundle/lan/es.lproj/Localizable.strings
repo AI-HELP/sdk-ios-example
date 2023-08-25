@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Contenido de respuesta";
 "aihelp_task_content"="Contenido del boleto";
 "aihelp_task_status"="Estado del billete";
-"aihelp_media_upload_err_size_ios"="El tamaño del archivo excede el límite, cargue el archivo más pequeño que %@M";
+"aihelp_media_upload_err_size_ios"="El tamaño del archivo excede el límite, cargue el archivo más pequeño que %ldM";
 "aihelp_media_upload_err_size_android"="El tamaño del archivo excede el límite, cargue el archivo más pequeño que %sM";
 "aihelp_reply"="Responder";
 "aihelp_allow_photo_access"="Permitir acceso a fotos";

@@ -73,7 +73,7 @@
 "aihelp_reply_content"="回复内容";
 "aihelp_task_content"="工单内容";
 "aihelp_task_status"="处理进度";
-"aihelp_media_upload_err_size_ios"="文件大小超过限制，请上传小于 %@M 的文件";
+"aihelp_media_upload_err_size_ios"="文件大小超过限制，请上传小于 %ldM 的文件";
 "aihelp_media_upload_err_size_android"="文件大小超过限制，请上传小于 %sM 的文件";
 "aihelp_reply"="回复";
 "aihelp_allow_photo_access"="开启照片访问权限";

@@ -73,7 +73,7 @@
 "aihelp_reply_content"="nội dung trả lời";
 "aihelp_task_content"="nội dung vé";
 "aihelp_task_status"="tình trạng vé";
-"aihelp_media_upload_err_size_ios"="Kích thước tệp vượt quá giới hạn, vui lòng tải lên tệp nhỏ hơn %@M";
+"aihelp_media_upload_err_size_ios"="Kích thước tệp vượt quá giới hạn, vui lòng tải lên tệp nhỏ hơn %ldM";
 "aihelp_media_upload_err_size_android"="Kích thước tệp vượt quá giới hạn, vui lòng tải lên tệp nhỏ hơn %sM";
 "aihelp_reply"="Hồi đáp";
 "aihelp_allow_photo_access"="Cho phép truy cập ảnh";

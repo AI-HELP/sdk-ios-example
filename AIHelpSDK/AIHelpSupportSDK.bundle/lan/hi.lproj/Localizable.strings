@@ -73,7 +73,7 @@
 "aihelp_reply_content"="उत्तर सामग्री";
 "aihelp_task_content"="टिकट सामग्री";
 "aihelp_task_status"="टिकट की स्थिति";
-"aihelp_media_upload_err_size_ios"="फ़ाइल का आकार सीमा से अधिक है, कृपया %@M से छोटी फ़ाइल अपलोड करें";
+"aihelp_media_upload_err_size_ios"="फ़ाइल का आकार सीमा से अधिक है, कृपया %ldM से छोटी फ़ाइल अपलोड करें";
 "aihelp_media_upload_err_size_android"="फ़ाइल का आकार सीमा से अधिक है, कृपया %sM से छोटी फ़ाइल अपलोड करें";
 "aihelp_reply"="जवाब";
 "aihelp_allow_photo_access"="फोटो एक्सेस की अनुमति दें";

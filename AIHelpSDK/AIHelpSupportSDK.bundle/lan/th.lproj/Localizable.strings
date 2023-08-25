@@ -73,7 +73,7 @@
 "aihelp_reply_content"="ตอบกลับเนื้อหา";
 "aihelp_task_content"="เนื้อหาตั๋ว";
 "aihelp_task_status"="สถานะตั๋ว";
-"aihelp_media_upload_err_size_ios"="ขนาดไฟล์เกินขีดจำกัด โปรดอัปโหลดไฟล์ที่มีขนาดเล็กกว่า %@M";
+"aihelp_media_upload_err_size_ios"="ขนาดไฟล์เกินขีดจำกัด โปรดอัปโหลดไฟล์ที่เล็กกว่า %ldM";
 "aihelp_media_upload_err_size_android"="ขนาดไฟล์เกินขีดจำกัด โปรดอัปโหลดไฟล์ที่เล็กกว่า %sM";
 "aihelp_reply"="ตอบ";
 "aihelp_allow_photo_access"="อนุญาตการเข้าถึงรูปภาพ";

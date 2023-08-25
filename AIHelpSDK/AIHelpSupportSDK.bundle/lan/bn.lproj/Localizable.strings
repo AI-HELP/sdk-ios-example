@@ -73,7 +73,7 @@
 "aihelp_reply_content"="কন্টেন্ট উত্তর";
 "aihelp_task_content"="টিকিটের বিষয়বস্তু";
 "aihelp_task_status"="টিকিটের অবস্থা";
-"aihelp_media_upload_err_size_ios"="ফাইলের আকার সীমা ছাড়িয়ে গেছে, অনুগ্রহ করে %@M এর চেয়ে ছোট ফাইলটি আপলোড করুন";
+"aihelp_media_upload_err_size_ios"="ফাইলের আকার সীমা ছাড়িয়ে গেছে, অনুগ্রহ করে %ldM থেকে ছোট ফাইল আপলোড করুন";
 "aihelp_media_upload_err_size_android"="ফাইলের আকার সীমা ছাড়িয়ে গেছে, অনুগ্রহ করে %sM থেকে ছোট ফাইলটি আপলোড করুন";
 "aihelp_reply"="উত্তর দিন";
 "aihelp_allow_photo_access"="ফটো অ্যাক্সেসের অনুমতি দিন";

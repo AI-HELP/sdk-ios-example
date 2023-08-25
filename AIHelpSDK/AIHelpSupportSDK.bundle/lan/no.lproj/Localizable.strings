@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Svarinnhold";
 "aihelp_task_content"="Billettinnhold";
 "aihelp_task_status"="Billettstatus";
-"aihelp_media_upload_err_size_ios"="Filstørrelsen overskrider grensen, last opp filen som er mindre enn %@M";
+"aihelp_media_upload_err_size_ios"="Filstørrelsen overskrider grensen. Last opp filen som er mindre enn %ldM";
 "aihelp_media_upload_err_size_android"="Filstørrelsen overskrider grensen. Last opp filen som er mindre enn %sM";
 "aihelp_reply"="Svare";
 "aihelp_allow_photo_access"="Tillat bildetilgang";

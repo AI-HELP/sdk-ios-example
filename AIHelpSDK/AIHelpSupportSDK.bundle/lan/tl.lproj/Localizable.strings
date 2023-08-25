@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Tumugon sa nilalaman";
 "aihelp_task_content"="Nilalaman ng tiket";
 "aihelp_task_status"="Katayuan ng tiket";
-"aihelp_media_upload_err_size_ios"="Ang laki ng file ay lumampas sa limitasyon, mangyaring i-upload ang file na mas maliit sa %@M";
+"aihelp_media_upload_err_size_ios"="Ang laki ng file ay lumampas sa limitasyon, mangyaring i-upload ang file na mas maliit sa %ldM";
 "aihelp_media_upload_err_size_android"="Ang laki ng file ay lumampas sa limitasyon, mangyaring i-upload ang file na mas maliit sa %sM";
 "aihelp_reply"="Sumagot";
 "aihelp_allow_photo_access"="Payagan ang Photo Access";

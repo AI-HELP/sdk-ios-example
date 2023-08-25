@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Përmbajtja e përgjigjes";
 "aihelp_task_content"="Përmbajtja e biletës";
 "aihelp_task_status"="Statusi i biletës";
-"aihelp_media_upload_err_size_ios"="Madhësia e skedarit e kalon kufirin, ju lutemi ngarkoni skedarin më të vogël se %@M";
+"aihelp_media_upload_err_size_ios"="Madhësia e skedarit e kalon kufirin, ju lutemi ngarkoni skedarin më të vogël se %ldM";
 "aihelp_media_upload_err_size_android"="Madhësia e skedarit e kalon kufirin, ju lutemi ngarkoni skedarin më të vogël se %sM";
 "aihelp_reply"="Përgjigju";
 "aihelp_allow_photo_access"="Lejo qasjen në foto";

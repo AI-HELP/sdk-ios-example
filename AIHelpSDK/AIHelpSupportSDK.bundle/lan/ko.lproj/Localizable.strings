@@ -73,7 +73,7 @@
 "aihelp_reply_content"="응답 내용";
 "aihelp_task_content"="티켓 내용";
 "aihelp_task_status"="티켓 상태";
-"aihelp_media_upload_err_size_ios"="파일 크기가 한도를 초과했습니다. %@M 보다 작은 파일을 업로드하십시오.";
+"aihelp_media_upload_err_size_ios"="파일 크기가 한도를 초과했습니다. %ldM 보다 작은 파일을 업로드하십시오.";
 "aihelp_media_upload_err_size_android"="파일 크기가 한도를 초과했습니다. %sM 보다 작은 파일을 업로드하십시오.";
 "aihelp_reply"="답장";
 "aihelp_allow_photo_access"="사진 액세스 허용";

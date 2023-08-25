@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Antwortinhalt";
 "aihelp_task_content"="Ticketinhalt";
 "aihelp_task_status"="Ticketstatus";
-"aihelp_media_upload_err_size_ios"="Die Dateigröße überschreitet das Limit. Bitte laden Sie die Datei hoch, die kleiner als %@M ist";
+"aihelp_media_upload_err_size_ios"="Die Dateigröße überschreitet das Limit. Bitte laden Sie die Datei hoch, die kleiner als %ldM ist";
 "aihelp_media_upload_err_size_android"="Die Dateigröße überschreitet das Limit. Bitte laden Sie die Datei hoch, die kleiner als %sM ist";
 "aihelp_reply"="Antwort";
 "aihelp_allow_photo_access"="Fotozugriff zulassen";

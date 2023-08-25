@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Conținut de răspuns";
 "aihelp_task_content"="Conținutul biletului";
 "aihelp_task_status"="Starea biletului";
-"aihelp_media_upload_err_size_ios"="Dimensiunea fișierului depășește limita, vă rugăm să încărcați fișierul mai mic decât %@M";
+"aihelp_media_upload_err_size_ios"="Dimensiunea fișierului depășește limita, vă rugăm să încărcați fișierul mai mic de %ldM";
 "aihelp_media_upload_err_size_android"="Dimensiunea fișierului depășește limita, vă rugăm să încărcați fișierul mai mic de %sM";
 "aihelp_reply"="Răspuns";
 "aihelp_allow_photo_access"="Permiteți accesul la fotografii";

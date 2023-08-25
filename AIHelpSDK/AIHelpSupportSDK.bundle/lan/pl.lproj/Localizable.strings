@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Treść odpowiedzi";
 "aihelp_task_content"="Treść biletu";
 "aihelp_task_status"="Stan biletu";
-"aihelp_media_upload_err_size_ios"="Rozmiar pliku przekracza limit, prześlij plik mniejszy niż %@M";
+"aihelp_media_upload_err_size_ios"="Rozmiar pliku przekracza limit, prześlij plik mniejszy niż %ldM";
 "aihelp_media_upload_err_size_android"="Rozmiar pliku przekracza limit, prześlij plik mniejszy niż %sM";
 "aihelp_reply"="Odpowiedź";
 "aihelp_allow_photo_access"="Zezwól na dostęp do zdjęć";

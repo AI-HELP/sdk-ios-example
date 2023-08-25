@@ -73,7 +73,7 @@
 "aihelp_reply_content"="محتوى الرد";
 "aihelp_task_content"="محتوى التذاكر";
 "aihelp_task_status"="حالة التذكرة";
-"aihelp_media_upload_err_size_ios"="يتجاوز حجم الملف الحد الأقصى ، يرجى تحميل ملف أصغر من٪ @ M";
+"aihelp_media_upload_err_size_ios"="يتجاوز حجم الملف الحد الأقصى ، يرجى تحميل ملف أصغر من٪ ldM";
 "aihelp_media_upload_err_size_android"="يتجاوز حجم الملف الحد الأقصى ، يرجى تحميل ملف أصغر من٪ sM";
 "aihelp_reply"="رد";
 "aihelp_allow_photo_access"="السماح بالوصول إلى الصور";

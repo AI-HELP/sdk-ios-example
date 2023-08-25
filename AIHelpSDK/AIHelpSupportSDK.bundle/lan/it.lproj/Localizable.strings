@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Rispondi al contenuto";
 "aihelp_task_content"="Contenuto del biglietto";
 "aihelp_task_status"="Stato del biglietto";
-"aihelp_media_upload_err_size_ios"="La dimensione del file supera il limite, carica un file più piccolo di %@M";
+"aihelp_media_upload_err_size_ios"="La dimensione del file supera il limite, caricare il file più piccolo di %ldM";
 "aihelp_media_upload_err_size_android"="La dimensione del file supera il limite, carica un file più piccolo di %sM";
 "aihelp_reply"="Rispondere";
 "aihelp_allow_photo_access"="Consenti l'accesso alle foto";

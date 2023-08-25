@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Sadržaj odgovora";
 "aihelp_task_content"="Sadržaj ulaznice";
 "aihelp_task_status"="Status ulaznice";
-"aihelp_media_upload_err_size_ios"="Veličina datoteke premašuje ograničenje, molimo prenesite datoteku manju od %@M";
+"aihelp_media_upload_err_size_ios"="Veličina datoteke premašuje ograničenje, molimo prenesite datoteku manju od %ldM";
 "aihelp_media_upload_err_size_android"="Veličina datoteke premašuje ograničenje, molimo prenesite datoteku manju od %sM";
 "aihelp_reply"="Odgovor";
 "aihelp_allow_photo_access"="Dopusti pristup fotografijama";

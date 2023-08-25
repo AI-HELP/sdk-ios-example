@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Válasz tartalma";
 "aihelp_task_content"="A jegyek tartalma";
 "aihelp_task_status"="Jegy állapota";
-"aihelp_media_upload_err_size_ios"="A fájl mérete meghaladja a korlátot, kérjük, töltse fel a %@M-nél kisebb fájlt";
+"aihelp_media_upload_err_size_ios"="A fájl mérete meghaladja a korlátot, kérjük, töltse fel a %ldM-nél kisebb fájlt";
 "aihelp_media_upload_err_size_android"="A fájl mérete meghaladja a korlátot. Kérjük, töltse fel a %sM-nél kisebb fájlt";
 "aihelp_reply"="Válasz";
 "aihelp_allow_photo_access"="Fotóhoz való hozzáférés engedélyezése";

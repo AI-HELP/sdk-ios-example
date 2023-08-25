@@ -73,7 +73,7 @@
 "aihelp_reply_content"="תוכן תגובה";
 "aihelp_task_content"="תוכן הכרטיסים";
 "aihelp_task_status"="מצב כרטיס";
-"aihelp_media_upload_err_size_ios"="גודל הקובץ חורג מהמגבלה, אנא העלה את הקובץ קטן מ-%@M";
+"aihelp_media_upload_err_size_ios"="גודל הקובץ חורג מהמגבלה, אנא העלה את הקובץ קטן מ-%ldM";
 "aihelp_media_upload_err_size_android"="גודל הקובץ חורג מהמגבלה, אנא העלה את הקובץ קטן מ-%sM";
 "aihelp_reply"="תשובה";
 "aihelp_allow_photo_access"="אפשר גישה לתמונות";

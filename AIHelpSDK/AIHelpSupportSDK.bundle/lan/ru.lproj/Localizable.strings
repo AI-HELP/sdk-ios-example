@@ -73,7 +73,7 @@
 "aihelp_reply_content"="Ответить на содержание";
 "aihelp_task_content"="Содержание билета";
 "aihelp_task_status"="Статус билета";
-"aihelp_media_upload_err_size_ios"="Размер файла превышает лимит, пожалуйста, загрузите файл меньше %@M";
+"aihelp_media_upload_err_size_ios"="Размер файла превышает лимит, пожалуйста, загрузите файл меньше %ldM";
 "aihelp_media_upload_err_size_android"="Размер файла превышает лимит, загрузите файл меньше %sM";
 "aihelp_reply"="Отвечать";
 "aihelp_allow_photo_access"="Разрешить доступ к фото";
