@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "AIHelpSDK"
-  s.version           = "4.6.1"
+  s.version           = "1.1.113"
   s.summary           = "AIHelpSDK for iOS"
   s.homepage          = "https://github.com/AI-HELP/sdk-ios-example"
   s.license      = { :type => "Apache-2.0", :file => "LICENSE" }
@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.platform          = :ios
   s.platform          = :ios, "9.0"
   s.requires_arc      = true
+  s.static_framework  = true
 
   s.source            = { :git => "https://github.com/AI-HELP/sdk-ios-example.git", :tag => "#{s.version}" }
 
