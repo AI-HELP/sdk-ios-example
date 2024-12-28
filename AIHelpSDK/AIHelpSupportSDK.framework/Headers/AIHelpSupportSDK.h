@@ -120,14 +120,6 @@ typedef void (*AISupportSpecificUrlClickedCallBack)(const char * url);
 + (void)enableLogging:(BOOL)enable;
 
 /**
- * The preferred screen orientation sdk would like to run in.
- *
- * NOTE: The SDK direction must be included in the program direction Settings, otherwise the setting will fail
- * @param interfaceOrientationMask please refer to the UIInterfaceOrientationMask API
- */
-+ (void)setSDKInterfaceOrientationMask:(UIInterfaceOrientationMask)interfaceOrientationMask;
-
-/**
  * Set up host address for network check with result callback.
  *
  * With this api, you can get the network check result passing back to you.
@@ -144,7 +136,16 @@ typedef void (*AISupportSpecificUrlClickedCallBack)(const char * url);
  * You can call this method either before or after the init method.
  * @param callback callback for AIHelp initialization
  */
-+ (void)setOnInitializedCallback:(AISupportInitCallBack)callback;
++ (void)setOnInitializedCallback:(AISupportInitCallBack)callback __attribute__((deprecated("Use `setOnInitializedAsyncCallback:` instead")));
+
+/**
+ * Register callback for the process of AIHelp's initialization.
+ *
+ * After you register this callback, SDK will let you know if the init work is done.
+ * You can call this method either before or after the init method.
+ * @param callback callback for AIHelp initialization
+ */
++ (void)setOnInitializedAsyncCallback:(AISupportInitCallBack)callback;
 
 /**
  * start in-app unread message count polling
@@ -155,6 +156,11 @@ typedef void (*AISupportSpecificUrlClickedCallBack)(const char * url);
  */
 + (void)startUnreadMessageCountPolling:(AISupportMessageCallBack)callback;
 
+/**
+ * Fetch unread message count proactively
+ * @param  callback for unread message fetching
+ */
++ (void)fetchUnreadMessageCount:(AISupportMessageCallBack)callback;
 /**
  * Set the SDK display mode
  *
