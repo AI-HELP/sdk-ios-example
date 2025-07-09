@@ -127,4 +127,9 @@
 "aihelp_loading"="Indlæser~";
 "aihelp_loading_failed"="Indlæsning mislykkedes";
 "aihelp_typing_indicator"="Agent skriver...";
-"aihelp_switched_to_agent"="Du er nu forbundet til en menneskelig agent.";
+"aihelp_switched_to_agent"="Du er nu forbundet til en menneskelig agent";
+"aihelp_select_file"="Vælg fil";
+"aihelp_file_not_select"="Vælg en fil.";
+"aihelp_max_file_limit_ios"="Du kan højst uploade %@ filer.";
+"aihelp_max_file_limit_android"="Du kan højst uploade %s filer.";
+"aihelp_max_file_limit_web"="Du kan højst uploade {val} filer.";

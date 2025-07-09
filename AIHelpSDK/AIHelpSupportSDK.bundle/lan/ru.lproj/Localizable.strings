@@ -127,4 +127,9 @@
 "aihelp_loading"="Загрузка~";
 "aihelp_loading_failed"="Ошибка загрузки";
 "aihelp_typing_indicator"="Агент печатает...";
-"aihelp_switched_to_agent"="Вы подключены к агенту-человеку.";
+"aihelp_switched_to_agent"="Вы подключены к агенту-человеку";
+"aihelp_select_file"="Выберите файл";
+"aihelp_file_not_select"="Пожалуйста, выберите файл.";
+"aihelp_max_file_limit_ios"="Вы можете загрузить не более %@ файлов.";
+"aihelp_max_file_limit_android"="Вы можете загрузить не более %s файлов.";
+"aihelp_max_file_limit_web"="Вы можете загрузить не более {val} файлов.";

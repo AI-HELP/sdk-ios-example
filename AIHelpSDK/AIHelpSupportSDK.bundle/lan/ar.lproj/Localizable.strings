@@ -127,4 +127,9 @@
 "aihelp_loading"="جارٍ التحميل..";
 "aihelp_loading_failed"="فشل التحميل";
 "aihelp_typing_indicator"="يكتب الوكيل...";
-"aihelp_switched_to_agent"="أنت الآن متصل بوكيل بشري.";
+"aihelp_switched_to_agent"="أنت الآن متصل بوكيل بشري";
+"aihelp_select_file"="اختر ملفا";
+"aihelp_file_not_select"="الرجاء اختيار ملف.";
+"aihelp_max_file_limit_ios"="يمكنك تحميل %@ ملف كحد أقصى.";
+"aihelp_max_file_limit_android"="يمكنك تحميل %s ملف كحد أقصى.";
+"aihelp_max_file_limit_web"="يمكنك تحميل {val} ملف كحد أقصى.";

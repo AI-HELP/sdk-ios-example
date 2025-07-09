@@ -127,4 +127,9 @@
 "aihelp_loading"="පූරණය වෙමින් පවතී~";
 "aihelp_loading_failed"="පූරණය වීම අසාර්ථක විය";
 "aihelp_typing_indicator"="නියෝජිතවරයා ටයිප් කරමින් සිටී...";
-"aihelp_switched_to_agent"="ඔබ දැන් මිනිස් නියෝජිතයෙකුට සම්බන්ධ වී ඇත.";
+"aihelp_switched_to_agent"="ඔබ දැන් මිනිස් නියෝජිතයෙකුට සම්බන්ධ වී ඇත";
+"aihelp_select_file"="ගොනුව තෝරන්න";
+"aihelp_file_not_select"="කරුණාකර ගොනුවක් තෝරන්න.";
+"aihelp_max_file_limit_ios"="ඔබට උපරිම වශයෙන් %@ ගොනු උඩුගත කළ හැක.";
+"aihelp_max_file_limit_android"="ඔබට උපරිම වශයෙන් %s ගොනු උඩුගත කළ හැක.";
+"aihelp_max_file_limit_web"="ඔබට උපරිම වශයෙන් {val} ගොනු උඩුගත කළ හැක.";

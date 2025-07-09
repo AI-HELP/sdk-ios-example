@@ -127,4 +127,9 @@
 "aihelp_loading"="Memuat~";
 "aihelp_loading_failed"="Pemuatan gagal";
 "aihelp_typing_indicator"="Agen sedang mengetik...";
-"aihelp_switched_to_agent"="Anda sekarang terhubung ke agen manusia.";
+"aihelp_switched_to_agent"="Anda sekarang terhubung ke agen manusia";
+"aihelp_select_file"="Pilih File";
+"aihelp_file_not_select"="Silakan pilih sebuah file.";
+"aihelp_max_file_limit_ios"="Anda dapat mengunggah maksimal %@ file.";
+"aihelp_max_file_limit_android"="Anda dapat mengunggah maksimal %s file.";
+"aihelp_max_file_limit_web"="Anda dapat mengunggah maksimal {val} file.";

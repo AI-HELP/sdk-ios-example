@@ -127,4 +127,9 @@
 "aihelp_loading"="Завантаження~";
 "aihelp_loading_failed"="Помилка завантаження";
 "aihelp_typing_indicator"="Агент друкує...";
-"aihelp_switched_to_agent"="Вас підключено до живого агента.";
+"aihelp_switched_to_agent"="Ви зараз підключені до живого агента";
+"aihelp_select_file"="Виберіть файл";
+"aihelp_file_not_select"="Будь ласка, виберіть файл.";
+"aihelp_max_file_limit_ios"="Ви можете завантажити максимум %@ файлів.";
+"aihelp_max_file_limit_android"="Ви можете завантажити максимум %s файлів.";
+"aihelp_max_file_limit_web"="Ви можете завантажити максимум {val} файлів.";

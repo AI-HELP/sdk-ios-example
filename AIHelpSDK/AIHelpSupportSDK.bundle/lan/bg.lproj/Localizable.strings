@@ -127,4 +127,9 @@
 "aihelp_loading"="Зареждане~";
 "aihelp_loading_failed"="Зареждането не бе успешно";
 "aihelp_typing_indicator"="Агентът пише...";
-"aihelp_switched_to_agent"="Вече сте свързани с агент.";
+"aihelp_switched_to_agent"="Вече сте свързани с човешки оператор";
+"aihelp_select_file"="Изберете файл";
+"aihelp_file_not_select"="Моля, изберете файл.";
+"aihelp_max_file_limit_ios"="Можете да качите максимум %@ файла.";
+"aihelp_max_file_limit_android"="Можете да качите максимум %s файла.";
+"aihelp_max_file_limit_web"="Можете да качите максимум {val} файла.";

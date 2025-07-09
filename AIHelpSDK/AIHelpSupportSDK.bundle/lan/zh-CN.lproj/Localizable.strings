@@ -128,3 +128,8 @@
 "aihelp_loading_failed"="加载失败";
 "aihelp_typing_indicator"="客服正在输入...";
 "aihelp_switched_to_agent"="您已进入人工服务";
+"aihelp_select_file"="选择文件";
+"aihelp_file_not_select"="请选择文件";
+"aihelp_max_file_limit_ios"="最多可上传 %@ 个文件";
+"aihelp_max_file_limit_android"="最多可上传 %s 个文件";
+"aihelp_max_file_limit_web"="最多可上传 {val} 个文件";

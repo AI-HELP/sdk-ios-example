@@ -127,4 +127,9 @@
 "aihelp_loading"="Yükleniyor~";
 "aihelp_loading_failed"="Yükleme başarısız oldu";
 "aihelp_typing_indicator"="Temsilci yazıyor...";
-"aihelp_switched_to_agent"="Artık bir insan temsilciye bağlandınız.";
+"aihelp_switched_to_agent"="Artık bir insan temsilciye bağlandınız";
+"aihelp_select_file"="Dosya Seç";
+"aihelp_file_not_select"="Lütfen bir dosya seçin.";
+"aihelp_max_file_limit_ios"="En fazla %@ dosya yükleyebilirsiniz.";
+"aihelp_max_file_limit_android"="En fazla %s dosya yükleyebilirsiniz.";
+"aihelp_max_file_limit_web"="En fazla {val} dosya yükleyebilirsiniz.";

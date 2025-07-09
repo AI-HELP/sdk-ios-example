@@ -127,4 +127,9 @@
 "aihelp_loading"="Caricamento~";
 "aihelp_loading_failed"="Caricamento fallito";
 "aihelp_typing_indicator"="L'agente sta scrivendo...";
-"aihelp_switched_to_agent"="Ora sei connesso a un agente umano.";
+"aihelp_switched_to_agent"="Ora sei connesso a un agente umano";
+"aihelp_select_file"="Seleziona File";
+"aihelp_file_not_select"="Seleziona un file.";
+"aihelp_max_file_limit_ios"="Puoi caricare un massimo di %@ file.";
+"aihelp_max_file_limit_android"="Puoi caricare un massimo di %s file.";
+"aihelp_max_file_limit_web"="Puoi caricare un massimo di {val} file.";

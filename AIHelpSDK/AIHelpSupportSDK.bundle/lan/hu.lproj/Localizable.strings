@@ -127,4 +127,9 @@
 "aihelp_loading"="Betöltés~";
 "aihelp_loading_failed"="A betöltés sikertelen";
 "aihelp_typing_indicator"="Az operátor éppen ír...";
-"aihelp_switched_to_agent"="Most egy valódi operátorhoz kapcsolódtál.";
+"aihelp_switched_to_agent"="Most már egy emberi operátorhoz vagy kapcsolva";
+"aihelp_select_file"="Fájl kiválasztása";
+"aihelp_file_not_select"="Kérjük, válasszon egy fájlt.";
+"aihelp_max_file_limit_ios"="Legfeljebb %@ fájlt tölthet fel.";
+"aihelp_max_file_limit_android"="Legfeljebb %s fájlt tölthet fel.";
+"aihelp_max_file_limit_web"="Legfeljebb {val} fájlt tölthet fel.";

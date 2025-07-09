@@ -127,4 +127,9 @@
 "aihelp_loading"="ロード中～";
 "aihelp_loading_failed"="ロードに失敗しました";
 "aihelp_typing_indicator"="エージェントが入力中です...";
-"aihelp_switched_to_agent"="担当者につながりました。";
+"aihelp_switched_to_agent"="現在、人間のエージェントに接続されています";
+"aihelp_select_file"="ファイルを選択";
+"aihelp_file_not_select"="ファイルを選択してください。";
+"aihelp_max_file_limit_ios"="最大%@個のファイルをアップロードできます。";
+"aihelp_max_file_limit_android"="最大%s個のファイルをアップロードできます。";
+"aihelp_max_file_limit_web"="最大{val}個のファイルをアップロードできます。";

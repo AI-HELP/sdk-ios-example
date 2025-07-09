@@ -127,4 +127,9 @@
 "aihelp_loading"="در حال بارگیری~";
 "aihelp_loading_failed"="بارگیری ناموفق بود";
 "aihelp_typing_indicator"="نماینده در حال نوشتن است...";
-"aihelp_switched_to_agent"="اکنون به یک نماینده انسانی متصل هستید.";
+"aihelp_switched_to_agent"="اکنون به یک عامل انسانی متصل هستید";
+"aihelp_select_file"="انتخاب فایل";
+"aihelp_file_not_select"="لطفاً یک فایل را انتخاب کنید.";
+"aihelp_max_file_limit_ios"="شما می توانید حداکثر %@ فایل بارگذاری کنید.";
+"aihelp_max_file_limit_android"="شما می توانید حداکثر %s فایل بارگذاری کنید.";
+"aihelp_max_file_limit_web"="شما می توانید حداکثر {val} فایل بارگذاری کنید.";

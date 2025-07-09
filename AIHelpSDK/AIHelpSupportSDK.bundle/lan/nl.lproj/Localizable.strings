@@ -127,4 +127,9 @@
 "aihelp_loading"="Laden~";
 "aihelp_loading_failed"="Laden mislukt";
 "aihelp_typing_indicator"="De agent is aan het typen...";
-"aihelp_switched_to_agent"="U bent nu verbonden met een menselijke agent.";
+"aihelp_switched_to_agent"="U bent nu verbonden met een menselijke agent";
+"aihelp_select_file"="Bestand selecteren";
+"aihelp_file_not_select"="Selecteer een bestand.";
+"aihelp_max_file_limit_ios"="U kunt maximaal %@ bestanden uploaden.";
+"aihelp_max_file_limit_android"="U kunt maximaal %s bestanden uploaden.";
+"aihelp_max_file_limit_web"="U kunt maximaal {val} bestanden uploaden.";

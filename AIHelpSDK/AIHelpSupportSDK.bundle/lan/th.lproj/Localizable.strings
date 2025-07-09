@@ -128,3 +128,8 @@
 "aihelp_loading_failed"="โหลดล้มเหลว";
 "aihelp_typing_indicator"="เจ้าหน้าที่กำลังพิมพ์...";
 "aihelp_switched_to_agent"="ขณะนี้คุณเชื่อมต่อกับเจ้าหน้าที่ที่เป็นมนุษย์แล้ว";
+"aihelp_select_file"="เลือกไฟล์";
+"aihelp_file_not_select"="โปรดเลือกไฟล์";
+"aihelp_max_file_limit_ios"="คุณสามารถอัปโหลดไฟล์ได้สูงสุด %@ ไฟล์";
+"aihelp_max_file_limit_android"="คุณสามารถอัปโหลดไฟล์ได้สูงสุด %s ไฟล์";
+"aihelp_max_file_limit_web"="คุณสามารถอัปโหลดไฟล์ได้สูงสุด {val} ไฟล์";

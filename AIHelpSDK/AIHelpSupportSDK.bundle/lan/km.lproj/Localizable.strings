@@ -127,4 +127,9 @@
 "aihelp_loading"="កំពុងផ្ទុក..";
 "aihelp_loading_failed"="ការផ្ទុកបានបរាជ័យ";
 "aihelp_typing_indicator"="ភ្នាក់ងារកំពុងវាយ...";
-"aihelp_switched_to_agent"="អ្នក​ឥឡូវ​នេះ​បាន​ភ្ជាប់​ទៅ​ភ្នាក់ងារ​មនុស្ស​ហើយ​។";
+"aihelp_switched_to_agent"="ឥឡូវ​នេះ​អ្នក​បាន​ភ្ជាប់​ទៅ​ភ្នាក់ងារ​មនុស្ស​ហើយ";
+"aihelp_select_file"="ជ្រើសរើសឯកសារ";
+"aihelp_file_not_select"="សូមជ្រើសរើសឯកសារមួយ។";
+"aihelp_max_file_limit_ios"="អ្នកអាចផ្ទុកឡើងឯកសារបានអតិបរមា %@ ។";
+"aihelp_max_file_limit_android"="អ្នកអាចផ្ទុកឡើងឯកសារបានអតិបរមា %s ។";
+"aihelp_max_file_limit_web"="អ្នកអាចផ្ទុកឡើងឯកសារបានអតិបរមា {val} ។";

@@ -127,4 +127,9 @@
 "aihelp_loading"="Läser in~";
 "aihelp_loading_failed"="Inläsning misslyckades";
 "aihelp_typing_indicator"="Agenten skriver...";
-"aihelp_switched_to_agent"="Du är nu ansluten till en mänsklig agent.";
+"aihelp_switched_to_agent"="Du är nu ansluten till en mänsklig agent";
+"aihelp_select_file"="Välj fil";
+"aihelp_file_not_select"="Välj en fil.";
+"aihelp_max_file_limit_ios"="Du kan ladda upp maximalt %@ filer.";
+"aihelp_max_file_limit_android"="Du kan ladda upp maximalt %s filer.";
+"aihelp_max_file_limit_web"="Du kan ladda upp maximalt {val} filer.";

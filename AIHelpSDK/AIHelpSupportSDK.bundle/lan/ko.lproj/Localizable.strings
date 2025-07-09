@@ -127,4 +127,9 @@
 "aihelp_loading"="로딩 중~";
 "aihelp_loading_failed"="로딩 실패";
 "aihelp_typing_indicator"="상담원 입력 중...";
-"aihelp_switched_to_agent"="상담원 연결되었습니다.";
+"aihelp_switched_to_agent"="현재 상담원 연결되었습니다";
+"aihelp_select_file"="파일 선택";
+"aihelp_file_not_select"="파일을 선택하십시오.";
+"aihelp_max_file_limit_ios"="최대 %@개의 파일을 업로드할 수 있습니다.";
+"aihelp_max_file_limit_android"="최대 %s개의 파일을 업로드할 수 있습니다.";
+"aihelp_max_file_limit_web"="최대 {val}개의 파일을 업로드할 수 있습니다.";

@@ -127,4 +127,9 @@
 "aihelp_loading"="ஏற்றுகிறது~";
 "aihelp_loading_failed"="ஏற்றுவதில் தோல்வி";
 "aihelp_typing_indicator"="முகவர் தட்டச்சு செய்கிறார்...";
-"aihelp_switched_to_agent"="நீங்கள் இப்போது ஒரு மனித முகவருடன் இணைக்கப்பட்டுள்ளீர்கள்.";
+"aihelp_switched_to_agent"="நீங்கள் இப்போது ஒரு மனித முகவருடன் இணைக்கப்பட்டுள்ளீர்கள்";
+"aihelp_select_file"="கோப்பைத் தேர்ந்தெடுக்கவும்";
+"aihelp_file_not_select"="ஒரு கோப்பைத் தேர்ந்தெடுக்கவும்.";
+"aihelp_max_file_limit_ios"="அதிகபட்சம் %@ கோப்புகளைப் பதிவேற்றலாம்.";
+"aihelp_max_file_limit_android"="அதிகபட்சம் %s கோப்புகளைப் பதிவேற்றலாம்.";
+"aihelp_max_file_limit_web"="அதிகபட்சம் {val} கோப்புகளைப் பதிவேற்றலாம்.";

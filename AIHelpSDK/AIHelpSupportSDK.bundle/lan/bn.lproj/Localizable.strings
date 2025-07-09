@@ -127,4 +127,9 @@
 "aihelp_loading"="লোডিং হচ্ছে~";
 "aihelp_loading_failed"="লোডিং ব্যর্থ হয়েছে";
 "aihelp_typing_indicator"="এজেন্ট লিখছেন...";
-"aihelp_switched_to_agent"="আপনি এখন একজন মানুষের এজেন্টের সাথে সংযুক্ত আছেন।";
+"aihelp_switched_to_agent"="আপনি এখন একজন মানব এজেন্টের সাথে সংযুক্ত আছেন";
+"aihelp_select_file"="ফাইল নির্বাচন করুন";
+"aihelp_file_not_select"="অনুগ্রহ করে একটি ফাইল নির্বাচন করুন।";
+"aihelp_max_file_limit_ios"="আপনি সর্বোচ্চ %@ ফাইল আপলোড করতে পারেন।";
+"aihelp_max_file_limit_android"="আপনি সর্বোচ্চ %s ফাইল আপলোড করতে পারেন।";
+"aihelp_max_file_limit_web"="আপনি সর্বোচ্চ {val} ফাইল আপলোড করতে পারেন।";

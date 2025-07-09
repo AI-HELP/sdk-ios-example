@@ -127,4 +127,9 @@
 "aihelp_loading"="Ładowanie~";
 "aihelp_loading_failed"="Ładowanie nie powiodło się";
 "aihelp_typing_indicator"="Agent pisze...";
-"aihelp_switched_to_agent"="Jesteś teraz połączony z agentem-człowiekiem.";
+"aihelp_switched_to_agent"="Jesteś teraz połączony z konsultantem";
+"aihelp_select_file"="Wybierz plik";
+"aihelp_file_not_select"="Proszę wybrać plik.";
+"aihelp_max_file_limit_ios"="Możesz przesłać maksymalnie %@ plików.";
+"aihelp_max_file_limit_android"="Możesz przesłać maksymalnie %s plików.";
+"aihelp_max_file_limit_web"="Możesz przesłać maksymalnie {val} plików.";

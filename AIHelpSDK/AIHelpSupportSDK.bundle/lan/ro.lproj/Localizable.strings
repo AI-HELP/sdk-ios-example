@@ -127,4 +127,9 @@
 "aihelp_loading"="Se încarcă~";
 "aihelp_loading_failed"="Încărcare eșuată";
 "aihelp_typing_indicator"="Agentul scrie...";
-"aihelp_switched_to_agent"="Acum sunteți conectat la un agent uman.";
+"aihelp_switched_to_agent"="Acum sunteți conectat la un agent uman";
+"aihelp_select_file"="Selectați Fișierul";
+"aihelp_file_not_select"="Vă rugăm să selectați un fișier.";
+"aihelp_max_file_limit_ios"="Puteți încărca maximum %@ fișiere.";
+"aihelp_max_file_limit_android"="Puteți încărca maximum %s fișiere.";
+"aihelp_max_file_limit_web"="Puteți încărca maximum {val} fișiere.";

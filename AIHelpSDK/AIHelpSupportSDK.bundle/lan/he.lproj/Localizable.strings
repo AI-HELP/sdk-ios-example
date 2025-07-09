@@ -127,4 +127,9 @@
 "aihelp_loading"="טוען..";
 "aihelp_loading_failed"="טעינה נכשלה";
 "aihelp_typing_indicator"="הסוכן מקליד...";
-"aihelp_switched_to_agent"="אתה מחובר כעת לסוכן אנושי.";
+"aihelp_switched_to_agent"="אתה מחובר כעת לסוכן אנושי";
+"aihelp_select_file"="בחר קובץ";
+"aihelp_file_not_select"="אנא בחר קובץ.";
+"aihelp_max_file_limit_ios"="ניתן להעלות עד %@ קבצים.";
+"aihelp_max_file_limit_android"="ניתן להעלות עד %s קבצים.";
+"aihelp_max_file_limit_web"="ניתן להעלות עד {val} קבצים.";

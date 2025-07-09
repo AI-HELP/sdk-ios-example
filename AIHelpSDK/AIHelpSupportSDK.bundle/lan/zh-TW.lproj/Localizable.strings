@@ -127,4 +127,9 @@
 "aihelp_loading"="載入中~";
 "aihelp_loading_failed"="載入失敗";
 "aihelp_typing_indicator"="專員正在輸入...";
-"aihelp_switched_to_agent"="您現在已連接至真人專員。";
+"aihelp_switched_to_agent"="您現在已連接到真人客服";
+"aihelp_select_file"="選擇檔案";
+"aihelp_file_not_select"="請選擇一個檔案。";
+"aihelp_max_file_limit_ios"="您最多可以上傳 %@ 個檔案。";
+"aihelp_max_file_limit_android"="您最多可以上傳 %s 個檔案。";
+"aihelp_max_file_limit_web"="您最多可以上傳 {val} 個檔案。";

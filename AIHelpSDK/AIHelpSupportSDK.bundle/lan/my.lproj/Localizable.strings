@@ -127,4 +127,9 @@
 "aihelp_loading"="တင်နေသည်~";
 "aihelp_loading_failed"="တင်ရန်ပျက်ကွက်";
 "aihelp_typing_indicator"="ကိုယ်စားလှယ်သည် ရိုက်နေသည်...";
-"aihelp_switched_to_agent"="သင်သည် လူသားကိုယ်စားလှယ်တစ်ဦးနှင့် ချိတ်ဆက်ပြီးပါပြီ။";
+"aihelp_switched_to_agent"="သင်သည် ယခု လူသားကိုယ်စားလှယ်တစ်ဦးနှင့် ချိတ်ဆက်ပြီးပါပြီ။";
+"aihelp_select_file"="ဖိုင်ကိုရွေးချယ်ပါ";
+"aihelp_file_not_select"="ဖိုင်တစ်ခုကိုရွေးချယ်ပါ။";
+"aihelp_max_file_limit_ios"="%@ ဖိုင်အများဆုံးတင်နိုင်သည်။";
+"aihelp_max_file_limit_android"="%s ဖိုင်အများဆုံးတင်နိုင်သည်။";
+"aihelp_max_file_limit_web"="{val} ဖိုင်အများဆုံးတင်နိုင်သည်။";

@@ -127,4 +127,9 @@
 "aihelp_loading"="Учитавање~";
 "aihelp_loading_failed"="Учитавање није успело";
 "aihelp_typing_indicator"="Агент куца...";
-"aihelp_switched_to_agent"="Сада сте повезани са агентом.";
+"aihelp_switched_to_agent"="Сада сте повезани са агентом – човеком";
+"aihelp_select_file"="Изаберите фајл";
+"aihelp_file_not_select"="Молимо изаберите фајл.";
+"aihelp_max_file_limit_ios"="Можете отпремити највише %@ фајлова.";
+"aihelp_max_file_limit_android"="Можете отпремити највише %s фајлова.";
+"aihelp_max_file_limit_web"="Можете отпремити највише {val} фајлова.";

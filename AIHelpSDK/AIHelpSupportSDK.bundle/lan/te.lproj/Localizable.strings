@@ -127,4 +127,9 @@
 "aihelp_loading"="లోడ్ అవుతోంది~";
 "aihelp_loading_failed"="లోడ్ చేయడం విఫలమైంది";
 "aihelp_typing_indicator"="ఏజెంట్ టైప్ చేస్తున్నారు...";
-"aihelp_switched_to_agent"="మీరు ఇప్పుడు ఒక మానవ ఏజెంట్‌కు కనెక్ట్ చేయబడ్డారు.";
+"aihelp_switched_to_agent"="మీరు ఇప్పుడు ఒక మానవ ఏజెంట్‌కు కనెక్ట్ చేయబడ్డారు";
+"aihelp_select_file"="ఫైల్‌ను ఎంచుకోండి";
+"aihelp_file_not_select"="దయచేసి ఒక ఫైల్‌ను ఎంచుకోండి.";
+"aihelp_max_file_limit_ios"="మీరు గరిష్టంగా %@ ఫైళ్ళను అప్‌లోడ్ చేయవచ్చు.";
+"aihelp_max_file_limit_android"="మీరు గరిష్టంగా %s ఫైళ్ళను అప్‌లోడ్ చేయవచ్చు.";
+"aihelp_max_file_limit_web"="మీరు గరిష్టంగా {val} ఫైళ్ళను అప్‌లోడ్ చేయవచ్చు.";

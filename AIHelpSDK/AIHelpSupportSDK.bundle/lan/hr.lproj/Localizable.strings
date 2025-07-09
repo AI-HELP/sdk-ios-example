@@ -127,4 +127,9 @@
 "aihelp_loading"="Učitavanje~";
 "aihelp_loading_failed"="Učitavanje nije uspjelo";
 "aihelp_typing_indicator"="Agent piše...";
-"aihelp_switched_to_agent"="Sada ste povezani s agentom.";
+"aihelp_switched_to_agent"="Sada ste povezani s ljudskim agentom";
+"aihelp_select_file"="Odaberite Datoteku";
+"aihelp_file_not_select"="Molimo odaberite datoteku.";
+"aihelp_max_file_limit_ios"="Možete učitati najviše %@ datoteka.";
+"aihelp_max_file_limit_android"="Možete učitati najviše %s datoteka.";
+"aihelp_max_file_limit_web"="Možete učitati najviše {val} datoteka.";

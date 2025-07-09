@@ -127,4 +127,9 @@
 "aihelp_loading"="Wird geladen~";
 "aihelp_loading_failed"="Laden fehlgeschlagen";
 "aihelp_typing_indicator"="Agent schreibt...";
-"aihelp_switched_to_agent"="Sie sind jetzt mit einem menschlichen Agenten verbunden.";
+"aihelp_switched_to_agent"="Sie sind jetzt mit einem menschlichen Agenten verbunden";
+"aihelp_select_file"="Datei auswählen";
+"aihelp_file_not_select"="Bitte wähle eine Datei aus.";
+"aihelp_max_file_limit_ios"="Du kannst maximal %@ Dateien hochladen.";
+"aihelp_max_file_limit_android"="Du kannst maximal %s Dateien hochladen.";
+"aihelp_max_file_limit_web"="Du kannst maximal {val} Dateien hochladen.";

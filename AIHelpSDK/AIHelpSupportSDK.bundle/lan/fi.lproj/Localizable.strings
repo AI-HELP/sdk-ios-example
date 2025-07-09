@@ -127,4 +127,9 @@
 "aihelp_loading"="Ladataan~";
 "aihelp_loading_failed"="Lataus epäonnistui";
 "aihelp_typing_indicator"="Agentti kirjoittaa...";
-"aihelp_switched_to_agent"="Olet nyt yhteydessä ihmisagenttiin.";
+"aihelp_switched_to_agent"="Olet nyt yhteydessä ihmisagenttiin";
+"aihelp_select_file"="Valitse tiedosto";
+"aihelp_file_not_select"="Valitse tiedosto.";
+"aihelp_max_file_limit_ios"="Voit ladata enintään %@ tiedostoa.";
+"aihelp_max_file_limit_android"="Voit ladata enintään %s tiedostoa.";
+"aihelp_max_file_limit_web"="Voit ladata enintään {val} tiedostoa.";

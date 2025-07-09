@@ -127,4 +127,9 @@
 "aihelp_loading"="Chargement en cours..";
 "aihelp_loading_failed"="Échec du chargement";
 "aihelp_typing_indicator"="L'agent est en train d'écrire...";
-"aihelp_switched_to_agent"="Vous êtes maintenant connecté à un agent humain.";
+"aihelp_switched_to_agent"="Vous êtes maintenant connecté(e) à un agent humain";
+"aihelp_select_file"="Sélectionner un fichier";
+"aihelp_file_not_select"="Veuillez sélectionner un fichier.";
+"aihelp_max_file_limit_ios"="Vous pouvez télécharger un maximum de %@ fichiers.";
+"aihelp_max_file_limit_android"="Vous pouvez télécharger un maximum de %s fichiers.";
+"aihelp_max_file_limit_web"="Vous pouvez télécharger un maximum de {val} fichiers.";

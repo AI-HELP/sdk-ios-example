@@ -127,4 +127,9 @@
 "aihelp_loading"="Naglo-load~";
 "aihelp_loading_failed"="Nabigo ang pag-load";
 "aihelp_typing_indicator"="Nagta-type ang ahente...";
-"aihelp_switched_to_agent"="Konektado ka na ngayon sa isang ahente.";
+"aihelp_switched_to_agent"="Konektado ka na ngayon sa isang human agent";
+"aihelp_select_file"="Piliin ang File";
+"aihelp_file_not_select"="Pakiusap pumili ng file.";
+"aihelp_max_file_limit_ios"="Maaari kang mag-upload ng maximum na %@ files.";
+"aihelp_max_file_limit_android"="Maaari kang mag-upload ng maximum na %s files.";
+"aihelp_max_file_limit_web"="Maaari kang mag-upload ng maximum na {val} files.";

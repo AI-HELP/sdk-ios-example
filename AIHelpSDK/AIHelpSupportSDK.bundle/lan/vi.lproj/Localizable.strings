@@ -127,4 +127,9 @@
 "aihelp_loading"="Đang tải~";
 "aihelp_loading_failed"="Tải không thành công";
 "aihelp_typing_indicator"="Agent đang nhập...";
-"aihelp_switched_to_agent"="Bạn hiện đang được kết nối với một agent người.";
+"aihelp_switched_to_agent"="Bạn hiện đang được kết nối với một người điều hành";
+"aihelp_select_file"="Chọn Tập tin";
+"aihelp_file_not_select"="Vui lòng chọn một tập tin.";
+"aihelp_max_file_limit_ios"="Bạn có thể tải lên tối đa %@ tập tin.";
+"aihelp_max_file_limit_android"="Bạn có thể tải lên tối đa %s tập tin.";
+"aihelp_max_file_limit_web"="Bạn có thể tải lên tối đa {val} tập tin.";

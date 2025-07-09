@@ -127,4 +127,9 @@
 "aihelp_loading"="Memuat..";
 "aihelp_loading_failed"="Pemuatan gagal";
 "aihelp_typing_indicator"="Ejen sedang menaip...";
-"aihelp_switched_to_agent"="Anda kini berhubung dengan ejen manusia.";
+"aihelp_switched_to_agent"="Anda kini berhubung dengan ejen manusia";
+"aihelp_select_file"="Pilih Fail";
+"aihelp_file_not_select"="Sila pilih fail.";
+"aihelp_max_file_limit_ios"="Anda boleh memuat naik maksimum %@ fail.";
+"aihelp_max_file_limit_android"="Anda boleh memuat naik maksimum %s fail.";
+"aihelp_max_file_limit_web"="Anda boleh memuat naik maksimum {val} fail.";

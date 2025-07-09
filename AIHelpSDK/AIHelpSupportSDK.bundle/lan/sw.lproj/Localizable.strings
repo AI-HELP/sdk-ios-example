@@ -127,4 +127,9 @@
 "aihelp_loading"="Inapakia~";
 "aihelp_loading_failed"="Upakiaji umeshindwa";
 "aihelp_typing_indicator"="Wakala anaandika...";
-"aihelp_switched_to_agent"="Sasa umeunganishwa na wakala binadamu.";
+"aihelp_switched_to_agent"="Sasa umeunganishwa na wakala wa kibinadamu";
+"aihelp_select_file"="Chagua Faili";
+"aihelp_file_not_select"="Tafadhali chagua faili.";
+"aihelp_max_file_limit_ios"="Unaweza kupakia kiwango cha juu cha faili %@.";
+"aihelp_max_file_limit_android"="Unaweza kupakia kiwango cha juu cha faili %s.";
+"aihelp_max_file_limit_web"="Unaweza kupakia kiwango cha juu cha faili {val}.";

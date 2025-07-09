@@ -128,3 +128,8 @@
 "aihelp_loading_failed"="لوڈ کرنے میں ناکام";
 "aihelp_typing_indicator"="ایجنٹ لکھ رہا ہے...";
 "aihelp_switched_to_agent"="اب آپ ایک انسانی ایجنٹ سے منسلک ہیں۔";
+"aihelp_select_file"="فائل منتخب کریں";
+"aihelp_file_not_select"="براہ کرم ایک فائل منتخب کریں۔";
+"aihelp_max_file_limit_ios"="آپ زیادہ سے زیادہ %@ فائلیں اپ لوڈ کر سکتے ہیں۔";
+"aihelp_max_file_limit_android"="آپ زیادہ سے زیادہ %s فائلیں اپ لوڈ کر سکتے ہیں۔";
+"aihelp_max_file_limit_web"="آپ زیادہ سے زیادہ {val} فائلیں اپ لوڈ کر سکتے ہیں۔";

@@ -127,4 +127,9 @@
 "aihelp_loading"="Laster~";
 "aihelp_loading_failed"=" lasting mislyktes";
 "aihelp_typing_indicator"="Agent skriver...";
-"aihelp_switched_to_agent"="Du er nå koblet til en menneskelig agent.";
+"aihelp_switched_to_agent"="Du er nå koblet til en menneskelig agent";
+"aihelp_select_file"="Velg fil";
+"aihelp_file_not_select"="Vennligst velg en fil.";
+"aihelp_max_file_limit_ios"="Du kan laste opp maksimalt %@ filer.";
+"aihelp_max_file_limit_android"="Du kan laste opp maksimalt %s filer.";
+"aihelp_max_file_limit_web"="Du kan laste opp maksimalt {val} filer.";

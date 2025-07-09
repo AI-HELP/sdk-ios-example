@@ -127,4 +127,9 @@
 "aihelp_loading"="Φόρτωση~";
 "aihelp_loading_failed"="Η φόρτωση απέτυχε";
 "aihelp_typing_indicator"="Ο πράκτορας πληκτρολογεί...";
-"aihelp_switched_to_agent"="Έχετε συνδεθεί τώρα με έναν ανθρώπινο πράκτορα.";
+"aihelp_switched_to_agent"="Έχετε συνδεθεί τώρα με έναν ανθρώπινο πράκτορα";
+"aihelp_select_file"="Επιλογή αρχείου";
+"aihelp_file_not_select"="Επιλέξτε ένα αρχείο.";
+"aihelp_max_file_limit_ios"="Μπορείτε να ανεβάσετε έως και %@ αρχεία.";
+"aihelp_max_file_limit_android"="Μπορείτε να ανεβάσετε έως και %s αρχεία.";
+"aihelp_max_file_limit_web"="Μπορείτε να ανεβάσετε έως και {val} αρχεία.";

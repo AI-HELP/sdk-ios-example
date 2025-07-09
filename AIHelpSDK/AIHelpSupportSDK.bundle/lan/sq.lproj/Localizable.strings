@@ -127,4 +127,9 @@
 "aihelp_loading"="Po ngarkohet~";
 "aihelp_loading_failed"="Ngarkimi dështoi";
 "aihelp_typing_indicator"="Agjenti po shkruan...";
-"aihelp_switched_to_agent"="Tani jeni lidhur me një agjent njerëzor.";
+"aihelp_switched_to_agent"="Tani jeni të lidhur me një agjent njerëzor";
+"aihelp_select_file"="Zgjidhni Skedarin";
+"aihelp_file_not_select"="Ju lutemi zgjidhni një skedar.";
+"aihelp_max_file_limit_ios"="Mund të ngarkoni maksimumi %@ skedarë.";
+"aihelp_max_file_limit_android"="Mund të ngarkoni maksimumi %s skedarë.";
+"aihelp_max_file_limit_web"="Mund të ngarkoni maksimumi {val} skedarë.";

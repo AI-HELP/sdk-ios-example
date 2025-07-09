@@ -127,4 +127,9 @@
 "aihelp_loading"="Loading~";
 "aihelp_loading_failed"="Loading failed";
 "aihelp_typing_indicator"="Agent is typing...";
-"aihelp_switched_to_agent"="You are now connected to a human agent.";
+"aihelp_switched_to_agent"="You are now connected to a human agent";
+"aihelp_select_file"="Select File";
+"aihelp_file_not_select"="Please select a file.";
+"aihelp_max_file_limit_ios"="You can upload a maximum of %@ files.";
+"aihelp_max_file_limit_android"="You can upload a maximum of %s files.";
+"aihelp_max_file_limit_web"="You can upload a maximum of {val} files.";

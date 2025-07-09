@@ -127,4 +127,9 @@
 "aihelp_loading"="Načítání~";
 "aihelp_loading_failed"="Načítání selhalo";
 "aihelp_typing_indicator"="Agent píše...";
-"aihelp_switched_to_agent"="Nyní jste připojeni k lidskému agentovi.";
+"aihelp_switched_to_agent"="Nyní jste připojeni k lidskému operátorovi";
+"aihelp_select_file"="Vyberte soubor";
+"aihelp_file_not_select"="Vyberte soubor.";
+"aihelp_max_file_limit_ios"="Můžete nahrát maximálně %@ souborů.";
+"aihelp_max_file_limit_android"="Můžete nahrát maximálně %s souborů.";
+"aihelp_max_file_limit_web"="Můžete nahrát maximálně {val} souborů.";
