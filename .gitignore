@@ -4,3 +4,4 @@ Pods/
 *.lock
 AIHelpSDKDemo/Products
 AIHelpSDK_backup_*/
+*.sh
