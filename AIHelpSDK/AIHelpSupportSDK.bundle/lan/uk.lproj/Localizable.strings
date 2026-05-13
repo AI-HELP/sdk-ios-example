@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Переглянути всі результати пошуку";
 "aihelp_related_articles"="Схожі статті";
 "aihelp_helpful_article"="Чи була ця стаття корисною?";
-"aihelp_more_help"="Потрібна додаткова допомога?";
+"aihelp_more_help"="Натисніть для отримання додаткової підтримки";
 "aihelp_select_max_options_web"="Виберіть до {count} варіантів";
 "aihelp_media_upload_err_size_web"="Розмір файлу перевищує ліміт. Будь ласка, завантажте файл розміром менше ніж {size}M";
 "aihelp_media_upload_err_format_web"="Формат файлу не підтримується.";

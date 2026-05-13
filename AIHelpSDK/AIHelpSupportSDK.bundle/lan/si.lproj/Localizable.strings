@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="සියලුම සෙවුම් ප්‍රතිඵල බලන්න";
 "aihelp_related_articles"="අදාළ ලිපි";
 "aihelp_helpful_article"="මෙම ලිපිය ප්‍රයෝජනවත් වූවාද?";
-"aihelp_more_help"="තවත් උදව් අවශ්‍යද?";
+"aihelp_more_help"="වැඩිදුර සහාය සඳහා තට්ටු කරන්න";
 "aihelp_select_max_options_web"="විකල්ප {count} දක්වා තෝරන්න";
 "aihelp_media_upload_err_size_web"="ගොනු ප්‍රමාණය සීමාව ඉක්මවයි, කරුණාකර {size}M ට වඩා කුඩා ගොනුව උඩුගත කරන්න";
 "aihelp_media_upload_err_format_web"="ගොනු ආකෘතිය සහාය නොදක්වයි.";

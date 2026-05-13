@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Lihat semua hasil carian";
 "aihelp_related_articles"="Artikel Berkaitan";
 "aihelp_helpful_article"="Adakah artikel ini membantu?";
-"aihelp_more_help"="Perlukan bantuan lagi?";
+"aihelp_more_help"="Ketik untuk sokongan lanjut";
 "aihelp_select_max_options_web"="Pilih sehingga {count} pilihan";
 "aihelp_media_upload_err_size_web"="Saiz fail melebihi had, sila muat naik fail yang lebih kecil daripada {size}M";
 "aihelp_media_upload_err_format_web"="Format fail tidak disokong.";

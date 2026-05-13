@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Lihat semua hasil pencarian";
 "aihelp_related_articles"="Artikel Terkait";
 "aihelp_helpful_article"="Apakah artikel ini berguna?";
-"aihelp_more_help"="Butuh lebih banyak bantuan?";
+"aihelp_more_help"="Ketuk untuk dukungan lebih lanjut";
 "aihelp_select_max_options_web"="Pilih hingga {count} opsi";
 "aihelp_media_upload_err_size_web"="Ukuran file melebihi batas, harap unggah file yang lebih kecil dari {size}M";
 "aihelp_media_upload_err_format_web"="Format file tidak didukung.";

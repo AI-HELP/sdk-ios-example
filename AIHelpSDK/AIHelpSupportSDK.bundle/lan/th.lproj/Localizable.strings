@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="ดูผลการค้นหาทั้งหมด";
 "aihelp_related_articles"="บทความที่เกี่ยวข้อง";
 "aihelp_helpful_article"="บทความนี้เป็นประโยชน์หรือไม่?";
-"aihelp_more_help"="ต้องการความช่วยเหลือเพิ่มเติมหรือไม่?";
+"aihelp_more_help"="แตะเพื่อรับการสนับสนุนเพิ่มเติม";
 "aihelp_select_max_options_web"="เลือกได้ถึง {count} ตัวเลือก";
 "aihelp_media_upload_err_size_web"="ขนาดไฟล์เกินขีดจำกัด โปรดอัปโหลดไฟล์ที่เล็กกว่า {size}M";
 "aihelp_media_upload_err_format_web"="ไม่รองรับรูปแบบไฟล์";

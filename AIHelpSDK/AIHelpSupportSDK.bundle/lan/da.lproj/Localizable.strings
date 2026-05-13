@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Se alle søgeresultater";
 "aihelp_related_articles"="Relaterede Artikler";
 "aihelp_helpful_article"="Var denne artikel til hjælp?";
-"aihelp_more_help"="Har du brug for mere hjælp?";
+"aihelp_more_help"="Tryk for mere support";
 "aihelp_select_max_options_web"="Vælg op til {count} muligheder";
 "aihelp_media_upload_err_size_web"="Filstørrelsen overskrider grænsen. Upload venligst filen, der er mindre end {size}M";
 "aihelp_media_upload_err_format_web"="Filformatet understøttes ikke.";

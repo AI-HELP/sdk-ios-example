@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Вижте всички резултати от търсенето";
 "aihelp_related_articles"="Свързани статии";
 "aihelp_helpful_article"="Беше ли полезна тази статия?";
-"aihelp_more_help"="Нуждаете се от още помощ?";
+"aihelp_more_help"="Докоснете за повече поддръжка";
 "aihelp_select_max_options_web"="Изберете до {count} опции";
 "aihelp_media_upload_err_size_web"="Размерът на файла надвишава ограничението, моля, качете файла, по-малък от {size}M";
 "aihelp_media_upload_err_format_web"="Файловият формат не се поддържа.";

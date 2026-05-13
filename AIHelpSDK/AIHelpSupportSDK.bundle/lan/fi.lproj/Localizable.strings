@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Näytä kaikki hakutulokset";
 "aihelp_related_articles"="Aiheeseen liittyvät artikkelit";
 "aihelp_helpful_article"="Oliko tästä artikkelista apua?";
-"aihelp_more_help"="Tarvitsetko lisää apua?";
+"aihelp_more_help"="Napauta saadaksesi lisää tukea";
 "aihelp_select_max_options_web"="Valitse enintään {count} vaihtoehtoa";
 "aihelp_media_upload_err_size_web"="Tiedoston koko ylittää rajan. Lataa tiedosto, joka on pienempi kuin {size}M";
 "aihelp_media_upload_err_format_web"="Tiedostomuotoa ei tueta.";

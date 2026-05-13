@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Bekijk alle zoekresultaten";
 "aihelp_related_articles"="Gerelateerde Artikelen";
 "aihelp_helpful_article"="Was dit artikel behulpzaam?";
-"aihelp_more_help"="Meer hulp nodig?";
+"aihelp_more_help"="Tik voor meer ondersteuning";
 "aihelp_select_max_options_web"="Selecteer maximaal {count} opties";
 "aihelp_media_upload_err_size_web"="De bestandsgrootte overschrijdt de limiet. Upload het bestand kleiner dan {size}M";
 "aihelp_media_upload_err_format_web"="Het bestandsformaat wordt niet ondersteund.";

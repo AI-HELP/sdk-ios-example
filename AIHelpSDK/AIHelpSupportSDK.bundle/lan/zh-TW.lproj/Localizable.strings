@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="查看所有搜索結果";
 "aihelp_related_articles"="相關文章";
 "aihelp_helpful_article"="本文是否有幫助？";
-"aihelp_more_help"="需要更多幫助？";
+"aihelp_more_help"="點擊以獲得更多支援";
 "aihelp_select_max_options_web"="最多選擇 {count} 個選項";
 "aihelp_media_upload_err_size_web"="檔案大小超出限制，請上傳小於{size}M的文件";
 "aihelp_media_upload_err_format_web"="不支援該文件格式。";

@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Tüm arama sonuçlarını görüntüle";
 "aihelp_related_articles"="İlgili Makaleler";
 "aihelp_helpful_article"="Bu makale yardımcı oldu mu?";
-"aihelp_more_help"="Daha fazla yardıma mı ihtiyacınız var?";
+"aihelp_more_help"="Daha fazla destek için dokun";
 "aihelp_select_max_options_web"="En fazla {count} seçeneği belirleyin";
 "aihelp_media_upload_err_size_web"="Dosya boyutu sınırı aşıyor, lütfen dosyayı {size}M boyutundan küçük yükleyin";
 "aihelp_media_upload_err_format_web"="Dosya formatı desteklenmiyor.";

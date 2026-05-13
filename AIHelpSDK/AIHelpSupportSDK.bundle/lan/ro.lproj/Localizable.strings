@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Vedeți toate rezultatele căutării";
 "aihelp_related_articles"="Articole similare";
 "aihelp_helpful_article"="A fost de ajutor articolul?";
-"aihelp_more_help"="Ai nevoie de mai mult ajutor?";
+"aihelp_more_help"="Atingeți pentru mai mult suport";
 "aihelp_select_max_options_web"="Selectați până la {count} opțiuni";
 "aihelp_media_upload_err_size_web"="Dimensiunea fișierului depășește limita, vă rugăm să încărcați fișierul mai mic de {size}M";
 "aihelp_media_upload_err_format_web"="Formatul de fișier nu este acceptat.";

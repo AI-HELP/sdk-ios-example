@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Zobrazit všechny výsledky vyhledávání";
 "aihelp_related_articles"="Související články";
 "aihelp_helpful_article"="Byl tento článek užitečný?";
-"aihelp_more_help"="Potřebujete další pomoc?";
+"aihelp_more_help"="Klepnutím získáte další podporu";
 "aihelp_select_max_options_web"="Vyberte až {count} možností";
 "aihelp_media_upload_err_size_web"="Velikost souboru překračuje limit, nahrajte soubor menší než {size} M";
 "aihelp_media_upload_err_format_web"="Formát souboru není podporován.";

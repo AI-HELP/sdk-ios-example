@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Погледајте све резултате претраге";
 "aihelp_related_articles"="Повезани Чланци";
 "aihelp_helpful_article"="Да ли је овај чланак био од помоћи?";
-"aihelp_more_help"="Треба вам још помоћи?";
+"aihelp_more_help"="Додирните за више подршке";
 "aihelp_select_max_options_web"="Изаберите највише {count} опција";
 "aihelp_media_upload_err_size_web"="Величина датотеке премашује ограничење, отпремите датотеку мању од {size}М";
 "aihelp_media_upload_err_format_web"="Формат датотеке није подржан.";

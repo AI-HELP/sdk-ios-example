@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="सभी खोज परिणाम देखें";
 "aihelp_related_articles"="संबंधित आलेख";
 "aihelp_helpful_article"="क्या यह लेख सहायक था?";
-"aihelp_more_help"="और अधिक मदद की आवश्यकता है?";
+"aihelp_more_help"="अधिक सहायता के लिए टैप करें";
 "aihelp_select_max_options_web"="{count} तक विकल्प चुनें";
 "aihelp_media_upload_err_size_web"="फ़ाइल का आकार सीमा से अधिक है, कृपया {size}M से छोटी फ़ाइल अपलोड करें";
 "aihelp_media_upload_err_format_web"="फ़ाइल स्वरूप समर्थित नहीं है.";

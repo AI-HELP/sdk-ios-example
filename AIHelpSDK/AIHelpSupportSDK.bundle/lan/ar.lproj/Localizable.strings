@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="عرض جميع نتائج البحث";
 "aihelp_related_articles"="مقالات ذات صلة";
 "aihelp_helpful_article"="هل كان المقال مساعدا؟!";
-"aihelp_more_help"="هل تريد المزيد من المساعدة؟";
+"aihelp_more_help"="انقر للمزيد من الدعم";
 "aihelp_select_max_options_web"="حدد ما يصل إلى {count} من الخيارات";
 "aihelp_media_upload_err_size_web"="حجم الملف يتجاوز الحد المسموح به، يرجى تحميل الملف الأصغر من {size}M";
 "aihelp_media_upload_err_format_web"="تنسيق الملف غير مدعوم.";

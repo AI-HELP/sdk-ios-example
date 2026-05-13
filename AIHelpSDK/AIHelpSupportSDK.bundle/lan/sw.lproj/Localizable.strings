@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Tazama matokeo yote ya utafutaji";
 "aihelp_related_articles"="Makala Zinazohusiana";
 "aihelp_helpful_article"="Je, makala hii ilikusaidia?";
-"aihelp_more_help"="Je, unahitaji usaidizi zaidi?";
+"aihelp_more_help"="Gonga kwa usaidizi zaidi";
 "aihelp_select_max_options_web"="Chagua hadi chaguo {count}";
 "aihelp_media_upload_err_size_web"="Ukubwa wa faili umezidi kikomo, tafadhali pakia faili ndogo kuliko {size}M";
 "aihelp_media_upload_err_format_web"="Umbizo la faili halitumiki.";

@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Az összes keresési eredmény megtekintése";
 "aihelp_related_articles"="Kapcsolódó cikkek";
 "aihelp_helpful_article"="Hasznos volt ez a cikk?";
-"aihelp_more_help"="További segítségre van szüksége?";
+"aihelp_more_help"="Koppintson a további támogatásért";
 "aihelp_select_max_options_web"="Válasszon legfeljebb {count} lehetőséget";
 "aihelp_media_upload_err_size_web"="A fájl mérete meghaladja a korlátot. Kérjük, töltsön fel {size}M-nél kisebb fájlt";
 "aihelp_media_upload_err_format_web"="A fájlformátum nem támogatott.";

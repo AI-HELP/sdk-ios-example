@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Προβολή όλων των αποτελεσμάτων αναζήτησης";
 "aihelp_related_articles"="Σχετικά Άρθρα";
 "aihelp_helpful_article"="'Ηταν αυτό το άρθρο χρήσιμο?";
-"aihelp_more_help"="Χρειάζεστε περισσότερη βοήθεια;";
+"aihelp_more_help"="Πατήστε για περισσότερη υποστήριξη";
 "aihelp_select_max_options_web"="Επιλέξτε έως και {count} επιλογές";
 "aihelp_media_upload_err_size_web"="Το μέγεθος του αρχείου υπερβαίνει το όριο, μεταφορτώστε το αρχείο μικρότερο από {size}M";
 "aihelp_media_upload_err_format_web"="Η μορφή αρχείου δεν υποστηρίζεται.";

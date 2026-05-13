@@ -101,7 +101,7 @@
 "aihelp_view_all_results"="Посмотреть все результаты поиска";
 "aihelp_related_articles"="Статьи по Теме";
 "aihelp_helpful_article"="Была ли эта статья полезна?";
-"aihelp_more_help"="Нужна дополнительная помощь?";
+"aihelp_more_help"="Нажмите для получения дополнительной поддержки";
 "aihelp_select_max_options_web"="Выберите до {count} вариантов";
 "aihelp_media_upload_err_size_web"="Размер файла превышает лимит. Загрузите файл размером меньше {size}M.";
 "aihelp_media_upload_err_format_web"="Формат файла не поддерживается.";
