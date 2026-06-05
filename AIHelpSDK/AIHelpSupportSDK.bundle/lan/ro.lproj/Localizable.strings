@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Descrierea accesului la fotografii și videoclipuri";
 "aihelp_max_file_limit_web"="Puteți încărca maximum {val} fișiere.";
 "aihelp_permission_usage_desc"="Folosit pentru citirea fotografiilor și videoclipurilor pentru a oferi feedback serviciului clienți";
-"aihelp_operation_too_frequent"="Prea multe căutări. Vă rugăm să încercați din nou în scurt timp.";
+"aihelp_operation_too_frequent"="Acțiune prea rapidă. Te rugăm să încerci din nou mai târziu.";
 "defaultCompletedTip"="Evaluare implicită completată automat.";
 "existingChatMsg"="Aveți un tichet deschis.";

@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Descrição de Acesso a Fotos e Vídeos";
 "aihelp_max_file_limit_web"="Você pode enviar no máximo {val} arquivos.";
 "aihelp_permission_usage_desc"="Usado para ler fotos e vídeos para fornecer feedback ao serviço de atendimento ao cliente";
-"aihelp_operation_too_frequent"="Demasiadas pesquisas. Por favor, tente novamente em breve.";
+"aihelp_operation_too_frequent"="Ação muito rápida. Por favor, tente novamente mais tarde.";
 "defaultCompletedTip"="Classificação padrão preenchida automaticamente.";
 "existingChatMsg"="Você tem um ticket em andamento.";

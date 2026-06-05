@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Beskrivelse af adgang til fotos og videoer";
 "aihelp_max_file_limit_web"="Du kan højst uploade {val} filer.";
 "aihelp_permission_usage_desc"="Bruges til at læse fotos og videoer for at give feedback til kundeservice";
-"aihelp_operation_too_frequent"="For mange søgninger. Prøv venligst igen om et øjeblik.";
+"aihelp_operation_too_frequent"="Handlingen går for stærkt. Prøv venligst igen senere.";
 "defaultCompletedTip"="Standardbedømmelse automatisk udfyldt.";
 "existingChatMsg"="Du har en igangværende billet.";

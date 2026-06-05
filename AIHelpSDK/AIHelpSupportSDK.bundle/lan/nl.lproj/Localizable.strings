@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Beschrijving van toegang tot foto's en video's";
 "aihelp_max_file_limit_web"="U kunt maximaal {val} bestanden uploaden.";
 "aihelp_permission_usage_desc"="Wordt gebruikt voor het lezen van foto's en video's om feedback te geven aan de klantenservice";
-"aihelp_operation_too_frequent"="Te veel zoekopdrachten. Probeer het zo meteen opnieuw.";
+"aihelp_operation_too_frequent"="Actie te snel. Probeer het later opnieuw.";
 "defaultCompletedTip"="Standaardbeoordeling automatisch voltooid.";
 "existingChatMsg"="Je hebt een openstaand ticket.";

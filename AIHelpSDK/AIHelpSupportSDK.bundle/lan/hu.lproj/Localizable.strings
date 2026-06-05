@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Fényképek és videók hozzáférésének leírása";
 "aihelp_max_file_limit_web"="Legfeljebb {val} fájlt tölthet fel.";
 "aihelp_permission_usage_desc"="Fényképek és videók olvasására szolgál, hogy visszajelzést küldhessen az ügyfélszolgálatnak";
-"aihelp_operation_too_frequent"="Túl sok keresés. Kérjük, próbálja újra rövidesen.";
+"aihelp_operation_too_frequent"="Túl gyors művelet. Kérlek, próbáld meg később.";
 "defaultCompletedTip"="Az alapértelmezett értékelés automatikusan kitöltve.";
 "existingChatMsg"="Van egy folyamatban lévő jegyed.";

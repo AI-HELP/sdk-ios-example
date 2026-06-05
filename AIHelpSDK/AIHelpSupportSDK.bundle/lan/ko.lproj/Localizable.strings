@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="사진 및 비디오 접근 권한 설명";
 "aihelp_max_file_limit_web"="최대 {val}개의 파일을 업로드할 수 있습니다.";
 "aihelp_permission_usage_desc"="고객 서비스에 피드백을 제공하기 위해 사진 및 비디오를 읽는 데 사용됩니다";
-"aihelp_operation_too_frequent"="검색 횟수가 너무 많습니다. 잠시 후에 다시 시도해 주세요.";
+"aihelp_operation_too_frequent"="동작이 너무 빠릅니다. 잠시 후 다시 시도해 주세요.";
 "defaultCompletedTip"="기본 평점이 자동으로 완료되었습니다.";
 "existingChatMsg"="진행 중인 티켓이 있습니다.";

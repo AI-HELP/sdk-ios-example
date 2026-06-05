@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="คำอธิบายการเข้าถึงรูปภาพและวิดีโอ";
 "aihelp_max_file_limit_web"="คุณสามารถอัปโหลดไฟล์ได้สูงสุด {val} ไฟล์";
 "aihelp_permission_usage_desc"="ใช้สำหรับอ่านรูปภาพและวิดีโอเพื่อส่งข้อเสนอแนะไปยังฝ่ายบริการลูกค้า";
-"aihelp_operation_too_frequent"="ค้นหามากเกินไป โปรดลองอีกครั้งในไม่ช้า";
+"aihelp_operation_too_frequent"="การดำเนินการเร็วเกินไป โปรดลองใหม่อีกครั้งในภายหลัง";
 "defaultCompletedTip"="การให้คะแนนเริ่มต้นเสร็จสมบูรณ์โดยอัตโนมัติ";
 "existingChatMsg"="คุณมีตั๋วที่กำลังดำเนินการอยู่";

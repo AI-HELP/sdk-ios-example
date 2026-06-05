@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Beskrivelse av tilgang til bilder og videoer";
 "aihelp_max_file_limit_web"="Du kan laste opp maksimalt {val} filer.";
 "aihelp_permission_usage_desc"="Brukes til å lese bilder og videoer for å gi tilbakemelding til kundeservice";
-"aihelp_operation_too_frequent"="For mange søk. Vennligst prøv igjen om litt.";
+"aihelp_operation_too_frequent"="Handlingen går for fort. Vennligst prøv igjen senere.";
 "defaultCompletedTip"="Standardvurdering automatisk fullført.";
 "existingChatMsg"="Du har en aktiv sak.";

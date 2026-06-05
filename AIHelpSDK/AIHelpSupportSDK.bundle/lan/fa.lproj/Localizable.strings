@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="توضیحات دسترسی به عکس‌ها و ویدئوها";
 "aihelp_max_file_limit_web"="شما می توانید حداکثر {val} فایل بارگذاری کنید.";
 "aihelp_permission_usage_desc"="برای خواندن عکس‌ها و ویدئوها جهت ارائه بازخورد به خدمات مشتری استفاده می‌شود";
-"aihelp_operation_too_frequent"="جستجوهای زیاد. لطفاً کمی بعد دوباره امتحان کنید.";
+"aihelp_operation_too_frequent"="سرعت انجام عملیات بیش از حد است. لطفاً بعداً دوباره تلاش کنید.";
 "defaultCompletedTip"="امتیاز پیش‌فرض به صورت خودکار تکمیل شد.";
 "existingChatMsg"="شما یک تیکت فعال دارید.";

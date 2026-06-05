@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="फ़ोटो और वीडियो एक्सेस विवरण";
 "aihelp_max_file_limit_web"="आप अधिकतम {val} फ़ाइलें अपलोड कर सकते हैं।";
 "aihelp_permission_usage_desc"="ग्राहक सेवा को प्रतिक्रिया देने के लिए फ़ोटो और वीडियो पढ़ने के लिए उपयोग किया जाता है";
-"aihelp_operation_too_frequent"="बहुत ज़्यादा खोजें। कृपया कुछ देर बाद फिर से कोशिश करें।";
+"aihelp_operation_too_frequent"="क्रिया बहुत तेज़ है। कृपया बाद में पुनः प्रयास करें।";
 "defaultCompletedTip"="डिफ़ॉल्ट रेटिंग स्वतः पूर्ण हो गई।";
 "existingChatMsg"="आपका एक सक्रिय टिकट है।";

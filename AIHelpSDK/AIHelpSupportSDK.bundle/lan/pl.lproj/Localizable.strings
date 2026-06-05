@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Opis dostępu do zdjęć i filmów";
 "aihelp_max_file_limit_web"="Możesz przesłać maksymalnie {val} plików.";
 "aihelp_permission_usage_desc"="Służy do odczytywania zdjęć i filmów w celu przekazania opinii obsłudze klienta";
-"aihelp_operation_too_frequent"="Zbyt wiele wyszukiwań. Spróbuj ponownie za chwilę.";
+"aihelp_operation_too_frequent"="Zbyt szybka akcja. Spróbuj ponownie później.";
 "defaultCompletedTip"="Domyślna ocena uzupełniona automatycznie.";
 "existingChatMsg"="Masz otwarty bilet.";

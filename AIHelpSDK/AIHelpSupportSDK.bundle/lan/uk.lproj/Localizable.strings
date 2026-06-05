@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Опис доступу до фото та відео";
 "aihelp_max_file_limit_web"="Ви можете завантажити максимум {val} файлів.";
 "aihelp_permission_usage_desc"="Використовується для читання фотографій та відео, щоб надати відгук службі підтримки клієнтів";
-"aihelp_operation_too_frequent"="Забагато пошуків. Будь ласка, спробуйте ще раз пізніше.";
+"aihelp_operation_too_frequent"="Занадто швидка дія. Будь ласка, спробуйте пізніше.";
 "defaultCompletedTip"="Рейтинг за замовчуванням заповнено автоматично.";
 "existingChatMsg"="У вас є активний запит.";

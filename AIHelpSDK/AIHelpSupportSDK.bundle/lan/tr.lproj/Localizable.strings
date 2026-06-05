@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Fotoğraflara ve Videolara Erişim Açıklaması";
 "aihelp_max_file_limit_web"="En fazla {val} dosya yükleyebilirsiniz.";
 "aihelp_permission_usage_desc"="Müşteri hizmetlerine geri bildirim sağlamak için fotoğraf ve videoları okumak için kullanılır";
-"aihelp_operation_too_frequent"="Çok fazla arama yapıldı. Lütfen kısa süre sonra tekrar deneyin.";
+"aihelp_operation_too_frequent"="İşlem çok hızlı. Lütfen daha sonra tekrar deneyin.";
 "defaultCompletedTip"="Varsayılan derecelendirme otomatik olarak tamamlandı.";
 "existingChatMsg"="Devam eden bir biletiniz var.";

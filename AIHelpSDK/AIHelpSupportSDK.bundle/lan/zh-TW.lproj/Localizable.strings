@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="照片和影片存取說明";
 "aihelp_max_file_limit_web"="您最多可以上傳 {val} 個檔案。";
 "aihelp_permission_usage_desc"="用於讀取照片和影片，以便向客戶服務提供回饋";
-"aihelp_operation_too_frequent"="搜尋次數過多。請稍後再試。";
+"aihelp_operation_too_frequent"="操作過快，請稍後再試。";
 "defaultCompletedTip"="預設評分已自動完成。";
 "existingChatMsg"="您有一張正在處理中的票證。";

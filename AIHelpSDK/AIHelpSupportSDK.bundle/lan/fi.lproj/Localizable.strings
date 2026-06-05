@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Kuvien ja videoiden käyttöoikeuden kuvaus";
 "aihelp_max_file_limit_web"="Voit ladata enintään {val} tiedostoa.";
 "aihelp_permission_usage_desc"="Käytetään kuvien ja videoiden lukemiseen palautteen antamiseksi asiakaspalveluun";
-"aihelp_operation_too_frequent"="Liian monta hakua. Yritä pian uudelleen.";
+"aihelp_operation_too_frequent"="Toiminto liian nopea. Yritä myöhemmin uudelleen.";
 "defaultCompletedTip"="Oletusarvio automaattisesti täydennetty.";
 "existingChatMsg"="Sinulla on avoin tukipyyntö.";

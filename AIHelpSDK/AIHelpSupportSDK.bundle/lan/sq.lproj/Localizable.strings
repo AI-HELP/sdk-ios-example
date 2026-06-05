@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Përshkrimi i Qasjes në Foto dhe Video";
 "aihelp_max_file_limit_web"="Mund të ngarkoni maksimumi {val} skedarë.";
 "aihelp_permission_usage_desc"="Përdoret për leximin e fotove dhe videove për të ofruar reagime për shërbimin ndaj klientit";
-"aihelp_operation_too_frequent"="Shumë kërkime. Ju lutemi provoni sërish pas pak.";
+"aihelp_operation_too_frequent"="Veprim shumë i shpejtë. Ju lutemi provoni përsëri më vonë.";
 "defaultCompletedTip"="Vlerësimi i parazgjedhur u plotësua automatikisht.";
 "existingChatMsg"="Ju keni një biletë aktive.";

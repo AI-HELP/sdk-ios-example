@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="وصف الوصول إلى الصور ومقاطع الفيديو";
 "aihelp_max_file_limit_web"="يمكنك تحميل {val} ملف كحد أقصى.";
 "aihelp_permission_usage_desc"="تُستخدم لقراءة الصور ومقاطع الفيديو لتقديم الملاحظات لخدمة العملاء";
-"aihelp_operation_too_frequent"="عدد كبير جدًا من عمليات البحث. الرجاء المحاولة مرة أخرى بعد قليل.";
+"aihelp_operation_too_frequent"="الإجراء سريع جداً. يرجى المحاولة مرة أخرى لاحقاً.";
 "defaultCompletedTip"="تم إكمال التقييم الافتراضي تلقائيًا.";
 "existingChatMsg"="لديك تذكرة قيد المعالجة.";

@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Popis přístupu k fotografiím a videím";
 "aihelp_max_file_limit_web"="Můžete nahrát maximálně {val} souborů.";
 "aihelp_permission_usage_desc"="Používá se pro čtení fotografií a videí k poskytování zpětné vazby zákaznickému servisu";
-"aihelp_operation_too_frequent"="Příliš mnoho hledání. Zkuste to prosím znovu za chvíli.";
+"aihelp_operation_too_frequent"="Akce proběhla příliš rychle. Zkuste to prosím později.";
 "defaultCompletedTip"="Výchozí hodnocení automaticky dokončeno.";
 "existingChatMsg"="Máte otevřený tiket.";

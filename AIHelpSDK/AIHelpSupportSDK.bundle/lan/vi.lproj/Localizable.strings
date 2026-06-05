@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Mô tả quyền truy cập ảnh và video";
 "aihelp_max_file_limit_web"="Bạn có thể tải lên tối đa {val} tập tin.";
 "aihelp_permission_usage_desc"="Dùng để đọc ảnh và video nhằm cung cấp phản hồi cho dịch vụ khách hàng";
-"aihelp_operation_too_frequent"="Quá nhiều lượt tìm kiếm. Vui lòng thử lại sau ít phút.";
+"aihelp_operation_too_frequent"="Thao tác quá nhanh. Vui lòng thử lại sau.";
 "defaultCompletedTip"="Xếp hạng mặc định đã được tự động hoàn tất.";
 "existingChatMsg"="Bạn có một yêu cầu đang chờ xử lý.";

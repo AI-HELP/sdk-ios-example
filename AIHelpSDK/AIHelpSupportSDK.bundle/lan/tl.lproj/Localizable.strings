@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Deskripsyon ng Access sa Larawan at Video";
 "aihelp_max_file_limit_web"="Maaari kang mag-upload ng maximum na {val} files.";
 "aihelp_permission_usage_desc"="Ginagamit para sa pagbabasa ng mga larawan at video upang magbigay ng feedback sa customer service";
-"aihelp_operation_too_frequent"="Masyadong maraming paghahanap. Pakisubukang muli maya-maya.";
+"aihelp_operation_too_frequent"="Masyadong mabilis ang aksyon. Pakisubukan muli mamaya.";
 "defaultCompletedTip"="Awtomatikong nakumpleto ang default na rating.";
 "existingChatMsg"="Mayroon kang kasalukuyang ticket.";

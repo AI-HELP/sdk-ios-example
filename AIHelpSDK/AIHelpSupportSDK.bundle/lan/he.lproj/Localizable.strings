@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="תיאור גישה לתמונות וסרטונים";
 "aihelp_max_file_limit_web"="ניתן להעלות עד {val} קבצים.";
 "aihelp_permission_usage_desc"="משמש לקריאת תמונות וסרטונים כדי לספק משוב לשירות הלקוחות";
-"aihelp_operation_too_frequent"="יותר מדי חיפושים. אנא נסה שוב בקרוב.";
+"aihelp_operation_too_frequent"="הפעולה מהירה מדי. אנא נסה שוב מאוחר יותר.";
 "defaultCompletedTip"="הדירוג מולא אוטומטית.";
 "existingChatMsg"="יש לך כרטיס פתוח.";

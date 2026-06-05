@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Opis pristupa fotografijama i videozapisima";
 "aihelp_max_file_limit_web"="Možete učitati najviše {val} datoteka.";
 "aihelp_permission_usage_desc"="Koristi se za čitanje fotografija i videozapisa radi pružanja povratnih informacija korisničkoj službi";
-"aihelp_operation_too_frequent"="Previše pretraga. Pokušajte ponovo uskoro.";
+"aihelp_operation_too_frequent"="Radnja je prebrza. Molimo pokušajte ponovo kasnije.";
 "defaultCompletedTip"="Zadana ocjena automatski popunjena.";
 "existingChatMsg"="Imate otvorenu kartu.";

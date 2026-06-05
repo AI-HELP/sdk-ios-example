@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="Descrizione accesso a foto e video";
 "aihelp_max_file_limit_web"="Puoi caricare un massimo di {val} file.";
 "aihelp_permission_usage_desc"="Utilizzato per leggere foto e video per fornire feedback al servizio clienti";
-"aihelp_operation_too_frequent"="Troppe ricerche. Riprova tra poco.";
+"aihelp_operation_too_frequent"="Azione troppo rapida. Riprova più tardi.";
 "defaultCompletedTip"="Valutazione predefinita completata automaticamente.";
 "existingChatMsg"="Hai un ticket in corso.";

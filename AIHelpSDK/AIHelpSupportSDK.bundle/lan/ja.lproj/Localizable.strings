@@ -146,6 +146,6 @@
 "aihelp_permission_usage_title"="写真と動画へのアクセス説明";
 "aihelp_max_file_limit_web"="最大{val}個のファイルをアップロードできます。";
 "aihelp_permission_usage_desc"="カスタマーサービスにフィードバックを提供するために写真と動画を読み込むために使用されます";
-"aihelp_operation_too_frequent"="検索回数が多すぎます。しばらくしてからもう一度お試しください。";
+"aihelp_operation_too_frequent"="操作が速すぎます。しばらくしてからもう一度お試しください。";
 "defaultCompletedTip"="デフォルトの評価が自動入力されました。";
 "existingChatMsg"="進行中のチケットがあります。";
