@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Acțiune prea rapidă. Te rugăm să încerci din nou mai târziu.";
 "defaultCompletedTip"="Evaluare implicită completată automat.";
 "existingChatMsg"="Aveți un tichet deschis.";
+"aihelp_loading_querying"="Se caută";
+"aihelp_loading_processing"="Se procesează";

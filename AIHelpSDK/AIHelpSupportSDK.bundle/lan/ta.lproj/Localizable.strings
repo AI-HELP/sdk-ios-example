@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="செயல்பாடு மிக வேகமாக உள்ளது. தயவுசெய்து சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்.";
 "defaultCompletedTip"="இயல்புநிலை மதிப்பீடு தானாகவே பூர்த்தி செய்யப்பட்டது.";
 "existingChatMsg"="உங்களுக்கு ஒரு டிக்கெட் உள்ளது.";
+"aihelp_loading_querying"="தேடுகிறது";
+"aihelp_loading_processing"="செயலாக்குகிறது";

@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Действие выполняется слишком быстро. Пожалуйста, повторите попытку позже.";
 "defaultCompletedTip"="Рейтинг по умолчанию заполнен автоматически.";
 "existingChatMsg"="У вас есть активный запрос.";
+"aihelp_loading_querying"="Поиск";
+"aihelp_loading_processing"="Обработка";

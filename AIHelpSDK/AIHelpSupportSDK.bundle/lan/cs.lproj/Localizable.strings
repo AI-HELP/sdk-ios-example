@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Akce proběhla příliš rychle. Zkuste to prosím později.";
 "defaultCompletedTip"="Výchozí hodnocení automaticky dokončeno.";
 "existingChatMsg"="Máte otevřený tiket.";
+"aihelp_loading_querying"="Vyhledávání";
+"aihelp_loading_processing"="Zpracovávání";

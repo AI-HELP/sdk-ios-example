@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Actie te snel. Probeer het later opnieuw.";
 "defaultCompletedTip"="Standaardbeoordeling automatisch voltooid.";
 "existingChatMsg"="Je hebt een openstaand ticket.";
+"aihelp_loading_querying"="Zoeken";
+"aihelp_loading_processing"="Verwerken";

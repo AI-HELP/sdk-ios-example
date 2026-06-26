@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="İşlem çok hızlı. Lütfen daha sonra tekrar deneyin.";
 "defaultCompletedTip"="Varsayılan derecelendirme otomatik olarak tamamlandı.";
 "existingChatMsg"="Devam eden bir biletiniz var.";
+"aihelp_loading_querying"="Aranıyor";
+"aihelp_loading_processing"="İşleniyor";

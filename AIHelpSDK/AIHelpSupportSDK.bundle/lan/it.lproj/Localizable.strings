@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Azione troppo rapida. Riprova più tardi.";
 "defaultCompletedTip"="Valutazione predefinita completata automaticamente.";
 "existingChatMsg"="Hai un ticket in corso.";
+"aihelp_loading_querying"="Ricerca in corso";
+"aihelp_loading_processing"="Elaborazione in corso";

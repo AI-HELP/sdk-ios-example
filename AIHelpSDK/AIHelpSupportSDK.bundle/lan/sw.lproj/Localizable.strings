@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Umetenda haraka sana. Tafadhali jaribu tena baadaye.";
 "defaultCompletedTip"="Ukadiriaji chaguomsingi umekamilika kiotomatiki.";
 "existingChatMsg"="Una tiketi inayoendelea.";
+"aihelp_loading_querying"="Inatafuta";
+"aihelp_loading_processing"="Inachakata";

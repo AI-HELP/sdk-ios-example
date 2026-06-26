@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="操作が速すぎます。しばらくしてからもう一度お試しください。";
 "defaultCompletedTip"="デフォルトの評価が自動入力されました。";
 "existingChatMsg"="進行中のチケットがあります。";
+"aihelp_loading_querying"="検索中";
+"aihelp_loading_processing"="処理中";

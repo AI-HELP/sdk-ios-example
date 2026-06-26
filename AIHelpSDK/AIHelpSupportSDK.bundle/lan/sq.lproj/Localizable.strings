@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Veprim shumë i shpejtë. Ju lutemi provoni përsëri më vonë.";
 "defaultCompletedTip"="Vlerësimi i parazgjedhur u plotësua automatikisht.";
 "existingChatMsg"="Ju keni një biletë aktive.";
+"aihelp_loading_querying"="Duke kërkuar";
+"aihelp_loading_processing"="Duke përpunuar";

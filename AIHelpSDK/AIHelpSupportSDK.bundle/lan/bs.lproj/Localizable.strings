@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Radnja je prebrza. Molimo pokušajte ponovo kasnije.";
 "defaultCompletedTip"="Zadana ocjena automatski popunjena.";
 "existingChatMsg"="Imate otvorenu kartu.";
+"aihelp_loading_querying"="Pretraživanje";
+"aihelp_loading_processing"="Obrada";

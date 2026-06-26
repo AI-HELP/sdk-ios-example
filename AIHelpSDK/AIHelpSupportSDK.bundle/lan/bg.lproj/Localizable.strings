@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Действието е твърде бързо. Моля, опитайте отново по-късно.";
 "defaultCompletedTip"="Оценката по подразбиране е автоматично попълнена.";
 "existingChatMsg"="Имате отворен билет.";
+"aihelp_loading_querying"="Търсене";
+"aihelp_loading_processing"="Обработка";

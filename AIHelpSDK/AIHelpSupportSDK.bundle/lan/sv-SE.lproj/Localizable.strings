@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Åtgärden gick för fort. Vänligen försök igen senare.";
 "defaultCompletedTip"="Standardbetyg automatiskt ifyllt.";
 "existingChatMsg"="Du har ett pågående ärende.";
+"aihelp_loading_querying"="Söker";
+"aihelp_loading_processing"="Bearbetar";

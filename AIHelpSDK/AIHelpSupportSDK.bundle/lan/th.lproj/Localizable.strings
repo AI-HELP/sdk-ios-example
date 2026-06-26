@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="การดำเนินการเร็วเกินไป โปรดลองใหม่อีกครั้งในภายหลัง";
 "defaultCompletedTip"="การให้คะแนนเริ่มต้นเสร็จสมบูรณ์โดยอัตโนมัติ";
 "existingChatMsg"="คุณมีตั๋วที่กำลังดำเนินการอยู่";
+"aihelp_loading_querying"="กำลังค้นหา";
+"aihelp_loading_processing"="กำลังประมวลผล";

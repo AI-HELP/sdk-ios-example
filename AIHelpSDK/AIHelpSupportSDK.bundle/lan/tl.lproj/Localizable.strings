@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Masyadong mabilis ang aksyon. Pakisubukan muli mamaya.";
 "defaultCompletedTip"="Awtomatikong nakumpleto ang default na rating.";
 "existingChatMsg"="Mayroon kang kasalukuyang ticket.";
+"aihelp_loading_querying"="Naghanap";
+"aihelp_loading_processing"="Pinoproseso";

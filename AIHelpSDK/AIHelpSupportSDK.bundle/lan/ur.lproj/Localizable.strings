@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="عمل بہت تیز ہے۔ براہ کرم بعد میں دوبارہ کوشش کریں۔";
 "defaultCompletedTip"="ڈیفالٹ ریٹنگ خود بخود مکمل ہو گئی۔";
 "existingChatMsg"="آپ کا ایک جاری ٹکٹ ہے۔";
+"aihelp_loading_querying"="تلاش جاری ہے";
+"aihelp_loading_processing"="پروسیسنگ ہو رہی ہے";

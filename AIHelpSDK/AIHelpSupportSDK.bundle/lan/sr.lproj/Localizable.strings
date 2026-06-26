@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Акција је пребрза. Молимо покушајте поново касније.";
 "defaultCompletedTip"="Подразумевана оцена аутоматски попуњена.";
 "existingChatMsg"="Имате отворену пријаву.";
+"aihelp_loading_querying"="Претраживање";
+"aihelp_loading_processing"="Обрада";

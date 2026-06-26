@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Handlingen går for fort. Vennligst prøv igjen senere.";
 "defaultCompletedTip"="Standardvurdering automatisk fullført.";
 "existingChatMsg"="Du har en aktiv sak.";
+"aihelp_loading_querying"="Søker";
+"aihelp_loading_processing"="Behandler";

@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="ක්‍රියාව ඉතා වේගවත්ය. කරුණාකර පසුව නැවත උත්සාහ කරන්න.";
 "defaultCompletedTip"="පෙරනිමි ශ්‍රේණිගත කිරීම ස්වයංක්‍රීයව සම්පූර්ණ කරන ලදී.";
 "existingChatMsg"="ඔබට දැනටමත් ටිකට් පතක් තිබේ.";
+"aihelp_loading_querying"="සෙවෙමින් පවතී";
+"aihelp_loading_processing"="සැකසෙමින් පවතී";

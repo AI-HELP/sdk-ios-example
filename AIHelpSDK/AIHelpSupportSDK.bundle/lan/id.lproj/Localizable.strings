@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Tindakan terlalu cepat. Silakan coba lagi nanti.";
 "defaultCompletedTip"="Peringkat default selesai otomatis.";
 "existingChatMsg"="Anda memiliki tiket yang sedang berlangsung.";
+"aihelp_loading_querying"="Mencari";
+"aihelp_loading_processing"="Memproses";

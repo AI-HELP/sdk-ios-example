@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Åtgärden går för snabbt. Försök igen senare.";
 "defaultCompletedTip"="Standardbetyg automatiskt ifyllt.";
 "existingChatMsg"="Du har en pågående biljett.";
+"aihelp_loading_querying"="Söker";
+"aihelp_loading_processing"="Bearbetar";

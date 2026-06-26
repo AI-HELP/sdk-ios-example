@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="လုပ်ဆောင်ချက် မြန်လွန်းနေသည်။ ကျေးဇူးပြု၍ နောက်မှ ထပ်မံကြိုးစားပါ။";
 "defaultCompletedTip"="မူရင်းအဆင့်သတ်မှတ်ချက် အလိုအလျောက် ပြီးစီးခဲ့သည်။";
 "existingChatMsg"="သင့်တွင် လက်ရှိလက်မှတ်တစ်ခုရှိသည်။";
+"aihelp_loading_querying"="ရှာဖွေနေသည်";
+"aihelp_loading_processing"="လုပ်ဆောင်နေသည်";

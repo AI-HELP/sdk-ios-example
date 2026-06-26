@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="سرعت انجام عملیات بیش از حد است. لطفاً بعداً دوباره تلاش کنید.";
 "defaultCompletedTip"="امتیاز پیش‌فرض به صورت خودکار تکمیل شد.";
 "existingChatMsg"="شما یک تیکت فعال دارید.";
+"aihelp_loading_querying"="در حال جستجو";
+"aihelp_loading_processing"="در حال پردازش";

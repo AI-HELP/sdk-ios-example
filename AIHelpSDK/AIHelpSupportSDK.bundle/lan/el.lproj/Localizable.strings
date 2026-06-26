@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Πολύ γρήγορη ενέργεια. Παρακαλώ δοκιμάστε ξανά αργότερα.";
 "defaultCompletedTip"="Η προεπιλεγμένη βαθμολογία συμπληρώθηκε αυτόματα.";
 "existingChatMsg"="Έχετε ένα εν εξελίξει αίτημα.";
+"aihelp_loading_querying"="Αναζήτηση";
+"aihelp_loading_processing"="Επεξεργασία";

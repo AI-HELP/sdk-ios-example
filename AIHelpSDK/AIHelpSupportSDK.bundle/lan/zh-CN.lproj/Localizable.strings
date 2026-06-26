@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="操作太快啦，请稍后重试！";
 "defaultCompletedTip"="已自动完成默认评价";
 "existingChatMsg"="您已有进行中的会话";
+"aihelp_loading_querying"="正在查询中";
+"aihelp_loading_processing"="正在处理中";

@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Túl gyors művelet. Kérlek, próbáld meg később.";
 "defaultCompletedTip"="Az alapértelmezett értékelés automatikusan kitöltve.";
 "existingChatMsg"="Van egy folyamatban lévő jegyed.";
+"aihelp_loading_querying"="Keresés";
+"aihelp_loading_processing"="Feldolgozás";

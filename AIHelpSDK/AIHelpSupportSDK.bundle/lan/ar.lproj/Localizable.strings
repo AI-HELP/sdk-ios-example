@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="الإجراء سريع جداً. يرجى المحاولة مرة أخرى لاحقاً.";
 "defaultCompletedTip"="تم إكمال التقييم الافتراضي تلقائيًا.";
 "existingChatMsg"="لديك تذكرة قيد المعالجة.";
+"aihelp_loading_querying"="جاري البحث";
+"aihelp_loading_processing"="جاري المعالجة";

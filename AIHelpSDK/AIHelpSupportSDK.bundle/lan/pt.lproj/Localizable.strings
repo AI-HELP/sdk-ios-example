@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Ação muito rápida. Por favor, tente novamente mais tarde.";
 "defaultCompletedTip"="Classificação padrão preenchida automaticamente.";
 "existingChatMsg"="Você tem um ticket em andamento.";
+"aihelp_loading_querying"="Pesquisando";
+"aihelp_loading_processing"="Processando";

@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="क्रिया बहुत तेज़ है। कृपया बाद में पुनः प्रयास करें।";
 "defaultCompletedTip"="डिफ़ॉल्ट रेटिंग स्वतः पूर्ण हो गई।";
 "existingChatMsg"="आपका एक सक्रिय टिकट है।";
+"aihelp_loading_querying"="खोज रहा है";
+"aihelp_loading_processing"="प्रोसेस हो रहा है";

@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Toiminto liian nopea. Yritä myöhemmin uudelleen.";
 "defaultCompletedTip"="Oletusarvio automaattisesti täydennetty.";
 "existingChatMsg"="Sinulla on avoin tukipyyntö.";
+"aihelp_loading_querying"="Etsitään";
+"aihelp_loading_processing"="Käsitellään";

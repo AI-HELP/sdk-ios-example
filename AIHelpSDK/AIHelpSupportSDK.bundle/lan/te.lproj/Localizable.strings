@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="చర్య చాలా వేగంగా ఉంది. దయచేసి తర్వాత మళ్ళీ ప్రయత్నించండి.";
 "defaultCompletedTip"="డిఫాల్ట్ రేటింగ్ ఆటో-కంప్లీట్ చేయబడింది.";
 "existingChatMsg"="మీకు కొనసాగుతున్న టికెట్ ఉంది.";
+"aihelp_loading_querying"="వెతుకుతోంది";
+"aihelp_loading_processing"="ప్రాసెస్ చేస్తోంది";

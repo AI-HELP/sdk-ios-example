@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Aktion zu schnell. Bitte versuche es später erneut.";
 "defaultCompletedTip"="Standardbewertung automatisch abgeschlossen.";
 "existingChatMsg"="Sie haben ein offenes Ticket.";
+"aihelp_loading_querying"="Suche";
+"aihelp_loading_processing"="Verarbeitung";

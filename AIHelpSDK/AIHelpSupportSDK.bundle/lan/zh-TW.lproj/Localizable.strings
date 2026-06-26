@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="操作過快，請稍後再試。";
 "defaultCompletedTip"="預設評分已自動完成。";
 "existingChatMsg"="您有一張正在處理中的票證。";
+"aihelp_loading_querying"="搜尋中";
+"aihelp_loading_processing"="處理中";

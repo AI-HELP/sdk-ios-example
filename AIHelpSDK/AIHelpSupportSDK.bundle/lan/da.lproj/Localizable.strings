@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Handlingen går for stærkt. Prøv venligst igen senere.";
 "defaultCompletedTip"="Standardbedømmelse automatisk udfyldt.";
 "existingChatMsg"="Du har en igangværende billet.";
+"aihelp_loading_querying"="Søger";
+"aihelp_loading_processing"="Behandler";

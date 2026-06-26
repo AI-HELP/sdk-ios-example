@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="הפעולה מהירה מדי. אנא נסה שוב מאוחר יותר.";
 "defaultCompletedTip"="הדירוג מולא אוטומטית.";
 "existingChatMsg"="יש לך כרטיס פתוח.";
+"aihelp_loading_querying"="מחפש";
+"aihelp_loading_processing"="מעבד";

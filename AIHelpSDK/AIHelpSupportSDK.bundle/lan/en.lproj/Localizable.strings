@@ -149,3 +149,5 @@
 "aihelp_operation_too_frequent"="Action too fast. Please try again later.";
 "defaultCompletedTip"="Default rating auto-completed.";
 "existingChatMsg"="You have an ongoing ticket";
+"aihelp_loading_querying"="Searching";
+"aihelp_loading_processing"="Processing";
